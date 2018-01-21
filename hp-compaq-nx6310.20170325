@@ -1,0 +1,136 @@
+OpenBSD 6.1-beta (GENERIC) #0: Sat Mar 25 10:40:07 CET 2017
+    hans@hp.stare.cz:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Intel(R) Celeron(R) M CPU 430 @ 1.73GHz ("GenuineIntel" 686-class) 1.73 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,TM,PBE,NXE,SSE3,MWAIT,TM2,xTPR,PDCM,PERF,SENSOR
+real mem  = 1601519616 (1527MB)
+avail mem = 1558134784 (1485MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 04/17/07, BIOS32 rev. 0 @ 0xf0000, SMBIOS rev. 2.4 @ 0xf38eb (23 entries)
+bios0: vendor Hewlett-Packard version "68YDU Ver. F.0D" date 04/17/2007
+bios0: Hewlett-Packard 30AA
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SLIC HPET APIC MCFG TCPA SSDT SSDT SSDT SSDT
+acpi0: wakeup devices C096(S5) C0F1(S3) C0F8(S3) C0F9(S3) C0FA(S3) C0FB(S3) C102(S5) C22B(S5) C115(S5) C22C(S5) C118(S5) C22C(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 133MHz
+cpu0: mwait min=64, max=64, C-substates=0.1.1.1, IBE
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0xf8000000, bus 0-63
+acpiprt0 at acpi0: bus 2 (C096)
+acpiprt1 at acpi0: bus 8 (C102)
+acpiprt2 at acpi0: bus 24 (C115)
+acpiprt3 at acpi0: bus 32 (C118)
+acpiprt4 at acpi0: bus 0 (C002)
+acpiec0 at acpi0
+acpicpu0 at acpi0: !C3(250@17 io@0x1015), !C2(500@1 io@0x1014), C1(1000@1 halt)
+acpipwrres0 at acpi0: C1F0, resource for C1EC
+acpipwrres1 at acpi0: C1FD, resource for C1F1
+acpipwrres2 at acpi0: C21A, resource for C218
+acpipwrres3 at acpi0: C222, resource for C121
+acpipwrres4 at acpi0: C321, resource for C325
+acpipwrres5 at acpi0: C322, resource for C326
+acpipwrres6 at acpi0: C323, resource for C327
+acpipwrres7 at acpi0: C324, resource for C328
+acpitz0 at acpi0: critical temperature is 256 degC
+acpitz1 at acpi0: critical temperature is 105 degC
+acpitz2 at acpi0: critical temperature is 105 degC
+acpitz3 at acpi0: critical temperature is 105 degC
+acpitz4 at acpi0: critical temperature is 110 degC
+"PNP0A06" at acpi0 not configured
+"PNP0303" at acpi0 not configured
+"SYN0112" at acpi0 not configured
+"HPQ0006" at acpi0 not configured
+acpibat0 at acpi0: C1BC not present
+acpibat1 at acpi0: C1BB not present
+acpiac0 at acpi0: AC unit online
+acpibtn0 at acpi0: C23F
+acpibtn1 at acpi0: C238
+"PNP0C14" at acpi0 not configured
+"PNP0C0B" at acpi0 not configured
+"PNP0C0B" at acpi0 not configured
+"PNP0C0B" at acpi0 not configured
+"PNP0C0B" at acpi0 not configured
+acpivideo0 at acpi0: C083
+bios0: ROM list: 0xc0000/0x10000! 0xd0000/0x1000 0xd1000/0x1800
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 "Intel 82945GM Host" rev 0x03
+inteldrm0 at pci0 dev 2 function 0 "Intel 82945GM Video" rev 0x03
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0xd0000000, size 0x10000000
+inteldrm0: apic 1 int 16
+inteldrm0: 1024x768, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+"Intel 82945GM Video" rev 0x03 at pci0 dev 2 function 1 not configured
+azalia0 at pci0 dev 27 function 0 "Intel 82801GB HD Audio" rev 0x01: msi
+azalia0: codecs: Analog Devices AD1981HD, AT&T/Lucent/0x3026, using Analog Devices AD1981HD
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 "Intel 82801GB PCIE" rev 0x01: apic 1 int 16
+pci1 at ppb0 bus 8
+bwi0 at pci1 dev 0 function 0 "Broadcom BCM4311" rev 0x01: apic 1 int 16, address 00:14:a5:f0:fa:2c
+ppb1 at pci0 dev 28 function 2 "Intel 82801GB PCIE" rev 0x01: apic 1 int 18
+pci2 at ppb1 bus 24
+ppb2 at pci0 dev 28 function 3 "Intel 82801GB PCIE" rev 0x01: apic 1 int 19
+pci3 at ppb2 bus 32
+uhci0 at pci0 dev 29 function 0 "Intel 82801GB USB" rev 0x01: apic 1 int 20
+uhci1 at pci0 dev 29 function 1 "Intel 82801GB USB" rev 0x01: apic 1 int 21
+uhci2 at pci0 dev 29 function 2 "Intel 82801GB USB" rev 0x01: apic 1 int 18
+uhci3 at pci0 dev 29 function 3 "Intel 82801GB USB" rev 0x01: apic 1 int 19
+ehci0 at pci0 dev 29 function 7 "Intel 82801GB USB" rev 0x01: apic 1 int 20
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb3 at pci0 dev 30 function 0 "Intel 82801BAM Hub-to-PCI" rev 0xe1
+pci4 at ppb3 bus 2
+cbb0 at pci4 dev 6 function 0 "TI PCIXX12 CardBus" rev 0x00: apic 1 int 18
+"TI PCIXX12 FireWire" rev 0x00 at pci4 dev 6 function 1 not configured
+bce0 at pci4 dev 14 function 0 "Broadcom BCM4401B1" rev 0x02: apic 1 int 16, address 00:1a:4b:6f:6c:1f
+bmtphy0 at bce0 phy 1: BCM4401 10/100baseTX PHY, rev. 0
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 3 device 0 cacheline 0x10, lattimer 0x20
+pcmcia0 at cardslot0
+ichpcib0 at pci0 dev 31 function 0 "Intel 82801GBM LPC" rev 0x01: PM disabled
+pciide0 at pci0 dev 31 function 1 "Intel 82801GB IDE" rev 0x01: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: <PIONEER, DVDRW DVR-K17, 1.05> ATAPI 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, DMA mode 2
+pciide0: channel 1 ignored (disabled)
+ahci0 at pci0 dev 31 function 2 "Intel 82801GBM AHCI" rev 0x01: msi, AHCI 1.1
+ahci0: port 0: 1.5Gb/s
+scsibus2 at ahci0: 32 targets
+sd0 at scsibus2 targ 0 lun 0: <ATA, Hitachi HTS54161, SBDO> SCSI3 0/direct fixed naa.5000cca51eefd39b
+sd0: 114473MB, 512 bytes/sector, 234441648 sectors
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 6.2
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+vmm at mainbus0 not configured
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (8607602cb9fc6ee0.a) swap on sd0b dump on sd0b

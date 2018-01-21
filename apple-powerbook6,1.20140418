@@ -1,0 +1,94 @@
+[ using 500456 bytes of bsd ELF symbol table ]
+console out [NVDA,Display-A]console in [keyboard] , using ADB
+using parent NVDA,Parent:: memaddr 94000000 size 4000000, : consaddr 94004000, : ioaddr 91000000, size 1000000: memtag 8000, iotag 8000: width 1024 linebytes 1024 height 768 depth 8
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+	The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2013 OpenBSD. All rights reserved.  http://www.OpenBSD.org
+
+OpenBSD 5.4 (GENERIC) #32: Tue Jul 30 14:18:00 MDT 2013
+    deraadt@macppc.openbsd.org:/usr/src/sys/arch/macppc/compile/GENERIC
+real mem = 671088640 (640MB)
+avail mem = 636510208 (607MB)
+mainbus0 at root: model PowerBook6,1
+cpu0 at mainbus0: 7455 (Revision 0x303): 533 MHz: 256KB L2 cache
+mem0 at mainbus0
+spdmem0 at mem0: no EEPROM found
+spdmem1 at mem0: 512MB DDR SDRAM non-parity PC2100CL2.5
+memc0 at mainbus0: uni-n rev 0xd2
+"hw-clock" at memc0 not configured
+kiic0 at memc0 offset 0xf8001000
+iic0 at kiic0
+admtmp0 at iic0 addr 0xac
+mpcpcibr0 at mainbus0 pci: uni-north
+pci0 at mpcpcibr0 bus 0
+pchb0 at pci0 dev 11 function 0 "Apple UniNorth AGP" rev 0x00
+appleagp0 at pchb0
+agp0 at appleagp0: aperture at 0x0, size 0x10000000
+vgafb0 at pci0 dev 16 function 0 "NVIDIA GeForce4 440 Go 64M" rev 0xa3, mmio
+wsdisplay0 at vgafb0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+mpcpcibr1 at mainbus0 pci: uni-north
+pci1 at mpcpcibr1 bus 0
+pchb1 at pci1 dev 11 function 0 "Apple UniNorth PCI" rev 0x00
+macobio0 at pci1 dev 23 function 0 "Apple Intrepid" rev 0x00
+openpic0 at macobio0 offset 0x40000: version 0x4614 feature 3f0302 LE
+macgpio0 at macobio0 offset 0x50
+macgpio1 at macgpio0 offset 0x9: irq 47
+"programmer-switch" at macgpio0 offset 0x11 not configured
+"gpio4" at macgpio0 offset 0x1e not configured
+"gpio5" at macgpio0 offset 0x6f not configured
+"gpio6" at macgpio0 offset 0x70 not configured
+"extint-gpio4" at macgpio0 offset 0x5c not configured
+"gpio11" at macgpio0 offset 0x75 not configured
+"extint-gpio15" at macgpio0 offset 0x67 not configured
+"escc-legacy" at macobio0 offset 0x12000 not configured
+zsc0 at macobio0 offset 0x13000: irq 22,23
+zstty0 at zsc0 channel 0
+zstty1 at zsc0 channel 1
+snapper0 at macobio0 offset 0x10000: irq 30,1,2
+"timer" at macobio0 offset 0x15000 not configured
+adb0 at macobio0 offset 0x16000: irq 25, via-pmu, 3 targets
+apm0 at adb0: battery flags 0x5, 0% charged
+piic0 at adb0
+iic1 at piic0
+akbd0 at adb0 addr 2: iBook keyboard with inverted T (ISO layout)
+wskbd0 at akbd0: console keyboard, using wsdisplay0
+ams0 at adb0 addr 3: EMP trackpad <tpad> 2-button, 400 dpi
+wsmouse0 at ams0 mux 0
+abtn0 at adb0 addr 7: brightness/volume/eject buttons
+"battery" at macobio0 offset 0x0 not configured
+"backlight" at macobio0 offset 0xf300 not configured
+kiic1 at macobio0 offset 0x18000
+iic2 at kiic1
+wdc0 at macobio0 offset 0x20000 irq 24: DMA
+atapiscsi0 at wdc0 channel 0 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: <MATSHITA, CD-RW CW-8122, BA21> ATAPI 5/cdrom removable
+cd0(wdc0:0:0): using BIOS timings, DMA mode 2
+audio0 at snapper0
+ohci0 at pci1 dev 24 function 0 "Apple Intrepid USB" rev 0x00: irq 27, version 1.0, legacy support
+ohci1 at pci1 dev 25 function 0 "Apple Intrepid USB" rev 0x00: irq 28, version 1.0, legacy support
+ohci2 at pci1 dev 26 function 0 "Apple Intrepid USB" rev 0x00: irq 29, version 1.0, legacy support
+usb0 at ohci0: USB revision 1.0
+uhub0 at usb0 "Apple OHCI root hub" rev 1.00/1.00 addr 1
+usb1 at ohci1: USB revision 1.0
+uhub1 at usb1 "Apple OHCI root hub" rev 1.00/1.00 addr 1
+usb2 at ohci2: USB revision 1.0
+uhub2 at usb2 "Apple OHCI root hub" rev 1.00/1.00 addr 1
+mpcpcibr2 at mainbus0 pci: uni-north
+pci2 at mpcpcibr2 bus 0
+pchb2 at pci2 dev 11 function 0 "Apple UniNorth PCI" rev 0x00
+kauaiata0 at pci2 dev 13 function 0 "Apple Intrepid ATA" rev 0x00
+wdc1 at kauaiata0 irq 39: DMA
+wd0 at wdc1 channel 0 drive 0: <IC25N040ATMR04-0>
+wd0: 16-sector PIO, LBA48, 38154MB, 78140160 sectors
+wd0(wdc1:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5
+"Apple UniNorth Firewire" rev 0x81 at pci2 dev 14 function 0 not configured
+gem0 at pci2 dev 15 function 0 "Apple Uni-N2 GMAC" rev 0x80: irq 41, address 00:03:93:cb:bc:4c
+bmtphy0 at gem0 phy 0: BCM5221 100baseTX PHY, rev. 4
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+bootpath: /pci@f4000000/ata-6@d/disk@0:/bsd
+root on wd0a (44cde0ac88aca394.a) swap on wd0b dump on wd0b

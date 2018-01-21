@@ -1,0 +1,57 @@
+OpenBSD 6.1-beta (GENERIC) #275: Sat Mar 25 08:37:12 MDT 2017
+    deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Geode(TM) Integrated Processor by AMD PCS ("AuthenticAMD" 586-class) 432 MHz
+cpu0: FPU,DE,PSE,TSC,MSR,CX8,SEP,PGE,CMOV,CFLUSH,MMX,MMXX,3DNOW2,3DNOW
+real mem  = 133713920 (127MB)
+avail mem = 118480896 (112MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 12/10/07, BIOS32 rev. 0 @ 0xfceb2
+pcibios0 at bios0: rev 2.1 @ 0xf0000/0x10000
+pcibios0: pcibios_get_intr_routing - function not supported
+pcibios0: PCI IRQ Routing information unavailable.
+pcibios0: PCI bus #0 is the last bus
+bios0: ROM list: 0xe0000/0xa800
+cpu0 at mainbus0: (uniprocessor)
+mtrr: K6-family MTRR support (2 registers)
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 1 function 0 "AMD Geode LX" rev 0x31
+glxsb0 at pci0 dev 1 function 2 "AMD Geode LX Crypto" rev 0x00: RNG AES
+vr0 at pci0 dev 9 function 0 "VIA VT6105M RhineIII" rev 0x96: irq 10, address 00:0d:b9:12:9f:2c
+ukphy0 at vr0 phy 1: Generic IEEE 802.3u media interface, rev. 3: OUI 0x004063, model 0x0034
+vr1 at pci0 dev 10 function 0 "VIA VT6105M RhineIII" rev 0x96: irq 11, address 00:0d:b9:12:9f:2d
+ukphy1 at vr1 phy 1: Generic IEEE 802.3u media interface, rev. 3: OUI 0x004063, model 0x0034
+vr2 at pci0 dev 11 function 0 "VIA VT6105M RhineIII" rev 0x96: irq 12, address 00:0d:b9:12:9f:2e
+ukphy2 at vr2 phy 1: Generic IEEE 802.3u media interface, rev. 3: OUI 0x004063, model 0x0034
+ral0 at pci0 dev 12 function 0 "Ralink RT2560" rev 0x01: irq 9, address 00:11:09:0d:d3:36
+ral0: MAC/BBP RT2560 (rev 0x04), RF RT2525
+glxpcib0 at pci0 dev 15 function 0 "AMD CS5536 ISA" rev 0x03: rev 3, 32-bit 3579545Hz timer, watchdog, gpio, i2c
+gpio0 at glxpcib0: 32 pins
+iic0 at glxpcib0
+pciide0 at pci0 dev 15 function 2 "AMD CS5536 IDE" rev 0x01: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+wd0 at pciide0 channel 0 drive 0: <ELITE PRO CF CARD 8GB>
+wd0: 1-sector PIO, LBA, 7279MB, 14909328 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+ohci0 at pci0 dev 15 function 4 "AMD CS5536 USB" rev 0x02: irq 15, version 1.0, legacy support
+ehci0 at pci0 dev 15 function 5 "AMD CS5536 USB" rev 0x02: irq 15
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "AMD EHCI root hub" rev 2.00/1.00 addr 1
+isa0 at glxpcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 "AMD OHCI root hub" rev 1.00/1.00 addr 1
+vmm at mainbus0 not configured
+nvram: invalid checksum
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on wd0a (bf940e6c7aaf2c50.a) swap on wd0b dump on wd0b
+clock: unknown CMOS layout

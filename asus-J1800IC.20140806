@@ -1,0 +1,105 @@
+OpenBSD 5.6 (GENERIC) #0: Wed Aug  6 11:09:59 CEST 2014
+    root@media.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC
+real mem = 1985871872 (1893MB)
+avail mem = 1924329472 (1835MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.8 @ 0xebd60 (43 entries)
+bios0: vendor American Megatrends Inc. version "0604" date 06/10/2014
+bios0: ASUS All Series
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC FPDT MCFG LPIT HPET SSDT SSDT SSDT UEFI
+acpi0: wakeup devices UAR5(S4) UAR8(S4) PS2K(S4) PS2M(S4) UAR1(S4) URIR(S4) XHC1(S4) EHC1(S4) PXSX(S4) PXSX(S4) PXSX(S4) PXSX(S4) PWRB(S0)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Celeron(R) CPU J1800 @ 2.41GHz, 2417.23 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,MOVBE,POPCNT,DEADLINE,RDRAND,NXE,LONG,LAHF,3DNOWP,PERF,ITSC,SMEP,ERMS
+cpu0: 1MB 64b/line 16-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 83MHz
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 87 pins
+acpimadt0: bogus nmi for apid 2
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (RP01)
+acpiprt2 at acpi0: bus 2 (RP02)
+acpiprt3 at acpi0: bus 3 (RP03)
+acpiprt4 at acpi0: bus 4 (RP04)
+acpiec0 at acpi0: not present
+acpicpu0 at acpi0: C1, PSS
+acpipwrres0 at acpi0: PLPE
+acpipwrres1 at acpi0: PLPE
+acpipwrres2 at acpi0: USBC, resource for EHC1, OTG1
+acpipwrres3 at acpi0: FN00, resource for FAN0
+acpitz0 at acpi0: critical temperature is 90 degC
+acpibat0 at acpi0: BAT0 not present
+acpibat1 at acpi0: BAT1 not present
+acpibat2 at acpi0: BAT2 not present
+acpibtn0 at acpi0: LID0
+acpibtn1 at acpi0: PWRB
+acpibtn2 at acpi0: SLPB
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: DD1F
+cpu0: Enhanced SpeedStep 2417 MHz: speeds: 2408, 2407, 2324, 2241, 2158, 2075, 1992, 1909, 1826, 1743, 1660, 1577, 1494, 1411, 1328 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 vendor "Intel", unknown product 0x0f00 rev 0x0c
+vga1 at pci0 dev 2 function 0 vendor "Intel", unknown product 0x0f31 rev 0x0c
+intagp at vga1 not configured
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ahci0 at pci0 dev 19 function 0 vendor "Intel", unknown product 0x0f23 rev 0x0c: msi, AHCI 1.3
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, SAMSUNG HM251JJ, 2AA0> SCSI3 0/direct fixed naa.50f0000003105140
+sd0: 238475MB, 512 bytes/sector, 488397168 sectors
+sd1 at scsibus1 targ 1 lun 0: <ATA, WDC WD10TPVT-00H, 01.0> SCSI3 0/direct fixed naa.50014ee2aed8deca
+sd1: 953869MB, 512 bytes/sector, 1953525168 sectors
+vendor "Intel", unknown product 0x0f18 (class crypto subclass miscellaneous, rev 0x0c) at pci0 dev 26 function 0 not configured
+azalia0 at pci0 dev 27 function 0 vendor "Intel", unknown product 0x0f04 rev 0x0c: msi
+azalia0: codecs: Realtek/0x0887, Intel/0x2882, using Realtek/0x0887
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 vendor "Intel", unknown product 0x0f48 rev 0x0c: msi
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 28 function 1 vendor "Intel", unknown product 0x0f4a rev 0x0c: msi
+pci2 at ppb1 bus 2
+re0 at pci2 dev 0 function 0 "Realtek 8168" rev 0x0c: RTL8168G/8111G (0x4c00), msi, address e0:3f:49:6f:f3:1c
+rgephy0 at re0 phy 7: RTL8251 PHY, rev. 0
+ppb2 at pci0 dev 28 function 2 vendor "Intel", unknown product 0x0f4c rev 0x0c: msi
+pci3 at ppb2 bus 3
+ppb3 at pci0 dev 28 function 3 vendor "Intel", unknown product 0x0f4e rev 0x0c: msi
+pci4 at ppb3 bus 4
+ehci0 at pci0 dev 29 function 0 vendor "Intel", unknown product 0x0f34 rev 0x0c: apic 1 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 vendor "Intel", unknown product 0x0f1c rev 0x0c
+vendor "Intel", unknown product 0x0f12 (class serial bus subclass SMBus, rev 0x0c) at pci0 dev 31 function 3 not configured
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lapic_set_lvt: bad pin value 72
+ehci_sync_hc: tsleep() = 35
+ehci_sync_hc: tsleep() = 35
+ehci_sync_hc: tsleep() = 35
+ehci_sync_hc: tsleep() = 35
+ehci_sync_hc: tsleep() = 35
+ehci_sync_hc: tsleep() = 35
+ehci_sync_hc: tsleep() = 35
+ehci_sync_hc: tsleep() = 35
+uhub0: device problem, disabling port 1
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (b6c0cad145f7170f.a) swap on sd0b dump on sd0b

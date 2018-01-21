@@ -1,0 +1,115 @@
+OpenBSD 5.1-current (GENERIC.MP) #253: Thu Apr 26 01:45:24 MDT 2012
+    deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC.MP
+cpu0: Intel(R) Pentium(R) CPU P6200 @ 2.13GHz ("GenuineIntel" 686-class) 2.14 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,LONG,SSE3,MWAIT,DS-CPL,EST,TM2,SSSE3,CX16,xTPR,PDCM,POPCNT,LAHF
+real mem  = 3007627264 (2868MB)
+avail mem = 2947653632 (2811MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 01//2/01, BIOS32 rev. 0 @ 0xef735, SMBIOS rev. 2.7 @ 0xe6920 (41 entries)
+bios0: vendor Insyde Corp. version "V1.05" date 011/21/2011
+bios0: Acer TravelMate 5744Z
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP ASF! BOOT HPET APIC MCFG SLIC MSDM WDAT ASPT SSDT
+acpi0: wakeup devices P0P2(S4) PEGP(S4) P0P1(S4) EHC1(S3) EHC2(S3) HDEF(S0) PXSX(S4) RP01(S4) PXSX(S4) RP02(S4) PXSX(S4) RP03(S4) PXSX(S4) RP04(S4) PXSX(S4) RP05(S4) PXSX(S4) RP06(S4) PXSX(S4) RP07(S4) PXSX(S4) RP08(S4) GLAN(S4) PEG3(S4) PEG5(S4) PEG6(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: apic clock running at 133MHz
+cpu1 at mainbus0: apid 4 (application processor)
+cpu1: Intel(R) Pentium(R) CPU P6200 @ 2.13GHz ("GenuineIntel" 686-class) 2.14 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,LONG,SSE3,MWAIT,DS-CPL,EST,TM2,SSSE3,CX16,xTPR,PDCM,POPCNT,LAHF
+ioapic0 at mainbus0: apid 0 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0xf0000000, bus 0-63
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (P0P2)
+acpiprt2 at acpi0: bus 4 (P0P1)
+acpiprt3 at acpi0: bus 1 (RP01)
+acpiprt4 at acpi0: bus 2 (RP02)
+acpiprt5 at acpi0: bus -1 (RP03)
+acpiprt6 at acpi0: bus -1 (RP04)
+acpiprt7 at acpi0: bus -1 (RP05)
+acpiprt8 at acpi0: bus 3 (RP06)
+acpiprt9 at acpi0: bus -1 (RP07)
+acpiprt10 at acpi0: bus -1 (RP08)
+acpiprt11 at acpi0: bus -1 (PEG3)
+acpiprt12 at acpi0: bus -1 (PEG5)
+acpiprt13 at acpi0: bus -1 (PEG6)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C1, PSS
+acpicpu1 at acpi0: C1, PSS
+acpitz0 at acpi0: critical temperature is 89 degC
+acpiac0 at acpi0: AC unit in unknown state
+acpibat0 at acpi0: BAT0 not present
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: SLPB
+acpibtn2 at acpi0: LID_
+acpidock0 at acpi0: DOCK not docked (0)
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: DD02
+bios0: ROM list: 0xc0000/0xf200 0xcf200/0x3000!
+cpu0: Enhanced SpeedStep 2134 MHz: speeds: 2133, 1999, 1866, 1733, 1599, 1466, 1333, 1199, 1066, 933 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 "Intel Core Host" rev 0x02
+vga1 at pci0 dev 2 function 0 "Intel Mobile HD graphics" rev 0x02
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+intagp0 at vga1
+agp0 at intagp0: aperture at 0xc0000000, size 0x10000000
+inteldrm0 at vga1: apic 0 int 16
+drm0 at inteldrm0
+"Intel 3400 MEI" rev 0x06 at pci0 dev 22 function 0 not configured
+ehci0 at pci0 dev 26 function 0 "Intel 3400 USB" rev 0x05: apic 0 int 16
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 "Intel 3400 HD Audio" rev 0x05: msi
+azalia0: codecs: Realtek ALC269
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 "Intel 3400 PCIE" rev 0x05: apic 0 int 17
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 28 function 1 "Intel 3400 PCIE" rev 0x05: apic 0 int 16
+pci2 at ppb1 bus 2
+"Broadcom BCM4313" rev 0x01 at pci2 dev 0 function 0 not configured
+ppb2 at pci0 dev 28 function 5 "Intel 3400 PCIE" rev 0x05: apic 0 int 16
+pci3 at ppb2 bus 3
+bge0 at pci3 dev 0 function 0 "Broadcom BCM57780" rev 0x01, BCM57780 A1 (0x57780001): apic 0 int 17, address e8:40:f2:1e:df:27
+brgphy0 at bge0 phy 1: BCM57780 10/100/1000baseT PHY, rev. 1
+ehci1 at pci0 dev 29 function 0 "Intel 3400 USB" rev 0x05: apic 0 int 23
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb3 at pci0 dev 30 function 0 "Intel 82801BAM Hub-to-PCI" rev 0xa5
+pci4 at ppb3 bus 4
+pcib0 at pci0 dev 31 function 0 "Intel HM55 LPC" rev 0x05
+ahci0 at pci0 dev 31 function 2 "Intel 3400 AHCI" rev 0x05: msi, AHCI 1.3
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 1 lun 0: <ATA, ST9500325AS, 0001> SCSI3 0/direct fixed naa.5000c5004a11a378
+sd0: 476940MB, 512 bytes/sector, 976773168 sectors
+cd0 at scsibus0 targ 4 lun 0: <MATSHITA, DVD-RAM UJ8B0AW, 1.00> ATAPI 5/cdrom removable
+ichiic0 at pci0 dev 31 function 3 "Intel 3400 SMBus" rev 0x05: apic 0 int 19
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x52: 4GB DDR3 SDRAM PC3-10600 SO-DIMM
+itherm0 at pci0 dev 31 function 6 "Intel 3400 Thermal" rev 0x05
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 7.5
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+mtrr: Pentium Pro MTRR support
+uhub2 at uhub0 port 1 "Intel Rate Matching Hub" rev 2.00/0.00 addr 2
+uvideo0 at uhub2 port 3 configuration 1 interface 0 "SuYin WebCam" rev 2.00/1.00 addr 3
+video0 at uvideo0
+uhub3 at uhub1 port 1 "Intel Rate Matching Hub" rev 2.00/0.00 addr 2
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on sd0a (7f6430f6067b0d6a.a) swap on sd0b dump on sd0b

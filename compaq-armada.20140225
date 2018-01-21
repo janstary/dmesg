@@ -1,0 +1,86 @@
+OpenBSD 5.5 (GENERIC) #258: Tue Feb 25 01:32:07 MST 2014
+    deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Intel Pentium III ("GenuineIntel" 686-class, 128KB L2 cache) 847 MHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,SEP,MTRR,PGE,MCA,CMOV,PSE36,MMX,FXSR,SSE,PERF
+real mem  = 259485696 (247MB)
+avail mem = 242933760 (231MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 08/20/01, BIOS32 rev. 0 @ 0xfd720, SMBIOS rev. 2.3 @ 0xe9f90 (17 entries)
+bios0: vendor Phoenix Technologies LTD version "0F08" date 08/20/2001
+bios0: Compaq 110 series
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP BOOT
+acpi0: wakeup devices PWRB(S1) LID_(S1) PCI0(S1) USB0(S1) MODM(S1) PMOD(S1) CRD0(S1)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C3, C2
+acpipwrres0 at acpi0: PLPC
+acpitz0 at acpi0: critical temperature is 100 degC
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: SLPB
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT1 not present
+acpibtn2 at acpi0: LID_
+acpivideo0 at acpi0: VGA_
+bios0: ROM list: 0xc0000/0xc000 0xcc000/0x1800
+cpu0 at mainbus0: (uniprocessor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 "VIA VT8601 PCI" rev 0x05
+viaagp0 at pchb0: v2
+agp0 at viaagp0: aperture at 0xf8000000, size 0x10000000
+ppb0 at pci0 dev 1 function 0 "VIA VT82C601 AGP" rev 0x00
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 "Trident CyberBlade i1 AGP" rev 0x6a
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+pcib0 at pci0 dev 7 function 0 "VIA VT82C686 ISA" rev 0x22
+pciide0 at pci0 dev 7 function 1 "VIA VT82C571 IDE" rev 0x10: ATA66, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 0: <IC25N015ATDA04-0>
+wd0: 16-sector PIO, LBA, 14403MB, 29498112 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 4
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: <QSI, CD-ROM SCR-242, CCA1> ATAPI 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, DMA mode 2
+uhci0 at pci0 dev 7 function 2 "VIA VT83C572 USB" rev 0x10: irq 11
+viapm0 at pci0 dev 7 function 4 "VIA VT82C686 SMBus" rev 0x30: SMBus disabled
+viapm0: HWM disabled
+auvia0 at pci0 dev 7 function 5 "VIA VT82C686 AC97" rev 0x20: irq 9
+ac97: codec id 0x41445348 (Analog Devices AD1881A)
+ac97: codec features headphone, Analog Devices Phat Stereo
+audio0 at auvia0
+fxp0 at pci0 dev 9 function 0 "Intel 8255x" rev 0x09, i82559S: irq 11, address 00:d0:59:80:c6:e5
+inphy0 at fxp0 phy 1: i82555 10/100 PHY, rev. 4
+"AT&T/Lucent LTMODEM" rev 0x00 at pci0 dev 9 function 1 not configured
+cbb0 at pci0 dev 10 function 0 "TI PCI1410 CardBus" rev 0x01: irq 11, CardBus support disabled
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 4.6
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+usb0 at uhci0: USB revision 1.0
+uhub0 at usb0 "VIA UHCI root hub" rev 1.00/1.00 addr 1
+cbb0: bad Vcc request. sock_ctrl 0xf000ff00, sock_status 0xf000e2c3
+cardslot0 at cbb0 slot 0 flags 0
+pcmcia0 at cardslot0
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on wd0a (b2284437e82f62e4.a) swap on wd0b dump on wd0b

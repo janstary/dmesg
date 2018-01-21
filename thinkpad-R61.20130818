@@ -1,0 +1,141 @@
+OpenBSD 5.4-current (GENERIC) #3: Sun Aug 18 13:14:59 CEST 2013
+    root@lenovo.stare.cz:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Intel(R) Core(TM)2 Duo CPU T7250 @ 2.00GHz ("GenuineIntel" 686-class) 2.20 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,LONG,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,LAHF,PERF
+real mem  = 1071894528 (1022MB)
+avail mem = 1042558976 (994MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 08/27/07, BIOS32 rev. 0 @ 0xfdc70, SMBIOS rev. 2.4 @ 0xe0010 (71 entries)
+bios0: vendor LENOVO version "7KET72WW (1.22 )" date 08/27/2007
+bios0: LENOVO 8918B8G
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SSDT ECDT TCPA APIC MCFG HPET SLIC BOOT SSDT SSDT SSDT SSDT
+acpi0: wakeup devices LID_(S3) SLPB(S3) LURT(S3) DURT(S3) IGBE(S4) EXP0(S4) EXP1(S4) EXP2(S4) EXP3(S4) EXP4(S4) PCI1(S4) USB0(S3) USB1(S3) USB2(S3) USB3(S3) USB4(S3) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpiec0 at acpi0
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: apic clock running at 199MHz
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 2, remapped to apid 1
+acpimcfg0 at acpi0 addr 0xf0000000, bus 0-63
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (AGP_)
+acpiprt2 at acpi0: bus 2 (EXP0)
+acpiprt3 at acpi0: bus 3 (EXP1)
+acpiprt4 at acpi0: bus 4 (EXP2)
+acpiprt5 at acpi0: bus 5 (EXP3)
+acpiprt6 at acpi0: bus 13 (EXP4)
+acpiprt7 at acpi0: bus 21 (PCI1)
+acpicpu0 at acpi0: C3, C2, C1, PSS
+acpipwrres0 at acpi0: PUBS
+acpitz0 at acpi0: critical temperature is 127 degC
+acpitz1 at acpi0: critical temperature is 100 degC
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+acpibat0 at acpi0: BAT0 model "COMPATIBLE" serial 13920 type LION oem "SANYO"
+acpibat1 at acpi0: BAT1 not present
+acpiac0 at acpi0: AC unit online
+acpithinkpad0 at acpi0
+acpidock0 at acpi0: GDCK not docked (0)
+bios0: ROM list: 0xc0000/0xf000 0xcf000/0x1000 0xd0000/0x1000 0xe0000/0x10000!
+cpu0: Enhanced SpeedStep 1996 MHz: speeds: 2001, 2000, 1600, 1200, 800 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 "Intel GM965 Host" rev 0x0c
+ppb0 at pci0 dev 1 function 0 "Intel GM965 PCIE" rev 0x0c: apic 1 int 16
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 vendor "NVIDIA", unknown product 0x0429 rev 0xa1
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+em0 at pci0 dev 25 function 0 "Intel ICH8 IGP M" rev 0x03: msi, address 00:1a:6b:d4:5f:22
+uhci0 at pci0 dev 26 function 0 "Intel 82801H USB" rev 0x03: apic 1 int 20
+uhci1 at pci0 dev 26 function 1 "Intel 82801H USB" rev 0x03: apic 1 int 21
+ehci0 at pci0 dev 26 function 7 "Intel 82801H USB" rev 0x03: apic 1 int 22
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 "Intel 82801H HD Audio" rev 0x03: msi
+azalia0: codecs: Analog Devices AD1984, Conexant/0x2bfa, using Analog Devices AD1984
+audio0 at azalia0
+ppb1 at pci0 dev 28 function 0 "Intel 82801H PCIE" rev 0x03: apic 1 int 20
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 28 function 1 "Intel 82801H PCIE" rev 0x03: apic 1 int 21
+pci3 at ppb2 bus 3
+iwn0 at pci3 dev 0 function 0 "Intel Wireless WiFi Link 4965" rev 0x61: msi, MIMO 2T3R, MoW2, address 00:13:e8:d2:4e:9b
+ppb3 at pci0 dev 28 function 2 "Intel 82801H PCIE" rev 0x03: apic 1 int 22
+pci4 at ppb3 bus 4
+ppb4 at pci0 dev 28 function 3 "Intel 82801H PCIE" rev 0x03: apic 1 int 23
+pci5 at ppb4 bus 5
+ppb5 at pci0 dev 28 function 4 "Intel 82801H PCIE" rev 0x03: apic 1 int 20
+pci6 at ppb5 bus 13
+uhci2 at pci0 dev 29 function 0 "Intel 82801H USB" rev 0x03: apic 1 int 16
+uhci3 at pci0 dev 29 function 1 "Intel 82801H USB" rev 0x03: apic 1 int 17
+uhci4 at pci0 dev 29 function 2 "Intel 82801H USB" rev 0x03: apic 1 int 18
+ehci1 at pci0 dev 29 function 7 "Intel 82801H USB" rev 0x03: apic 1 int 19
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb6 at pci0 dev 30 function 0 "Intel 82801BAM Hub-to-PCI" rev 0xf3
+pci7 at ppb6 bus 21
+cbb0 at pci7 dev 0 function 0 "Ricoh 5C476 CardBus" rev 0xba: apic 1 int 16
+"Ricoh 5C832 Firewire" rev 0x04 at pci7 dev 0 function 1 not configured
+sdhc0 at pci7 dev 0 function 2 "Ricoh 5C822 SD/MMC" rev 0x21: apic 1 int 18
+sdmmc0 at sdhc0
+"Ricoh 5C843 MMC" rev 0x11 at pci7 dev 0 function 3 not configured
+"Ricoh 5C592 Memory Stick" rev 0x11 at pci7 dev 0 function 4 not configured
+"Ricoh 5C852 xD" rev 0x11 at pci7 dev 0 function 5 not configured
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 22 device 0 cacheline 0x0, lattimer 0xb0
+pcmcia0 at cardslot0
+ichpcib0 at pci0 dev 31 function 0 "Intel 82801HBM LPC" rev 0x03: PM disabled
+pciide0 at pci0 dev 31 function 1 "Intel 82801HBM IDE" rev 0x03: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: <HL-DT-ST, DVDRAM GMA-4082N, PX07> ATAPI 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+ahci0 at pci0 dev 31 function 2 "Intel 82801HBM AHCI" rev 0x03: msi, AHCI 1.1
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, HITACHI HTS54161, SB4I> SCSI3 0/direct fixed naa.5000cca553d9c785
+sd0: 152627MB, 512 bytes/sector, 312581808 sectors
+ichiic0 at pci0 dev 31 function 3 "Intel 82801H SMBus" rev 0x03: apic 1 int 23
+iic0 at ichiic0
+usb2 at uhci0: USB revision 1.0
+uhub2 at usb2 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci1: USB revision 1.0
+uhub3 at usb3 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb4 at uhci2: USB revision 1.0
+uhub4 at usb4 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb5 at uhci3: USB revision 1.0
+uhub5 at usb5 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb6 at uhci4: USB revision 1.0
+uhub6 at usb6 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pms0: ALPS Dualpoint, version 0x7301
+wsmouse1 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+aps0 at isa0 port 0x1600/31
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+mtrr: Pentium Pro MTRR support
+ugen0 at uhub2 port 2 "TouchStrip Fingerprint Sensor" rev 1.00/0.01 addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (603a3f894caa2b45.a) swap on sd0b dump on sd0b
+iwn0: radio is disabled by hardware switch
+iwn0: radio is disabled by hardware switch
+iwn0: radio is disabled by hardware switch
+sd1 at scsibus3 targ 1 lun 0: <OPENBSD, SR CRYPTO, 005> SCSI2 0/direct fixed
+sd1: 28667MB, 512 bytes/sector, 58710448 sectors
+ugen1 at uhub2 port 1 "Broadcom Corp BCM2045B" rev 2.00/1.00 addr 3

@@ -1,0 +1,181 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.0.2 (GENERIC.201610210724Z)
+total memory = 2039 MB
+avail memory = 1989 MB
+kern.module.path=/stand/i386/7.0/modules
+timecounter: Timecounters tick every 10.000 msec
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+Hewlett-Packard HP d530 SFF(DC578AV) ( )
+mainbus0 (root)
+ACPI: RSDP 0xe9e10 000014 (v00 COMPAQ)
+ACPI: RSDT 0xe5640 00007C (v01 COMPAQ CPQ0064  20040115      00000000)
+ACPI: FACP 0xe56f8 000074 (v01 COMPAQ SPRINGD  00000001      00000000)
+ACPI: DSDT 0xe5808 000D7D (v01 COMPAQ     DSDT 00000001 MSFT 0100000E)
+ACPI: FACS 0xe5600 000040
+ACPI: SSDT 0xe6585 000685 (v01 COMPAQ  PROJECT 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe6c0a 00054C (v01 COMPAQ CORE_PNP 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe7156 0001F2 (v01 COMPAQ CORE_UTL 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe7348 00032E (v01 COMPAQ VILLTBL1 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe7676 00053F (v01 COMPAQ LGCYLITE 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe7bb5 000167 (v01 COMPAQ    UART2 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe7d1c 00014E (v01 COMPAQ   FLOPPY 00000001 MSFT 0100000E)
+ACPI: APIC 0xe576c 000068 (v01 COMPAQ SPRINGD  00000001      00000000)
+ACPI: SSDT 0xe9b2c 0000B2 (v01 COMPAQ     APIC 00000001 MSFT 0100000E)
+ACPI: ASF! 0xe57d4 000034 (v16 COMPAQ SPRINGD  00000001      00000000)
+ACPI: SSDT 0xe82d8 00040F (v01 COMPAQ PNP_PRSS 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe86e7 00016D (v01 COMPAQ UR2_PRSS 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe8854 000119 (v01 COMPAQ FPY_PRSS 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe8a22 000167 (v01 COMPAQ       S3 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe8b89 0000DD (v01 COMPAQ  CORE_S3 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe8c66 000144 (v01 COMPAQ   PIDETM 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe9200 0001B5 (v01 COMPAQ     GTF0 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe8daa 000155 (v01 COMPAQ   SIDETM 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe956f 0001BA (v01 COMPAQ     GTF2 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe98e3 0000F0 (v01 COMPAQ      L08 00000001 MSFT 0100000E)
+ACPI: SSDT 0xe9d30 000078 (v01 COMPAQ    FINIS 00000001 MSFT 0100000E)
+ACPI: All ACPI Tables successfully acquired
+ioapic0 at mainbus0 apid 1: pa 0xfec00000, version 0x20, 24 pins
+cpu0 at mainbus0 apid 0: Intel(R) Pentium(R) 4 CPU 2.80GHz, id 0xf34
+acpi0 at mainbus0: Intel ACPICA 20131218
+acpi0: X/RSDT: OemId <COMPAQ,CPQ0064 ,20040115>, AslId <    ,00000000>
+acpi0: SCI interrupting at int 9
+timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
+NCP (PNP0C04) at acpi0 not configured
+attimer1 at acpi0 (TIME, PNP0100): io 0x40-0x43 irq 0
+pcppi1 at acpi0 (SPKR, PNP0800): io 0x61
+midi0 at pcppi1: PC speaker
+sysbeep0 at pcppi1
+pckbc1 at acpi0 (PS2M, PNP0F13) (aux port): irq 12
+pckbc2 at acpi0 (KBD, PNP0303) (kbd port): io 0x60,0x64 irq 1
+ECP0 (PNP0401) at acpi0 not configured
+COM1 (PNP0501) at acpi0 not configured
+FDC0 (PNP0700) at acpi0 not configured
+APIC (PNP0003) at acpi0 not configured
+SBD1 (PNP0C02) at acpi0 not configured
+SBD2 (PNP0C02) at acpi0 not configured
+MBRD (PNP0C01) at acpi0 not configured
+acpibut0 at acpi0 (PBTN, PNP0C0C): ACPI Power Button
+apm0 at acpi0: Power Management spec V1.2
+ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20131218/hwxface-646)
+attimer1: attached to pcppi1
+pckbd0 at pckbc2 (kbd slot)
+pckbc2: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+pchb0 at pci0 dev 0 function 0: vendor 0x8086 product 0x2570 (rev. 0x02)
+agp0 at pchb0: i855-family chipset
+agp0: detected 8060k stolen memory
+agp0: aperture at 0xf0000000, size 0x8000000
+i915drmkms0 at pci0 dev 2 function 0: vendor 0x8086 product 0x2572 (rev. 0x02)
+drm: Memory usable by graphics device = 128M
+drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
+drm: Driver supports precise vblank timestamp query.
+i915drmkms0: interrupting at ioapic0 pin 16 (i915)
+drm: initialized overlay support
+intelfb0 at i915drmkms0
+i915drmkms0: info: registered panic notifier
+intelfb0: framebuffer at 0xdb7fc000, size 1920x1080, depth 32, stride 7680
+wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+uhci0 at pci0 dev 29 function 0: vendor 0x8086 product 0x24d2 (rev. 0x02)
+uhci0: interrupting at ioapic0 pin 16
+usb0 at uhci0: USB revision 1.0
+uhci1 at pci0 dev 29 function 1: vendor 0x8086 product 0x24d4 (rev. 0x02)
+uhci1: interrupting at ioapic0 pin 19
+usb1 at uhci1: USB revision 1.0
+uhci2 at pci0 dev 29 function 2: vendor 0x8086 product 0x24d7 (rev. 0x02)
+uhci2: interrupting at ioapic0 pin 18
+usb2 at uhci2: USB revision 1.0
+ehci0 at pci0 dev 29 function 7: vendor 0x8086 product 0x24dd (rev. 0x02)
+ehci0: interrupting at ioapic0 pin 23
+ehci0: EHCI version 1.0
+ehci0: wrong number of companions (4 != 3)
+ehci0: companion controllers, 2 ports each: uhci0 uhci1 uhci2
+usb3 at ehci0: USB revision 2.0
+ppb0 at pci0 dev 30 function 0: vendor 0x8086 product 0x244e (rev. 0xc2)
+pci1 at ppb0 bus 5
+pci1: i/o space, memory space enabled
+bge0 at pci1 dev 2 function 0: Broadcom BCM5782 Gigabit Ethernet
+bge0: interrupting at ioapic0 pin 20
+bge0: HW config 00000155, 00000015, 00000000, 00000000 00000000
+bge0: ASIC BCM5705 A3 (0x3003), Ethernet address 00:11:85:79:7b:4d
+bge0: setting short Tx thresholds
+brgphy0 at bge0 phy 1: BCM5705 1000BASE-T media interface, rev. 2
+brgphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+ichlpcib0 at pci0 dev 31 function 0: vendor 0x8086 product 0x24d0 (rev. 0x02)
+timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
+ichlpcib0: 24-bit timer
+ichlpcib0: TCO (watchdog) timer configured.
+gpio0 at ichlpcib0: 64 pins
+piixide0 at pci0 dev 31 function 1: Intel 82801EB IDE Controller (ICH5) (rev. 0x02)
+piixide0: bus-master DMA support present
+piixide0: primary channel configured to compatibility mode
+piixide0: primary channel interrupting at ioapic0 pin 14
+atabus0 at piixide0 channel 0
+piixide0: secondary channel configured to compatibility mode
+piixide0: secondary channel interrupting at ioapic0 pin 15
+atabus1 at piixide0 channel 1
+piixide1 at pci0 dev 31 function 2: Intel 82801EB Serial ATA Controller (rev. 0x02)
+piixide1: bus-master DMA support present
+piixide1: primary channel configured to native-PCI mode
+piixide1: using ioapic0 pin 18 for native-PCI interrupt
+atabus2 at piixide1 channel 0
+piixide1: secondary channel configured to native-PCI mode
+atabus3 at piixide1 channel 1
+auich0 at pci0 dev 31 function 5: i82801EB (ICH5) AC-97 Audio
+auich0: interrupting at ioapic0 pin 17
+auich0: ac97: Analog Devices AD1981B codec; headphone, 20 bit DAC, no 3D stereo
+auich0: ac97: ext id 0x605<AC97_22,AMAP,SPDIF,VRA>
+isa0 at ichlpcib0
+lpt0 at isa0 port 0x378-0x37b irq 7
+com0 at isa0 port 0x3f8-0x3ff irq 4: ns16550a, working fifo
+fdc0 at isa0 port 0x3f0-0x3f7 irq 6 drq 2
+acpicpu0 at cpu0: ACPI CPU
+acpicpu0: C1: HLT, lat   0 us, pow     0 mW
+acpicpu0: T0: I/O, lat   1 us, pow     0 mW, 100 %
+acpicpu0: T1: I/O, lat   1 us, pow     0 mW,  88 %
+acpicpu0: T2: I/O, lat   1 us, pow     0 mW,  76 %
+acpicpu0: T3: I/O, lat   1 us, pow     0 mW,  64 %
+acpicpu0: T4: I/O, lat   1 us, pow     0 mW,  52 %
+acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
+acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
+acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+auich0: measured ac97 link rate at 47998 Hz, will use 48000 Hz
+audio0 at auich0: full duplex, playback, capture, mmap, independent
+fd0 at fdc0 drive 0: 1.44MB, 80 cyl, 2 head, 18 sec
+uhub0 at usb0: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+uhub1 at usb1: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1: 2 ports with 2 removable, self powered
+uhub2 at usb2: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub2: 2 ports with 2 removable, self powered
+uhub3 at usb3: vendor 0x8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub3: 8 ports with 8 removable, self powered
+IPsec: Initialized Security Association Processing.
+wd0 at atabus0 drive 0
+wd0: <WDC WD400BB-60JKC0>
+wd0: drive supports 16-sector PIO transfers, LBA addressing
+wd0: 38166 MB, 77545 cyl, 16 head, 63 sec, 512 bytes/sect x 78165360 sectors
+wd0: 32-bit data port
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
+wd0(piixide0:0:0): using PIO mode 4, Ultra-DMA mode 5 (Ultra/100) (using DMA)
+atapibus0 at atabus1: 2 targets
+cd0 at atapibus0 drive 0: <HL-DT-ST CD-ROM GCR-8483B, , 1.02> cdrom removable
+cd0: 32-bit data port
+cd0: drive supports PIO mode 4, DMA mode 2
+cd0(piixide0:1:0): using PIO mode 4, DMA mode 2 (using DMA)
+Kernelized RAIDframe activated
+boot device: wd0
+root on wd0a dumps on wd0b
+root file system type: ffs
+wsdisplay0: screen 1 added (default, vt100 emulation)
+wsdisplay0: screen 2 added (default, vt100 emulation)
+wsdisplay0: screen 3 added (default, vt100 emulation)
+wsdisplay0: screen 4 added (default, vt100 emulation)

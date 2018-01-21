@@ -1,0 +1,112 @@
+OpenBSD 5.8-beta (GENERIC) #1074: Fri Jul 10 00:59:58 MDT 2015
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC
+real mem = 519503872 (495MB)
+avail mem = 499990528 (476MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.3 @ 0xd8010 (42 entries)
+bios0: vendor Phoenix version "V1.09" date 10/26/2004
+bios0: Acer Aspire 1520
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SSDT APIC
+acpi0: wakeup devices PCI0(S5) Z007(S4) GLAN(S5) ILAN(S5) LID_(S3) SLPB(S3)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: AMD Athlon(tm) 64 Processor 3000+, 1801.30 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,NXE,MMXX,LONG,3DNOW2,3DNOW
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 1MB 64b/line 16-way L2 cache
+cpu0: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: DTLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: AMD errata 86, 89, 97, 104 present, BIOS upgrade may be required
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 200MHz
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 3, 24 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiec0 at acpi0
+acpicpu0 at acpi0: PSS
+acpitz0 at acpi0: critical temperature is 80 degC
+acpitz1 at acpi0: critical temperature is 97 degC
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT0 model "Bat 8Cell" serial 236 type Lion oem "Acer"
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+acpivideo0 at acpi0: VGA_
+cpu0: PowerNow! K8 1801 MHz: speeds: 1800 1600 800 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "VIA K8M800 Host" rev 0x00
+agp at pchb0 not configured
+pchb1 at pci0 dev 0 function 1 "VIA K8M800 Host" rev 0x00
+pchb2 at pci0 dev 0 function 2 "VIA K8M800 Host" rev 0x00
+pchb3 at pci0 dev 0 function 3 "VIA K8M800 Host" rev 0x00
+pchb4 at pci0 dev 0 function 4 "VIA K8M800 Host" rev 0x00
+pchb5 at pci0 dev 0 function 7 "VIA K8M800 Host" rev 0x00
+ppb0 at pci0 dev 1 function 0 "VIA K8HTB AGP" rev 0x00
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 "NVIDIA GeForce FX Go 5700" rev 0xa1
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+"INPROCOMM IPN2220" rev 0x00 at pci0 dev 10 function 0 not configured
+cbb0 at pci0 dev 11 function 0 "TI PCI7420 CardBus" rev 0x00: apic 1 int 17
+cbb1 at pci0 dev 11 function 1 "TI PCI7420 CardBus" rev 0x00: apic 1 int 18
+"TI PCI7x20 FireWire" rev 0x00 at pci0 dev 11 function 2 not configured
+re0 at pci0 dev 12 function 0 "Realtek 8169" rev 0x10: RTL8169/8110SB (0x1000), apic 1 int 22, address 00:0a:e4:a1:a4:a5
+rgephy0 at re0 phy 7: RTL8169S/8110S PHY, rev. 2
+uhci0 at pci0 dev 16 function 0 "VIA VT83C572 USB" rev 0x80: apic 1 int 21
+uhci1 at pci0 dev 16 function 1 "VIA VT83C572 USB" rev 0x80: apic 1 int 21
+uhci2 at pci0 dev 16 function 2 "VIA VT83C572 USB" rev 0x80: apic 1 int 21
+ehci0 at pci0 dev 16 function 3 "VIA VT6202 USB" rev 0x82: apic 1 int 21
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 "VIA EHCI root hub" rev 2.00/1.00 addr 1
+viapm0 at pci0 dev 17 function 0 "VIA VT8235 ISA" rev 0x00: SMI
+iic0 at viapm0
+spdmem0 at iic0 addr 0x50: 256MB DDR SDRAM non-parity PC2700CL2.5
+spdmem1 at iic0 addr 0x51: 256MB DDR SDRAM non-parity PC2700CL2.5
+pciide0 at pci0 dev 17 function 1 "VIA VT82C571 IDE" rev 0x06: ATA133, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 0: <HTS424040M9AT00>
+wd0: 16-sector PIO, LBA48, 38154MB, 78140160 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 5
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: <TSSTcorp, CD/DVDW TS-L532A, TI50> ATAPI 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, Ultra-DMA mode 2
+auvia0 at pci0 dev 17 function 5 "VIA VT8233 AC97" rev 0x50: apic 1 int 22
+ac97: codec id 0x56494161 (VIA Technologies VT1612A)
+ac97: codec features headphone, 18 bit DAC, 18 bit ADC, KS Waves 3D
+audio0 at auvia0
+"VIA VT82C686 Modem" rev 0x80 at pci0 dev 17 function 6 not configured
+pchb6 at pci0 dev 24 function 0 "AMD AMD64 0Fh HyperTransport" rev 0x00
+pchb7 at pci0 dev 24 function 1 "AMD AMD64 0Fh Address Map" rev 0x00
+pchb8 at pci0 dev 24 function 2 "AMD AMD64 0Fh DRAM Cfg" rev 0x00
+kate0 at pci0 dev 24 function 3 "AMD AMD64 0Fh Misc Cfg" rev 0x00
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 3 device 0 cacheline 0x0, lattimer 0x40
+pcmcia0 at cardslot0
+cardslot1 at cbb1 slot 1 flags 0
+cardbus1 at cardslot1: bus 4 device 0 cacheline 0x0, lattimer 0x40
+pcmcia1 at cardslot1
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 "VIA UHCI root hub" rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 "VIA UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 "VIA UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at mainbus0
+isadma0 at isa0
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 5.8
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on wd0a (e121ef3dbee0b651.a) swap on wd0b dump on wd0b

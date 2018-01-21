@@ -1,0 +1,66 @@
+OpenBSD 5.9-beta (GENERIC) #1523: Sun Jan 17 20:52:56 MST 2016
+    deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Intel Pentium III ("GenuineIntel" 686-class, 128KB L2 cache) 596 MHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,SEP,MTRR,PGE,MCA,CMOV,PSE36,MMX,FXSR,SSE,PERF
+real mem  = 266539008 (254MB)
+avail mem = 248913920 (237MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 09/18/00, BIOS32 rev. 0 @ 0xffe90, SMBIOS rev. 2.3 @ 0xf0450 (58 entries)
+bios0: vendor Dell Computer Corporation version "A07" date 09/18/2000
+bios0: Dell Computer Corporation OptiPlex GX100
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP
+acpi0: wakeup devices PCI0(S5) USB0(S1) PCI1(S5) KBD_(S1)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (PCI1)
+acpicpu0 at acpi0: C1(@1 halt!)
+bios0: ROM list: 0xc0000/0x8000 0xc8000/0x8000
+cpu0 at mainbus0: (uniprocessor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 "Intel 82810-DC100 Host" rev 0x03
+vga1 at pci0 dev 1 function 0 "Intel 82810-DC100 Video" rev 0x03
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ppb0 at pci0 dev 30 function 0 "Intel 82801AA Hub-to-PCI" rev 0x02
+pci1 at ppb0 bus 1
+rl0 at pci1 dev 7 function 0 "Realtek 8139" rev 0x10: irq 9, address 00:30:4f:19:82:1b
+rlphy0 at rl0 phy 0: RTL internal PHY
+"Creative Labs SoundBlaster Audigy LS" rev 0x00 at pci1 dev 8 function 0 not configured
+xl0 at pci1 dev 12 function 0 "3Com 3c905C 100Base-TX" rev 0x78: irq 10, address 00:b0:d0:a0:69:be
+bmtphy0 at xl0 phy 24: 3C905C internal PHY, rev. 7
+ichpcib0 at pci0 dev 31 function 0 "Intel 82801AA LPC" rev 0x02
+pciide0 at pci0 dev 31 function 1 "Intel 82801AA IDE" rev 0x02: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+wd0 at pciide0 channel 0 drive 0: <ST340823A>
+wd0: 16-sector PIO, LBA, 38166MB, 78165360 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 4
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: <SAMSUNG, CD-ROM SN-124, q009> ATAPI 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, Ultra-DMA mode 2
+uhci0 at pci0 dev 31 function 2 "Intel 82801AA USB" rev 0x02: irq 11
+ichiic0 at pci0 dev 31 function 3 "Intel 82801AA SMBus" rev 0x02: SMBus disabled
+isa0 at ichpcib0
+isadma0 at isa0
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+usb0 at uhci0: USB revision 1.0
+uhub0 at usb0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on wd0a (502aecc830317895.a) swap on wd0b dump on wd0b

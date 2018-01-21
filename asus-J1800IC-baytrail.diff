@@ -1,0 +1,35 @@
+Index: sys/dev/pci/drm/i915/i915_devlist.h
+===================================================================
+RCS file: /cvs/src/sys/dev/pci/drm/i915/i915_devlist.h,v
+retrieving revision 1.2
+diff -u -p -r1.2 i915_devlist.h
+--- sys/dev/pci/drm/i915/i915_devlist.h	12 Jul 2014 23:31:07 -0000	1.2
++++ sys/dev/pci/drm/i915/i915_devlist.h	12 Jan 2015 12:48:58 -0000
+@@ -104,4 +104,9 @@ static const struct pci_matchid i915_dev
+ 	{ 0x8086, 0x0D0E },
+ 	{ 0x8086, 0x0D1E },
+ 	{ 0x8086, 0x0D2E },
++	{ 0x8086, 0x0f30 },
++	{ 0x8086, 0x0f31 },
++	{ 0x8086, 0x0f33 },
++	{ 0x8086, 0x0157 },
++	{ 0x8086, 0x0155 },
+ };
+Index: sys/dev/pci/drm/i915/i915_drv.c
+===================================================================
+RCS file: /cvs/src/sys/dev/pci/drm/i915/i915_drv.c,v
+retrieving revision 1.69
+diff -u -p -r1.69 i915_drv.c
+--- sys/dev/pci/drm/i915/i915_drv.c	20 Dec 2014 16:34:27 -0000	1.69
++++ sys/dev/pci/drm/i915/i915_drv.c	12 Jan 2015 12:48:22 -0000
+@@ -419,6 +419,11 @@ const static struct drm_pcidev inteldrm_
+ 	INTEL_VGA_DEVICE(0x0D0E, &intel_haswell_d_info), /* CRW GT1 reserved */
+ 	INTEL_VGA_DEVICE(0x0D1E, &intel_haswell_d_info), /* CRW GT2 reserved */
+ 	INTEL_VGA_DEVICE(0x0D2E, &intel_haswell_d_info), /* CRW GT3 reserved */
++	INTEL_VGA_DEVICE(0x0f30, &intel_valleyview_m_info),
++	INTEL_VGA_DEVICE(0x0f31, &intel_valleyview_m_info),
++	INTEL_VGA_DEVICE(0x0f33, &intel_valleyview_m_info),
++	INTEL_VGA_DEVICE(0x0157, &intel_valleyview_m_info),
++	INTEL_VGA_DEVICE(0x0155, &intel_valleyview_d_info),
+ 	{0, 0, 0}
+ };

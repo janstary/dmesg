@@ -1,0 +1,125 @@
+OpenBSD 5.8-current (GENERIC.MP) #1378: Thu Sep 24 20:47:17 MDT 2015
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 4259938304 (4062MB)
+avail mem = 4126728192 (3935MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.5 @ 0xe69cb (27 entries)
+bios0: vendor Intel Corp. version "MWPNT10N.86A.0069.2010.0913.1432" date 09/13/2010
+bios0: Intel Corporation D525MW
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S1 S3 S4 S5
+acpi0: tables DSDT FACP APIC MCFG HPET SSDT
+acpi0: wakeup devices SLPB(S4) PS2M(S4) PS2K(S4) UAR1(S4) UAR2(S4) P32_(S4) ILAN(S4) PEX0(S4) PEX1(S4) PEX2(S4) PEX3(S4) UHC1(S3) UHC2(S3) UHC3(S3) UHC4(S3) EHCI(S3) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Atom(TM) CPU D525 @ 1.80GHz, 1800.36 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,TM2,SSSE3,CX16,xTPR,PDCM,MOVBE,NXE,LONG,LAHF,PERF
+cpu0: 512KB 64b/line 8-way L2 cache
+mtrr: Pentium Pro MTRR support, 7 var ranges, 88 fixed ranges
+cpu0: apic clock running at 200MHz
+cpu0: mwait min=22785, max=32960
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Atom(TM) CPU D525 @ 1.80GHz, 1800.07 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,TM2,SSSE3,CX16,xTPR,PDCM,MOVBE,NXE,LONG,LAHF,PERF
+cpu1: 512KB 64b/line 8-way L2 cache
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Intel(R) Atom(TM) CPU D525 @ 1.80GHz, 1800.07 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,TM2,SSSE3,CX16,xTPR,PDCM,MOVBE,NXE,LONG,LAHF,PERF
+cpu2: 512KB 64b/line 8-way L2 cache
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Atom(TM) CPU D525 @ 1.80GHz, 1800.07 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,TM2,SSSE3,CX16,xTPR,PDCM,MOVBE,NXE,LONG,LAHF,PERF
+cpu3: 512KB 64b/line 8-way L2 cache
+ioapic0 at mainbus0: apid 8 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 0, remapped to apid 8
+acpimcfg0 at acpi0 addr 0xf8000000, bus 0-63
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 5 (P32_)
+acpiprt0: no apic found for irq 24
+acpiprt1 at acpi0: bus 0 (PCI0)
+acpiprt2 at acpi0: bus 1 (PEX0)
+acpiprt3 at acpi0: bus 2 (PEX1)
+acpiprt4 at acpi0: bus 3 (PEX2)
+acpiprt5 at acpi0: bus 4 (PEX3)
+acpicpu0 at acpi0: C1(1000@3 mwait.1)
+acpicpu1 at acpi0: C1(1000@3 mwait.1)
+acpicpu2 at acpi0: C1(1000@3 mwait.1)
+acpicpu3 at acpi0: C1(1000@3 mwait.1)
+acpibtn0 at acpi0: SLPB
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "Intel Pineview DMI" rev 0x02
+vga1 at pci0 dev 2 function 0 "Intel Pineview Video" rev 0x02
+intagp0 at vga1
+agp0 at intagp0: aperture at 0xe0000000, size 0x10000000
+inteldrm0 at vga1
+drm0 at inteldrm0
+inteldrm0: msi, 1280x800
+wsdisplay0 at vga1 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+azalia0 at pci0 dev 27 function 0 "Intel 82801GB HD Audio" rev 0x01: msi
+azalia0: codecs: Realtek ALC662
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 "Intel 82801GB PCIE" rev 0x01: msi
+pci1 at ppb0 bus 1
+re0 at pci1 dev 0 function 0 "Realtek 8168" rev 0x06: RTL8168E/8111E (0x2c00), msi, address 70:71:bc:bd:bf:4e
+rgephy0 at re0 phy 7: RTL8169S/8110S/8211 PHY, rev. 4
+ppb1 at pci0 dev 28 function 1 "Intel 82801GB PCIE" rev 0x01: msi
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 28 function 2 "Intel 82801GB PCIE" rev 0x01: msi
+pci3 at ppb2 bus 3
+ppb3 at pci0 dev 28 function 3 "Intel 82801GB PCIE" rev 0x01: msi
+pci4 at ppb3 bus 4
+uhci0 at pci0 dev 29 function 0 "Intel 82801GB USB" rev 0x01: apic 8 int 23
+uhci1 at pci0 dev 29 function 1 "Intel 82801GB USB" rev 0x01: apic 8 int 19
+uhci2 at pci0 dev 29 function 2 "Intel 82801GB USB" rev 0x01: apic 8 int 18
+uhci3 at pci0 dev 29 function 3 "Intel 82801GB USB" rev 0x01: apic 8 int 16
+ehci0 at pci0 dev 29 function 7 "Intel 82801GB USB" rev 0x01: apic 8 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb4 at pci0 dev 30 function 0 "Intel 82801BAM Hub-to-PCI" rev 0xe1
+pci5 at ppb4 bus 5
+pcib0 at pci0 dev 31 function 0 "Intel NM10 LPC" rev 0x01
+ahci0 at pci0 dev 31 function 2 "Intel 82801GR AHCI" rev 0x01: msi, AHCI 1.1
+ahci0: port 0: 3.0Gb/s
+ahci0: port 1: 3.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, INTEL SSDSA2M040, 2CV1> SCSI3 0/direct fixed naa.50015179593bd675
+sd0: 38166MB, 512 bytes/sector, 78165360 sectors, thin
+sd1 at scsibus1 targ 1 lun 0: <ATA, WDC WD10TPVT-00H, 01.0> SCSI3 0/direct fixed naa.50014ee2aed8deca
+sd1: 953869MB, 512 bytes/sector, 1953525168 sectors
+ichiic0 at pci0 dev 31 function 3 "Intel 82801GB SMBus" rev 0x01: apic 8 int 19
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 2GB DDR3 SDRAM PC3-10600 SO-DIMM
+spdmem1 at iic0 addr 0x51: 2GB DDR3 SDRAM PC3-10600 SO-DIMM
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+wbsio0 at isa0 port 0x2e/2: W83627DHG-P rev 0x73
+lm1 at wbsio0 port 0x290/8: W83627DHG
+uhidev0 at uhub2 port 1 configuration 1 interface 0 "Genius Optical Mouse" rev 1.10/1.00 addr 2
+uhidev0: iclass 3/1
+ums0 at uhidev0: 3 buttons, Z dir
+wsmouse0 at ums0 mux 0
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (c3cac300fd798ecf.a) swap on sd0b dump on sd0b

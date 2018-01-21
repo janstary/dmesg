@@ -1,0 +1,201 @@
+OpenBSD 4.9-beta (GENERIC.MP) #747: Fri Jan 14 22:06:21 MST 2011
+    deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC.MP
+cpu0: Intel(R) Core(TM) i5 CPU M 460 @ 2.53GHz ("GenuineIntel" 686-class) 2.53 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,POPCNT
+real mem  = 3739295744 (3566MB)
+avail mem = 3668000768 (3498MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 09/23/09, SMBIOS rev. 2.6 @ 0xebe70 (17 entries)
+bios0: vendor American Megatrends Inc. version "R1090Y8" date 07/20/2010
+bios0: Sony Corporation VPCEB3S1E
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC MCFG HPET SLIC SSDT SSDT
+acpi0: wakeup devices P0PF(S4) USB1(S3) USB2(S3) USB3(S3) USB4(S3) USB5(S3) USB6(S3) USB7(S3) HDEF(S4) RP01(S3) PXSX(S3) RP03(S3) PXSX(S3) EHC1(S3) EHC2(S3) RP06(S3) PXSX(S3) PWRB(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: apic clock running at 133MHz
+cpu1 at mainbus0: apid 4 (application processor)
+cpu1: Intel(R) Core(TM) i5 CPU M 460 @ 2.53GHz ("GenuineIntel" 686-class) 2.53 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,POPCNT
+cpu2 at mainbus0: apid 1 (application processor)
+cpu2: Intel(R) Core(TM) i5 CPU M 460 @ 2.53GHz ("GenuineIntel" 686-class) 2.53 GHz
+cpu2: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,POPCNT
+cpu3 at mainbus0: apid 5 (application processor)
+cpu3: Intel(R) Core(TM) i5 CPU M 460 @ 2.53GHz ("GenuineIntel" 686-class) 2.53 GHz
+cpu3: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,POPCNT
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0xf8000000, bus 0-63
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 2 (RP01)
+acpiprt2 at acpi0: bus 4 (RP03)
+acpiprt3 at acpi0: bus 3 (RP02)
+acpiprt4 at acpi0: bus -1 (RP04)
+acpiprt5 at acpi0: bus 5 (RP06)
+acpiprt6 at acpi0: bus 1 (PEGP)
+acpiprt7 at acpi0: bus -1 (PEG3)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C3, C1, PSS
+acpicpu1 at acpi0: C3, C1, PSS
+acpicpu2 at acpi0: C3, C1, PSS
+acpicpu3 at acpi0: C3, C1, PSS
+acpitz0 at acpi0: critical temperature 103 degC
+acpitz1 at acpi0: critical temperature 103 degC
+acpibat0 at acpi0: BAT0 type LiOn oem "Sony Corp."
+acpiac0 at acpi0: AC unit online
+acpibtn0 at acpi0: LID0
+acpibtn1 at acpi0: PWRB
+acpisony0 at acpi0: SNC_
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: DD02
+bios0: ROM list: 0xc0000/0xee00 0xcf000/0x1000
+cpu0: Enhanced SpeedStep 2528 MHz: speeds: 2534, 2533, 2399, 2266, 2133, 1999, 1866, 1733, 1599, 1466, 1333, 1199 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 "Intel Core Host" rev 0x02
+ppb0 at pci0 dev 1 function 0 "Intel 3400 PCIE Root" rev 0x02: apic 2 int 16 (irq 11)
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 vendor "ATI", unknown product 0x68c1 rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+azalia0 at pci1 dev 0 function 1 "ATI Radeon HD 5600 Audio" rev 0x00: apic 2 int 17 (irq 10)
+azalia0: no supported codecs
+azalia0: initialization failure, detaching
+"Intel 3400 MEI" rev 0x06 at pci0 dev 22 function 0 not configured
+ehci0 at pci0 dev 26 function 0 "Intel 3400 USB" rev 0x05: apic 2 int 16 (irq 11)
+ehci0: timed out waiting for BIOS
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+azalia1 at pci0 dev 27 function 0 "Intel 3400 HD Audio" rev 0x05: apic 2 int 22 (irq 3)
+azalia1: codecs: Realtek ALC269
+audio0 at azalia1
+ppb1 at pci0 dev 28 function 0 "Intel 3400 PCIE" rev 0x05: apic 2 int 16 (irq 11)
+pci2 at ppb1 bus 2
+athn0 at pci2 dev 0 function 0 "Atheros AR9285" rev 0x01: apic 2 int 16 (irq 11)
+athn0: AR9285 rev 2 (1T1R), ROM rev 13, address 78:dd:08:f8:b3:fc
+ppb2 at pci0 dev 28 function 1 "Intel 3400 PCIE" rev 0x05: apic 2 int 17 (irq 10)
+pci3 at ppb2 bus 3
+sdhc0 at pci3 dev 0 function 0 "Ricoh 5U822 SD/MMC" rev 0x00: apic 2 int 17 (irq 10)
+sdmmc0 at sdhc0
+"Ricoh 5U230 Memory Stick" rev 0x00 at pci3 dev 0 function 1 not configured
+sdhc1 at pci3 dev 0 function 4 "Ricoh 5U822 SD/MMC" rev 0x00: apic 2 int 19 (irq 5)
+sdmmc1 at sdhc1
+ppb3 at pci0 dev 28 function 2 "Intel 3400 PCIE" rev 0x05: apic 2 int 18 (irq 4)
+pci4 at ppb3 bus 4
+mskc0 at pci4 dev 0 function 0 "Marvell Yukon 88E8059" rev 0x11, Yukon-2 Optima (0x1): apic 2 int 18 (irq 4)
+msk0 at mskc0 port A: address 54:42:49:72:3f:3d
+eephy0 at msk0 phy 0: PHYG65G Gigabit PHY, rev. 0
+ppb4 at pci0 dev 28 function 5 "Intel 3400 PCIE" rev 0x05: apic 2 int 17 (irq 10)
+pci5 at ppb4 bus 5
+ehci1 at pci0 dev 29 function 0 "Intel 3400 USB" rev 0x05: apic 2 int 23 (irq 11)
+ehci1: timed out waiting for BIOS
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb5 at pci0 dev 30 function 0 "Intel 82801BAM Hub-to-PCI" rev 0xa5
+pci6 at ppb5 bus 13
+pcib0 at pci0 dev 31 function 0 "Intel HM55 LPC" rev 0x05
+ahci0 at pci0 dev 31 function 2 "Intel 3400 AHCI" rev 0x05: apic 2 int 19 (irq 5), AHCI 1.3
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: <ATA, ST9500325AS, 0006> SCSI3 0/direct fixed
+sd0: 476940MB, 512 bytes/sec, 976773168 sec total
+cd0 at scsibus0 targ 1 lun 0: <MATSHITA, DVD-RAM UJ890AS, 1.00> ATAPI 5/cdrom removable
+ichiic0 at pci0 dev 31 function 3 "Intel 3400 SMBus" rev 0x05: apic 2 int 18 (irq 4)
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 2GB DDR3 SDRAM PC3-10600 SO-DIMM
+spdmem1 at iic0 addr 0x52: 2GB DDR3 SDRAM PC3-10600 SO-DIMM
+itherm0 at pci0 dev 31 function 6 "Intel 3400 Thermal" rev 0x05
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+mtrr: Pentium Pro MTRR support
+uhub2 at uhub0 port 1 "Intel Rate Matching Hub" rev 2.00/0.00 addr 2
+uvideo0 at uhub2 port 2 configuration 1 interface 0 "USB 2.0 Camera_FLV14 USB 2.0 Camera" rev 2.00/9c.30 addr 3
+video0 at uvideo0
+ubt0 at uhub2 port 6 "Broadcom Corp Broadcom Bluetooth Device" rev 2.00/5.96 addr 4
+uhub3 at uhub1 port 1 "Intel Rate Matching Hub" rev 2.00/0.00 addr 2
+umass0 at uhub3 port 6 configuration 1 interface 0 "Generic MP3 Player" rev 2.00/11.00 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: <Generic, MP3 Player, 1100> SCSI0 0/direct removable
+sd1: 1932MB, 512 bytes/sec, 3957504 sec total
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+root on sd1a swap on sd1b dump on sd1b
+hw.machine=i386
+hw.model=Intel(R) Core(TM) i5 CPU M 460 @ 2.53GHz ("GenuineIntel" 686-class)
+hw.ncpu=4
+hw.byteorder=1234
+hw.pagesize=4096
+hw.disknames=sd0:,cd0:,sd1:37393ed1d6bd5cd3
+hw.diskcount=3
+hw.sensors.acpitz0.temp0=48.00 degC (zone temperature)
+hw.sensors.acpitz1.temp0=48.00 degC (zone temperature)
+hw.sensors.acpibat0.volt0=121.65 VDC (voltage)
+hw.sensors.acpibat0.volt1=unknown (current voltage), UNKNOWN
+hw.sensors.acpibat0.watthour0=41.73 Wh (last full capacity)
+hw.sensors.acpibat0.watthour1=1.00 Wh (warning capacity)
+hw.sensors.acpibat0.watthour2=0.00 Wh (low capacity)
+hw.sensors.acpibat0.watthour3=41.73 Wh (remaining capacity), OK
+hw.sensors.acpibat0.raw0=0 (battery full), OK
+hw.sensors.acpibat0.raw1=0 (rate)
+hw.sensors.acpiac0.indicator0=On (power supply)
+hw.sensors.cpu0.temp0=44.00 degC
+hw.sensors.itherm0.temp1=48.06 degC (Core 1)
+hw.sensors.itherm0.temp4=57.00 degC (CPU/GPU Max temp)
+hw.sensors.itherm0.temp6=104.00 degC (DIMM 2)
+hw.sensors.itherm0.temp9=57.00 degC (GPU/Memory controller abs.)
+hw.sensors.itherm0.temp10=59.00 degC (PCH abs.)
+hw.sensors.itherm0.power0=5.00 W (CPU power consumption)
+hw.cpuspeed=2528
+hw.setperf=99
+hw.vendor=Sony Corporation
+hw.product=VPCEB3S1E
+hw.version=C6063CLL
+hw.serialno=27534864-5000457
+hw.uuid=00c20ab8-4bd7-dd11-8b11-544249723f3d
+hw.physmem=3739295744
+hw.usermem=3739086848
+hw.ncpufound=4
+inputs.dac-0:1=126,126 
+inputs.dac-2:3=126,126 
+record.adc-2:3_mute=off  [ off on ]
+record.adc-2:3=125,125 
+record.adc-0:1_mute=off  [ off on ]
+record.adc-0:1=125,125 
+inputs.mix_source=mic2  { mic2 }
+inputs.mix_mic2=120,120 
+inputs.mix2_source=dac-0:1,mix  { dac-0:1 mix }
+inputs.mix3_source=dac-2:3,mix  { dac-2:3 mix }
+outputs.spkr_source=mix3  [ mix2 mix3 ]
+outputs.spkr_mute=off  [ off on ]
+outputs.spkr_eapd=on  [ off on ]
+outputs.hp_source=mix2  [ mix2 mix3 ]
+outputs.hp_mute=off  [ off on ]
+outputs.hp_boost=off  [ off on ]
+outputs.hp_eapd=on  [ off on ]
+outputs.mic2_source=mix2  [ mix2 mix3 ]
+outputs.mic2_mute=off  [ off on ]
+inputs.mic2=85,85 
+outputs.mic2_dir=input-vr80  [ none output input input-vr0 input-vr50 input-vr80 input-vr100 ]
+record.adc-0:1_source=mic  [ mic2 mic mix ]
+record.adc-2:3_source=mic2,mix  { mic2 mix }
+outputs.hp_sense=unplugged  [ unplugged plugged ]
+outputs.mic2_sense=unplugged  [ unplugged plugged ]
+outputs.spkr_muters=hp,mic2  { hp mic2 }
+outputs.master=126,126 
+outputs.master.mute=off  [ off on ]
+outputs.master.slaves=dac-0:1,dac-2:3,spkr,hp  { dac-0:1 dac-2:3 spkr hp mic2 }
+record.volume=125,125 
+record.volume.mute=off  [ off on ]
+record.volume.slaves=adc-2:3,adc-0:1  { adc-2:3 adc-0:1 mic2 }

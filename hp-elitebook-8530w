@@ -1,0 +1,147 @@
+OpenBSD 5.1-current (GENERIC) #230: Mon Jun 11 12:10:30 MDT 2012
+    todd@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC
+RTC BIOS diagnostic error bb<clock_battery,config_unit,memory_size,fixed_disk>
+cpu0: Intel(R) Core(TM)2 Duo CPU T9400 @ 2.53GHz ("GenuineIntel" 686-class) 2.53 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,TM,SBF,NXE,LONG,SSE3,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,LAHF
+real mem  = 2125709312 (2027MB)
+avail mem = 2080153600 (1983MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 11/10/08, SMBIOS rev. 2.4 @ 0x7edbf000 (21 entries)
+bios0: vendor Hewlett-Packard version "68PDV Ver. F.06" date 12/15/2008
+bios0: Hewlett-Packard HP EliteBook 8530w
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET APIC MCFG TCPA SSDT SLIC SSDT DMAR ASF! SSDT SSDT SSDT SSDT
+acpi0: wakeup devices LANC(S5) HDEF(S4) RP02(S5) WNIC(S5) RP03(S5) ECF0(S5) RP05(S5) ECF0(S5) RP06(S5) NIC_(S5) USB1(S3) USB2(S3) USB3(S3) USB4(S3) USB5(S3) USB6(S3) U6RM(S3) EHC1(S3) EHC2(S3) PCIB(S5) HST1(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: apic clock running at 266MHz
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 0, remapped to apid 1
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpiprt0 at acpi0: bus 1 (PEGP)
+acpiprt1 at acpi0: bus 2 (RP01)
+acpiprt2 at acpi0: bus 3 (RP02)
+acpiprt3 at acpi0: bus 4 (RP03)
+acpiprt4 at acpi0: bus 69 (RP05)
+acpiprt5 at acpi0: bus 134 (PCIB)
+acpiprt6 at acpi0: bus 0 (PCI0)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C3, C2, C1, PSS
+acpipwrres0 at acpi0: APPR
+acpipwrres1 at acpi0: COMP
+acpipwrres2 at acpi0: LPP_
+acpipwrres3 at acpi0: PGF0
+acpitz0 at acpi0: critical temperature is 115 degC
+acpitz1 at acpi0: critical temperature is 105 degC
+acpitz2 at acpi0: critical temperature is 112 degC
+acpitz3 at acpi0: critical temperature is 112 degC
+acpitz4 at acpi0: critical temperature is 90 degC
+acpitz5 at acpi0: critical temperature is 112 degC
+acpibat0 at acpi0: BAT0 model "Primary" serial 34704 2002/12/16 type LIon oem "Hewlett-Packard"
+acpibat1 at acpi0: BAT1 not present
+acpiac0 at acpi0: AC unit offline
+acpibtn0 at acpi0: SLPB
+acpibtn1 at acpi0: LID_
+acpivideo0 at acpi0: DGFX
+acpivout0 at acpivideo0: LCD_
+bios0: ROM list: 0xc0000/0xe200 0xce800/0x1000 0xcf800/0x1000
+cpu0: Enhanced SpeedStep 2528 MHz: speeds: 2534, 2533, 1600, 800 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 "Intel GM45 Host" rev 0x07
+ppb0 at pci0 dev 1 function 0 "Intel GM45 PCIE" rev 0x07: apic 1 int 16
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 vendor "NVIDIA", unknown product 0x065c rev 0xa1
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+"Intel GM45 HECI" rev 0x07 at pci0 dev 3 function 0 not configured
+pciide0 at pci0 dev 3 function 2 "Intel GM45 PT IDER" rev 0x07: DMA (unsupported), channel 0 wired to native-PCI, channel 1 wired to native-PCI
+pciide0: using apic 1 int 18 for native-PCI interrupt
+pciide0: channel 0 ignored (not responding; disabled or no drives?)
+pciide0: channel 1 ignored (not responding; disabled or no drives?)
+puc0 at pci0 dev 3 function 3 "Intel GM45 KT" rev 0x07: ports: 1 com
+com3 at puc0 port 0 apic 1 int 17: ns16550a, 16 byte fifo
+com3: probed fifo depth: 15 bytes
+em0 at pci0 dev 25 function 0 "Intel ICH9 IGP M AMT" rev 0x03: msi, address 00:23:7d:e7:ac:60
+uhci0 at pci0 dev 26 function 0 "Intel 82801I USB" rev 0x03: apic 1 int 16
+uhci1 at pci0 dev 26 function 1 "Intel 82801I USB" rev 0x03: apic 1 int 17
+uhci2 at pci0 dev 26 function 2 "Intel 82801I USB" rev 0x03: apic 1 int 18
+ehci0 at pci0 dev 26 function 7 "Intel 82801I USB" rev 0x03: apic 1 int 19
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 "Intel 82801I HD Audio" rev 0x03: msi
+azalia0: codecs: Analog Devices AD1984A, 0x0000/0x0000, using Analog Devices AD1984A
+audio0 at azalia0
+ppb1 at pci0 dev 28 function 0 "Intel 82801I PCIE" rev 0x03: apic 1 int 16
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 28 function 1 "Intel 82801I PCIE" rev 0x03: apic 1 int 17
+pci3 at ppb2 bus 3
+iwn0 at pci3 dev 0 function 0 "Intel WiFi Link 5300" rev 0x00: msi, MIMO 3T3R, MoW, address 00:21:6a:0f:b2:8e
+ppb3 at pci0 dev 28 function 2 "Intel 82801I PCIE" rev 0x03: apic 1 int 18
+pci4 at ppb3 bus 4
+ppb4 at pci0 dev 28 function 4 "Intel 82801I PCIE" rev 0x03: apic 1 int 16
+pci5 at ppb4 bus 69
+uhci3 at pci0 dev 29 function 0 "Intel 82801I USB" rev 0x03: apic 1 int 20
+uhci4 at pci0 dev 29 function 1 "Intel 82801I USB" rev 0x03: apic 1 int 22
+uhci5 at pci0 dev 29 function 2 "Intel 82801I USB" rev 0x03: apic 1 int 18
+ehci1 at pci0 dev 29 function 7 "Intel 82801I USB" rev 0x03: apic 1 int 20
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb5 at pci0 dev 30 function 0 "Intel 82801BAM Hub-to-PCI" rev 0x93
+pci6 at ppb5 bus 134
+sdhc0 at pci6 dev 9 function 0 "Ricoh 5C822 SD/MMC" rev 0x25: apic 1 int 22
+sdmmc0 at sdhc0
+"Ricoh 5C843 MMC" rev 0x14 at pci6 dev 9 function 1 not configured
+"Ricoh 5C592 Memory Stick" rev 0x14 at pci6 dev 9 function 2 not configured
+"Ricoh 5C852 xD" rev 0x14 at pci6 dev 9 function 3 not configured
+cbb0 at pci6 dev 9 function 4 "Ricoh 5C476 CardBus" rev 0xbb: apic 1 int 22
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 135 device 0 cacheline 0x0, lattimer 0x20
+pcmcia0 at cardslot0
+pcib0 at pci0 dev 31 function 0 "Intel 82801IEM LPC" rev 0x03
+ahci0 at pci0 dev 31 function 2 "Intel 82801I AHCI" rev 0x03: msi, AHCI 1.2
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: <ATA, Hitachi HTS72322, FCDO> SCSI3 0/direct fixed naa.5000cca583c16d27
+sd0: 238475MB, 512 bytes/sector, 488397168 sectors
+cd0 at scsibus0 targ 1 lun 0: <HL-DT-ST, DVDRAM GSA-T50L, SC04> ATAPI 5/cdrom removable
+usb2 at uhci0: USB revision 1.0
+uhub2 at usb2 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci1: USB revision 1.0
+uhub3 at usb3 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb4 at uhci2: USB revision 1.0
+uhub4 at usb4 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb5 at uhci3: USB revision 1.0
+uhub5 at usb5 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb6 at uhci4: USB revision 1.0
+uhub6 at usb6 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb7 at uhci5: USB revision 1.0
+uhub7 at usb7 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 7.0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+mtrr: Pentium Pro MTRR support
+"RICOH, Bay8Controller" (manufacturer 0x0, product 0x0) at pcmcia0 function 0 not configured
+acpitz2: critical temperature exceeded 5424C (56976K), shutting down
+uvideo0 at uhub0 port 5 configuration 1 interface 0 "Chicony Electronics Co., Ltd. CKA7216" rev 2.00/32.18 addr 2
+video0 at uvideo0
+ugen0 at uhub2 port 1 "Broadcom Corp HP Integrated Module" rev 2.00/1.00 addr 2
+ugen1 at uhub3 port 1 "AuthenTec Fingerprint Sensor" rev 2.00/17.03 addr 2
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on sd0a (2bc64a6c405e47ad.a) swap on sd0b dump on sd0b
+Process (pid 1) got signal 31

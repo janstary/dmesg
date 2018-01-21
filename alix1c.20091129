@@ -1,0 +1,247 @@
+OpenBSD 4.5-stable (GENERIC) #3: Sun Nov 29 11:09:37 CET 2009
+    root@www.stare.cz:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Geode(TM) Integrated Processor by AMD PCS ("AuthenticAMD" 586-class) 499 MHz
+cpu0: FPU,DE,PSE,TSC,MSR,CX8,SEP,PGE,CMOV,CFLUSH,MMX
+real mem  = 259284992 (247MB)
+avail mem = 242405376 (231MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 08/21/07, BIOS32 rev. 0 @ 0xfa960
+apm0 at bios0: Power Management spec V1.2 (slowidle)
+apm0: AC on, battery charge unknown
+pcibios0 at bios0: rev 2.1 @ 0xf0000/0xdfb4
+pcibios0: PCI IRQ Routing Table rev 1.0 @ 0xfdf40/112 (5 entries)
+pcibios0: bad IRQ table checksum
+pcibios0: PCI BIOS has 5 Interrupt Routing table entries
+pcibios0: PCI Exclusive IRQs: 5 10 11
+pcibios0: no compatible PCI ICU found
+pcibios0: Warning, unable to fix up PCI interrupt routing
+pcibios0: PCI bus #0 is the last bus
+bios0: ROM list: 0xc0000/0x8000 0xc8000/0xa800 0xef000/0x1000!
+cpu0 at mainbus0: (uniprocessor)
+amdmsr0 at mainbus0
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 1 function 0 "AMD Geode LX" rev 0x31
+vga1 at pci0 dev 1 function 1 "AMD Geode LX Video" rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+glxsb0 at pci0 dev 1 function 2 "AMD Geode LX Crypto" rev 0x00: RNG AES
+vr0 at pci0 dev 13 function 0 "VIA VT6105M RhineIII" rev 0x96: irq 11, address 00:0d:b9:0c:e1:40
+ukphy0 at vr0 phy 1: Generic IEEE 802.3u media interface, rev. 3: OUI 0x004063, model 0x0034
+glxpcib0 at pci0 dev 15 function 0 "AMD CS5536 ISA" rev 0x03: rev 0, 32-bit 3579545Hz timer, watchdog, gpio
+gpio0 at glxpcib0: 32 pins
+pciide0 at pci0 dev 15 function 2 "AMD CS5536 IDE" rev 0x01: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+wd0 at pciide0 channel 0 drive 0: <ELITE PRO CF CARD 4GB>
+wd0: 1-sector PIO, LBA, 3847MB, 7880544 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+auglx0 at pci0 dev 15 function 3 "AMD CS5536 Audio" rev 0x01: irq 11, CS5536 AC97
+ac97: codec id 0x414c4770 (Avance Logic ALC203 rev 0)
+ac97: codec features headphone, 20 bit DAC, 18 bit ADC, No 3D Stereo
+audio0 at auglx0
+ohci0 at pci0 dev 15 function 4 "AMD CS5536 USB" rev 0x02: irq 5, version 1.0, legacy support
+ehci0 at pci0 dev 15 function 5 "AMD CS5536 USB" rev 0x02: irq 5
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 "AMD EHCI root hub" rev 2.00/1.00 addr 1
+isa0 at glxpcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: <PC speaker>
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+wbsio0 at isa0 port 0x2e/2: W83627HF rev 0x41
+lm1 at wbsio0 port 0x290/8: W83627HF
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 "AMD OHCI root hub" rev 1.00/1.00 addr 1
+biomask f765 netmask ff65 ttymask ffff
+mtrr: K6-family MTRR support (2 registers)
+umass0 at uhub0 port 3 configuration 1 interface 0 "JMicron USB to ATA/ATAPI Bridge" rev 2.00/1.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: <ST932032, 0AS, > SCSI2 0/direct fixed
+sd0: 305245MB, 512 bytes/sec, 625142448 sec total
+umass1 at uhub0 port 4 configuration 1 interface 0 "JMicron USB to ATA/ATAPI Bridge" rev 2.00/1.00 addr 3
+umass1: using SCSI over Bulk-Only
+scsibus1 at umass1: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: <SAMSUNG, HM251JJ, > SCSI2 0/direct fixed
+sd1: 238475MB, 512 bytes/sec, 488397168 sec total
+softraid0 at root
+root on wd0a swap on wd0b dump on wd0b
+
+hw.machine=i386
+hw.model=Geode(TM) Integrated Processor by AMD PCS ("AuthenticAMD" 586-class)
+hw.ncpu=1
+hw.byteorder=1234
+hw.pagesize=4096
+hw.disknames=wd0,sd0,sd1
+hw.diskcount=3
+hw.sensors.lm1.temp0=71.00 degC
+hw.sensors.lm1.temp1=59.00 degC
+hw.sensors.lm1.temp2=54.50 degC
+hw.sensors.lm1.volt0=1.23 VDC (VCore A)
+hw.sensors.lm1.volt1=2.62 VDC (VCore B)
+hw.sensors.lm1.volt2=3.33 VDC (+3.3V)
+hw.sensors.lm1.volt3=4.97 VDC (+5V)
+hw.sensors.lm1.volt4=0.00 VDC (+12V)
+hw.sensors.lm1.volt5=-14.91 VDC (-12V)
+hw.sensors.lm1.volt6=-7.71 VDC (-5V)
+hw.sensors.lm1.volt7=4.95 VDC (5VSB)
+hw.sensors.lm1.volt8=0.06 VDC (VBAT)
+hw.cpuspeed=499
+hw.physmem=259284992
+hw.usermem=259272704
+
+Domain /dev/pci0:
+ 0:1:0: AMD Geode LX
+	0x0000: Vendor ID: 1022 Product ID: 2080
+	0x0004: Command: 0005 Status ID: 0220
+	0x0008: Class: 06 Subclass: 00 Interface: 00 Revision: 31
+	0x000c: BIST: 00 Header Type: 80 Latency Timer: f8 Cache Line Size: 08
+	0x0010: BAR io addr: 0x0000ac1c
+	0x0014: BAR empty (00000000)
+	0x0018: BAR empty (00000000)
+	0x001c: BAR empty (00000000)
+	0x0020: BAR empty (00000000)
+	0x0024: BAR empty (00000000)
+	0x0028: Cardbus CIS: 00000000
+	0x002c: Subsystem Vendor ID: 1022 Product ID: 2080
+	0x0030: Expansion ROM Base Address: 00000000
+	0x0038: 00000000
+	0x003c: Interrupt Pin: 00 Line: 00 Min Gnt: 00 Max Lat: 00
+ 0:1:1: AMD Geode LX Video
+	0x0000: Vendor ID: 1022 Product ID: 2081
+	0x0004: Command: 0007 Status ID: 0220
+	0x0008: Class: 03 Subclass: 00 Interface: 00 Revision: 00
+	0x000c: BIST: 00 Header Type: 00 Latency Timer: 00 Cache Line Size: 08
+	0x0010: BAR mem 32bit addr: 0xee000000
+	0x0014: BAR mem 32bit addr: 0xefff0000
+	0x0018: BAR mem 32bit addr: 0xeffec000
+	0x001c: BAR mem 32bit addr: 0xeffe8000
+	0x0020: BAR mem 32bit addr: 0xefff8000
+	0x0024: BAR empty (00000000)
+	0x0028: Cardbus CIS: 00000000
+	0x002c: Subsystem Vendor ID: 1022 Product ID: 2081
+	0x0030: Expansion ROM Base Address: 00000000
+	0x0038: 00000000
+	0x003c: Interrupt Pin: 01 Line: 0a Min Gnt: 00 Max Lat: 00
+ 0:1:2: AMD Geode LX Crypto
+	0x0000: Vendor ID: 1022 Product ID: 2082
+	0x0004: Command: 0006 Status ID: 02a0
+	0x0008: Class: 10 Subclass: 10 Interface: 00 Revision: 00
+	0x000c: BIST: 00 Header Type: 00 Latency Timer: 00 Cache Line Size: 08
+	0x0010: BAR mem 32bit addr: 0xefff4000
+	0x0014: BAR empty (00000000)
+	0x0018: BAR empty (00000000)
+	0x001c: BAR empty (00000000)
+	0x0020: BAR empty (00000000)
+	0x0024: BAR empty (00000000)
+	0x0028: Cardbus CIS: 00000000
+	0x002c: Subsystem Vendor ID: 1022 Product ID: 2082
+	0x0030: Expansion ROM Base Address: 00000000
+	0x0038: 00000000
+	0x003c: Interrupt Pin: 01 Line: 0a Min Gnt: 00 Max Lat: 00
+ 0:13:0: VIA VT6105M RhineIII
+	0x0000: Vendor ID: 1106 Product ID: 3053
+	0x0004: Command: 0087 Status ID: 0210
+	0x0008: Class: 02 Subclass: 00 Interface: 00 Revision: 96
+	0x000c: BIST: 00 Header Type: 00 Latency Timer: 00 Cache Line Size: 08
+	0x0010: BAR io addr: 0x0000fc00
+	0x0014: BAR mem 32bit addr: 0xeffff000
+	0x0018: BAR empty (00000000)
+	0x001c: BAR empty (00000000)
+	0x0020: BAR empty (00000000)
+	0x0024: BAR empty (00000000)
+	0x0028: Cardbus CIS: 00000000
+	0x002c: Subsystem Vendor ID: 1106 Product ID: 0106
+	0x0030: Expansion ROM Base Address: 00000000
+	0x0038: 00000000
+	0x003c: Interrupt Pin: 01 Line: 0b Min Gnt: 03 Max Lat: 08
+	0x0040: Capability 0x01: Power Management
+ 0:15:0: AMD CS5536 ISA
+	0x0000: Vendor ID: 1022 Product ID: 2090
+	0x0004: Command: 0009 Status ID: 02a0
+	0x0008: Class: 06 Subclass: 01 Interface: 00 Revision: 03
+	0x000c: BIST: 00 Header Type: 80 Latency Timer: 40 Cache Line Size: 08
+	0x0010: BAR io addr: 0x00006000
+	0x0014: BAR io addr: 0x00006100
+	0x0018: BAR io addr: 0x00006200
+	0x001c: BAR io addr: 0x00005800
+	0x0020: BAR io addr: 0x00009d00
+	0x0024: BAR io addr: 0x00009c00
+	0x0028: Cardbus CIS: 00000000
+	0x002c: Subsystem Vendor ID: 1022 Product ID: 2090
+	0x0030: Expansion ROM Base Address: 00000000
+	0x0038: 00000000
+	0x003c: Interrupt Pin: 00 Line: 00 Min Gnt: 00 Max Lat: 00
+ 0:15:2: AMD CS5536 IDE
+	0x0000: Vendor ID: 1022 Product ID: 209a
+	0x0004: Command: 0005 Status ID: 02a0
+	0x0008: Class: 01 Subclass: 01 Interface: 80 Revision: 01
+	0x000c: BIST: 00 Header Type: 00 Latency Timer: f8 Cache Line Size: 08
+	0x0010: BAR empty (00000000)
+	0x0014: BAR empty (00000000)
+	0x0018: BAR empty (00000000)
+	0x001c: BAR empty (00000000)
+	0x0020: BAR io addr: 0x0000ff00
+	0x0024: BAR empty (00000000)
+	0x0028: Cardbus CIS: 00000000
+	0x002c: Subsystem Vendor ID: 1022 Product ID: 209a
+	0x0030: Expansion ROM Base Address: 00000000
+	0x0038: 00000000
+	0x003c: Interrupt Pin: 00 Line: 00 Min Gnt: 00 Max Lat: 00
+ 0:15:3: AMD CS5536 Audio
+	0x0000: Vendor ID: 1022 Product ID: 2093
+	0x0004: Command: 0005 Status ID: 02a0
+	0x0008: Class: 04 Subclass: 01 Interface: 00 Revision: 01
+	0x000c: BIST: 00 Header Type: 00 Latency Timer: 00 Cache Line Size: 08
+	0x0010: BAR io addr: 0x0000fe00
+	0x0014: BAR empty (00000000)
+	0x0018: BAR empty (00000000)
+	0x001c: BAR empty (00000000)
+	0x0020: BAR empty (00000000)
+	0x0024: BAR empty (00000000)
+	0x0028: Cardbus CIS: 00000000
+	0x002c: Subsystem Vendor ID: 1022 Product ID: 2093
+	0x0030: Expansion ROM Base Address: 00000000
+	0x0038: 00000000
+	0x003c: Interrupt Pin: 02 Line: 0b Min Gnt: 00 Max Lat: 00
+ 0:15:4: AMD CS5536 USB
+	0x0000: Vendor ID: 1022 Product ID: 2094
+	0x0004: Command: 0006 Status ID: 0230
+	0x0008: Class: 0c Subclass: 03 Interface: 10 Revision: 02
+	0x000c: BIST: 00 Header Type: 00 Latency Timer: 00 Cache Line Size: 08
+	0x0010: BAR mem 32bit addr: 0xefffe000
+	0x0014: BAR empty (00000000)
+	0x0018: BAR empty (00000000)
+	0x001c: BAR empty (00000000)
+	0x0020: BAR empty (00000000)
+	0x0024: BAR empty (00000000)
+	0x0028: Cardbus CIS: 00000000
+	0x002c: Subsystem Vendor ID: 1022 Product ID: 2094
+	0x0030: Expansion ROM Base Address: 00000000
+	0x0038: 00000000
+	0x003c: Interrupt Pin: 04 Line: 05 Min Gnt: 00 Max Lat: 00
+	0x0040: Capability 0x01: Power Management
+ 0:15:5: AMD CS5536 USB
+	0x0000: Vendor ID: 1022 Product ID: 2095
+	0x0004: Command: 0006 Status ID: 0230
+	0x0008: Class: 0c Subclass: 03 Interface: 20 Revision: 02
+	0x000c: BIST: 00 Header Type: 00 Latency Timer: 00 Cache Line Size: 08
+	0x0010: BAR mem 32bit addr: 0xefffd000
+	0x0014: BAR empty (00000000)
+	0x0018: BAR empty (00000000)
+	0x001c: BAR empty (00000000)
+	0x0020: BAR empty (00000000)
+	0x0024: BAR empty (00000000)
+	0x0028: Cardbus CIS: 00000000
+	0x002c: Subsystem Vendor ID: 1022 Product ID: 2095
+	0x0030: Expansion ROM Base Address: 00000000
+	0x0038: 00000000
+	0x003c: Interrupt Pin: 04 Line: 05 Min Gnt: 00 Max Lat: 00
+	0x0040: Capability 0x01: Power Management

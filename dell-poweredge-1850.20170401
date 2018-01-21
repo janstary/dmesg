@@ -1,0 +1,125 @@
+OpenBSD 6.1 (GENERIC.MP) #291: Sat Apr  1 13:53:41 MDT 2017
+    deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC.MP
+cpu0: Intel(R) Xeon(TM) CPU 3.20GHz ("GenuineIntel" 686-class) 3.20 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,LONG,SSE3,DTES64,MWAIT,DS-CPL,CNXT-ID,CX16,xTPR,PERF
+real mem  = 1072975872 (1023MB)
+avail mem = 1039654912 (991MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 09/22/05, BIOS32 rev. 0 @ 0xffe90, SMBIOS rev. 2.3 @ 0xf9920 (87 entries)
+bios0: vendor Dell Computer Corporation version "A04" date 09/22/2005
+bios0: Dell Computer Corporation PowerEdge 1850
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S4 S5
+acpi0: tables DSDT FACP APIC SPCR HPET MCFG
+acpi0: wakeup devices PCI0(S5) PALO(S5) PBLO(S5) VPR0(S5) PBHI(S5) VPR1(S5) PICH(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 199MHz
+cpu0: mwait min=64, max=64
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Xeon(TM) CPU 3.20GHz ("GenuineIntel" 686-class) 3.20 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,LONG,SSE3,DTES64,MWAIT,DS-CPL,CNXT-ID,CX16,xTPR,PERF
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+ioapic1 at mainbus0: apid 3 pa 0xfec80000, version 20, 24 pins
+ioapic2 at mainbus0: apid 4 pa 0xfec83000, version 20, 24 pins
+acpihpet0 at acpi0: 14318179 Hz
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (PALO)
+acpiprt2 at acpi0: bus 2 (DOBA)
+acpiprt3 at acpi0: bus 3 (DOBB)
+acpiprt4 at acpi0: bus 4 (PBLO)
+acpiprt5 at acpi0: bus 8 (VPR0)
+acpiprt6 at acpi0: bus 5 (PBHI)
+acpiprt7 at acpi0: bus 6 (PXB1)
+acpiprt8 at acpi0: bus 7 (PXB2)
+acpiprt9 at acpi0: bus -1 (PXC1)
+acpiprt10 at acpi0: bus -1 (PXC2)
+acpiprt11 at acpi0: bus 9 (PICH)
+acpicpu0 at acpi0: C1(@1 halt!)
+acpicpu1 at acpi0: C1(@1 halt!)
+"PNP0700" at acpi0 not configured
+"PNP0303" at acpi0 not configured
+"PNP0501" at acpi0 not configured
+bios0: ROM list: 0xc0000/0xb000! 0xcb000/0x2200 0xec000/0x4000!
+ipmi at mainbus0 not configured
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 "Intel E7520 Host" rev 0x09
+ppb0 at pci0 dev 2 function 0 "Intel E7520 PCIE" rev 0x09
+pci1 at ppb0 bus 1
+ppb1 at pci1 dev 0 function 0 "Intel IOP332 PCIE-PCIX" rev 0x06
+pci2 at ppb1 bus 2
+ami0 at pci2 dev 14 function 0 "Dell PERC 4e/Di" rev 0x06: apic 3 int 14
+ami0: Dell 16c, 32b, FW 521X, BIOS vH430, 256MB RAM
+ami0: 1 channels, 0 FC loops, 1 logical drives
+scsibus1 at ami0: 40 targets
+sd0 at scsibus1 targ 0 lun 0: <AMI, Host drive #00, > SCSI2 0/direct fixed
+sd0: 69880MB, 512 bytes/sector, 143114240 sectors
+scsibus2 at ami0: 16 targets
+safte0 at scsibus2 targ 6 lun 0: <PE/PV, 1x2 SCSI BP, 1.0> SCSI2 3/processor fixed
+ppb2 at pci1 dev 0 function 2 "Intel IOP332 PCIE-PCIX" rev 0x06
+pci3 at ppb2 bus 3
+ppb3 at pci0 dev 4 function 0 "Intel E7520 PCIE" rev 0x09
+pci4 at ppb3 bus 4
+ppb4 at pci0 dev 5 function 0 "Intel E7520 PCIE" rev 0x09
+pci5 at ppb4 bus 5
+ppb5 at pci5 dev 0 function 0 "Intel 6700PXH PCIE-PCIX" rev 0x09
+pci6 at ppb5 bus 6
+em0 at pci6 dev 7 function 0 "Intel 82541GI" rev 0x05: apic 4 int 0, address 00:13:72:51:1d:23
+ppb6 at pci5 dev 0 function 2 "Intel 6700PXH PCIE-PCIX" rev 0x09
+pci7 at ppb6 bus 7
+em1 at pci7 dev 8 function 0 "Intel 82541GI" rev 0x05: apic 4 int 1, address 00:13:72:51:1d:24
+ppb7 at pci0 dev 6 function 0 "Intel E7520 PCIE" rev 0x09
+pci8 at ppb7 bus 8
+uhci0 at pci0 dev 29 function 0 "Intel 82801EB/ER USB" rev 0x02: apic 2 int 16
+uhci1 at pci0 dev 29 function 1 "Intel 82801EB/ER USB" rev 0x02: apic 2 int 19
+uhci2 at pci0 dev 29 function 2 "Intel 82801EB/ER USB" rev 0x02: apic 2 int 18
+ehci0 at pci0 dev 29 function 7 "Intel 82801EB/ER USB2" rev 0x02: apic 2 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb8 at pci0 dev 30 function 0 "Intel 82801BA Hub-to-PCI" rev 0xc2
+pci9 at ppb8 bus 9
+radeondrm0 at pci9 dev 13 function 0 "ATI Radeon VE" rev 0x00
+drm0 at radeondrm0
+radeondrm0: apic 2 int 18
+ichpcib0 at pci0 dev 31 function 0 "Intel 82801EB/ER LPC" rev 0x02
+pciide0 at pci0 dev 31 function 1 "Intel 82801EB/ER IDE" rev 0x02: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus3 at atapiscsi0: 2 targets
+cd0 at scsibus3 targ 0 lun 0: <HL-DT-ST, CD-ROM GCR-8240N, 1.10> ATAPI 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 disabled (no drives)
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+uhub4 at uhub0 port 3 configuration 1 interface 0 "Dell product 0xa001" rev 2.00/0.00 addr 2
+vscsi0 at root
+scsibus4 at vscsi0: 256 targets
+softraid0 at root
+scsibus5 at softraid0: 256 targets
+root on sd0a (6632d8718453ddd0.a) swap on sd0b dump on sd0b
+error: [drm:pid0:r100_cp_init_microcode] *ERROR* radeon_cp: Failed to load firmware "radeon-r100_cp"
+error: [drm:pid0:r100_cp_init] *ERROR* Failed to load firmware!
+drm:pid0:r100_startup *ERROR* failed initializing CP (-2).
+drm:pid0:r100_init *ERROR* Disabling GPU acceleration
+radeondrm0: 1024x768, 8bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)

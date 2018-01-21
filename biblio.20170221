@@ -1,0 +1,163 @@
+OpenBSD 6.0-current (GENERIC.MP) #0: Tue Feb 21 14:14:06 CET 2017
+    hans@biblio.stare.cz:/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8486649856 (8093MB)
+avail mem = 8224788480 (7843MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xf0100 (36 entries)
+bios0: vendor Award Software International, Inc. version "F2" date 04/20/2011
+bios0: Gigabyte Technology Co., Ltd. Z68MX-UD2H-B3
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET MCFG ASPT SSPT EUDS MATS TAMG APIC SSDT MATS
+acpi0: wakeup devices PEX0(S5) PEX1(S5) PEX2(S5) PEX3(S5) PEX4(S5) PEX5(S5) PEX6(S5) PEX7(S5) HUB0(S5) UAR1(S3) USBE(S3) USE2(S3) AZAL(S5) PCI0(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimcfg0 at acpi0 addr 0xf4000000, bus 0-63
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz, 3093.37 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC,SENSOR,ARAT
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: TSC frequency 3093368760 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.1, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz, 3092.97 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC,SENSOR,ARAT
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 4 (application processor)
+cpu2: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz, 3092.97 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC,SENSOR,ARAT
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 6 (application processor)
+cpu3: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz, 3092.97 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC,SENSOR,ARAT
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 0, core 3, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (PEG0)
+acpiprt2 at acpi0: bus -1 (PEG1)
+acpiprt3 at acpi0: bus 2 (PEX0)
+acpiprt4 at acpi0: bus -1 (PEX1)
+acpiprt5 at acpi0: bus -1 (PEX2)
+acpiprt6 at acpi0: bus 3 (PEX3)
+acpiprt7 at acpi0: bus 4 (PEX4)
+acpiprt8 at acpi0: bus 5 (PEX5)
+acpiprt9 at acpi0: bus 6 (PEX6)
+acpiprt10 at acpi0: bus 7 (PEX7)
+acpicpu0 at acpi0: C3(350@96 mwait.1@0x20), C2(500@64 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(350@96 mwait.1@0x20), C2(500@64 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(350@96 mwait.1@0x20), C2(500@64 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(350@96 mwait.1@0x20), C2(500@64 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpibtn0 at acpi0: PWRB
+"PNP0501" at acpi0 not configured
+"PNP0303" at acpi0 not configured
+"ICD0001" at acpi0 not configured
+"pnp0c14" at acpi0 not configured
+"INT3F0D" at acpi0 not configured
+cpu0: Enhanced SpeedStep 3093 MHz: speeds: 3301, 3300, 3200, 3100, 3000, 2900, 2800, 2700, 2600, 2500, 2400, 2300, 2200, 2100, 2000, 1900, 1800, 1700, 1600 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "Intel Core 2G Host" rev 0x09
+ppb0 at pci0 dev 1 function 0 "Intel Core 2G PCIE" rev 0x09: msi
+pci1 at ppb0 bus 1
+em0 at pci1 dev 0 function 0 "Intel 82574L" rev 0x00: msi, address 68:05:ca:33:6a:61
+inteldrm0 at pci0 dev 2 function 0 "Intel HD Graphics 2000" rev 0x09
+drm0 at inteldrm0
+inteldrm0: msi
+inteldrm0: 1920x1080, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+"Intel 6 Series MEI" rev 0x04 at pci0 dev 22 function 0 not configured
+ehci0 at pci0 dev 26 function 0 "Intel 6 Series USB" rev 0x05: apic 2 int 18
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 "Intel 6 Series HD Audio" rev 0x05: msi
+azalia0: codecs: Realtek/0x0889, Intel/0x2805, using Realtek/0x0889
+audio0 at azalia0
+ppb1 at pci0 dev 28 function 0 "Intel 6 Series PCIE" rev 0xb5: msi
+pci2 at ppb1 bus 2
+puc0 at pci2 dev 0 function 0 "NetMos Nm9922" rev 0x00: ports: 1 com
+com4 at puc0 port 0 apic 2 int 16: st16650, 32 byte fifo
+puc1 at pci2 dev 0 function 1 "NetMos Nm9922" rev 0x00: ports: 1 com
+com5 at puc1 port 0 apic 2 int 17: st16650, 32 byte fifo
+ppb2 at pci0 dev 28 function 3 "Intel 6 Series PCIE" rev 0xb5: msi
+pci3 at ppb2 bus 3
+em1 at pci3 dev 0 function 0 "Intel 82574L" rev 0x00: msi, address 00:1b:21:72:9d:bc
+ppb3 at pci0 dev 28 function 4 "Intel 6 Series PCIE" rev 0xb5: msi
+pci4 at ppb3 bus 4
+pciide0 at pci4 dev 0 function 0 vendor "Marvell", unknown product 0x917a rev 0x11: DMA (unsupported), channel 0 configured to native-PCI, channel 1 configured to native-PCI
+pciide0: using apic 2 int 16 for native-PCI interrupt
+pciide0: channel 0 ignored (not responding; disabled or no drives?)
+pciide0: channel 1 ignored (not responding; disabled or no drives?)
+ppb4 at pci0 dev 28 function 5 "Intel 6 Series PCIE" rev 0xb5: msi
+pci5 at ppb4 bus 5
+xhci0 at pci5 dev 0 function 0 "Etron xHCI" rev 0x01: msi
+usb1 at xhci0: USB revision 3.0
+uhub1 at usb1 configuration 1 interface 0 "Etron xHCI root hub" rev 3.00/1.00 addr 1
+ppb5 at pci0 dev 28 function 6 "Intel 6 Series PCIE" rev 0xb5: msi
+pci6 at ppb5 bus 6
+re0 at pci6 dev 0 function 0 "Realtek 8168" rev 0x06: RTL8168E/8111E-VL (0x2c80), msi, address 50:e5:49:39:0e:aa
+rgephy0 at re0 phy 7: RTL8169S/8110S/8211 PHY, rev. 5
+ppb6 at pci0 dev 28 function 7 "Intel 6 Series PCIE" rev 0xb5: msi
+pci7 at ppb6 bus 7
+xhci1 at pci7 dev 0 function 0 "Etron xHCI" rev 0x01: msi
+usb2 at xhci1: USB revision 3.0
+uhub2 at usb2 configuration 1 interface 0 "Etron xHCI root hub" rev 3.00/1.00 addr 1
+ehci1 at pci0 dev 29 function 0 "Intel 6 Series USB" rev 0x05: apic 2 int 23
+usb3 at ehci1: USB revision 2.0
+uhub3 at usb3 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb7 at pci0 dev 30 function 0 "Intel 82801BA Hub-to-PCI" rev 0xa5
+pci8 at ppb7 bus 8
+pcib0 at pci0 dev 31 function 0 "Intel Z68 LPC" rev 0x05
+ahci0 at pci0 dev 31 function 2 "Intel 6 Series AHCI" rev 0x05: msi, AHCI 1.3
+ahci0: port 0: 1.5Gb/s
+ahci0: port 1: 3.0Gb/s
+ahci0: port 2: 3.0Gb/s
+ahci0: port 3: 3.0Gb/s
+ahci0: port 4: 1.5Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, ST380811AS, 3.AA> SCSI3 0/direct fixed t10.ATA_ST380811AS_5PS1056R
+sd0: 76319MB, 512 bytes/sector, 156301488 sectors
+sd1 at scsibus1 targ 1 lun 0: <ATA, WDC WD5000AADS-0, 01.0> SCSI3 0/direct fixed naa.50014ee25ba41f56
+sd1: 476940MB, 512 bytes/sector, 976773168 sectors
+sd2 at scsibus1 targ 2 lun 0: <ATA, TOSHIBA MK5059GS, GK00> SCSI3 0/direct fixed naa.50000392eb286d09
+sd2: 476940MB, 512 bytes/sector, 976773168 sectors
+sd3 at scsibus1 targ 3 lun 0: <ATA, WDC WD6400BPVT-0, 01.0> SCSI3 0/direct fixed naa.50014ee25979e46a
+sd3: 610480MB, 512 bytes/sector, 1250263728 sectors
+cd0 at scsibus1 targ 4 lun 0: <ATAPI, iHAS122, ZL0E> ATAPI 5/cdrom removable
+ichiic0 at pci0 dev 31 function 3 "Intel 6 Series SMBus" rev 0x05: apic 2 int 18
+iic0 at ichiic0
+iic0: addr 0x4e 03=c7 04=c7 06=0d 07=01 08=0f 0c=ae 0d=fa 0e=c6 0f=88 12=ff 13=ff 20=14 26=03 28=83 29=12 2a=23 2c=10 2f=e4 3c=28 3e=01 47=99 71=ff 80=ff 82=ff 84=ff 86=ff 90=ff 91=ff 92=ff 93=ff 94=ff 95=ff 96=ff 98=ff 99=ff 9a=ff 9b=ff 9c=ff 9d=ff 9e=ff a0=ff a1=ff a2=ff a3=ff a4=ff a5=ff a6=ff a8=ff a9=ff aa=ff ab=ff ac=ff ad=ff ae=ff f0=ff f1=30 f2=2c f3=07 f4=e5 f5=3f f6=0c f7=01 f8=3c words 00=0000 01=0000 02=00c7 03=c7c7 04=c700 05=000d 06=0d01 07=010f
+spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-10600
+spdmem1 at iic0 addr 0x51: 4GB DDR3 SDRAM PC3-10600
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+it0 at isa0 port 0x2e/2: IT8728F rev 1, EC port 0x290
+vmm0 at mainbus0: VMX/EPT
+uhub4 at uhub0 port 1 configuration 1 interface 0 "Intel Rate Matching Hub" rev 2.00/0.00 addr 2
+uplcom0 at uhub4 port 3 configuration 1 interface 0 "Prolific Technology Inc. USB-Serial Controller" rev 1.10/3.00 addr 3
+ucom0 at uplcom0
+uhidev0 at uhub4 port 4 configuration 1 interface 0 "Logitech USB Optical Mouse" rev 2.00/54.00 addr 4
+uhidev0: iclass 3/1
+ums0 at uhidev0: 8 buttons, Z and W dir
+wsmouse0 at ums0 mux 0
+uhub5 at uhub3 port 1 configuration 1 interface 0 "Intel Rate Matching Hub" rev 2.00/0.00 addr 2
+ugen0 at uhub5 port 1 "Android Android" rev 2.00/3.10 addr 3
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (dd3e6921954c301e.a) swap on sd0b dump on sd0b

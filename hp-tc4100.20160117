@@ -1,0 +1,86 @@
+OpenBSD 5.9-beta (GENERIC) #1523: Sun Jan 17 20:52:56 MST 2016
+    deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Intel(R) Pentium(R) III CPU family 1266MHz ("GenuineIntel" 686-class) 1.27 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PSE36,MMX,FXSR,SSE,PERF
+real mem  = 1073168384 (1023MB)
+avail mem = 1040089088 (991MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 04/11/02, BIOS32 rev. 0 @ 0xfd8c0, SMBIOS rev. 2.3 @ 0xef730 (57 entries)
+bios0: vendor Phoenix Technologies LTD version "4.06.15 RI" date 04/11/2002
+bios0: Hewlett-Packard HP NetServer
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP SPCR APIC BOOT
+acpi0: wakeup devices NIC_(S5) SL3_(S5) SL4_(S5) SL5_(S5) SL6_(S5) PCI1(S5)
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 133MHz
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 11, 16 pins
+ioapic1 at mainbus0: apid 2 pa 0xfec01000, version 11, 16 pins
+ioapic2 at mainbus0: apid 3 pa 0xfec02000, version 11, 16 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 5 (PCI1)
+acpicpu0 at acpi0: C1(@1 halt!)
+bios0: ROM list: 0xc0000/0x8000 0xc8000/0x1800 0xc9800/0x800 0xca000/0x1e00
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 "ServerWorks CNB20LE Host" rev 0x06
+pchb1 at pci0 dev 0 function 1 "ServerWorks CNB20LE Host" rev 0x06
+pci1 at pchb1 bus 5
+ami0 at pci1 dev 2 function 0 "AMI MegaRAID" rev 0x21: apic 2 int 6
+ami0: HP 60e7, 64b/lhc, FW H.02.01, BIOS vG.02.03, 32MB RAM
+ami0: 1 channels, 0 FC loops, 3 logical drives
+scsibus1 at ami0: 40 targets
+sd0 at scsibus1 targ 0 lun 0: <AMI, Host drive #00, > SCSI2 0/direct fixed
+sd0: 17365MB, 512 bytes/sector, 35563520 sectors
+sd1 at scsibus1 targ 1 lun 0: <AMI, Host drive #01, > SCSI2 0/direct fixed
+sd1: 34731MB, 512 bytes/sector, 71129088 sectors
+sd2 at scsibus1 targ 2 lun 0: <AMI, Host drive #02, > SCSI2 0/direct fixed
+sd2: 34731MB, 512 bytes/sector, 71129088 sectors
+scsibus2 at ami0: 16 targets
+safte0 at scsibus2 targ 4 lun 0: <HP, SAF-TE, 1124> SCSI2 3/processor fixed
+siop0 at pci1 dev 4 function 0 "Symbios Logic 53c1010-66" rev 0x01: apic 2 int 7, using 8K of on-board RAM
+scsibus3 at siop0: 16 targets, initiator 7
+siop1 at pci1 dev 4 function 1 "Symbios Logic 53c1010-66" rev 0x01: apic 2 int 8, using 8K of on-board RAM
+scsibus4 at siop1: 16 targets, initiator 7
+fxp0 at pci0 dev 2 function 0 "Intel 8255x" rev 0x0d, i82550: apic 2 int 4, address 00:30:6e:21:d0:1d
+inphy0 at fxp0 phy 1: i82555 10/100 PHY, rev. 4
+vga1 at pci0 dev 7 function 0 "ATI Rage XL" rev 0x27
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+piixpm0 at pci0 dev 15 function 0 "ServerWorks CSB5" rev 0x93: polling
+iic0 at piixpm0
+iic0: addr 0x1f 00=c6 01=00 02=f0 04=00 05=36 08=0f 09=00 0a=70 0b=7f 0c=00 0d=7f 10=c0 11=00 12=00 13=00 14=00 15=00 16=00 20=60 21=13 words 00=c6ff 01=00ff 02=f0ff 03=ffff 04=00ff 05=36ff 06=ffff 07=ffff
+lm1 at iic0 addr 0x28: W83782D
+lm2 at iic0 addr 0x2d: AS99127F rev 2
+iic0: addr 0x2f d0=00 d1=00 d2=00 d3=00 d4=00 e0=00 e1=00 e2=00 e3=00 e4=00 e5=00 e6=00 e7=00 e8=00 e9=00 ea=00 eb=00 f6=f8 f7=10 words 00=ffff 01=ffff 02=ffff 03=ffff 04=ffff 05=ffff 06=ffff 07=ffff
+"eeprom" at iic0 addr 0x50 not configured
+pciide0 at pci0 dev 15 function 1 "ServerWorks CSB5 IDE" rev 0x93: DMA
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus5 at atapiscsi0: 2 targets
+cd0 at scsibus5 targ 0 lun 0: <LITEON, CD-ROM LTN486S, YKS4> ATAPI 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 2
+ohci0 at pci0 dev 15 function 2 "ServerWorks OSB4/CSB5 USB" rev 0x05: apic 1 int 11, version 1.0, legacy support
+pcib0 at pci0 dev 15 function 3 "ServerWorks CSB5 LPC" rev 0x00
+usb0 at ohci0: USB revision 1.0
+uhub0 at usb0 "ServerWorks OHCI root hub" rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+vscsi0 at root
+scsibus6 at vscsi0: 256 targets
+softraid0 at root
+scsibus7 at softraid0: 256 targets
+root on sd0a (1c9538a8fe702e71.a) swap on sd0b dump on sd0b

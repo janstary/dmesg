@@ -1,0 +1,171 @@
+OpenBSD 6.0-current (GENERIC.MP) #0: Fri Feb  3 22:36:19 CET 2017
+    hans@dell.stare.cz:/sys/arch/amd64/compile/GENERIC.MP
+real mem = 16810340352 (16031MB)
+avail mem = 16296214528 (15541MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.8 @ 0xeac10 (107 entries)
+bios0: vendor Dell Inc. version "1.5.0" date 04/22/2016
+bios0: Dell Inc. Latitude E5570
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC FPDT FIDT MCFG HPET SSDT LPIT SSDT SSDT SSDT DBGP DBG2 SSDT UEFI SSDT SSDT SLIC ASF!
+acpi0: wakeup devices PEGP(S4) PEG0(S4) PEGP(S4) PEG1(S4) PEGP(S4) PEG2(S4) PXSX(S4) RP09(S4) PXSX(S4) RP10(S4) PXSX(S4) RP11(S4) PXSX(S4) RP12(S4) PXSX(S4) RP13(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i5-6440HQ CPU @ 2.60GHz, 2592.00 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SENSOR,ARAT
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: TSC frequency 2592000000 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 24MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Core(TM) i5-6440HQ CPU @ 2.60GHz, 2592.00 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SENSOR,ARAT
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 4 (application processor)
+cpu2: Intel(R) Core(TM) i5-6440HQ CPU @ 2.60GHz, 2592.00 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SENSOR,ARAT
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 6 (application processor)
+cpu3: Intel(R) Core(TM) i5-6440HQ CPU @ 2.60GHz, 2592.00 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SENSOR,ARAT
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 0, core 3, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 120 pins
+acpimcfg0 at acpi0 addr 0xf0000000, bus 0-127
+acpihpet0 at acpi0: 23999999 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEG0)
+acpiprt2 at acpi0: bus -1 (PEG1)
+acpiprt3 at acpi0: bus -1 (PEG2)
+acpiprt4 at acpi0: bus -1 (RP09)
+acpiprt5 at acpi0: bus -1 (RP10)
+acpiprt6 at acpi0: bus -1 (RP11)
+acpiprt7 at acpi0: bus -1 (RP12)
+acpiprt8 at acpi0: bus -1 (RP13)
+acpiprt9 at acpi0: bus -1 (RP01)
+acpiprt10 at acpi0: bus 1 (RP02)
+acpiprt11 at acpi0: bus 2 (RP03)
+acpiprt12 at acpi0: bus -1 (RP04)
+acpiprt13 at acpi0: bus -1 (RP05)
+acpiprt14 at acpi0: bus -1 (RP06)
+acpiprt15 at acpi0: bus -1 (RP07)
+acpiprt16 at acpi0: bus -1 (RP08)
+acpiprt17 at acpi0: bus -1 (RP17)
+acpiprt18 at acpi0: bus -1 (RP18)
+acpiprt19 at acpi0: bus -1 (RP19)
+acpiprt20 at acpi0: bus -1 (RP20)
+acpiprt21 at acpi0: bus -1 (RP14)
+acpiprt22 at acpi0: bus -1 (RP15)
+acpiprt23 at acpi0: bus -1 (RP16)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: PG00, resource for PEG0
+acpipwrres1 at acpi0: PG01, resource for PEG1
+acpipwrres2 at acpi0: PG02, resource for PEG2
+acpipwrres3 at acpi0: WRST
+acpipwrres4 at acpi0: WRST
+acpipwrres5 at acpi0: WRST
+acpipwrres6 at acpi0: WRST
+acpipwrres7 at acpi0: WRST
+acpipwrres8 at acpi0: WRST
+acpipwrres9 at acpi0: WRST
+acpipwrres10 at acpi0: WRST
+acpipwrres11 at acpi0: WRST
+acpipwrres12 at acpi0: WRST
+acpipwrres13 at acpi0: WRST
+acpipwrres14 at acpi0: WRST
+acpipwrres15 at acpi0: WRST
+acpipwrres16 at acpi0: WRST
+acpipwrres17 at acpi0: WRST
+acpipwrres18 at acpi0: WRST
+acpipwrres19 at acpi0: WRST
+acpitz0 at acpi0: critical temperature is 107 degC
+"INT3F0D" at acpi0 not configured
+"INT3403" at acpi0 not configured
+"INT3403" at acpi0 not configured
+"DLLK06DF" at acpi0 not configured
+"DLL06DF" at acpi0 not configured
+"PNP0401" at acpi0 not configured
+"SMO8810" at acpi0 not configured
+"INT3403" at acpi0 not configured
+"PNP0C14" at acpi0 not configured
+"INT33A1" at acpi0 not configured
+"PNP0C14" at acpi0 not configured
+acpibtn0 at acpi0: LID0
+acpibtn1 at acpi0: PBTN
+acpibtn2 at acpi0: SBTN
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT0 model "DELL TXF9M65" serial 48071 type LiP oem "Samsung SDI"
+"DELLABC6" at acpi0 not configured
+"DELLABCE" at acpi0 not configured
+"INT340E" at acpi0 not configured
+"INT3400" at acpi0 not configured
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: LCD_
+cpu0: Enhanced SpeedStep 2592 MHz: speeds: 2601, 2600, 2400, 2300, 2200, 2100, 2000, 1800, 1700, 1600, 1400, 1300, 1200, 1100, 900, 800 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "Intel Core 6G Host" rev 0x07
+vga1 at pci0 dev 2 function 0 "Intel HD Graphics 530" rev 0x06
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+vendor "Intel", unknown product 0x1903 (class DASP subclass miscellaneous, rev 0x07) at pci0 dev 4 function 0 not configured
+xhci0 at pci0 dev 20 function 0 "Intel 100 Series xHCI" rev 0x31: msi
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 "Intel xHCI root hub" rev 3.00/1.00 addr 1
+pchtemp0 at pci0 dev 20 function 2 "Intel 100 Series Thermal" rev 0x31
+"Intel 100 Series MEI" rev 0x31 at pci0 dev 22 function 0 not configured
+puc0 at pci0 dev 22 function 3 "Intel 100 Series KT" rev 0x31: ports: 1 com
+com4 at puc0 port 0 apic 2 int 19: ns16550a, 16 byte fifo
+ahci0 at pci0 dev 23 function 0 "Intel 100 Series AHCI" rev 0x31: msi, AHCI 1.3.1
+ahci0: port 0: 6.0Gb/s
+ahci0: PHY offline on port 2
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, INTEL SSDSCKGF25, LB1i> SCSI3 0/direct fixed naa.55cd2e414d0cc399
+sd0: 244198MB, 512 bytes/sector, 500118192 sectors, thin
+ppb0 at pci0 dev 28 function 0 "Intel 100 Series PCIE" rev 0xf1: msi
+pci1 at ppb0 bus 1
+iwm0 at pci1 dev 0 function 0 "Intel Dual Band Wireless AC 8260" rev 0x3a, msi
+ppb1 at pci0 dev 28 function 2 "Intel 100 Series PCIE" rev 0xf1: msi
+pci2 at ppb1 bus 2
+"Realtek RTS525A Card Reader" rev 0x01 at pci2 dev 0 function 0 not configured
+pcib0 at pci0 dev 31 function 0 "Intel CM236 LPC" rev 0x31
+"Intel 100 Series PMC" rev 0x31 at pci0 dev 31 function 2 not configured
+azalia0 at pci0 dev 31 function 3 "Intel 100 Series HD Audio" rev 0x31: msi
+azalia0: codecs: Realtek/0x0293, Intel/0x2809, using Realtek/0x0293
+audio0 at azalia0
+ichiic0 at pci0 dev 31 function 4 "Intel 100 Series SMBus" rev 0x31: apic 2 int 16
+iic0 at ichiic0
+iic0: addr 0x29 0f=33 10=82 11=80 12=8e 13=61 14=a0 15=20 16=24 17=20 18=1a 19=a0 1a=70 1b=64 1c=e0 1d=a0 1e=a0 20=0f 22=40 2f=20 30=95 32=0e 33=16 8f=33 90=82 91=80 92=8e 93=61 94=a0 95=20 96=24 97=20 98=1a 99=a0 9a=70 9b=64 9c=e0 9d=a0 9e=a0 a0=0f a2=40 af=20 b0=95 b2=0e b3=16 words 00=0000 01=0000 02=0000 03=0000 04=0000 05=0000 06=0000 07=0000
+em0 at pci0 dev 31 function 6 "Intel I219-LM2" rev 0x31: msi, address 28:f1:0e:26:94:75
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm disabled by firmware
+vmm at mainbus0 not configured
+ugen0 at uhub0 port 6 "Intel Bluetooth" rev 2.00/0.01 addr 2
+ugen1 at uhub0 port 10 "Broadcom Corp 5880" rev 1.10/1.01 addr 3
+uvideo0 at uhub0 port 11 configuration 1 interface 0 "CN0J8NNP7248765RBBM6A00 Integrated_Webcam_HD" rev 2.00/54.13 addr 4
+video0 at uvideo0
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (47bc4f354dbe6b0b.a) swap on sd0b dump on sd0b
+iwm0: hw rev 0x200, fw ver 16.242414.0, address e4:a4:71:40:21:08

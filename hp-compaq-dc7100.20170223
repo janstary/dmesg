@@ -1,0 +1,111 @@
+OpenBSD 6.0-current (GENERIC.MP) #0: Thu Feb 23 20:21:16 CET 2017
+    hans@debian.stare.cz:/usr/src/sys/arch/i386/compile/GENERIC.MP
+cpu0: Intel(R) Pentium(R) 4 CPU 3.00GHz ("GenuineIntel" 686-class) 3 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,CNXT-ID,xTPR,PERF
+real mem  = 2138472448 (2039MB)
+avail mem = 2084757504 (1988MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 06/16/04, BIOS32 rev. 0 @ 0xeb560, SMBIOS rev. 2.3 @ 0xeeae0 (63 entries)
+bios0: vendor Hewlett-Packard version "786C1 v01.05" date 06/16/2004
+bios0: Hewlett-Packard HP Compaq dc7100 SFF(DX878AV)
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S3 S4 S5
+acpi0: tables DSDT FACP SSDT APIC ASF! MCFG
+acpi0: wakeup devices PCI0(S4) PEG1(S4) PCX1(S4) PCX2(S4) PCX4(S4) HUB_(S4) COM1(S4) USB1(S3) USB2(S3) USB3(S3) USB4(S3) EUSB(S3) PBTN(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 199MHz
+cpu0: mwait min=64, max=64
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Pentium(R) 4 CPU 3.00GHz ("GenuineIntel" 686-class) 3 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,CNXT-ID,xTPR,PERF
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0xd0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 32 (PCX1)
+acpiprt2 at acpi0: bus 64 (PCX2)
+acpiprt3 at acpi0: bus -1 (PCX4)
+acpiprt4 at acpi0: bus 5 (HUB_)
+acpicpu0 at acpi0: C1(@1 halt!)
+acpicpu1 at acpi0: C1(@1 halt!)
+"PNP0F13" at acpi0 not configured
+"PNP0303" at acpi0 not configured
+"PNP0401" at acpi0 not configured
+"PNP0501" at acpi0 not configured
+"PNP0700" at acpi0 not configured
+"PNP0003" at acpi0 not configured
+acpibtn0 at acpi0: PBTN
+"PNP0C14" at acpi0 not configured
+bios0: ROM list: 0xc0000/0xa800! 0xca800/0x1000 0xcb800/0x2000 0xe9c00/0x6400!
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 "Intel 82915G Host" rev 0x04
+inteldrm0 at pci0 dev 2 function 0 "Intel 82915G Video" rev 0x04
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0xe0000000, size 0x10000000
+inteldrm0: apic 1 int 16
+inteldrm0: 1920x1080, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+"Intel 82915G Video" rev 0x04 at pci0 dev 2 function 1 not configured
+ppb0 at pci0 dev 28 function 0 "Intel 82801FB PCIE" rev 0x03
+pci1 at ppb0 bus 32
+ppb1 at pci0 dev 28 function 1 "Intel 82801FB PCIE" rev 0x03: apic 1 int 17
+pci2 at ppb1 bus 64
+bge0 at pci2 dev 0 function 0 "Broadcom BCM5751" rev 0x01, BCM5750 A1 (0x4001): apic 1 int 17, address 00:12:79:6c:ab:72
+brgphy0 at bge0 phy 1: BCM5750 10/100/1000baseT PHY, rev. 0
+uhci0 at pci0 dev 29 function 0 "Intel 82801FB USB" rev 0x03: apic 1 int 20
+uhci1 at pci0 dev 29 function 1 "Intel 82801FB USB" rev 0x03: apic 1 int 18
+uhci2 at pci0 dev 29 function 2 "Intel 82801FB USB" rev 0x03: apic 1 int 21
+uhci3 at pci0 dev 29 function 3 "Intel 82801FB USB" rev 0x03: apic 1 int 22
+ehci0 at pci0 dev 29 function 7 "Intel 82801FB USB" rev 0x03: apic 1 int 20
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb2 at pci0 dev 30 function 0 "Intel 82801BA Hub-to-PCI" rev 0xd3
+pci3 at ppb2 bus 5
+auich0 at pci0 dev 30 function 2 "Intel 82801FB AC97" rev 0x03: apic 1 int 21, ICH6
+ac97: codec id 0x41445374 (Analog Devices AD1981B)
+ac97: codec features headphone, 20 bit DAC, No 3D Stereo
+audio0 at auich0
+ichpcib0 at pci0 dev 31 function 0 "Intel 82801FB LPC" rev 0x03: PM disabled
+pciide0 at pci0 dev 31 function 1 "Intel 82801FB IDE" rev 0x03: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: <HL-DT-ST, DVD-RAM GSA-H22L, 1.00> ATAPI 5/cdrom removable
+wd0 at pciide0 channel 0 drive 1: <QUANTUM FIREBALLP AS20.5>
+wd0: 16-sector PIO, LBA, 19595MB, 40132503 sectors
+cd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 4
+wd0(pciide0:0:1): using PIO mode 4, Ultra-DMA mode 5
+pciide0: channel 1 disabled (no drives)
+pciide1 at pci0 dev 31 function 2 "Intel 82801FB SATA" rev 0x03: DMA, channel 0 configured to native-PCI, channel 1 configured to native-PCI
+pciide1: using apic 1 int 19 for native-PCI interrupt
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+vmm at mainbus0 not configured
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on wd0a (fb1f76d2d55ed18b.a) swap on wd0b dump on wd0b

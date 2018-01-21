@@ -1,0 +1,759 @@
+U-Boot SPL 2013.04-dirty (Jul 10 2013 - 14:02:53)
+musb-hdrc: ConfigData=0xde (UTMI-8, dyn FIFOs, HB-ISO Rx, HB-ISO Tx, SoftConn)
+musb-hdrc: MHDRC RTL version 2.0
+musb-hdrc: setup fifo_mode 4
+musb-hdrc: 28/31 max ep, 16384/16384 memory
+USB Peripheral mode controller at 47401000 using PIO, IRQ 0
+musb-hdrc: ConfigData=0xde (UTMI-8, dyn FIFOs, HB-ISO Rx, HB-ISO Tx, SoftConn)
+musb-hdrc: MHDRC RTL version 2.0
+musb-hdrc: setup fifo_mode 4
+musb-hdrc: 28/31 max ep, 16384/16384 memory
+USB Host mode controller at 47401800 using PIO, IRQ 0
+OMAP SD/MMC: 0
+mmc_send_cmd : timeout: No status update
+reading u-boot.img
+reading u-boot.img
+
+
+U-Boot 2013.04-dirty (Jul 10 2013 - 14:02:53)
+
+I2C:   ready
+DRAM:  512 MiB
+WARNING: Caches not enabled
+NAND:  No NAND device found!!!
+0 MiB
+MMC:   OMAP SD/MMC: 0, OMAP SD/MMC: 1
+*** Warning - readenv() failed, using default environment
+
+musb-hdrc: ConfigData=0xde (UTMI-8, dyn FIFOs, HB-ISO Rx, HB-ISO Tx, SoftConn)
+musb-hdrc: MHDRC RTL version 2.0
+musb-hdrc: setup fifo_mode 4
+musb-hdrc: 28/31 max ep, 16384/16384 memory
+USB Peripheral mode controller at 47401000 using PIO, IRQ 0
+musb-hdrc: ConfigData=0xde (UTMI-8, dyn FIFOs, HB-ISO Rx, HB-ISO Tx, SoftConn)
+musb-hdrc: MHDRC RTL version 2.0
+musb-hdrc: setup fifo_mode 4
+musb-hdrc: 28/31 max ep, 16384/16384 memory
+USB Host mode controller at 47401800 using PIO, IRQ 0
+Net:   <ethaddr> not set. Validating first E-fuse MAC
+cpsw, usb_ether
+Hit any key to stop autoboot:  0
+gpio: pin 53 (gpio 53) value is 1
+mmc_send_cmd : timeout: No status update
+Card did not respond to voltage select!
+mmc0(part 0) is current device
+Card did not respond to voltage select!
+No micro SD card found, setting mmcdev to 1
+mmc1(part 0) is current device
+mmc_send_cmd : timeout: No status update
+gpio: pin 54 (gpio 54) value is 1
+SD/MMC found on device 1
+reading uEnv.txt
+26 bytes read in 4 ms (5.9 KiB/s)
+Loaded environment from uEnv.txt
+Importing environment from mmc ...
+gpio: pin 55 (gpio 55) value is 1
+4385024 bytes read in 762 ms (5.5 MiB/s)
+gpio: pin 56 (gpio 56) value is 1
+24808 bytes read in 44 ms (549.8 KiB/s)
+Booting from mmc ...
+## Booting kernel from Legacy Image at 80007fc0 ...
+   Image Name:	 Angstrom/3.8.13/beaglebone
+   Image Type:	 ARM Linux Kernel Image (uncompressed)
+   Data Size:	 4384960 Bytes = 4.2 MiB
+   Load Address: 80008000
+   Entry Point:	 80008000
+   Verifying Checksum ... OK
+## Flattened Device Tree blob at 80f80000
+   Booting using the fdt blob at 0x80f80000
+   XIP Kernel Image ... OK
+OK
+   Using Device Tree in place at 80f80000, end 80f890e7
+
+Starting kernel ...
+
+Uncompressing Linux... done, booting the kernel.
+[    0.195918] omap2_mbox_probe: platform not supported
+[    0.206496] tps65217-bl tps65217-bl: no platform data provided
+[    0.283095] bone-capemgr bone_capemgr.8: slot #0: No cape found
+[    0.320203] bone-capemgr bone_capemgr.8: slot #1: No cape found
+[    0.357311] bone-capemgr bone_capemgr.8: slot #2: No cape found
+[    0.394420] bone-capemgr bone_capemgr.8: slot #3: No cape found
+[    0.414185] bone-capemgr bone_capemgr.8: slot #6: BB-BONELT-HDMIN conflict P8.45 (#5:BB-BONELT-HDMI)
+[    0.423797] bone-capemgr bone_capemgr.8: slot #6: Failed verification
+[    0.444248] omap_hsmmc mmc.4: of_parse_phandle_with_args of 'reset' failed
+[    0.451541] bone-capemgr bone_capemgr.8: loader: failed to load slot-6 BB-BONELT-HDMIN:00A0 (prio 2)
+[    0.517968] pinctrl-single 44e10800.pinmux: pin 44e10854 already requested by 44e10800.pinmux; cannot claim for gpio-leds.7
+[    0.529700] pinctrl-single 44e10800.pinmux: pin-21 (gpio-leds.7) status -22
+[    0.537022] pinctrl-single 44e10800.pinmux: could not request pin 21 on device pinctrl-single
+systemd-fsck[85]: Angstrom: clean, 49253/112672 files, 275240/449820 blocks
+[    5.643127] libphy: PHY 4a101000.mdio:01 not found
+[    5.648230] net eth0: phy 4a101000.mdio:01 not found on slave 1
+
+.---O---.
+|	|		   .-.		 o o
+|   |	|-----.-----.-----.| |	 .----..-----.-----.
+|	|     | __  |  ---'| '--.|  .-'|     |	   |
+|   |	|  |  |	    |---  ||  --'|  |  |  '  | | | |
+'---'---'--'--'--.  |-----''----''--'  '-----'-'-'-'
+		-'  |
+		'---'
+
+The Angstrom Distribution beaglebone ttyO0
+
+Angstrom v2012.12 - Kernel 3.8.13
+
+beaglebone login: root
+Last login: Sat Jan  1 00:01:45 UTC 2000 on ttyO0
+root@beaglebone:~# dmesg
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.8.13 (koen@rrMBP) (gcc version 4.7.3 20130205 (prerelease) (Linaro GCC 4.7-2013.02-01) ) #1 SMP Wed Sep 4 09:09:32 CEST 2013
+[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=50c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: Generic AM33XX (Flattened Device Tree), model: TI AM335x BeagleBone
+[    0.000000] Memory policy: ECC disabled, Data cache writeback
+[    0.000000] On node 0 totalpages: 130816
+[    0.000000] free_area_init_node: node 0, pgdat c06c2cc0, node_mem_map c071e000
+[    0.000000]	 Normal zone: 1024 pages used for memmap
+[    0.000000]	 Normal zone: 0 pages reserved
+[    0.000000]	 Normal zone: 129792 pages, LIFO batch:31
+[    0.000000] AM335X ES1.0 (neon )
+[    0.000000] PERCPU: Embedded 8 pages/cpu @c0b2e000 s9408 r8192 d15168 u32768
+[    0.000000] pcpu-alloc: s9408 r8192 d15168 u32768 alloc=8*4096
+[    0.000000] pcpu-alloc: [0] 0
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 129792
+[    0.000000] Kernel command line: console=ttyO0,115200n8 quiet drm.debug=7 root=/dev/mmcblk0p2 ro rootfstype=ext4 rootwait
+[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] __ex_table already sorted, skipping sort
+[    0.000000] allocated 1048576 bytes of page_cgroup
+[    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[    0.000000] Memory: 511MB = 511MB total
+[    0.000000] Memory: 510320k/510320k available, 13968k reserved, 0K highmem
+[    0.000000] Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000	(   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000	( 896 kB)
+    vmalloc : 0xe0800000 - 0xff000000	( 488 MB)
+    lowmem  : 0xc0000000 - 0xe0000000	( 512 MB)
+    pkmap   : 0xbfe00000 - 0xc0000000	(   2 MB)
+    modules : 0xbf800000 - 0xbfe00000	(   6 MB)
+      .text : 0xc0008000 - 0xc0609a08	(6151 kB)
+      .init : 0xc060a000 - 0xc064c4c0	( 266 kB)
+      .data : 0xc064e000 - 0xc06c3be0	( 471 kB)
+       .bss : 0xc06c3be0 - 0xc071d93c	( 360 kB)
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000]	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] IRQ: Found an INTC at 0xfa200000 (revision 5.0) with 128 interrupts
+[    0.000000] Total of 128 interrupts on 1 active controller
+[    0.000000] OMAP clockevent source: GPTIMER1 at 24000000 Hz
+[    0.000000] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956ms
+[    0.000000] OMAP clocksource: GPTIMER2 at 24000000 Hz
+[    0.000000] Console: colour dummy device 80x30
+[    0.000360] Calibrating delay loop... 545.07 BogoMIPS (lpj=531968)
+[    0.015425] pid_max: default: 32768 minimum: 301
+[    0.015661] Security Framework initialized
+[    0.015755] Mount-cache hash table entries: 512
+[    0.026290] Initializing cgroup subsys cpuacct
+[    0.026323] Initializing cgroup subsys memory
+[    0.026387] Initializing cgroup subsys blkio
+[    0.026525] CPU: Testing write buffer coherency: ok
+[    0.027060] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[    0.027191] Setting up static identity map for 0x803886a0 - 0x803886ec
+[    0.028517] Brought up 1 CPUs
+[    0.028541] SMP: Total of 1 processors activated (545.07 BogoMIPS).
+[    0.029826] devtmpfs: initialized
+[    0.094882] pinctrl core: initialized pinctrl subsystem
+[    0.095096] rstctl core: initialized rstctl subsystem
+[    0.095634] regulator-dummy: no parameters
+[    0.096156] NET: Registered protocol family 16
+[    0.097013] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.106954] pinctrl-single 44e10800.pinmux: 142 pins at pa f9e10800 size 568
+[    0.107772] platform 49000000.edma: alias fck already exists
+[    0.107806] platform 49000000.edma: alias fck already exists
+[    0.107833] platform 49000000.edma: alias fck already exists
+[    0.108979] gpiochip_add: registered GPIOs 0 to 31 on device: gpio
+[    0.109217] OMAP GPIO hardware version 0.1
+[    0.110546] gpiochip_add: registered GPIOs 32 to 63 on device: gpio
+[    0.111874] gpiochip_add: registered GPIOs 64 to 95 on device: gpio
+[    0.113332] gpiochip_add: registered GPIOs 96 to 127 on device: gpio
+[    0.113874] of_get_named_gpio_flags exited with status 52
+[    0.113904] gpio-rctrl rstctl.3: loaded OK
+[    0.119455] hw-breakpoint: debug architecture 0x4 unsupported.
+[    0.121631] cpsw.0: No hwaddr in dt. Using 90:59:af:82:2e:7e from efuse
+[    0.121665] cpsw.1: No hwaddr in dt. Using 90:59:af:82:30:00 from efuse
+[    0.137077] bio: create slab <bio-0> at 0
+[    0.149078] edma-dma-engine edma-dma-engine.0: TI EDMA DMA engine driver
+[    0.149315] of_get_named_gpio_flags: can't parse gpios property
+[    0.149527] vmmcsd_fixed: 3300 mV
+[    0.152372] SCSI subsystem initialized
+[    0.152804] usbcore: registered new interface driver usbfs
+[    0.152928] usbcore: registered new interface driver hub
+[    0.153208] usbcore: registered new device driver usb
+[    0.155246] omap_i2c 44e0b000.i2c: bus 0 rev0.11 at 400 kHz
+[    0.156745] input: tps65217_pwr_but as /devices/ocp.2/44e0b000.i2c/i2c-0/0-0024/input/input0
+[    0.158510] DCDC1: at 1500 mV
+[    0.159673] vdd_mpu: 925 <--> 1325 mV at 950 mV
+[    0.160866] vdd_core: 925 <--> 1150 mV at 1100 mV
+[    0.161983] LDO1: at 1800 mV
+[    0.163060] LDO2: at 3300 mV
+[    0.165004] LDO3: 1800 mV
+[    0.166147] LDO4: at 3300 mV
+[    0.167135] tps65217 0-0024: TPS65217 ID 0xe version 1.2
+[    0.167899] omap_i2c 44e0b000.i2c: unable to select pin group
+[    0.168624] omap_i2c 4819c000.i2c: bus 1 rev0.11 at 100 kHz
+[    0.170975] omap_i2c 4819c000.i2c: unable to select pin group
+[    0.171190] media: Linux media interface: v0.10
+[    0.171291] Linux video capture interface: v2.00
+[    0.171416] pps_core: LinuxPPS API ver. 1 registered
+[    0.171432] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.172272] Advanced Linux Sound Architecture Driver Initialized.
+[    0.173547] Switching to clocksource gp_timer
+[    0.191692] NET: Registered protocol family 2
+[    0.192698] TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.192842] TCP bind hash table entries: 4096 (order: 4, 81920 bytes)
+[    0.193004] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.193095] TCP: reno registered
+[    0.193121] UDP hash table entries: 256 (order: 1, 12288 bytes)
+[    0.193167] UDP-Lite hash table entries: 256 (order: 1, 12288 bytes)
+[    0.193665] NET: Registered protocol family 1
+[    0.194218] RPC: Registered named UNIX socket transport module.
+[    0.194238] RPC: Registered udp transport module.
+[    0.194252] RPC: Registered tcp transport module.
+[    0.194266] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.195441] CPU PMU: probing PMU on CPU 0
+[    0.195470] hw perfevents: enabled with ARMv7 Cortex-A8 PMU driver, 5 counters available
+[    0.195918] omap2_mbox_probe: platform not supported
+[    0.199782] VFS: Disk quotas dquot_6.5.2
+[    0.200016] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.201252] NFS: Registering the id_resolver key type
+[    0.201341] Key type id_resolver registered
+[    0.201359] Key type id_legacy registered
+[    0.201430] jffs2: version 2.2. (NAND) (SUMMARY)  \xffffffc2\xffffffa9 2001-2006 Red Hat, Inc.
+[    0.201860] msgmni has been set to 996
+[    0.204717] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    0.204743] io scheduler noop registered
+[    0.204759] io scheduler deadline registered
+[    0.204808] io scheduler cfq registered (default)
+[    0.206496] tps65217-bl tps65217-bl: no platform data provided
+[    0.206538] tps65217-bl: probe of tps65217-bl failed with error -22
+[    0.207489] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.210038] omap_uart 44e09000.serial: did not get pins for uart0 error: -19
+[    0.210317] 44e09000.serial: ttyO0 at MMIO 0x44e09000 (irq = 88) is a OMAP UART0
+[    0.222612] console [ttyO0] enabled
+[    0.223785] [drm] Initialized drm 1.1.0 20060810
+[    0.223805] [drm:tda998x_init],
+[    0.237695] brd: module loaded
+[    0.244690] loop: module loaded
+[    0.244813] at24 0-0050: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[    0.244904] at24 1-0054: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[    0.244974] at24 1-0055: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[    0.245044] at24 1-0056: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[    0.245112] at24 1-0057: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[    0.252237] bone-capemgr bone_capemgr.8: Baseboard: 'A335BNLT,0A6A,5113BBBK2464'
+[    0.252278] bone-capemgr bone_capemgr.8: compatible-baseboard=ti,beaglebone-black
+[    0.283095] bone-capemgr bone_capemgr.8: slot #0: No cape found
+[    0.320203] bone-capemgr bone_capemgr.8: slot #1: No cape found
+[    0.357311] bone-capemgr bone_capemgr.8: slot #2: No cape found
+[    0.394420] bone-capemgr bone_capemgr.8: slot #3: No cape found
+[    0.400680] bone-capemgr bone_capemgr.8: slot #4: specific override
+[    0.400723] bone-capemgr bone_capemgr.8: bone: Using override eeprom data at slot 4
+[    0.400753] bone-capemgr bone_capemgr.8: slot #4: 'Bone-LT-eMMC-2G,00A0,Texas Instrument,BB-BONE-EMMC-2G'
+[    0.400894] bone-capemgr bone_capemgr.8: slot #5: specific override
+[    0.400930] bone-capemgr bone_capemgr.8: bone: Using override eeprom data at slot 5
+[    0.400959] bone-capemgr bone_capemgr.8: slot #5: 'Bone-Black-HDMI,00A0,Texas Instrument,BB-BONELT-HDMI'
+[    0.401114] bone-capemgr bone_capemgr.8: slot #6: specific override
+[    0.401151] bone-capemgr bone_capemgr.8: bone: Using override eeprom data at slot 6
+[    0.401178] bone-capemgr bone_capemgr.8: slot #6: 'Bone-Black-HDMIN,00A0,Texas Instrument,BB-BONELT-HDMIN'
+[    0.401825] bone-capemgr bone_capemgr.8: initialized OK.
+[    0.403803] OneNAND driver initializing
+[    0.404312] bone-capemgr bone_capemgr.8: slot #4: Requesting firmware 'cape-bone-2g-emmc1.dtbo' for board-name 'Bone-LT-eMMC-2G', version '00A0'
+[    0.404346] bone-capemgr bone_capemgr.8: slot #4: dtbo 'cape-bone-2g-emmc1.dtbo' loaded; converting to live tree
+[    0.404657] bone-capemgr bone_capemgr.8: slot #4: #2 overlays
+[    0.405509] bone-capemgr bone_capemgr.8: slot #4: Applied #2 overlays.
+[    0.405688] bone-capemgr bone_capemgr.8: slot #5: Requesting firmware 'cape-boneblack-hdmi-00A0.dtbo' for board-name 'Bone-Black-HDMI', version '00A0'
+[    0.405731] bone-capemgr bone_capemgr.8: slot #5: dtbo 'cape-boneblack-hdmi-00A0.dtbo' loaded; converting to live tree
+[    0.406905] bone-capemgr bone_capemgr.8: slot #5: #4 overlays
+[    0.409362] usbcore: registered new interface driver asix
+[    0.409491] usbcore: registered new interface driver cdc_ether
+[    0.409627] usbcore: registered new interface driver smsc95xx
+[    0.409718] usbcore: registered new interface driver net1080
+[    0.409809] usbcore: registered new interface driver cdc_subset
+[    0.409897] usbcore: registered new interface driver zaurus
+[    0.410157] usbcore: registered new interface driver cdc_ncm
+[    0.411880] platform 4830e000.fb: alias fck already exists
+[    0.413615] bone-capemgr bone_capemgr.8: slot #5: Applied #4 overlays.
+[    0.413704] bone-capemgr bone_capemgr.8: slot #6: Requesting firmware 'cape-boneblack-hdmin-00A0.dtbo' for board-name 'Bone-Black-HDMIN', version '00A0'
+[    0.413747] bone-capemgr bone_capemgr.8: slot #6: dtbo 'cape-boneblack-hdmin-00A0.dtbo' loaded; converting to live tree
+[    0.414185] bone-capemgr bone_capemgr.8: slot #6: BB-BONELT-HDMIN conflict P8.45 (#5:BB-BONELT-HDMI)
+[    0.423797] bone-capemgr bone_capemgr.8: slot #6: Failed verification
+[    0.430569] bone-capemgr bone_capemgr.8: loader: retrying slot-6 BB-BONELT-HDMIN:00A0 (prio 2)
+[    0.430882] usbcore: registered new interface driver cdc_acm
+[    0.430897] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    0.430911] Initializing USB Mass Storage driver...
+[    0.431038] usbcore: registered new interface driver usb-storage
+[    0.431052] USB Mass Storage support registered.
+[    0.431294] musb-hdrc: version 6.0, ?dma?, otg (peripheral+host)
+[    0.431742] musb-hdrc musb-hdrc.0.auto: pdev->id = 0
+[    0.431771] musb-hdrc musb-hdrc.0.auto: drivers/usb/musb/musb_dsps.c:468 dsps_musb_init: OK
+[    0.431809] musb-hdrc: ConfigData=0xde (UTMI-8, dyn FIFOs, bulk combine, bulk split, HB-ISO Rx, HB-ISO Tx, SoftConn)
+[    0.431828] musb-hdrc: MHDRC RTL version 2.0
+[    0.431843] musb-hdrc: setup fifo_mode 4
+[    0.431872] musb-hdrc: 28/31 max ep, 16384/16384 memory
+[    0.432017] musb-hdrc musb-hdrc.0.auto: *** mode=3
+[    0.432039] musb-hdrc musb-hdrc.0.auto: *** power=250
+[    0.432908] musb-hdrc musb-hdrc.1.auto: pdev->id = 1
+[    0.432936] musb-hdrc musb-hdrc.1.auto: drivers/usb/musb/musb_dsps.c:468 dsps_musb_init: OK
+[    0.432974] musb-hdrc: ConfigData=0xde (UTMI-8, dyn FIFOs, bulk combine, bulk split, HB-ISO Rx, HB-ISO Tx, SoftConn)
+[    0.432992] musb-hdrc: MHDRC RTL version 2.0
+[    0.433006] musb-hdrc: setup fifo_mode 4
+[    0.433030] musb-hdrc: 28/31 max ep, 16384/16384 memory
+[    0.433162] musb-hdrc musb-hdrc.1.auto: *** mode=1
+[    0.433183] musb-hdrc musb-hdrc.1.auto: *** power=250
+[    0.433204] musb-hdrc musb-hdrc.1.auto: MUSB HDRC host driver
+[    0.433704] musb-hdrc musb-hdrc.1.auto: new USB bus registered, assigned bus number 1
+[    0.433746] musb-hdrc musb-hdrc.1.auto: supports USB remote wakeup
+[    0.433857] usb usb1: default language 0x0409
+[    0.433917] usb usb1: udev 1, busnum 1, minor = 0
+[    0.433941] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.433964] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.433984] usb usb1: Product: MUSB HDRC host driver
+[    0.434004] usb usb1: Manufacturer: Linux 3.8.13 musb-hcd
+[    0.434023] usb usb1: SerialNumber: musb-hdrc.1.auto
+[    0.434752] usb usb1: usb_probe_device
+[    0.434782] usb usb1: configuration #1 chosen from 1 choice
+[    0.434847] usb usb1: adding 1-0:1.0 (config #1, interface 0)
+[    0.435052] hub 1-0:1.0: usb_probe_interface
+[    0.435074] hub 1-0:1.0: usb_probe_interface - got id
+[    0.435102] hub 1-0:1.0: USB hub found
+[    0.435139] hub 1-0:1.0: 1 port detected
+[    0.435158] hub 1-0:1.0: standalone hub
+[    0.435176] hub 1-0:1.0: individual port power switching
+[    0.435193] hub 1-0:1.0: no over-current protection
+[    0.435210] hub 1-0:1.0: Single TT
+[    0.435231] hub 1-0:1.0: TT requires at most 8 FS bit times (666 ns)
+[    0.435250] hub 1-0:1.0: power on to power good time: 10ms
+[    0.435291] hub 1-0:1.0: local power source is good
+[    0.435509] hub 1-0:1.0: enabling power on all ports
+[    0.436568] mousedev: PS/2 mouse device common for all mice
+[    0.439011] omap_rtc 44e3e000.rtc: rtc core: registered 44e3e000.rtc as rtc0
+[    0.439076] 44e3e000.rtc: already running
+[    0.439509] i2c /dev entries driver
+[    0.441200] pps_ldisc: PPS line discipline registered
+[    0.441470] Driver for 1-wire Dallas network protocol.
+[    0.443374] omap_wdt: OMAP Watchdog Timer Rev 0x01: initial timeout 60 sec
+[    0.443737] cpuidle: using governor ladder
+[    0.443757] cpuidle: using governor menu
+[    0.444176] of_get_named_gpio_flags exited with status 6
+[    0.444195] of_get_named_gpio_flags: can't parse gpios property
+[    0.444211] of_get_named_gpio_flags: can't parse gpios property
+[    0.444248] omap_hsmmc mmc.4: of_parse_phandle_with_args of 'reset' failed
+[    0.451493] omap_hsmmc mmc.4: Failed to get rstctl; not using any
+[    0.451541] bone-capemgr bone_capemgr.8: loader: failed to load slot-6 BB-BONELT-HDMIN:00A0 (prio 2)
+[    0.461527] edma-dma-engine edma-dma-engine.0: allocated channel for 0:25
+[    0.461613] edma-dma-engine edma-dma-engine.0: allocated channel for 0:24
+[    0.461865] mmc.4 supply vmmc_aux not found, using dummy regulator
+[    0.462312] omap_hsmmc mmc.4: pins are not configured from the driver
+[    0.488435] of_get_named_gpio_flags: can't parse gpios property
+[    0.488457] of_get_named_gpio_flags: can't parse gpios property
+[    0.488474] of_get_named_gpio_flags: can't parse gpios property
+[    0.488528] gpio-rctrl rstctl.3: gpio_rctrl_request eMMC_RSTn
+[    0.488614] omap_hsmmc mmc.10: Got rstctl (gpio:#0 name eMMC_RSTn) label:eMMC_RSTn
+[    0.488636] gpio-rctrl rstctl.3: gpio_rctrl_deassert eMMC_RSTn
+[    0.488948] edma-dma-engine edma-dma-engine.0: allocated channel for 0:3
+[    0.489028] edma-dma-engine edma-dma-engine.0: allocated channel for 0:2
+[    0.489562] mmc.10 supply vmmc_aux not found, using dummy regulator
+[    0.489706] omap_hsmmc mmc.10: pins are not configured from the driver
+[    0.517968] pinctrl-single 44e10800.pinmux: pin 44e10854 already requested by 44e10800.pinmux; cannot claim for gpio-leds.7
+[    0.529700] pinctrl-single 44e10800.pinmux: pin-21 (gpio-leds.7) status -22
+[    0.537022] pinctrl-single 44e10800.pinmux: could not request pin 21 on device pinctrl-single
+[    0.546082] hub 1-0:1.0: state 7 ports 1 chg 0000 evt 0000
+[    0.546138] leds-gpio gpio-leds.7: pins are not configured from the driver
+[    0.546177] of_get_named_gpio_flags exited with status 53
+[    0.546201] of_get_named_gpio_flags exited with status 54
+[    0.546222] of_get_named_gpio_flags exited with status 55
+[    0.546243] of_get_named_gpio_flags exited with status 56
+[    0.546268] of_get_named_gpio_flags exited with status 53
+[    0.546529] of_get_named_gpio_flags exited with status 54
+[    0.546797] of_get_named_gpio_flags exited with status 55
+[    0.546989] of_get_named_gpio_flags exited with status 56
+[    0.547571] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.547975] edma-dma-engine edma-dma-engine.0: allocated channel for 0:36
+[    0.548059] omap-sham 53100000.sham: hw accel on OMAP rev 4.3
+[    0.550276] omap-aes 53500000.aes: OMAP AES hw accel rev: 3.2
+[    0.550401] edma-dma-engine edma-dma-engine.0: allocated channel for 0:5
+[    0.550482] edma-dma-engine edma-dma-engine.0: allocated channel for 0:6
+[    0.556066] usbcore: registered new interface driver usbhid
+[    0.556086] usbhid: USB HID core driver
+[    0.559436] of_get_named_gpio_flags exited with status 59
+[    0.560896] davinci_evm sound.13:  nxp-hdmi-hifi <-> 48038000.mcasp mapping ok
+[    0.564962] TCP: cubic registered
+[    0.564984] Initializing XFRM netlink socket
+[    0.565031] NET: Registered protocol family 17
+[    0.565105] NET: Registered protocol family 15
+[    0.565241] Key type dns_resolver registered
+[    0.565541] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[    0.565580] ThumbEE CPU extension supported.
+[    0.565623] Registering SWP/SWPB emulation handler
+[    0.566659] registered taskstats version 1
+[    0.567406] [drm:tilcdc_drm_init], init
+[    0.568583] [drm:drm_platform_init],
+[    0.568606] [drm:drm_get_platform_dev],
+[    0.568696] [drm:drm_get_minor],
+[    0.569313] [drm:drm_get_minor], new minor assigned 64
+[    0.569336] [drm:drm_get_minor],
+[    0.569820] [drm:drm_get_minor], new minor assigned 0
+[    0.569930] of_get_named_gpio_flags: can't parse gpios property
+[    0.569956] tilcdc 4830e000.fb: No power control GPIO
+[    0.569977] [drm:tilcdc_load], Maximum Bandwidth Value 105840000
+[    0.569999] [drm:tilcdc_load], Maximum Horizontal Pixel Width Value 2048pixels
+[    0.570018] [drm:tilcdc_load], Maximum Pixel Clock Value 126000KHz
+[    0.570037] [drm:tilcdc_load], Allowing Standard Monitor Modes: true
+[    0.570055] [drm:tilcdc_load], Allowing Non Audio Monitor Modes: false
+[    0.570330] [drm:modeset_init], loading module: slave
+[    0.599163] mmc1: BKOPS_EN bit is not set
+[    0.601806] mmc1: new high speed MMC card at address 0001
+[    0.602607] mmcblk0: mmc1:0001 MMC02G 1.78 GiB
+[    0.602960] mmcblk0boot0: mmc1:0001 MMC02G partition 1 1.00 MiB
+[    0.603310] mmcblk0boot1: mmc1:0001 MMC02G partition 2 1.00 MiB
+[    0.605803]	mmcblk0: p1 p2
+[    0.608499]	mmcblk0boot1: unknown partition table
+[    0.610526]	mmcblk0boot0: unknown partition table
+[    0.678733] tilcdc 4830e000.fb: found TDA19988
+[    0.679294] [drm:tda998x_encoder_create_resources],
+[    0.679321] [drm:drm_sysfs_connector_add], adding "HDMI-A-1" to sysfs
+[    0.679572] [drm:drm_sysfs_hotplug_event], generating hotplug event
+[    0.679629] [drm] Supports vblank timestamp caching Rev 1 (10.10.2010).
+[    0.679645] [drm] No driver support for vblank timestamp query.
+[    0.679711] [drm:drm_irq_install], irq=52
+[    0.679815] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[    0.680082] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[    0.680116] tilcdc 4830e000.fb: No connectors reported connected with modes
+[    0.680133] [drm:drm_setup_crtcs],
+[    0.680151] [drm:drm_enable_connectors], connector 5 enabled? no
+[    0.680171] [drm:drm_setup_crtcs], picking CRTCs for 2048x2048 config
+[    0.680195] [drm] Cannot find any crtc or sizes - going 1024x768
+[    0.680210] [drm:drm_fbdev_cma_create], surface width(1024), height(768) and bpp(16)
+[    0.684213] [drm:drm_crtc_helper_set_config],
+[    0.684224] [drm:drm_crtc_helper_set_config], [CRTC:3] [NOFB]
+[    0.697607] Console: switching to colour frame buffer device 128x48
+[    0.712345] tilcdc 4830e000.fb: fb0:	 frame buffer device
+[    0.712367] tilcdc 4830e000.fb: registered panic notifier
+[    0.712478] [drm] Initialized tilcdc 1.0.0 20121205 on minor 0
+[    0.761646] davinci_mdio 4a101000.mdio: davinci mdio revision 1.6
+[    0.761676] davinci_mdio 4a101000.mdio: detected phy mask fffffffe
+[    0.762709] libphy: 4a101000.mdio: probed
+[    0.762742] davinci_mdio 4a101000.mdio: phy[0]: device 4a101000.mdio:00, driver SMSC LAN8710/LAN8720
+[    0.762978] Detected MACID = 90:59:af:82:2e:7e
+[    0.763090] cpsw 4a100000.ethernet: NAPI disabled
+[    0.764713] omap_rtc 44e3e000.rtc: setting system clock to 2000-01-01 00:24:01 UTC (946686241)
+[    0.772128] ALSA device list:
+[    0.772150]	 #0: TI BeagleBone Black
+[    0.804048] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[    0.804109] VFS: Mounted root (ext4 filesystem) readonly on device 179:2.
+[    0.833439] devtmpfs: mounted
+[    0.833744] Freeing init memory: 264K
+[    1.256393] systemd[1]: systemd 196 running in system mode. (+PAM -LIBWRAP -AUDIT -SELINUX +IMA +SYSVINIT -LIBCRYPTSETUP +GCRYPT +ACL +XZ; angstrom)
+[    1.324213] systemd[1]: Inserted module 'autofs4'
+[    1.325964] systemd[1]: Set hostname to <beaglebone>.
+[    1.577405] systemd[1]: Starting Forward Password Requests to Wall Directory Watch.
+[    1.577889] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    1.578134] systemd[1]: Expecting device dev-ttyO0.device...
+[    1.578227] systemd[1]: Expecting device dev-ttyGS0.device...
+[    1.578307] systemd[1]: Starting Remote File Systems.
+[    1.578377] systemd[1]: Reached target Remote File Systems.
+[    1.578449] systemd[1]: Starting /dev/initctl Compatibility Named Pipe.
+[    1.578621] systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+[    1.578683] systemd[1]: Starting Delayed Shutdown Socket.
+[    1.578855] systemd[1]: Listening on Delayed Shutdown Socket.
+[    1.579142] systemd[1]: Starting Arbitrary Executable File Formats File System Automount Point.
+[    1.579831] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    1.580494] systemd[1]: Starting udev Kernel Socket.
+[    1.580723] systemd[1]: Listening on udev Kernel Socket.
+[    1.581097] systemd[1]: Starting udev Control Socket.
+[    1.581329] systemd[1]: Listening on udev Control Socket.
+[    1.581435] systemd[1]: Starting Dispatch Password Requests to Console Directory Watch.
+[    1.581730] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[    1.581793] systemd[1]: Starting Swap.
+[    1.581993] systemd[1]: Reached target Swap.
+[    1.582105] systemd[1]: Starting Journal Socket.
+[    1.582461] systemd[1]: Listening on Journal Socket.
+[    1.582618] systemd[1]: Starting File System Check on Root Device...
+[    1.589059] systemd[1]: Mounting Debug File System...
+[    1.592958] systemd[1]: Starting Journal Service...
+[    1.603296] systemd[1]: Started Journal Service.
+[    1.605785] systemd[1]: Mounting POSIX Message Queue File System...
+[    1.612077] systemd[1]: Starting udev Kernel Device Manager...
+[    1.650471] systemd[1]: Started Set Up Additional Binary Formats.
+[    1.650654] systemd[1]: Mounted Huge Pages File System.
+[    1.650770] systemd[1]: Started Machine ID first boot configure.
+[    1.651245] systemd[1]: Starting udev Coldplug all Devices...
+[    1.675271] systemd[1]: Starting Apply Kernel Variables...
+[    1.694286] systemd[1]: Starting Load Kernel Modules...
+[    1.784861] systemd-udevd[89]: starting version 196
+[    1.944210] Bluetooth: Core ver 2.16
+[    1.944291] NET: Registered protocol family 31
+[    1.944301] Bluetooth: HCI device and connection manager initialized
+[    1.944341] Bluetooth: HCI socket layer initialized
+[    1.944358] Bluetooth: L2CAP socket layer initialized
+[    1.944397] Bluetooth: SCO socket layer initialized
+[    1.955907] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    1.957213] Bluetooth: HIDP socket layer initialized
+[    2.035158] NET: Registered protocol family 10
+[    2.076682] NET: Registered protocol family 23
+[    2.086996] IrCOMM protocol (Dag Brattli)
+[    2.308975] mt7601Usta: module license 'unspecified' taints kernel.
+[    2.308994] Disabling lock debugging due to kernel taint
+[    2.351952] rtusb init rtusbSTA --->
+[    2.352064] usbcore: registered new interface driver rtusbSTA
+[    2.371146] Bluetooth: RFCOMM TTY layer initialized
+[    2.371224] Bluetooth: RFCOMM socket layer initialized
+[    2.371235] Bluetooth: RFCOMM ver 1.11
+[    2.371524] systemd-modules-load[93]: Inserted module 'rfcomm'
+[    2.438637] EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+[    2.909383] systemd-journald[87]: Received SIGUSR1
+[    5.208672] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    5.627098] net eth0: initializing cpsw version 1.12 (0)
+[    5.643090] net eth0: phy found : id is : 0x7c0f1
+[    5.643127] libphy: PHY 4a101000.mdio:01 not found
+[    5.648230] net eth0: phy 4a101000.mdio:01 not found on slave 1
+[    5.737073] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[    5.756472] udc musb-hdrc.0.auto: registering UDC driver [g_multi]
+[    5.756596]	gadget: using random self ethernet address
+[    5.757413] usb0: MAC c6:17:39:28:b5:ac
+[    5.757427] usb0: HOST MAC 90:59:af:82:30:00
+[    5.779369] gserial_setup: registered 1 ttyGS* device
+[    5.779546]	lun0: open backing file: /dev/mmcblk0p1
+[    5.784718]	gadget: Mass Storage Function, version: 2009/09/11
+[    5.784741]	gadget: Number of LUNs=1
+[    5.784765]	lun0: LUN: removable file: /dev/mmcblk0p1
+[    5.784777]	gadget: I/O thread pid: 265
+[    5.784801]	gadget: adding config #1 'Multifunction with RNDIS'/bfa0259c
+[    5.784888]	gadget: adding 'rndis'/dcc2c380 to config 'Multifunction with RNDIS'/bfa0259c
+[    5.784916] rndis_register: configNr = 0
+[    5.784925] rndis_set_param_medium: 0 0
+[    5.784937]	gadget: RNDIS: dual speed IN/ep1in OUT/ep1out NOTIFY/ep2in
+[    5.784951]	gadget: adding 'acm'/dcc2c2c0 to config 'Multifunction with RNDIS'/bfa0259c
+[    5.784972]	gadget: acm ttyGS0: dual speed IN/ep3in OUT/ep2out NOTIFY/ep4in
+[    5.784985]	gadget: adding 'Mass Storage Function'/dce85ac0 to config 'Multifunction with RNDIS'/bfa0259c
+[    5.787083]	gadget: cfg 1/bfa0259c speeds: high full
+[    5.787102]	gadget:	  interface 0 = rndis/dcc2c380
+[    5.787112]	gadget:	  interface 1 = rndis/dcc2c380
+[    5.787122]	gadget:	  interface 2 = acm/dcc2c2c0
+[    5.787131]	gadget:	  interface 3 = acm/dcc2c2c0
+[    5.787141]	gadget:	  interface 4 = Mass Storage Function/dce85ac0
+[    5.787157]	gadget: Multifunction Composite Gadget
+[    5.787188]	gadget: g_multi ready
+[    5.787229] musb-hdrc musb-hdrc.0.auto: MUSB HDRC host driver
+[    5.795273] musb-hdrc musb-hdrc.0.auto: new USB bus registered, assigned bus number 2
+[    5.795315] musb-hdrc musb-hdrc.0.auto: supports USB remote wakeup
+[    5.795394] usb usb2: default language 0x0409
+[    5.795429] usb usb2: udev 1, busnum 2, minor = 128
+[    5.795443] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+[    5.795456] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    5.795468] usb usb2: Product: MUSB HDRC host driver
+[    5.795479] usb usb2: Manufacturer: Linux 3.8.13 musb-hcd
+[    5.795490] usb usb2: SerialNumber: musb-hdrc.0.auto
+[    5.805105] usb usb2: usb_probe_device
+[    5.805132] usb usb2: configuration #1 chosen from 1 choice
+[    5.805189] usb usb2: adding 2-0:1.0 (config #1, interface 0)
+[    5.805357] hub 2-0:1.0: usb_probe_interface
+[    5.805370] hub 2-0:1.0: usb_probe_interface - got id
+[    5.805389] hub 2-0:1.0: USB hub found
+[    5.805414] hub 2-0:1.0: 1 port detected
+[    5.805425] hub 2-0:1.0: standalone hub
+[    5.805435] hub 2-0:1.0: individual port power switching
+[    5.805445] hub 2-0:1.0: no over-current protection
+[    5.805454] hub 2-0:1.0: Single TT
+[    5.805467] hub 2-0:1.0: TT requires at most 8 FS bit times (666 ns)
+[    5.805477] hub 2-0:1.0: power on to power good time: 10ms
+[    5.805502] hub 2-0:1.0: local power source is good
+[    5.805568] hub 2-0:1.0: enabling power on all ports
+[    5.906371] hub 2-0:1.0: state 7 ports 1 chg 0000 evt 0000
+[    6.172425] CAUTION: musb: Babble Interrupt Occurred
+[    6.422417] [drm:drm_stub_open],
+[    6.422448] [drm:drm_open_helper], pid = 272, minor = 0
+[    6.422475] [drm:drm_setup],
+[    6.422508] [drm:drm_release], open_count = 1
+[    6.422522] [drm:drm_release], pid = 272, device = 0xe200, open_count = 1
+[    6.422548] [drm:drm_lastclose],
+[    6.422560] [drm:drm_crtc_helper_set_config],
+[    6.422568] [drm:drm_crtc_helper_set_config], [CRTC:3] [NOFB]
+[    6.422583] [drm:drm_lastclose], driver lastclose completed
+[    6.422595] [drm:drm_lastclose], lastclose completed
+[    6.423123] [drm:drm_stub_open],
+[    6.423141] [drm:drm_open_helper], pid = 272, minor = 0
+[    6.423159] [drm:drm_setup],
+[    6.423245] [drm:drm_ioctl], pid=272, cmd=0xc010640c, nr=0x0c, dev 0xe200, auth=1
+[    6.423298] [drm:drm_ioctl], pid=272, cmd=0xc04064a0, nr=0xa0, dev 0xe200, auth=1
+[    6.423319] [drm:drm_mode_getresources], CRTC[1] CONNECTORS[1] ENCODERS[1]
+[    6.423352] [drm:drm_ioctl], pid=272, cmd=0xc04064a0, nr=0xa0, dev 0xe200, auth=1
+[    6.423370] [drm:drm_mode_getresources], CRTC[1] CONNECTORS[1] ENCODERS[1]
+[    6.423434] [drm:drm_ioctl], pid=272, cmd=0xc02064b2, nr=0xb2, dev 0xe200, auth=1
+[    6.423563] [drm:drm_ioctl], pid=272, cmd=0xc01c64ae, nr=0xae, dev 0xe200, auth=1
+[    6.423596] [drm:drm_mode_addfb], [FB:7]
+[    6.423618] [drm:drm_ioctl], pid=272, cmd=0xc00464af, nr=0xaf, dev 0xe200, auth=1
+[    6.423637] [drm:drm_framebuffer_unreference], FB ID: 7
+[    6.431637] [drm:drm_ioctl], pid=272, cmd=0xc00464b4, nr=0xb4, dev 0xe200, auth=1
+[    6.432477] [drm:drm_ioctl], pid=272, cmd=0xc010640c, nr=0x0c, dev 0xe200, auth=1
+[    6.432583] [drm:drm_ioctl], pid=272, cmd=0xc010640c, nr=0x0c, dev 0xe200, auth=1
+[    6.432634] [drm:drm_ioctl], pid=272, cmd=0xc04064a0, nr=0xa0, dev 0xe200, auth=1
+[    6.432655] [drm:drm_mode_getresources], CRTC[1] CONNECTORS[1] ENCODERS[1]
+[    6.432672] [drm:drm_ioctl], pid=272, cmd=0xc04064a0, nr=0xa0, dev 0xe200, auth=1
+[    6.432688] [drm:drm_mode_getresources], CRTC[1] CONNECTORS[1] ENCODERS[1]
+[    6.437661] [drm:drm_ioctl], pid=272, cmd=0xc06864a1, nr=0xa1, dev 0xe200, auth=1
+[    6.437722] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[    6.437737] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[    6.437754] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[    6.441522] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[    6.441574] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[    6.441593] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[    6.441608] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[    6.441808] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[    6.441893] [drm:drm_ioctl], pid=272, cmd=0xc01464a6, nr=0xa6, dev 0xe200, auth=1
+[    6.442303] [drm:drm_ioctl], pid=272, cmd=0xc04064aa, nr=0xaa, dev 0xe200, auth=1
+[    6.442333] [drm:drm_ioctl], pid=272, cmd=0xc04064aa, nr=0xaa, dev 0xe200, auth=1
+[    6.442390] [drm:drm_ioctl], pid=272, cmd=0xc04064aa, nr=0xaa, dev 0xe200, auth=1
+[    6.442416] [drm:drm_ioctl], pid=272, cmd=0xc04064aa, nr=0xaa, dev 0xe200, auth=1
+[    6.442541] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[    6.442558] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[    6.442573] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[    6.445436] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[    6.445487] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[    6.445505] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[    6.445521] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[    6.445720] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[    6.471136] [drm:drm_ioctl], pid=272, cmd=0x641e, nr=0x1e, dev 0xe200, auth=1
+[    6.471182] [drm:drm_ioctl], pid=272, cmd=0xc02064b2, nr=0xb2, dev 0xe200, auth=1
+[    6.486442] [drm:drm_ioctl], pid=272, cmd=0xc02064b2, nr=0xb2, dev 0xe200, auth=1
+[    6.497030] [drm:drm_ioctl], pid=272, cmd=0xc04064aa, nr=0xaa, dev 0xe200, auth=1
+[    6.497074] [drm:drm_ioctl], pid=272, cmd=0xc04064aa, nr=0xaa, dev 0xe200, auth=1
+[    6.497100] [drm:drm_ioctl], pid=272, cmd=0xc04064aa, nr=0xaa, dev 0xe200, auth=1
+[    6.497120] [drm:drm_ioctl], pid=272, cmd=0xc04064aa, nr=0xaa, dev 0xe200, auth=1
+[    6.497668] [drm:drm_ioctl], pid=272, cmd=0x641e, nr=0x1e, dev 0xe200, auth=1
+[    6.497724] [drm:drm_ioctl], pid=272, cmd=0xc06864a2, nr=0xa2, dev 0xe200, auth=1
+[    6.497742] [drm:drm_mode_setcrtc], [CRTC:3]
+[    6.497753] [drm:drm_crtc_helper_set_config],
+[    6.497762] [drm:drm_crtc_helper_set_config], [CRTC:3] [NOFB]
+[    6.643190]	gadget: high-speed config #1: Multifunction with RNDIS
+[    6.643243]	gadget: init rndis
+[    6.643254]	gadget: RNDIS RX/TX early activation ...
+[    6.643290] usb0: qlen 10
+[    6.643300]	gadget: rndis_close
+[    6.643308] rndis_set_param_medium: 0 0
+[    6.643319] rndis_set_param_dev:
+[    6.643333]	gadget: activate acm ttyGS0
+[    6.643348]	gadget: acm ttyGS0 serial state 0000
+[    6.643381]	gadget: set_config: interface 4 (Mass Storage Function) requested delayed status
+[    6.643391]	gadget: delayed_status count 1
+[    6.643464]	gadget: usb_composite_setup_continue
+[    6.643476]	gadget: usb_composite_setup_continue: Completing delayed status
+[    6.644710]	gadget: reset rndis
+[    6.644727] usb0: gether_disconnect
+[    6.644752]	gadget: init rndis
+[    6.644762]	gadget: RNDIS RX/TX early activation ...
+[    6.644779] usb0: qlen 10
+[    6.644788]	gadget: rndis_close
+[    6.644796] rndis_set_param_medium: 0 0
+[    6.644805] rndis_set_param_dev:
+[    6.644919]	gadget: rndis req21.00 v0000 i0000 l28
+[    6.644958] gen_ndis_query_resp: RNDIS_OID_802_3_PERMANENT_ADDRESS
+[    6.645178]	gadget: rndis reqa1.01 v0000 i0000 l1024
+[    6.645444]	gadget: rndis req21.00 v0000 i0000 l28
+[    6.645476] gen_ndis_set_resp: RNDIS_OID_GEN_CURRENT_PACKET_FILTER 0000000c
+[    6.645677]	gadget: rndis reqa1.01 v0000 i0000 l1024
+[    6.649746]	gadget: sending command-failure status
+[    6.656313] [drm:drm_ioctl], pid=272, cmd=0xc06864a2, nr=0xa2, dev 0xe200, auth=1
+[    6.656355] [drm:drm_mode_setcrtc], [CRTC:3]
+[    6.656368] [drm:drm_crtc_helper_set_config],
+[    6.656377] [drm:drm_crtc_helper_set_config], [CRTC:3] [NOFB]
+[    6.656899] [drm:drm_ioctl], pid=272, cmd=0xc01064b3, nr=0xb3, dev 0xe200, auth=1
+[    6.656969] [drm:drm_vm_open_locked], 0xb6f02000,0x00004000
+[    6.656994] [drm:drm_ioctl], pid=272, cmd=0xc01064b3, nr=0xb3, dev 0xe200, auth=1
+[    6.657019] [drm:drm_vm_open_locked], 0xb6912000,0x00180000
+[    6.838459] [drm:drm_vm_open_locked], 0xb6912000,0x00180000
+[    6.838835] [drm:drm_vm_open_locked], 0xb6f02000,0x00004000
+[    6.845357] [drm:drm_vm_close_locked], 0xb6912000,0x00180000
+[    6.845423] [drm:drm_vm_close_locked], 0xb6f02000,0x00004000
+[    6.908956] usb0: eth_open
+[    6.908977] usb0: eth_start
+[    6.909066]	gadget: rndis_open
+[    6.909077] rndis_set_param_medium: 0 4259840
+[    7.535300]	gadget: sending command-failure status
+[    7.539033]	gadget: sending command-failure status
+[    7.540530]	gadget: sending command-failure status
+[    7.961179] [drm:drm_ioctl], pid=272, cmd=0xc01864b1, nr=0xb1, dev 0xe200, auth=1
+[    7.961225] [drm:drm_ioctl], ret = -22
+[    8.152019] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[    8.152054] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[    8.152075] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[    8.152433] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[    8.152466] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[    8.152481] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[    8.152495] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[    8.152683] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[    8.154880] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[    8.154908] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[    8.154928] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[    8.155166] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[    8.155193] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[    8.155208] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[    8.155222] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[    8.155411] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[    8.719208] libphy: 4a101000.mdio:00 - Link is Up - 100/Full
+[    8.719272] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[    8.816869] gs_open: start ttyGS0
+[    8.816939] gs_open: ttyGS0 (dce16000,dc865500)
+[    8.817069] gs_close: ttyGS0 (dce16000,dc865500) ...
+[    8.817083] gs_close: ttyGS0 (dce16000,dc865500) done!
+[    8.819713] gs_open: start ttyGS0
+[    8.819737] gs_open: ttyGS0 (dce16000,dccb1a40)
+[    8.819852] gs_close: ttyGS0 (dce16000,dccb1a40) ...
+[    8.819864] gs_close: ttyGS0 (dce16000,dccb1a40) done!
+[    8.841096] gs_open: start ttyGS0
+[    8.841123] gs_open: ttyGS0 (dce16000,df7d70c0)
+[    8.841288] gs_close: ttyGS0 (dce16000,df7d70c0) ...
+[    8.841300] gs_close: ttyGS0 (dce16000,df7d70c0) done!
+[    8.841545] gs_open: start ttyGS0
+[    8.841557] gs_open: ttyGS0 (dce16000,dce6d180)
+[    9.053965] [drm:drm_vm_open_locked], 0xb6912000,0x00180000
+[    9.054365] [drm:drm_vm_open_locked], 0xb6f02000,0x00004000
+[    9.061629] [drm:drm_vm_close_locked], 0xb6912000,0x00180000
+[    9.061711] [drm:drm_vm_close_locked], 0xb6f02000,0x00004000
+[   10.750111] [drm:output_poll_execute], [CONNECTOR:5:HDMI-A-1] status updated from 2 to 2
+[   18.202656] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[   18.202690] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[   18.202711] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[   18.209145] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[   18.209201] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[   18.209221] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[   18.209237] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[   18.209451] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[   18.225501] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[   18.225536] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[   18.225556] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[   18.228601] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[   18.228653] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[   18.228672] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[   18.228689] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[   18.228890] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[   18.239936] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[   18.239972] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[   18.239994] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[   18.241744] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[   18.241787] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[   18.241803] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[   18.241819] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[   18.242094] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[   18.248199] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[   18.248233] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[   18.248253] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[   18.249731] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[   18.249778] [drm:drm_ioctl], pid=272, cmd=0xc05064a7, nr=0xa7, dev 0xe200, auth=1
+[   18.249795] [drm:drm_mode_getconnector], [CONNECTOR:5:?]
+[   18.249809] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1]
+[   18.252421] [drm:drm_helper_probe_single_connector_modes], [CONNECTOR:5:HDMI-A-1] disconnected
+[   20.781476] [drm:output_poll_execute], [CONNECTOR:5:HDMI-A-1] status updated from 2 to 2
+

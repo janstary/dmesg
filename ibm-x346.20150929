@@ -1,0 +1,130 @@
+OpenBSD 5.8-current (GENERIC.MP) #0: Tue Sep 29 16:51:32 CEST 2015
+    root@ibm.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8572944384 (8175MB)
+avail mem = 8309014528 (7924MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.3 @ 0xf8779 (53 entries)
+bios0: vendor IBM version "-[KPE142AUS-1.16]-" date 01/26/2007
+bios0: IBM eserver xSeries 346 -[884045Y]-
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S4 S5
+acpi0: tables DSDT FACP APIC MCFG SSDT
+acpi0: wakeup devices PCI0(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Xeon(TM) CPU 3.60GHz, 3600.67 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,EST,TM2,CNXT-ID,CX16,xTPR,NXE,LONG,PERF
+cpu0: 2MB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 200MHz
+cpu0: mwait min=64, max=64
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Xeon(TM) CPU 3.60GHz, 3600.14 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,EST,TM2,CNXT-ID,CX16,xTPR,NXE,LONG,PERF
+cpu1: 2MB 64b/line 8-way L2 cache
+cpu1: smt 1, core 0, package 0
+ioapic0 at mainbus0: apid 14 pa 0xfec00000, version 20, 24 pins
+ioapic1 at mainbus0: apid 13 pa 0xfec84000, version 20, 24 pins
+ioapic2 at mainbus0: apid 12 pa 0xfec84400, version 20, 24 pins
+ioapic3 at mainbus0: apid 11 pa 0xfec80000, version 20, 24 pins
+ioapic4 at mainbus0: apid 10 pa 0xfec80400, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-9
+acpiprt0 at acpi0: bus 3 (PCI8)
+acpiprt1 at acpi0: bus 4 (PCI9)
+acpiprt2 at acpi0: bus 8 (PCI6)
+acpiprt3 at acpi0: bus 9 (PCI7)
+acpiprt4 at acpi0: bus 1 (PCIS)
+acpiprt5 at acpi0: bus 0 (PCI0)
+acpicpu0 at acpi0: C1(@1 halt!), FVS, 3600, 3200, 3200, 2800 MHz
+acpicpu1 at acpi0: C1(@1 halt!), FVS, 3600, 3200, 3200, 2800 MHz
+ipmi at mainbus0 not configured
+pci0 at mainbus0 bus 0
+0:0:0: mem address conflict 0xff000000/0x1000
+pchb0 at pci0 dev 0 function 0 "Intel E7520 Host" rev 0x0c
+"Intel E7520 Error Reporting" rev 0x0c at pci0 dev 0 function 1 not configured
+ppb0 at pci0 dev 2 function 0 "Intel E7520 PCIE" rev 0x0c
+pci1 at ppb0 bus 2
+ppb1 at pci1 dev 0 function 0 "Intel 6700PXH PCIE-PCIX" rev 0x09
+pci2 at ppb1 bus 3
+ppb2 at pci1 dev 0 function 2 "Intel 6700PXH PCIE-PCIX" rev 0x09
+pci3 at ppb2 bus 4
+ppb3 at pci0 dev 4 function 0 "Intel E7520 PCIE" rev 0x0c
+pci4 at ppb3 bus 5
+bge0 at pci4 dev 0 function 0 "Broadcom BCM5721" rev 0x11, BCM5750 B1 (0x4101): apic 14 int 16, address 00:14:5e:69:2f:b2
+brgphy0 at bge0 phy 1: BCM5750 10/100/1000baseT PHY, rev. 0
+ppb4 at pci0 dev 5 function 0 "Intel E7520 PCIE" rev 0x0c
+pci5 at ppb4 bus 6
+bge1 at pci5 dev 0 function 0 "Broadcom BCM5721" rev 0x11, BCM5750 B1 (0x4101): apic 14 int 16, address 00:14:5e:69:2f:b3
+brgphy1 at bge1 phy 1: BCM5750 10/100/1000baseT PHY, rev. 0
+ppb5 at pci0 dev 6 function 0 "Intel E7520 PCIE" rev 0x0c
+pci6 at ppb5 bus 7
+ppb6 at pci6 dev 0 function 0 "Intel IOP332 PCIE-PCIX" rev 0x07
+pci7 at ppb6 bus 8
+ips0 at pci7 dev 14 function 0 "Adaptec ServeRAID" rev 0x07: apic 13 int 14
+ips0: ServeRAID 7k, FW 7.12.02, BIOS 7.12.02, 64 cmds, 2 LDs
+scsibus1 at ips0: 2 targets
+sd0 at scsibus1 targ 0 lun 0: <IBM, LD0 RAID1, 1.0> SCSI2 0/direct fixed
+sd0: 140013MB, 512 bytes/sector, 286746624 sectors
+sd1 at scsibus1 targ 1 lun 0: <IBM, LD1 RAID5, 1.0> SCSI2 0/direct fixed
+sd1: 280026MB, 512 bytes/sector, 573493248 sectors
+scsibus2 at ips0: 9 targets
+safte0 at scsibus2 targ 8 lun 0: <IBM, 40K6480a S320 0, 1> SCSI2 3/processor fixed
+ppb7 at pci6 dev 0 function 2 "Intel IOP332 PCIE-PCIX" rev 0x07
+pci8 at ppb7 bus 9
+"Intel E7520 Config" rev 0x0c at pci0 dev 8 function 0 not configured
+uhci0 at pci0 dev 29 function 0 "Intel 82801EB/ER USB" rev 0x02: apic 14 int 16
+uhci1 at pci0 dev 29 function 1 "Intel 82801EB/ER USB" rev 0x02: apic 14 int 19
+ehci0 at pci0 dev 29 function 7 "Intel 82801EB/ER USB2" rev 0x02: apic 14 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb8 at pci0 dev 30 function 0 "Intel 82801BA Hub-to-PCI" rev 0xc2
+pci9 at ppb8 bus 1
+radeondrm0 at pci9 dev 6 function 0 "ATI Radeon VE" rev 0x00
+drm0 at radeondrm0
+radeondrm0: apic 14 int 20
+pcib0 at pci0 dev 31 function 0 "Intel 82801EB/ER LPC" rev 0x02
+pciide0 at pci0 dev 31 function 1 "Intel 82801EB/ER IDE" rev 0x02: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus3 at atapiscsi0: 2 targets
+cd0 at scsibus3 targ 0 lun 0: <MATSHITA, UJDA770 DVD/CDRW, 1.20> ATAPI 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+ichiic0 at pci0 dev 31 function 3 "Intel 82801EB/ER SMBus" rev 0x02: apic 14 int 17
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 512MB DDR2 SDRAM registered ECC PC2-3200CL5
+spdmem1 at iic0 addr 0x51: 512MB DDR2 SDRAM registered ECC PC2-3200CL5
+spdmem2 at iic0 addr 0x52: 512MB DDR2 SDRAM registered ECC PC2-3200CL5
+spdmem3 at iic0 addr 0x53: 512MB DDR2 SDRAM registered ECC PC2-3200CL5
+spdmem4 at iic0 addr 0x54: 1GB DDR2 SDRAM registered ECC PC2-3200CL5
+spdmem5 at iic0 addr 0x55: 1GB DDR2 SDRAM registered ECC PC2-3200CL5
+spdmem6 at iic0 addr 0x56: 2GB DDR2 SDRAM registered ECC PC2-3200CL4
+spdmem7 at iic0 addr 0x57: 2GB DDR2 SDRAM registered ECC PC2-3200CL4
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vscsi0 at root
+scsibus4 at vscsi0: 256 targets
+softraid0 at root
+scsibus5 at softraid0: 256 targets
+root on sd0a (19e502a2be368460.a) swap on sd0b dump on sd0b
+radeon_i2c_put_byte stub
+radeon_i2c_put_byte stub
+radeon_i2c_put_byte stub
+radeondrm0: 1024x768
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)

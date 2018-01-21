@@ -1,0 +1,114 @@
+OpenBSD 5.0 (GENERIC) #32: Thu Aug  4 16:54:29 MDT 2011
+    deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC
+RTC BIOS diagnostic error 80<clock_battery>
+cpu0: Intel(R) Atom(TM) CPU N455 @ 1.66GHz ("GenuineIntel" 686-class) 1.67 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,EST,TM2,SSSE3,CX16,xTPR,PDCM,MOVBE
+real mem  = 1061302272 (1012MB)
+avail mem = 1033887744 (985MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 02/15/11, SMBIOS rev. 2.6 @ 0xe80a0 (36 entries)
+bios0: vendor Acer version "V3.15(DDR3)" date 02/15/2011
+bios0: Acer AOD255E
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET APIC MCFG SLIC BOOT SSDT WDAT
+acpi0: wakeup devices UHC1(S3) UHC2(S3) UHC3(S3) UHC4(S3) ECHI(S3) EXP1(S4) EXP2(S0) EXP3(S4) EXP4(S4) AZAL(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: apic clock running at 166MHz
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 0, remapped to apid 4
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (EXP1)
+acpiprt2 at acpi0: bus 2 (EXP2)
+acpiprt3 at acpi0: bus -1 (EXP3)
+acpiprt4 at acpi0: bus -1 (EXP4)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C3, C2, C1, PSS
+acpipwrres0 at acpi0: FN00
+acpitz0 at acpi0: critical temperature is 100 degC
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: SLPB
+acpibtn2 at acpi0: LID0
+acpibat0 at acpi0: BAT0 model "13848633228217409" type Lion oem "SANYO "
+acpiac0 at acpi0: AC unit offline
+acpivideo0 at acpi0: OVGA
+acpivout0 at acpivideo0: DD02
+bios0: ROM list: 0xc0000/0xda00! 0xce000/0x1000
+cpu0: Enhanced SpeedStep 1663 MHz: speeds: 1666, 1333, 1000 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 "Intel Pineview DMI" rev 0x00
+vga1 at pci0 dev 2 function 0 "Intel Pineview Video" rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+intagp0 at vga1
+agp0 at intagp0: aperture at 0x40000000, size 0x10000000
+inteldrm0 at vga1: apic 4 int 16
+drm0 at inteldrm0
+"Intel Pineview Video" rev 0x00 at pci0 dev 2 function 1 not configured
+azalia0 at pci0 dev 27 function 0 "Intel 82801GB HD Audio" rev 0x02: msi
+azalia0: codecs: Realtek ALC272
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 "Intel 82801GB PCIE" rev 0x02: apic 4 int 16
+pci1 at ppb0 bus 1
+alc0 at pci1 dev 0 function 0 "Attansic Technology L2C" rev 0xc1: msi, address 1c:75:08:ec:e7:16
+atphy0 at alc0 phy 0: F2 10/100 PHY, rev. 4
+ppb1 at pci0 dev 28 function 1 "Intel 82801GB PCIE" rev 0x02: apic 4 int 17
+pci2 at ppb1 bus 2
+athn0 at pci2 dev 0 function 0 "Atheros AR9285" rev 0x01: apic 4 int 17
+athn0: AR9285 rev 2 (1T1R), ROM rev 14, address ec:55:f9:25:2d:e7
+uhci0 at pci0 dev 29 function 0 "Intel 82801GB USB" rev 0x02: apic 4 int 18
+uhci1 at pci0 dev 29 function 1 "Intel 82801GB USB" rev 0x02: apic 4 int 20
+uhci2 at pci0 dev 29 function 2 "Intel 82801GB USB" rev 0x02: apic 4 int 21
+uhci3 at pci0 dev 29 function 3 "Intel 82801GB USB" rev 0x02: apic 4 int 22
+ehci0 at pci0 dev 29 function 7 "Intel 82801GB USB" rev 0x02: apic 4 int 22
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb2 at pci0 dev 30 function 0 "Intel 82801BAM Hub-to-PCI" rev 0xe2
+pci3 at ppb2 bus 5
+pcib0 at pci0 dev 31 function 0 "Intel Tigerpoint LPC" rev 0x02
+ahci0 at pci0 dev 31 function 2 "Intel 82801GR AHCI" rev 0x02: msi, AHCI 1.1
+ahci0: PHY offline on port 1
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: <ATA, TOSHIBA MK2565GS, GJ00> SCSI3 0/direct fixed naa.500003931b2811b8
+sd0: 238475MB, 512 bytes/sector, 488397168 sectors
+ichiic0 at pci0 dev 31 function 3 "Intel 82801GB SMBus" rev 0x02: apic 4 int 17
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 1GB DDR3 SDRAM PC3-10600 SO-DIMM
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+mtrr: Pentium Pro MTRR support
+umass0 at uhub0 port 3 configuration 1 interface 0 "Generic MP3 Player" rev 2.00/11.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: <Generic, MP3 Player, 1100> SCSI0 0/direct removable serial.0aa66060000000000001
+sd1: 1932MB, 512 bytes/sector, 3957504 sectors
+uvideo0 at uhub0 port 4 configuration 1 interface 0 "SuYin WebCam" rev 2.00/1.00 addr 3
+video0 at uvideo0
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd1a (c07697ddbcc1d8f6.a) swap on sd1b dump on sd1b
