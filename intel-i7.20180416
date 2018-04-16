@@ -1,7 +1,7 @@
 OpenBSD 6.3-current (GENERIC.MP) #0: Mon Apr 16 16:10:41 CEST 2018
     hans@box.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
 real mem = 8486780928 (8093MB)
-avail mem = 8222420992 (7841MB)
+avail mem = 8222437376 (7841MB)
 mpath0 at root
 scsibus0 at mpath0: 256 targets
 mainbus0 at root
@@ -17,7 +17,7 @@ acpihpet0 at acpi0: 14318179 Hz
 acpimcfg0 at acpi0 addr 0xf4000000, bus 0-63
 acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
 cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz, 3492.52 MHz
+cpu0: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz, 3492.61 MHz
 cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,SENSOR,ARAT,MELTDOWN
 cpu0: 256KB 64b/line 8-way L2 cache
 cpu0: smt 0, core 0, package 0
@@ -122,14 +122,20 @@ ahci0: device on port 0 didn't come ready, TFD: 0x80<BSY>
 ahci0: CLO did not complete
 ahci0: port 0: 3.0Gb/s
 ahci0: port 1: 3.0Gb/s
+ahci0: port 2: 3.0Gb/s
 ahci0: port 3: 3.0Gb/s
+ahci0: port 4: 3.0Gb/s
 scsibus1 at ahci0: 32 targets
 sd0 at scsibus1 targ 0 lun 0: <ATA, INTEL SSDSA2M040, 2CV1> SCSI3 0/direct fixed naa.50015179593bd675
 sd0: 38166MB, 512 bytes/sector, 78165360 sectors, thin
 sd1 at scsibus1 targ 1 lun 0: <ATA, ST9320320AS, SD03> SCSI3 0/direct fixed naa.5000c50013baac5f
 sd1: 305245MB, 512 bytes/sector, 625142448 sectors
-sd2 at scsibus1 targ 3 lun 0: <ATA, ST1500DL003-9VT1, CC32> SCSI3 0/direct fixed naa.5000c5002f119d73
-sd2: 1430799MB, 512 bytes/sector, 2930277168 sectors
+sd2 at scsibus1 targ 2 lun 0: <ATA, ST1000LM024 HN-M, 2AR1> SCSI3 0/direct fixed naa.50004cf207132b48
+sd2: 953868MB, 512 bytes/sector, 1953523055 sectors
+sd3 at scsibus1 targ 3 lun 0: <ATA, SAMSUNG HD105SI, 1AJ1> SCSI3 0/direct fixed naa.50024e920592fbeb
+sd3: 953869MB, 512 bytes/sector, 1953525168 sectors
+sd4 at scsibus1 targ 4 lun 0: <ATA, ST1500DL003-9VT1, CC32> SCSI3 0/direct fixed naa.5000c5002f119d73
+sd4: 1430799MB, 512 bytes/sector, 2930277168 sectors
 ichiic0 at pci0 dev 31 function 3 "Intel 6 Series SMBus" rev 0x05: apic 2 int 18
 iic0 at ichiic0
 spdmem0 at iic0 addr 0x51: 4GB DDR3 SDRAM PC3-10600
