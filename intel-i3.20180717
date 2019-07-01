@@ -1,0 +1,238 @@
+NetBSD 8.0 (GENERIC) #0: Tue Jul 17 14:59:51 UTC 2018
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
+total memory = 8069 MB
+avail memory = 7812 MB
+timecounter: Timecounters tick every 10.000 msec
+Kernelized RAIDframe activated
+running cgd selftest aes-xts-256 aes-xts-512 done
+userconf: configure system autoconfiguration:
+uc> disable uhub
+[383] uhub* disabled
+[384] uhub* disabled
+uc> quit
+Continuing...
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+MSI MS-7733 (2.0)
+mainbus0 (root)
+ACPI: RSDP 0x00000000000F0490 000024 (v02 ALASKA)
+ACPI: XSDT 0x00000000D939B078 00006C (v01 ALASKA A M I    01072009 AMI  00010013)
+ACPI: FACP 0x00000000D93A49F8 00010C (v05 ALASKA A M I    01072009 AMI  00010013)
+ACPI: DSDT 0x00000000D939B178 009880 (v02 ALASKA A M I    00000021 INTL 20051117)
+ACPI: FACS 0x00000000D93A8080 000040
+ACPI: APIC 0x00000000D93A4B08 000072 (v03 ALASKA A M I    01072009 AMI  00010013)
+ACPI: FPDT 0x00000000D93A4B80 000044 (v01 ALASKA A M I    01072009 AMI  00010013)
+ACPI: MCFG 0x00000000D93A4BC8 00003C (v01 ALASKA A M I    01072009 MSFT 00000097)
+ACPI: SSDT 0x00000000D93A4C08 0007CA (v01 Intel_ AoacTabl 00001000 INTL 20091112)
+ACPI: HPET 0x00000000D93A53D8 000038 (v01 ALASKA A M I    01072009 AMI. 00000005)
+ACPI: SSDT 0x00000000D93A5410 00036D (v01 SataRe SataTabl 00001000 INTL 20091112)
+ACPI: SSDT 0x00000000D93A5780 0008E4 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000D93A6068 000A92 (v01 PmRef  CpuPm    00003000 INTL 20051117)
+ACPI: Executed 1 blocks of module-level executable AML code
+ACPI: 5 ACPI AML tables successfully acquired and loaded
+ioapic0 at mainbus0 apid 2: pa 0xfec00000, version 0x20, 24 pins
+cpu0 at mainbus0 apid 0
+cpu0: Intel(R) Core(TM) i3-3220T CPU @ 2.80GHz, id 0x306a9
+cpu0: package 0, core 0, smt 0
+cpu1 at mainbus0 apid 2
+cpu1: Intel(R) Core(TM) i3-3220T CPU @ 2.80GHz, id 0x306a9
+cpu1: package 0, core 1, smt 0
+cpu2 at mainbus0 apid 1
+cpu2: Intel(R) Core(TM) i3-3220T CPU @ 2.80GHz, id 0x306a9
+cpu2: package 0, core 0, smt 1
+cpu3 at mainbus0 apid 3
+cpu3: Intel(R) Core(TM) i3-3220T CPU @ 2.80GHz, id 0x306a9
+cpu3: package 0, core 1, smt 1
+acpi0 at mainbus0: Intel ACPICA 20170303
+acpi0: X/RSDT: OemId <ALASKA,   A M I,01072009>, AslId <AMI ,00010013>
+acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFFE810E6E2008 00083B (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFFE810E698808 000303 (v01 PmRef  ApIst    00003000 INTL 20051117)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFFE810E591088 000119 (v01 PmRef  ApCst    00003000 INTL 20051117)
+acpi0: SCI interrupting at int 9
+timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
+hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
+timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
+acpiec0 at acpi0 (H_EC, PNP0C09-1)acpiec0: unable to evaluate _GPE: AE_NOT_FOUND
+TPMX (PNP0C01) at acpi0 not configured
+FWHD (INT0800) at acpi0 not configured
+LDRC (PNP0C02) at acpi0 not configured
+attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
+CWDT (INT3F0D) at acpi0 not configured
+SIO1 (PNP0C02) at acpi0 not configured
+pckbc1 at acpi0 (PS2K, PNP0303) (kbd port): io 0x60,0x64 irq 1
+RMSC (PNP0C02) at acpi0 not configured
+acpivga0 at acpi0 (GFX0): ACPI Display Adapter
+acpiout0 at acpivga0 (DD01, 0x0100): ACPI Display Output Device
+acpiout1 at acpivga0 (DD02, 0x0400): ACPI Display Output Device
+acpiout1: brightness levels: [0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100]
+acpiout2 at acpivga0 (DD03, 0x0300): ACPI Display Output Device
+acpiout3 at acpivga0 (DD04, 0x0301): ACPI Display Output Device
+acpiout4 at acpivga0 (DD05, 0x0302): ACPI Display Output Device
+acpiout5 at acpivga0 (DD06, 0x0303): ACPI Display Output Device
+acpiout6 at acpivga0 (DD07, 0x0304): ACPI Display Output Device
+acpiout7 at acpivga0 (DD08, 0x0305): ACPI Display Output Device
+acpivga0: unknown output device acpiout0
+acpivga0: unknown output device acpiout2
+acpivga0: unknown output device acpiout3
+acpivga0: unknown output device acpiout4
+acpivga0: unknown output device acpiout5
+acpivga0: unknown output device acpiout6
+acpivga0: unknown output device acpiout7
+acpivga0: connected output devices:
+acpivga0:   0x0400 (acpiout1): Unknown Output Device, head 0
+PDRC (PNP0C02) at acpi0 not configured
+acpibut0 at acpi0 (PWRB, PNP0C0C-170): ACPI Power Button
+MEM2 (PNP0C01) at acpi0 not configured
+IAOE (INT33A0) at acpi0 not configured
+acpifan0 at acpi0 (FAN0, PNP0C0B-0): ACPI Fan
+acpifan1 at acpi0 (FAN1, PNP0C0B-1): ACPI Fan
+acpifan2 at acpi0 (FAN2, PNP0C0B-2): ACPI Fan
+acpifan3 at acpi0 (FAN3, PNP0C0B-3): ACPI Fan
+acpifan4 at acpi0 (FAN4, PNP0C0B-4): ACPI Fan
+acpitz0 at acpi0 (TZ00)
+acpitz0: active cooling level 0: 87.0C
+acpitz0: active cooling level 1: 55.0C
+acpitz0: active cooling level 2: 0.0C
+acpitz0: active cooling level 3: 0.0C
+acpitz0: active cooling level 4: 0.0C
+acpitz0: levels: critical 92.0 C
+acpitz1 at acpi0 (TZ01): cpu0 cpu1 cpu2 cpu3
+acpitz1: levels: critical 92.0 C, passive 92.0 C, passive cooling
+ACPI: Enabled 4 GPEs in block 00 to 3F
+pckbd0 at pckbc1 (kbd slot)
+pckbc1: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+pchb0 at pci0 dev 0 function 0: vendor 8086 product 0150 (rev. 0x09)
+i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 0152 (rev. 0x09)
+drm: Memory usable by graphics device = 2048M
+drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
+drm: Driver supports precise vblank timestamp query.
+i915drmkms0: interrupting at ioapic0 pin 16 (i915)
+intelfb0 at i915drmkms0
+i915drmkms0: info: registered panic notifier
+intelfb0: framebuffer at 0xffff8000ace54000, size 1920x1080, depth 32, stride 7680
+wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+xhci0 at pci0 dev 20 function 0: vendor 8086 product 1e31 (rev. 0x04)
+xhci0: interrupting at msi0 vec 0
+xhci0: xHCI version 1.0
+usb0 at xhci0: USB revision 3.0
+usb1 at xhci0: USB revision 2.0
+vendor 8086 product 1e3a (miscellaneous communications, revision 0x04) at pci0 dev 22 function 0 not configured
+ehci0 at pci0 dev 26 function 0: vendor 8086 product 1e2d (rev. 0x04)
+ehci0: interrupting at ioapic0 pin 16
+ehci0: EHCI version 1.0
+usb2 at ehci0: USB revision 2.0
+hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
+hdaudio0: interrupting at msi1 vec 0
+hdafg0 at hdaudio0: vendor 10ec product 0892
+hdafg0: DAC00 2ch: Speaker [Jack]
+hdafg0: DAC01 2ch: HP Out [Jack]
+hdafg0: DIG02 2ch: SPDIF Out [Jack]
+hdafg0: ADC03 2ch: Line In [Jack], Mic In [Jack]
+hdafg0: ADC04 2ch: Mic In [Jack]
+hdafg0: 2ch/2ch 32000Hz 44100Hz 48000Hz 88200Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
+audio0 at hdafg0: full duplex, playback, capture, mmap, independent
+hdafg0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
+hdafg0: Latency: 128 milliseconds
+spkr0 at audio0: PC Speaker (synthesized)
+hdafg1 at hdaudio0: vendor 8086 product 2806
+hdafg1: DP00 8ch: Digital Out [Jack]
+hdafg1: 8ch/0ch 48000Hz PCM16*
+ppb0 at pci0 dev 28 function 0: vendor 8086 product 1e10 (rev. 0xc4)
+ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
+pci1 at ppb0 bus 1
+pci1: i/o space, memory space enabled, rd/line, wr/inv ok
+ppb1 at pci0 dev 28 function 1: vendor 8086 product 1e12 (rev. 0xc4)
+ppb1: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
+ppb1: link is x1 @ 2.5GT/s
+pci2 at ppb1 bus 2
+pci2: i/o space, memory space enabled, rd/line, wr/inv ok
+re0 at pci2 dev 0 function 0: RealTek 8168/8111 PCIe Gigabit Ethernet (rev. 0x06)
+re0: interrupting at msi2 vec 0
+re0: Ethernet address d4:3d:7e:38:62:c1
+re0: using 256 tx descriptors
+rgephy0 at re0 phy 7: RTL8169S/8110S/8211 1000BASE-T media interface, rev. 5
+rgephy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+ehci1 at pci0 dev 29 function 0: vendor 8086 product 1e26 (rev. 0x04)
+ehci1: interrupting at ioapic0 pin 23
+ehci1: EHCI version 1.0
+usb3 at ehci1: USB revision 2.0
+ichlpcib0 at pci0 dev 31 function 0: vendor 8086 product 1e44 (rev. 0x04)
+timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
+ichlpcib0: 24-bit timer
+tco0 at ichlpcib0: TCO (watchdog) timer configured.
+tco0: Min/Max interval 1/367 seconds
+ahcisata0 at pci0 dev 31 function 2: vendor 8086 product 1e02 (rev. 0x04)
+ahcisata0: interrupting at ioapic0 pin 19
+ahcisata0: 64-bit DMA
+ahcisata0: AHCI revision 1.30, 6 ports, 32 slots, CAP 0xc730ff45<EMS,PSC,SSC,PMD,ISS=0x3=Gen3,SCLO,SAL,SALP,SNCQ,S64A>
+atabus0 at ahcisata0 channel 2
+atabus1 at ahcisata0 channel 4
+atabus2 at ahcisata0 channel 5
+ichsmb0 at pci0 dev 31 function 3: vendor 8086 product 1e22 (rev. 0x04)
+ichsmb0: interrupting at ioapic0 pin 18
+iic0 at ichsmb0: I2C bus
+isa0 at ichlpcib0
+lpt0 at isa0 port 0x378-0x37b irq 7
+pcppi0 at isa0 port 0x61
+spkr1 at pcppi0: PC Speaker
+midi0 at pcppi0: PC speaker
+sysbeep0 at pcppi0
+attimer1: attached to pcppi0
+acpicpu0 at cpu0: ACPI CPU
+acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
+acpicpu0: C3: FFH, lat  80 us, pow   350 mW
+acpicpu0: P0: FFH, lat  10 us, pow 35000 mW, 2800 MHz
+acpicpu0: P1: FFH, lat  10 us, pow 33218 mW, 2700 MHz
+acpicpu0: P2: FFH, lat  10 us, pow 31470 mW, 2600 MHz
+acpicpu0: P3: FFH, lat  10 us, pow 30093 mW, 2500 MHz
+acpicpu0: P4: FFH, lat  10 us, pow 28408 mW, 2400 MHz
+acpicpu0: P5: FFH, lat  10 us, pow 27087 mW, 2300 MHz
+acpicpu0: P6: FFH, lat  10 us, pow 25469 mW, 2200 MHz
+acpicpu0: P7: FFH, lat  10 us, pow 24202 mW, 2100 MHz
+acpicpu0: P8: FFH, lat  10 us, pow 22640 mW, 2000 MHz
+acpicpu0: P9: FFH, lat  10 us, pow 21110 mW, 1900 MHz
+acpicpu0: P10: FFH, lat  10 us, pow 19923 mW, 1800 MHz
+acpicpu0: P11: FFH, lat  10 us, pow 18457 mW, 1700 MHz
+acpicpu0: P12: FFH, lat  10 us, pow 17321 mW, 1600 MHz
+coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=91
+acpicpu1 at cpu1: ACPI CPU
+coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=91
+acpicpu2 at cpu2: ACPI CPU
+acpicpu3 at cpu3: ACPI CPU
+DRM error in cpt_serr_int_handler: PCH transcoder A FIFO underrun
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+timecounter: Timecounter "TSC" frequency 2800202200 Hz quality 3000
+usb0: root device is not a hub
+usb1: root device is not a hub
+IPsec: Initialized Security Association Processing.
+usb2: root device is not a hub
+usb3: root device is not a hub
+ahcisata0 port 2: device present, speed: 3.0Gb/s
+drm: Enabling RC6 states: RC6 on, RC6p on, RC6pp off
+wd0 at atabus0 drive 0
+wd0: <ADATA SX300>
+wd0: drive supports 16-sector PIO transfers, LBA48 addressing
+wd0: 61057 MB, 124053 cyl, 16 head, 63 sec, 512 bytes/sect x 125045424 sectors
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133)
+wd0(ahcisata0:2:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA)
+pad0: outputs: 44100Hz, 16-bit, stereo
+audio1 at pad0: half duplex, playback, capture, mmap
+pad0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 44100
+pad0: Latency: 139 milliseconds
+spkr2 at audio1: PC Speaker (synthesized)
+WARNING: 12 errors while detecting hardware; check system log.
+boot device: wd0
+root on wd0a dumps on wd0b
+root file system type: ffs
+kern.module.path=/stand/amd64/8.0/modules
+wsdisplay0: screen 1 added (default, vt100 emulation)
+wsdisplay0: screen 2 added (default, vt100 emulation)
+wsdisplay0: screen 3 added (default, vt100 emulation)
+wsdisplay0: screen 4 added (default, vt100 emulation)
