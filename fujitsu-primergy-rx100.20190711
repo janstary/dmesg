@@ -1,0 +1,66 @@
+OpenBSD 6.5-current (GENERIC) #99: Thu Jul 11 17:59:00 MDT 2019
+    deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC
+real mem  = 1609908224 (1535MB)
+avail mem = 1564942336 (1492MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 11/28/03, BIOS32 rev. 0 @ 0xf0230, SMBIOS rev. 2.3 @ 0xfab20 (43 entries)
+bios0: vendor FSC version "V4.1 R02-A3F5.1483   EN" date 11/28/2003
+bios0: FUJITSU SIEMENS PRIMERGY RX100
+acpi0 at bios0: ACPI 1.0
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP APIC SPCR
+acpi0: wakeup devices PCI0(S1) PS2M(S1) KBC0(S1) RTC0(S4) COM1(S4) USB0(S1)
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Pentium(R) 4 CPU 2.66GHz ("GenuineIntel" 686-class) 2.67 GHz, 0f-02-09
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,CNXT-ID,xTPR,PERF,MELTDOWN
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 133MHz
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 11, 16 pins
+ioapic1 at mainbus0: apid 2 pa 0xfec01000, version 11, 16 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpicpu0 at acpi0: C1(@1 halt!)
+"PNP0A03" at acpi0 not configured
+acpicmos0 at acpi0
+acpibtn0 at acpi0: PWBT
+bios0: ROM list: 0xc0000/0x8000 0xc8000/0xd000 0xd5000/0xb800
+ipmi at mainbus0 not configured
+pci0 at mainbus0 bus 0: configuration mode 1 (no bios)
+pchb0 at pci0 dev 0 function 0 "ServerWorks GCNB-LE Host" rev 0x32
+pchb1 at pci0 dev 0 function 1 "ServerWorks GCNB-LE Host" rev 0x00
+vga1 at pci0 dev 4 function 0 "ATI Rage XL" rev 0x27
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+em0 at pci0 dev 8 function 0 "Intel 82540EM" rev 0x02: apic 2 int 5, address 00:0a:e4:07:46:42
+fxp0 at pci0 dev 12 function 0 "Intel 8255x" rev 0x0d, i82550: apic 2 int 6, address 00:0a:e4:07:46:43
+inphy0 at fxp0 phy 1: i82555 10/100 PHY, rev. 4
+piixpm0 at pci0 dev 15 function 0 "ServerWorks CSB6" rev 0xa0: polling
+iic0 at piixpm0
+spdmem0 at iic0 addr 0x50: 512MB DDR SDRAM registered ECC PC2100CL2.5
+spdmem1 at iic0 addr 0x52: 512MB DDR SDRAM registered ECC PC2100CL2.5
+spdmem2 at iic0 addr 0x54: 512MB DDR SDRAM registered ECC PC2300CL2.5
+pciide0 at pci0 dev 15 function 1 "ServerWorks CSB6 RAID/IDE" rev 0xa0: DMA
+wd0 at pciide0 channel 0 drive 0: <WDC WD5000AAKB-00H8A0>
+wd0: 16-sector PIO, LBA48, 476940MB, 976773168 sectors
+wd0(pciide0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5
+ohci0 at pci0 dev 15 function 2 "ServerWorks CSB6 USB" rev 0x05: couldn't establish interrupt at apic 1 int 15
+pchb2 at pci0 dev 15 function 3 "ServerWorks GCLE-2 Host" rev 0x00
+isa0 at mainbus0
+isadma0 at isa0
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on wd0a (538e512fdb1a3a7b.a) swap on wd0b dump on wd0b
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec

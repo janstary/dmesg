@@ -1,0 +1,94 @@
+OpenBSD 6.5-current (GENERIC) #0: Thu Jun  6 12:46:47 CEST 2019
+    hans@bbb.stare.cz:/usr/src/sys/arch/armv7/compile/GENERIC
+real mem  = 477818880 (455MB)
+avail mem = 458125312 (436MB)
+mainbus0 at root: TI AM335x BeagleBone Black
+cpu0 at mainbus0: ARM Cortex-A8 r3p2 (ARMv7)
+cpu0: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu0: 32KB(64b/l,4way) I-cache, 32KB(64b/l,4way) wr-back D-cache
+omap0 at mainbus0
+prcm0 at omap0 rev 0.2
+dmtimer0 at omap0 rev 3.1
+dmtimer1 at omap0 rev 3.1
+simplebus0 at mainbus0: "ocp"
+simplebus1 at simplebus0: "l4_wkup"
+"wkup_m3" at simplebus1 not configured
+simplebus2 at simplebus1: "prcm"
+"l4_per_cm" at simplebus2 not configured
+"l4_wkup_cm" at simplebus2 not configured
+"mpu_cm" at simplebus2 not configured
+"l4_rtc_cm" at simplebus2 not configured
+"gfx_l3_cm" at simplebus2 not configured
+"l4_cefuse_cm" at simplebus2 not configured
+simplebus3 at simplebus1: "scm"
+syscon0 at simplebus3: "scm_conf"
+pinctrl0 at simplebus3
+"wkup_m3_ipc" at simplebus3 not configured
+"dma-router" at simplebus3 not configured
+intc0 at simplebus0 rev 5.0
+"edma" at simplebus0 not configured
+"tptc" at simplebus0 not configured
+"tptc" at simplebus0 not configured
+"tptc" at simplebus0 not configured
+omgpio0 at simplebus0: rev 0.1
+gpio0 at omgpio0: 32 pins
+omgpio1 at simplebus0: rev 0.1
+gpio1 at omgpio1: 32 pins
+omgpio2 at simplebus0: rev 0.1
+gpio2 at omgpio2: 32 pins
+omgpio3 at simplebus0: rev 0.1
+gpio3 at omgpio3: 32 pins
+com0 at simplebus0: ti16750, 64 byte fifo
+com0: console
+tiiic0 at simplebus0 rev 0.11
+iic0 at tiiic0
+"ti,tps65217" at iic0 addr 0x24 not configured
+"atmel,24c256" at iic0 addr 0x50 not configured
+nxphdmi0 at iic0 addr 0x70: rev 0x0301
+nxphdmi0: no display detected
+tiiic1 at simplebus0 rev 0.11
+iic1 at tiiic1
+"atmel,24c256" at iic1 addr 0x54 not configured
+"atmel,24c256" at iic1 addr 0x55 not configured
+"atmel,24c256" at iic1 addr 0x56 not configured
+"atmel,24c256" at iic1 addr 0x57 not configured
+ommmc0 at simplebus0
+sdmmc0 at ommmc0: 4-bit, sd high-speed, mmc high-speed
+ommmc1 at simplebus0
+sdmmc1 at ommmc1: 1-bit
+"spinlock" at simplebus0 not configured
+omdog0 at simplebus0 rev 0.1
+"mailbox" at simplebus0 not configured
+"timer" at simplebus0 not configured
+"timer" at simplebus0 not configured
+"timer" at simplebus0 not configured
+"timer" at simplebus0 not configured
+"timer" at simplebus0 not configured
+"timer" at simplebus0 not configured
+"timer" at simplebus0 not configured
+"rtc" at simplebus0 not configured
+"usb" at simplebus0 not configured
+cpsw0 at simplebus0: version 1.12 (0), address 90:59:af:82:2e:7e
+ukphy0 at cpsw0 phy 0: Generic IEEE 802.3u media interface, rev. 1: OUI 0x0001f0, model 0x000f
+"ocmcram" at simplebus0 not configured
+amdisplay0 at simplebus0
+amdisplay0: no display attached.
+"emif" at simplebus0 not configured
+"sham" at simplebus0 not configured
+"aes" at simplebus0 not configured
+"mcasp" at simplebus0 not configured
+"rng" at simplebus0 not configured
+scsibus0 at sdmmc1: 2 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: <SD/MMC, MMC02G, 0000> SCSI2 0/direct removable
+sd0: 1832MB, 512 bytes/sector, 3751936 sectors
+scsibus1 at sdmmc0: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: <SD/MMC, SU32G, 0080> SCSI2 0/direct removable
+sd1: 30436MB, 512 bytes/sector, 62333952 sectors
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+bootfile: sd0a:/bsd
+boot device: sd0
+root on sd1a (93aae518915c8841.a) swap on sd1b dump on sd1b
+WARNING: CHECK AND RESET THE DATE!
