@@ -1,0 +1,106 @@
+OpenBSD 6.6-current (GENERIC) #381: Fri Nov 15 11:49:24 MST 2019
+    deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC
+real mem  = 534962176 (510MB)
+avail mem = 509624320 (486MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 02/17/04, BIOS32 rev. 0 @ 0xffe90, SMBIOS rev. 2.3 @ 0xf8d20 (61 entries)
+bios0: vendor Dell Inc. version "A03" date 02/17/2004
+bios0: Dell Inc. Latitude D505
+acpi0 at bios0: ACPI 1.0
+acpi0: sleep states S0 S1 S3 S4 S5
+acpi0: tables DSDT FACP
+acpi0: wakeup devices LID_(S3) PBTN(S4) PCI0(S3) USB0(S1) CH1_(S1) USB1(S1) USB2(S1) USB3(S1) MODM(S3) PCIE(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (PCIE)
+acpicpu0 at acpi0: C1 (unknown FFH class 0): !C3(100@185 io@0x816), !C3(250@85 io@0x815), !C2(500@1 io@0x814), C1(@1 halt!), PSS
+acpitz0 at acpi0: critical temperature is 101 degC
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT0 model "DELL 00" serial 2547 type LION oem "Sony"
+acpibat1 at acpi0: BAT1 not present
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: PBTN
+acpibtn2 at acpi0: SBTN
+"PNP0A03" at acpi0 not configured
+acpicmos0 at acpi0
+acpidock0 at acpi0: GDCK not docked (0)
+acpivideo0 at acpi0: VID_
+acpivideo1 at acpi0: VID2
+bios0: ROM list: 0xc0000/0xd800! 0xcd800/0x800! 0xce000/0x800 0xce800/0x800 0xcf000/0x800 0xcf800/0x800
+cpu0 at mainbus0: (uniprocessor)
+cpu0: Intel(R) Pentium(R) M processor 1400MHz ("GenuineIntel" 686-class) 1.40 GHz, 06-09-05
+cpu0: FPU,V86,DE,PSE,TSC,MSR,MCE,CX8,SEP,MTRR,PGE,MCA,CMOV,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,TM,PBE,EST,TM2,PERF,MELTDOWN
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: Enhanced SpeedStep 1399 MHz: speeds: 1400, 1400, 1400, 1200, 1000, 800, 600 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (no bios)
+pchb0 at pci0 dev 0 function 0 "Intel 82855GM Host" rev 0x02
+"Intel 82855GM Memory" rev 0x02 at pci0 dev 0 function 1 not configured
+"Intel 82855GM Config" rev 0x02 at pci0 dev 0 function 3 not configured
+inteldrm0 at pci0 dev 2 function 0 "Intel 82855GM Video" rev 0x02
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0xf0000000, size 0x8000000
+inteldrm0: irq 11
+"Intel 82855GM Video" rev 0x02 at pci0 dev 2 function 1 not configured
+uhci0 at pci0 dev 29 function 0 "Intel 82801DB USB" rev 0x01: irq 11
+uhci1 at pci0 dev 29 function 1 "Intel 82801DB USB" rev 0x01: irq 11
+uhci2 at pci0 dev 29 function 2 "Intel 82801DB USB" rev 0x01: irq 11
+ehci0 at pci0 dev 29 function 7 "Intel 82801DB USB" rev 0x01: irq 11
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb0 at pci0 dev 30 function 0 "Intel 82801BAM Hub-to-PCI" rev 0x81
+pci1 at ppb0 bus 1
+cbb0 at pci1 dev 1 function 0 "TI PCI4510 CardBus" rev 0x02: irq 11, CardBus support disabled
+"TI PCI4510 FireWire" rev 0x00 at pci1 dev 1 function 1 not configured
+bwi0 at pci1 dev 3 function 0 "Broadcom BCM4306" rev 0x02: irq 11, address 00:90:4b:7a:64:05
+fxp0 at pci1 dev 8 function 0 "Intel PRO/100 VE" rev 0x81, i82562: irq 11, address 00:0f:1f:a1:19:dc
+inphy0 at fxp0 phy 1: i82562ET 10/100 PHY, rev. 0
+cardslot0 at cbb0 slot 0 flags 0
+pcmcia0 at cardslot0
+ichpcib0 at pci0 dev 31 function 0 "Intel 82801DBM LPC" rev 0x01
+pciide0 at pci0 dev 31 function 1 "Intel 82801DBM IDE" rev 0x01: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 0: <FUJITSU MHT2040AH>
+wd0: 16-sector PIO, LBA, 38154MB, 78140160 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 5
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: <HL-DT-ST, RW/DVD GCC-4241N, A101> removable
+cd0(pciide0:1:0): using PIO mode 4, Ultra-DMA mode 2
+auich0 at pci0 dev 31 function 5 "Intel 82801DB AC97" rev 0x01: irq 11, ICH4
+ac97: codec id 0x83847650 (SigmaTel STAC9750/51)
+ac97: codec features headphone, 20 bit DAC, 20 bit ADC, SigmaTel 3D
+audio0 at auich0
+"Intel 82801DB Modem" rev 0x01 at pci0 dev 31 function 6 not configured
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pms0: ALPS Glidepoint, version 0x7321
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on wd0a (2d5e013b783a7b2c.a) swap on wd0b dump on wd0b
+[drm] *ERROR* Unexpected child device config size 32 (expected 33 for VBT version 112)
+[drm] *ERROR* CPU pipe A FIFO underrun
+[drm] *ERROR* pipe B underrun
+[drm] *ERROR* CPU pipe B FIFO underrun
+inteldrm0: 1024x768, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
