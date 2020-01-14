@@ -1,0 +1,246 @@
+$ dmesg
+OpenBSD 6.6-current (GENERIC) #492: Sun Jan 12 20:10:07 MST 2020
+    deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC
+real mem  = 259207168 (247MB)
+avail mem = 238825472 (227MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 07/19/10, BIOS32 rev. 0 @ 0xfa950
+apm0 at bios0: Power Management spec V1.2 (slowidle)
+pcibios0 at bios0: rev 2.1 @ 0xf0000/0xdfb4
+pcibios0: PCI IRQ Routing Table rev 1.0 @ 0xfdf30/128 (6 entries)
+pcibios0: PCI Exclusive IRQs: 5 10 11
+pcibios0: no compatible PCI ICU found: ICU vendor 0x1022 product 0x2090
+pcibios0: Warning, unable to fix up PCI interrupt routing
+pcibios0: PCI bus #0 is the last bus
+bios0: ROM list: 0xc0000/0x8000 0xc8000/0xa800 0xef000/0x1000!
+cpu0 at mainbus0: (uniprocessor)
+cpu0: Geode(TM) Integrated Processor by AMD PCS ("AuthenticAMD" 586-class) 499 MHz, 05-0a-02
+cpu0: FPU,DE,PSE,TSC,MSR,CX8,SEP,PGE,CMOV,CFLUSH,MMX,MMXX,3DNOW2,3DNOW
+mtrr: K6-family MTRR support (2 registers)
+amdmsr0 at mainbus0
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 1 function 0 "AMD Geode LX" rev 0x33
+vga1 at pci0 dev 1 function 1 "AMD Geode LX Video" rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+glxsb0 at pci0 dev 1 function 2 "AMD Geode LX Crypto" rev 0x00: RNG AES
+vr0 at pci0 dev 13 function 0 "VIA VT6105M RhineIII" rev 0x96: irq 11, address 00:0d:b9:0e:9e:f4
+ukphy0 at vr0 phy 1: Generic IEEE 802.3u media interface, rev. 3: OUI 0x004063, model 0x0034
+glxpcib0 at pci0 dev 15 function 0 "AMD CS5536 ISA" rev 0x03: rev 3, 32-bit 3579545Hz timer, watchdog, gpio, i2c
+gpio0 at glxpcib0: 32 pins
+iic0 at glxpcib0
+pciide0 at pci0 dev 15 function 2 "AMD CS5536 IDE" rev 0x01: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+wd0 at pciide0 channel 0 drive 0: <ELITE PRO CF CARD 8GB>
+wd0: 1-sector PIO, LBA, 7279MB, 14909328 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+auglx0 at pci0 dev 15 function 3 "AMD CS5536 Audio" rev 0x01: irq 11, CS5536 AC97
+ac97: codec id 0x414c4770 (Avance Logic ALC203 rev 0)
+ac97: codec features headphone, 20 bit DAC, 18 bit ADC, No 3D Stereo
+audio0 at auglx0
+ohci0 at pci0 dev 15 function 4 "AMD CS5536 USB" rev 0x02: irq 5, version 1.0, legacy support
+ehci0 at pci0 dev 15 function 5 "AMD CS5536 USB" rev 0x02: irq 5
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "AMD EHCI root hub" rev 2.00/1.00 addr 1
+isa0 at glxpcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+wbsio0 at isa0 port 0x2e/2: W83627HF rev 0x41
+lm1 at wbsio0 port 0x290/8: W83627HF
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 "AMD OHCI root hub" rev 1.00/1.00 addr 1
+umass0 at uhub0 port 3 configuration 1 interface 0 "JMicron USB to ATA/ATAPI Bridge" rev 2.00/1.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd0 at scsibus1 targ 1 lun 0: <WDC WD10, TPVT-00HT5T0, > serial.152d2339DA0AC90273FF
+sd0: 953869MB, 512 bytes/sector, 1953525168 sectors
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on wd0a (bf940e6c7aaf2c50.a) swap on wd0b dump on wd0b
+
+$ mount -v
+/dev/wd0a (bf940e6c7aaf2c50.a) on / type ffs (rw, local, ctime=Tue Jan 14 08:24:40 2020)
+/dev/wd0d (bf940e6c7aaf2c50.d) on /usr type ffs (rw, local, noatime, nodev, ctime=Tue Jan 14 08:24:30 2020)
+/dev/wd0e (bf940e6c7aaf2c50.e) on /usr/local type ffs (rw, local, noatime, nodev, wxallowed, ctime=Tue Jan 14 08:24:30 2020)
+/dev/wd0f (bf940e6c7aaf2c50.f) on /var type ffs (rw, local, noatime, nodev, nosuid, ctime=Tue Jan 14 08:24:30 2020)
+/dev/wd0g (bf940e6c7aaf2c50.g) on /var/log type ffs (rw, local, noatime, nodev, nosuid, ctime=Tue Jan 14 08:24:30 2020)
+/dev/wd0h (bf940e6c7aaf2c50.h) on /var/www type ffs (rw, local, noatime, nodev, nosuid, ctime=Tue Jan 14 08:24:30 2020)
+/dev/wd0i (bf940e6c7aaf2c50.i) on /var/mail type ffs (rw, local, noatime, nodev, nosuid, ctime=Tue Jan 14 08:24:30 2020)
+/dev/wd0j (bf940e6c7aaf2c50.j) on /var/postgresql type ffs (rw, local, noatime, nodev, nosuid, ctime=Tue Jan 14 08:24:30 2020)
+/dev/wd0k (bf940e6c7aaf2c50.k) on /tmp type ffs (rw, local, noatime, nodev, nosuid, ctime=Tue Jan 14 08:24:30 2020)
+/dev/wd0l (bf940e6c7aaf2c50.l) on /home type ffs (rw, local, noatime, nodev, nosuid, ctime=Tue Jan 14 08:24:30 2020)
+/dev/sd0a (31efc37173c4c30f.a) on /backup type ffs (rw, local, noatime, nodev, nosuid, ctime=Tue Jan 14 09:01:34 2020)
+
+$ df -h
+Filesystem     Size    Used   Avail Capacity  Mounted on
+/dev/wd0a      254M   49.2M    192M    20%    /
+/dev/wd0d     1008M    484M    474M    50%    /usr
+/dev/wd0e      1.5G    386M    1.0G    27%    /usr/local
+/dev/wd0f      131M    9.5M    115M	8%    /var
+/dev/wd0g      131M    123M    930K    99%    /var/log
+/dev/wd0h      2.0G    1.4G    481M    75%    /var/www
+/dev/wd0i      131M   53.1M   70.9M    43%    /var/mail
+/dev/wd0j      131M    2.0K    124M	0%    /var/postgresql
+/dev/wd0k      131M    4.0K    124M	0%    /tmp
+/dev/wd0l      1.7G    1.4G    230M    86%    /home
+/dev/sd0a      931G    135G    750G    15%    /backup
+
+panic: ehci_device_clear_toggle: queue active
+Stopped at	db_enter+0x4:	popl	%ebp
+    TID	   PID	  UID	  PRFLAGS     PFLAGS  CPU  COMMAND
+*125358	 98098	    0	  0x14000      0x200	0  usbatsk
+db_enter() at db_enter+0x4
+panic(d0b39e8d) at panic+0xcc
+ehci_device_clear_toggle(d1923b80) at ehci_device_clear_toggle+0x25
+umass_bbb_state(d18e0640,d1954e00,f) at umass_bbb_state+0x14b
+usb_transfer_complete(d18e0640) at usb_transfer_complete+0x1b7
+ehci_abort_xfer(d18e0640,f) at ehci_abort_xferpanic: ehci_device_clear_toggle: queue active
+Stopped at	db_enter+0x4:	popl	%ebp
+    TID	   PID	  UID	  PRFLAGS     PFLAGS  CPU  COMMAND
+*125358	 98098	    0	  0x14000      0x200	0  usbatsk
+db_enter() at db_enter+0x4
+panic(d0b39e8d) at panic+0xcc
+ehci_d
+
+ddb> trace
+db_enter() at db_enter+0x4
+panic(d0b39e8d) at panic+0xcc
+ehci_device_clear_toggle(d1923b80) at ehci_device_clear_toggle+0x25
+umass_bbb_state(d18e0640,d1954e00,f) at umass_bbb_state+0x14b
+usb_transfer_complete(d18e0640) at usb_transfer_complete+0x1b7
+ehci_abort_xfer(d18e0640,f) at ehci_abort_xfer+0x2a5
+ehci_timeout_task(d18e0640) at ehci_timeout_task+0x1c
+usb_abort_task_thread(d18dcbe0) at usb_abort_task_thread+0x98
+
+ddb> ps
+   PID	   TID	 PPID	 UID  S	      FLAGS  WAIT	   COMMAND
+ 10274	303125	 2215	1000  3	   0x100003  biowait	   ksh
+  2215	479501	10522	1000  3	       0x90  select	   sshd
+ 10522	375696	65433	   0  3	       0x92  poll	   sshd
+  2783	186167	65433	   0  3	       0x82  netio	   sshd
+ 16791	175461	32411	   0  3	   0x100082  nanosleep	   sleep
+ 32411	408555	86211	   0  3	   0x10008a  pause	   sh
+ 86211	373939	43164	   0  3	   0x100090  piperd	   cron
+ 74312	511446	55156	1000  3		  0  inode	   rsync
+ 55156	267723	17081	1000  3	       0x82  select	   rsync
+ 17081	109318	40374	1000  3	   0x10008a  pause	   ksh
+ 40374	348103	35069	1000  3	       0x90  select	   sshd
+ 35069	263033	65433	   0  3	       0x92  poll	   sshd
+ 95492	378695	16393	1000  3		  0  biowait	   rsync
+ 16393	275467	69978	1000  3	       0x82  select	   rsync
+ 69978	 69676	33879	1000  3	   0x10008a  pause	   ksh
+ 33879	207896	 3716	1000  3	       0x90  select	   sshd
+  3716	108288	65433	   0  3	       0x92  poll	   sshd
+ 52665	366181	83150	1000  3		  0  biowait	   rsync
+ 83150	258754	 3331	1000  3	       0x82  select	   rsync
+  3331	 23380	76282	1000  3	   0x10008a  pause	   ksh
+ 76282	 30302	 9526	1000  3	       0x90  select	   sshd
+--9526ore24952	65433	   0  3	       0x92  poll	   sshd
+ 65257	154470	    1	   0  3	   0x100083  ttyin	   getty
+  5060	100746	    1	   0  3	   0x100083  ttyin	   getty
+ 36162	158059	    1	   0  3	   0x100083  ttyin	   getty
+ 41188	123069	    1	   0  3	   0x100083  ttyin	   getty
+ 29419	 55117	    1	   0  3	   0x100083  ttyin	   getty
+ 96178	161040	    1	   0  3	   0x100083  ttyin	   getty
+ 43164	323504	    1	   0  3	   0x100098  poll	   cron
+ 60842	485881	    1	  62  3	   0x100090  bpf	   spamlogd
+ 91511	190579	 6152	  62  3	   0x100090  piperd	   spamd
+ 19596	269263	 6152	  62  3	   0x100090  poll	   spamd
+  6152	 35793	    1	  62  3	   0x100090  nanosleep	   spamd
+ 86910	304526	    1	   0  3	   0x100080  kqread	   httpd
+ 99066	107831	    1	  67  3	   0x100092  kqread	   httpd
+ 42371	129422	    1	  67  3	   0x100092  kqread	   httpd
+ 35161	459075	    1	  67  3	   0x100092  kqread	   httpd
+ 57014	239036	    1	  67  3	   0x100092  kqread	   httpd
+ 63252	238046	  916	  95  3	   0x100092  kqread	   smtpd
+ 56940	  1192	  916	 103  3	   0x100092  kqread	   smtpd
+ 80613	106178	  916	  95  3	   0x100092  kqread	   smtpd
+ 57181	187925	  916	  95  3	   0x100092  kqread	   smtpd
+ 63175	460639	  916	  95  3	   0x100092  kqread	   smtpd
+  3873	380642	  916	  95  3	   0x100092  kqread	   smtpd
+--d916or494473	    1	   0  3	   0x100080  kqread	   smtpd
+ 65433	 76251	    1	   0  3	       0x80  select	   sshd
+ 88600	110121	    1	   0  3	   0x100080  poll	   ntpd
+ 19297	195954	20100	  83  3	   0x100092  poll	   ntpd
+ 20100	 17660	    1	  83  3	   0x100092  poll	   ntpd
+ 31191	 85959	26397	  74  3	   0x100092  bpf	   pflogd
+ 26397	187118	    1	   0  3	       0x80  netio	   pflogd
+ 68309	448011	94742	  73  3	   0x100090  kqread	   syslogd
+ 94742	 69614	    1	   0  3	   0x100082  netio	   syslogd
+ 53492	243971	27347	 115  3	   0x100092  kqread	   slaacd
+ 52858	458237	27347	 115  3	   0x100092  kqread	   slaacd
+ 27347	 12424	    1	   0  3	   0x100080  kqread	   slaacd
+ 17915	225322	    0	   0  3	    0x14200  pgzero	   zerothread
+ 11251	244396	    0	   0  3	    0x14200  aiodoned	   aiodoned
+ 87688	217902	    0	   0  3	    0x14200  biowait	   update
+ 40876	491170	    0	   0  3	    0x14200  cleaner	   cleaner
+ 44830	212355	    0	   0  3	    0x14200  reaper	   reaper
+ 46683	273930	    0	   0  3	    0x14200  pgdaemon	   pagedaemon
+ 44658	103575	    0	   0  3	    0x14200  bored	   crynlk
+ 42415	319793	    0	   0  3	    0x14200  bored	   crypto
+ 47079	305999	    0	   0  3	    0x14200  bored	   sensors
+ 59155	437520	    0	   0  3	    0x14200  usbtsk	   usbtask
+*98098	125358	    0	   0  7	    0x14200		   usbatsk
+-81352or375961	    0	   0  3	    0x14200  apmev	   apm0
+ 18033	252886	    0	   0  3	    0x14200  bored	   softnet
+ 22122	233491	    0	   0  3	    0x14200  bored	   systqmp
+ 49005	141234	    0	   0  3	    0x14200  bored	   systq
+ 86324	264951	    0	   0  3	 0x40014200  bored	   softclock
+ 23945	 31167	    0	   0  3	 0x40014200		   idle0
+ 50608	  6288	    0	   0  3	    0x14200  bored	   smr
+ 95605	198109	    0	   0  3	    0x14200  kmalloc	   kmthread
+     1	394155	    0	   0  3	       0x82  wait	   init
+     0	     0	   -1	   0  3	    0x10200  scheduler	   swapper
+
+ddb> show uvm
+Current UVM status:
+  pagesize=4096 (0x1000), pagemask=0xfff, pageshift=12
+  58510 VM pages: 13306 active, 984 inactive, 0 wired, 26309 free (3299 zero)
+  min  10% (25) anon, 10% (25) vnode, 5% (12) vtext
+  freemin=1950, free-target=2600, inactive-target=0, wired-max=19503
+  faults=10200852, traps=22512570, intrs=30008005, ctxswitch=28752503 fpuswitch
+=10557
+  softint=26097176, syscalls=27596327, kmapent=21
+  fault counts:
+    noram=0, noanon=0, noamap=0, pgwait=0, pgrele=0
+
+> show bcstats
+Current Buffer Cache status:
+numbufs 849 busymapped 13, delwri 32
+kvaslots 731 avail kva slots 718
+bufpages 11626, dmapages 11626, dirtypages 188
+pendingreads 4, pendingwrites 9
+highflips 0, highflops 0, dmaflips 0
+
+ddb> show registers
+ds		    0x10
+es		    0x10
+fs		    0x20
+gs		       0
+edi	      0xd0b39e8d	cmd0646_9_tim_udma+0x61fd
+esi		   0x100
+ebp	      0xf34f4ddc
+ebx	      0xf34f4e04
+edx		     0x2
+ecx		       0
+eax		     0x1
+eip	      0xd04734e4	db_enter+0x4
+cs		     0x8
+eflags		0x200202	__kernel_base_phys+0x12e
+esp	      0xf34f4ddc
+ss		    0x10
+db_enter+0x4:	popl	%ebp
+
