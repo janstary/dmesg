@@ -1,7 +1,7 @@
-OpenBSD 6.7-beta (GENERIC.MP) #148: Mon Apr 27 01:10:57 MDT 2020
-    deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC.MP
+OpenBSD 6.7-beta (GENERIC.MP) #0: Mon Apr 27 14:26:39 MDT 2020
+    hans@mb32.stare.cz:/usr/src/sys/arch/i386/compile/GENERIC.MP
 real mem  = 2113323008 (2015MB)
-avail mem = 2059026432 (1963MB)
+avail mem = 2059022336 (1963MB)
 mpath0 at root
 scsibus0 at mpath0: 256 targets
 mainbus0 at root
@@ -113,7 +113,6 @@ spkr0 at pcppi0
 asmc0 at isa0 port 0x300/32: rev 1.4f504, 203 keys
 npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
 uvideo0 at uhub0 port 4 configuration 1 interface 0 "Apple Computer Bluetooth" rev 2.00/0.0c addr 2
-uvideo0: can't find video interface
 uhidev0 at uhub1 port 2 configuration 1 interface 0 "Apple Inc. Apple Internal Keyboard / Trackpad" rev 2.00/0.09 addr 2
 uhidev0: iclass 3/1
 ukbd0 at uhidev0: 8 variable keys, 5 key codes, country code 13
@@ -149,3 +148,6 @@ inteldrm0: 1280x800, 32bpp
 wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
 wskbd1: connecting to wsdisplay0
 wsdisplay0: screen 1-5 added (std, vt100 emulation)
+uvideo0 detached
+uvideo0 at uhub0 port 4 configuration 1 interface 0 "Micron Built-in iSight" rev 2.00/1.84 addr 2
+video0 at uvideo0
