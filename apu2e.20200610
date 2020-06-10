@@ -1,0 +1,149 @@
+OpenBSD 6.7-current (GENERIC.MP) #0: Wed Jun 10 22:14:40 CEST 2020
+    hans@uvt.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 1996484608 (1903MB)
+avail mem = 1921105920 (1832MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.8 @ 0x7ee8d020 (13 entries)
+bios0: vendor coreboot version "v4.11.0.5" date 03/29/2020
+bios0: PC Engines apu2
+acpi0 at bios0: ACPI 4.0
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP SSDT MCFG TPM2 APIC HEST SSDT SSDT HPET
+acpi0: wakeup devices PWRB(S4) PBR4(S4) PBR5(S4) PBR6(S4) PBR7(S4) PBR8(S4) UOH1(S3) UOH2(S3) UOH3(S3) UOH4(S3) UOH5(S3) UOH6(S3) XHC0(S4)
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf8000000, bus 0-64
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: AMD GX-412TC SOC, 998.26 MHz, 16-30-01
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TOPEXT,DBKP,PERFTSC,PCTRL3,ITSC,BMI1,XSAVEOPT
+cpu0: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 2MB 64b/line 16-way L2 cache
+cpu0: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: AMD GX-412TC SOC, 998.14 MHz, 16-30-01
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TOPEXT,DBKP,PERFTSC,PCTRL3,ITSC,BMI1,XSAVEOPT
+cpu1: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 2MB 64b/line 16-way L2 cache
+cpu1: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu1: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: AMD GX-412TC SOC, 998.14 MHz, 16-30-01
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TOPEXT,DBKP,PERFTSC,PCTRL3,ITSC,BMI1,XSAVEOPT
+cpu2: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 2MB 64b/line 16-way L2 cache
+cpu2: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu2: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: AMD GX-412TC SOC, 998.14 MHz, 16-30-01
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TOPEXT,DBKP,PERFTSC,PCTRL3,ITSC,BMI1,XSAVEOPT
+cpu3: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 2MB 64b/line 16-way L2 cache
+cpu3: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu3: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+cpu3: smt 0, core 3, package 0
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 21, 24 pins
+ioapic1 at mainbus0: apid 5 pa 0xfec20000, version 21, 32 pins
+acpihpet0 at acpi0: 14318180 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PBR4)
+acpiprt2 at acpi0: bus 1 (PBR5)
+acpiprt3 at acpi0: bus 2 (PBR6)
+acpiprt4 at acpi0: bus 3 (PBR7)
+acpiprt5 at acpi0: bus 4 (PBR8)
+acpitz0 at acpi0: critical temperature is 115 degC
+"ACPI0007" at acpi0 not configured
+"ACPI0007" at acpi0 not configured
+"ACPI0007" at acpi0 not configured
+"ACPI0007" at acpi0 not configured
+"ACPI0007" at acpi0 not configured
+"ACPI0007" at acpi0 not configured
+"ACPI0007" at acpi0 not configured
+"ACPI0007" at acpi0 not configured
+acpibtn0 at acpi0: PWRB
+acpipci0 at acpi0 PCI0: 0x00000000 0x00000011 0x00000001
+extent `acpipci0 pcibus' (0x0 - 0xff), flags=0
+extent `pciio' (0x0 - 0xffffffff), flags=0
+     0x10000 - 0xffffffff
+extent `pcimem' (0x0 - 0xffffffffffffffff), flags=0
+     0x0 - 0x77ffffff
+     0x7ee8d000 - 0x7effffff
+     0xf8000000 - 0xfbffffff
+     0xfed40000 - 0xfed44fff
+     0x40000000000 - 0xffffffffffffffff
+acpicmos0 at acpi0
+amdgpio0 at acpi0 GPIO uid 0 addr 0xfed81500/0x300 irq 7, 184 pins
+"PRP0001" at acpi0 not configured
+"PRP0001" at acpi0 not configured
+"PRP0001" at acpi0 not configured
+"PRP0001" at acpi0 not configured
+"PRP0001" at acpi0 not configured
+"PRP0001" at acpi0 not configured
+"BOOT0000" at acpi0 not configured
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "AMD 16h Root Complex" rev 0x00
+vendor "AMD", unknown product 0x1567 (class system subclass IOMMU, rev 0x00) at pci0 dev 0 function 2 not configured
+pchb1 at pci0 dev 2 function 0 "AMD 16h Host" rev 0x00
+ppb0 at pci0 dev 2 function 2 "AMD 16h PCIE" rev 0x00: msi
+pci1 at ppb0 bus 1
+em0 at pci1 dev 0 function 0 "Intel I211" rev 0x03: msi, address 00:0d:b9:56:5e:fc
+ppb1 at pci0 dev 2 function 3 "AMD 16h PCIE" rev 0x00: msi
+pci2 at ppb1 bus 2
+em1 at pci2 dev 0 function 0 "Intel I211" rev 0x03: msi, address 00:0d:b9:56:5e:fd
+ppb2 at pci0 dev 2 function 4 "AMD 16h PCIE" rev 0x00: msi
+pci3 at ppb2 bus 3
+em2 at pci3 dev 0 function 0 "Intel I211" rev 0x03: msi, address 00:0d:b9:56:5e:fe
+ppb3 at pci0 dev 2 function 5 "AMD 16h PCIE" rev 0x00: msi
+pci4 at ppb3 bus 4
+athn0 at pci4 dev 0 function 0 "Atheros AR9281" rev 0x01: apic 5 int 16
+athn0: AR9280 rev 2 (2T2R), ROM rev 11, address c0:d9:62:75:ee:26
+ccp0 at pci0 dev 8 function 0 "AMD 16h Crypto" rev 0x00
+xhci0 at pci0 dev 16 function 0 "AMD Bolton xHCI" rev 0x11: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 "AMD xHCI root hub" rev 3.00/1.00 addr 1
+ahci0 at pci0 dev 17 function 0 "AMD Hudson-2 SATA" rev 0x40: apic 4 int 19, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, SanDisk SSD U100, 10.5> naa.5001b449c6c365ca
+sd0: 15272MB, 512 bytes/sector, 31277232 sectors, thin
+ehci0 at pci0 dev 19 function 0 "AMD Hudson-2 USB2" rev 0x39: apic 4 int 18
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 "AMD EHCI root hub" rev 2.00/1.00 addr 1
+piixpm0 at pci0 dev 20 function 0 "AMD Hudson-2 SMBus" rev 0x42: SMI
+iic0 at piixpm0
+iic1 at piixpm0
+iic1: addr 0x4c 3e=00 48=00 4a=00 4e=00 fc=00 fe=00 words 00=ffff 01=ffff 02=ffff 03=ffff 04=ffff 05=ffff 06=ffff 07=ffff
+pcib0 at pci0 dev 20 function 3 "AMD Hudson-2 LPC" rev 0x11
+sdhc0 at pci0 dev 20 function 7 "AMD Bolton SD/MMC" rev 0x01: apic 4 int 16
+sdhc0: SDHC 3.0, 200 MHz base clock
+sdmmc0 at sdhc0: 8-bit, sd high-speed, mmc high-speed, dma
+pchb2 at pci0 dev 24 function 0 "AMD 16h Link Cfg" rev 0x00
+pchb3 at pci0 dev 24 function 1 "AMD 16h Address Map" rev 0x00
+pchb4 at pci0 dev 24 function 2 "AMD 16h DRAM Cfg" rev 0x00
+km0 at pci0 dev 24 function 3 "AMD 16h Misc Cfg" rev 0x00
+pchb5 at pci0 dev 24 function 4 "AMD 16h CPU Power" rev 0x00
+pchb6 at pci0 dev 24 function 5 "AMD 16h Misc Cfg" rev 0x00
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+com2 at isa0 port 0x3e8/8 irq 5: ns16550a, 16 byte fifo
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+intr_establish: pic ioapic0 pin 7: can't share type 3 with 2
+wbsio0 at isa0 port 0x2e/2: NCT5104D rev 0x53
+vmm0 at mainbus0: SVM/RVI
+uhub2 at uhub1 port 1 configuration 1 interface 0 "Advanced Micro Devices Hub" rev 2.00/0.18 addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (cccc9705ab789db3.a) swap on sd0b dump on sd0b
