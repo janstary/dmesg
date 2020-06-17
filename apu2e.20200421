@@ -100,5 +100,3 @@ scsibus4 at vscsi0: 256 targets
 softraid0 at root
 scsibus5 at softraid0: 256 targets
 root on sd1a (703891b39d80a80d.a) swap on sd1b dump on sd1b
-WARNING: / was not properly unmounted
-Process (pid 1) got signal 31
