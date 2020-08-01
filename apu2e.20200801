@@ -1,7 +1,7 @@
-OpenBSD 6.7-current (GENERIC.MP) #0: Sat Aug  1 15:49:27 CEST 2020
+OpenBSD 6.7-current (GENERIC.MP) #0: Sat Aug  1 18:28:34 CEST 2020
     hans@uvt.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
 real mem = 1996484608 (1903MB)
-avail mem = 1920946176 (1831MB)
+avail mem = 1920937984 (1831MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -28,14 +28,14 @@ mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
 cpu0: apic clock running at 99MHz
 cpu0: mwait min=64, max=64, IBE
 cpu1 at mainbus0: apid 1 (application processor)
-cpu1: AMD GX-412TC SOC, 998.25 MHz, 16-30-01
+cpu1: AMD GX-412TC SOC, 998.14 MHz, 16-30-01
 cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TOPEXT,DBKP,PERFTSC,PCTRL3,ITSC,BMI1,XSAVEOPT
 cpu1: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 2MB 64b/line 16-way L2 cache
 cpu1: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
 cpu1: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
 cpu1: smt 0, core 1, package 0
 cpu2 at mainbus0: apid 2 (application processor)
-cpu2: AMD GX-412TC SOC, 998.14 MHz, 16-30-01
+cpu2: AMD GX-412TC SOC, 998.19 MHz, 16-30-01
 cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TOPEXT,DBKP,PERFTSC,PCTRL3,ITSC,BMI1,XSAVEOPT
 cpu2: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 2MB 64b/line 16-way L2 cache
 cpu2: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
@@ -58,14 +58,14 @@ acpiprt3 at acpi0: bus 2 (PBR6)
 acpiprt4 at acpi0: bus 3 (PBR7)
 acpiprt5 at acpi0: bus 4 (PBR8)
 acpitz0 at acpi0: critical temperature is 115 degC
-"ACPI0007" at acpi0 not configured
-"ACPI0007" at acpi0 not configured
-"ACPI0007" at acpi0 not configured
-"ACPI0007" at acpi0 not configured
-"ACPI0007" at acpi0 not configured
-"ACPI0007" at acpi0 not configured
-"ACPI0007" at acpi0 not configured
-"ACPI0007" at acpi0 not configured
+acpicpu0 at acpi0copyvalue: 6: C2(0@400 io@0x1771), C1(@1 halt!), PSS
+acpicpu1 at acpi0copyvalue: 6: C2(0@400 io@0x1771), C1(@1 halt!), PSS
+acpicpu2 at acpi0copyvalue: 6: C2(0@400 io@0x1771), C1(@1 halt!), PSS
+acpicpu3 at acpi0copyvalue: 6: C2(0@400 io@0x1771), C1(@1 halt!), PSS
+acpicpu4 at acpi0copyvalue: 6: no cpu matching ACPI ID 4
+acpicpu5 at acpi0copyvalue: 6: no cpu matching ACPI ID 5
+acpicpu6 at acpi0copyvalue: 6: no cpu matching ACPI ID 6
+acpicpu7 at acpi0copyvalue: 6: no cpu matching ACPI ID 7
 acpibtn0 at acpi0: PWRB
 acpipci0 at acpi0 PCI0: 0x00000000 0x00000011 0x00000001
 extent `acpipci0 pcibus' (0x0 - 0xff), flags=0
@@ -86,6 +86,7 @@ amdgpio0 at acpi0 GPIO uid 0 addr 0xfed81500/0x300 irq 7, 184 pins
 "PRP0001" at acpi0 not configured
 "PRP0001" at acpi0 not configured
 "BOOT0000" at acpi0 not configured
+cpu0: 998 MHz: speeds: 1000 800 600 MHz
 pci0 at mainbus0 bus 0
 pchb0 at pci0 dev 0 function 0 "AMD 16h Root Complex" rev 0x00
 vendor "AMD", unknown product 0x1567 (class system subclass IOMMU, rev 0x00) at pci0 dev 0 function 2 not configured
