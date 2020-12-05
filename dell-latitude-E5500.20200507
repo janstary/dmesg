@@ -1,0 +1,150 @@
+OpenBSD 6.7 (GENERIC.MP) #182: Thu May  7 11:11:58 MDT 2020
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 4231581696 (4035MB)
+avail mem = 4090716160 (3901MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xf6c40 (51 entries)
+bios0: vendor Dell Inc. version "A15" date 11/05/2009
+bios0: Dell Inc. Latitude E5500
+acpi0 at bios0: ACPI 4.0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET ____ APIC ASF! MCFG TCPA SLIC SSDT
+acpi0: wakeup devices PCI0(S5) PCIE(S4) USB1(S0) USB2(S0) USB3(S0) USB4(S0) USB5(S0) USB6(S0) EHC2(S0) EHCI(S0) AZAL(S3) RP01(S4) RP02(S4) RP03(S3) RP04(S3) RP05(S5) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM)2 Duo CPU P8400 @ 2.26GHz, 2128.36 MHz, 06-17-0a
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+cpu0: 3MB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 7 var ranges, 88 fixed ranges
+cpu0: apic clock running at 265MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.2.2.2.1.3, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM)2 Duo CPU P8400 @ 2.26GHz, 2128.01 MHz, 06-17-0a
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+cpu1: 3MB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins, remapped
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf8000000, bus 0-63
+acpimcfg0: addr 0x0, bus 0-0
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 2 (PCIE)
+acpiprt2 at acpi0: bus 11 (RP01)
+acpiprt3 at acpi0: bus 12 (RP02)
+acpiprt4 at acpi0: bus -1 (RP03)
+acpiprt5 at acpi0: bus -1 (RP04)
+acpiprt6 at acpi0: bus 9 (RP05)
+acpiprt7 at acpi0: bus -1 (RP06)
+acpiec0 at acpi0
+acpicpu0 at acpi0: !C3(100@162 mwait.3@0x50), !C2(500@1 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: !C3(100@162 mwait.3@0x50), !C2(500@1 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpitz0 at acpi0: critical temperature is 107 degC
+acpipci0 at acpi0 PCI0: _OSC failed
+acpicmos0 at acpi0
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: PBTN
+acpibtn2 at acpi0: SBTN
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT0 model "DELL RM66101" serial 10108 type LION oem "Samsung SDI"
+"*pnp0c14" at acpi0 not configured
+acpials0 at acpi0: ALS_
+acpivideo0 at acpi0: VID_
+acpivout0 at acpivideo0: LCD_
+acpivideo1 at acpi0: VID2
+cpu0: Enhanced SpeedStep 2128 MHz: speeds: 2268, 2267, 1600, 800 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "Intel GM45 Host" rev 0x07
+inteldrm0 at pci0 dev 2 function 0 "Intel GM45 Video" rev 0x07
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0xe0000000, size 0x10000000
+inteldrm0: apic 2 int 16, GM45, gen 4
+"Intel GM45 Video" rev 0x07 at pci0 dev 2 function 1 not configured
+uhci0 at pci0 dev 26 function 0 "Intel 82801I USB" rev 0x02: apic 2 int 20
+uhci1 at pci0 dev 26 function 1 "Intel 82801I USB" rev 0x02: apic 2 int 21
+uhci2 at pci0 dev 26 function 2 "Intel 82801I USB" rev 0x02: apic 2 int 22
+ehci0 at pci0 dev 26 function 7 "Intel 82801I USB" rev 0x02: apic 2 int 22
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 "Intel 82801I HD Audio" rev 0x02: msi
+azalia0: codecs: IDT 92HD71B7, Intel/0x2802, using IDT 92HD71B7
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 "Intel 82801I PCIE" rev 0x02: msi
+pci1 at ppb0 bus 11
+wpi0 at pci1 dev 0 function 0 "Intel PRO/Wireless 3945ABG" rev 0x02: msi, MoW2, address 00:1f:3c:30:94:34
+ppb1 at pci0 dev 28 function 1 "Intel 82801I PCIE" rev 0x02: msi
+pci2 at ppb1 bus 12
+ppb2 at pci0 dev 28 function 4 "Intel 82801I PCIE" rev 0x02: msi
+pci3 at ppb2 bus 9
+bge0 at pci3 dev 0 function 0 "Broadcom BCM5761E" rev 0x10, BCM5761 A1 (0x5761100): msi, address a4:ba:db:9f:07:3b
+brgphy0 at bge0 phy 1: BCM5761 10/100/1000baseT PHY, rev. 0
+uhci3 at pci0 dev 29 function 0 "Intel 82801I USB" rev 0x02: apic 2 int 20
+uhci4 at pci0 dev 29 function 1 "Intel 82801I USB" rev 0x02: apic 2 int 21
+uhci5 at pci0 dev 29 function 2 "Intel 82801I USB" rev 0x02: apic 2 int 22
+ehci1 at pci0 dev 29 function 7 "Intel 82801I USB" rev 0x02: apic 2 int 20
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb3 at pci0 dev 30 function 0 "Intel 82801BAM Hub-to-PCI" rev 0x92
+pci4 at ppb3 bus 2
+cbb0 at pci4 dev 1 function 0 "Ricoh 5C476 CardBus" rev 0xba: apic 2 int 19
+"Ricoh 5C832 Firewire" rev 0x04 at pci4 dev 1 function 1 not configured
+sdhc0 at pci4 dev 1 function 2 "Ricoh 5C822 SD/MMC" rev 0x21: apic 2 int 18
+sdhc0: SDHC 1.0, 33 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed
+"Ricoh 5C843 MMC" rev 0x11 at pci4 dev 1 function 3 not configured
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 3 device 0 cacheline 0x10, lattimer 0x20
+pcmcia0 at cardslot0
+pcib0 at pci0 dev 31 function 0 "Intel 82801IBM LPC" rev 0x02
+ahci0 at pci0 dev 31 function 2 "Intel 82801I AHCI" rev 0x02: msi, AHCI 1.2
+ahci0: port 0: 3.0Gb/s
+ahci0: port 1: 1.5Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, ST9160314AS, D005> naa.5000c5003e5f4612
+sd0: 152627MB, 512 bytes/sector, 312581808 sectors
+cd0 at scsibus1 targ 1 lun 0: <TEAC, DVD-ROM DV-28SW, D.2E> removable
+ichiic0 at pci0 dev 31 function 3 "Intel 82801I SMBus" rev 0x02: SMI
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 2GB DDR2 SDRAM non-parity PC2-6400CL6 SO-DIMM
+spdmem1 at iic0 addr 0x52: 2GB DDR2 SDRAM non-parity PC2-6400CL6 SO-DIMM
+usb2 at uhci0: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci1: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb4 at uhci2: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb5 at uhci3: USB revision 1.0
+uhub5 at usb5 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb6 at uhci4: USB revision 1.0
+uhub6 at usb6 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb7 at uhci5: USB revision 1.0
+uhub7 at usb7 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pms0: ALPS Glidepoint, version 0x7325
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+umass0 at uhub1 port 3 configuration 1 interface 0 "Generic Mass Storage" rev 2.00/1.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: <Generic, Flash Disk, 8.07> removable
+sd1: 7680MB, 512 bytes/sector, 15728640 sectors
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd1a (2ece4220700261ca.a) swap on sd1b dump on sd1b
+inteldrm0: 1280x800, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
