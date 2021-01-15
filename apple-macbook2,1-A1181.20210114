@@ -1,7 +1,7 @@
 OpenBSD 6.8-current (GENERIC.MP) #276: Thu Jan 14 10:56:47 MST 2021
     deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
-real mem = 3171909632 (3024MB)
-avail mem = 3060539392 (2918MB)
+real mem = 2098167808 (2000MB)
+avail mem = 2019328000 (1925MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -17,7 +17,7 @@ acpitimer0 at acpi0: 3579545 Hz, 24 bits
 acpihpet0 at acpi0: 14318179 Hz
 acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
 cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: Intel(R) Core(TM)2 CPU T7400 @ 2.16GHz, 2161.65 MHz, 06-0f-06
+cpu0: Intel(R) Core(TM)2 CPU T7400 @ 2.16GHz, 2161.66 MHz, 06-0f-06
 cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
 cpu0: 4MB 64b/line 16-way L2 cache
 cpu0: smt 0, core 0, package 0
@@ -25,7 +25,7 @@ mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
 cpu0: apic clock running at 166MHz
 cpu0: mwait min=64, max=64, C-substates=0.2.2.2.2, IBE
 cpu1 at mainbus0: apid 1 (application processor)
-cpu1: Intel(R) Core(TM)2 CPU T7400 @ 2.16GHz, 2161.26 MHz, 06-0f-06
+cpu1: Intel(R) Core(TM)2 CPU T7400 @ 2.16GHz, 2161.28 MHz, 06-0f-06
 cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
 cpu1: 4MB 64b/line 16-way L2 cache
 cpu1: smt 0, core 1, package 0
@@ -43,8 +43,8 @@ acpibtn0 at acpi0: LID0
 abl0 at acpi0: PNLF (backlight)
 acpibtn1 at acpi0: PWRB
 acpibtn2 at acpi0: SLPB
-acpipci0 at acpi0 PCI0: 0x00000010 0x00000011 0x00000000memory map conflict 0xbef00000/0x100000
-memory map conflict 0xbf000000/0x1000000
+acpipci0 at acpi0 PCI0: 0x00000010 0x00000011 0x00000000memory map conflict 0x7ef00000/0x100000
+memory map conflict 0x7f000000/0x1000000
 memory map conflict 0xf00f8000/0x1000
 memory map conflict 0xfed1c000/0x4000
 memory map conflict 0xfffb0000/0x30000
@@ -62,7 +62,7 @@ pchb0 at pci0 dev 0 function 0 "Intel 82945GM Host" rev 0x03
 inteldrm0 at pci0 dev 2 function 0 "Intel 82945GM Video" rev 0x03
 drm0 at inteldrm0
 intagp0 at inteldrm0
-agp0 at intagp0: aperture at 0xc0000000, size 0x10000000
+agp0 at intagp0: aperture at 0x80000000, size 0x10000000
 inteldrm0: apic 1 int 16, I945GM, gen 3
 "Intel 82945GM Video" rev 0x03 at pci0 dev 2 function 1 not configured
 vendor "Intel", unknown product 0x27a3 (class DASP subclass Time and Frequency, rev 0x03) at pci0 dev 7 function 0 not configured
@@ -102,9 +102,9 @@ wd0: 16-sector PIO, LBA48, 76319MB, 156301488 sectors
 wd0(pciide1:0:1): using PIO mode 4, Ultra-DMA mode 6
 ichiic0 at pci0 dev 31 function 3 "Intel 82801GB SMBus" rev 0x02: apic 1 int 19
 iic0 at ichiic0
-iic0: addr 0x48 00=35 01=00 02=4b 03=50 words 00=3580 01=00ff 02=4b00 03=5000 04=ffff 05=ffff 06=ffff 07=ffff
-spdmem0 at iic0 addr 0x50: 2GB DDR2 SDRAM non-parity PC2-6400CL6 SO-DIMM
-spdmem1 at iic0 addr 0x52: 2GB DDR2 SDRAM non-parity PC2-6400CL6 SO-DIMM
+iic0: addr 0x48 00=1f 01=00 02=4b 03=50 words 00=1f80 01=00ff 02=4b00 03=5000 04=ffff 05=ffff 06=ffff 07=ffff
+spdmem0 at iic0 addr 0x50: 1GB DDR2 SDRAM non-parity PC2-5300CL5 SO-DIMM
+spdmem1 at iic0 addr 0x52: 1GB DDR2 SDRAM non-parity PC2-5300CL5 SO-DIMM
 usb1 at uhci0: USB revision 1.0
 uhub1 at usb1 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
 usb2 at uhci1: USB revision 1.0
