@@ -1,0 +1,138 @@
+OpenBSD 6.8-current (GENERIC.MP) #261: Tue Jan  5 09:48:51 MST 2021
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 4242145280 (4045MB)
+avail mem = 4098273280 (3908MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.6 @ 0xfccb0 (23 entries)
+bios0: vendor American Megatrends Inc. version "5.13" date 03/03/2010
+bios0: Hewlett-Packard Compaq 500B Microtower
+acpi0 at bios0: ACPI 3.0
+acpi0: sleep states S0 S1 S3 S4 S5
+acpi0: tables DSDT FACP APIC MCFG OEMB HPET GSCI SSDT
+acpi0: wakeup devices P0P2(S4) P0P3(S4) P0P1(S4) MC97(S4) P0P4(S4) P0P5(S4) P0P6(S4) P0P7(S4) LAN1(S1) P0P8(S4) P0P9(S4) USB0(S3) USB1(S3) USB2(S3) USB3(S3) EUSB(S3)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM)2 Duo CPU E7500 @ 2.93GHz, 2933.72 MHz, 06-17-0a
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+cpu0: 3MB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 277MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.2.2.2, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM)2 Duo CPU E7500 @ 2.93GHz, 3050.68 MHz, 06-17-0a
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+cpu1: 3MB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins, remapped
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 3 (P0P1)
+acpiprt2 at acpi0: bus 1 (P0P4)
+acpiprt3 at acpi0: bus 2 (P0P5)
+acpiprt4 at acpi0: bus -1 (P0P6)
+acpiprt5 at acpi0: bus -1 (P0P7)
+acpiprt6 at acpi0: bus -1 (P0P8)
+acpiprt7 at acpi0: bus -1 (P0P9)
+acpipci0 at acpi0 PCI0: 0x00000010 0x00000011 0x00000000
+acpicmos0 at acpi0
+acpibtn0 at acpi0: PWRB
+acpicpu0 at acpi0
+acpi0: SSDT checksum error: C1(@1 halt!), PSS
+acpicpu1 at acpi0: C1(@1 halt!), PSS
+cpu0: Enhanced SpeedStep 2933 MHz: speeds: 2936, 2670, 2403, 2136, 1870, 1603 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "Intel G41 Host" rev 0x03
+inteldrm0 at pci0 dev 2 function 0 "Intel G41 Video" rev 0x03
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0xd0000000, size 0x10000000
+inteldrm0: apic 2 int 16, G45, gen 4
+azalia0 at pci0 dev 27 function 0 "Intel 82801GB HD Audio" rev 0x01: msi
+azalia0: codecs: Realtek ALC662
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 "Intel 82801GB PCIE" rev 0x01: msi
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 28 function 1 "Intel 82801GB PCIE" rev 0x01: msi
+pci2 at ppb1 bus 2
+re0 at pci2 dev 0 function 0 "Realtek 8101E" rev 0x02: RTL8102EL (0x2480), msi, address d8:d3:85:7f:58:94
+rlphy0 at re0 phy 7: RTL8201L 10/100 PHY, rev. 1
+uhci0 at pci0 dev 29 function 0 "Intel 82801GB USB" rev 0x01: apic 2 int 23
+uhci1 at pci0 dev 29 function 1 "Intel 82801GB USB" rev 0x01: apic 2 int 19
+uhci2 at pci0 dev 29 function 2 "Intel 82801GB USB" rev 0x01: apic 2 int 18
+uhci3 at pci0 dev 29 function 3 "Intel 82801GB USB" rev 0x01: apic 2 int 16
+ehci0 at pci0 dev 29 function 7 "Intel 82801GB USB" rev 0x01: apic 2 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb2 at pci0 dev 30 function 0 "Intel 82801BA Hub-to-PCI" rev 0xe1
+pci3 at ppb2 bus 3
+pcib0 at pci0 dev 31 function 0 "Intel 82801GB LPC" rev 0x01
+pciide0 at pci0 dev 31 function 1 "Intel 82801GB IDE" rev 0x01: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+pciide0: channel 0 disabled (no drives)
+pciide0: channel 1 disabled (no drives)
+pciide1 at pci0 dev 31 function 2 "Intel 82801GB SATA" rev 0x01: DMA, channel 0 configured to native-PCI, channel 1 configured to native-PCI
+pciide1: using apic 2 int 19 for native-PCI interrupt
+wd0 at pciide1 channel 0 drive 0: <WDC WD5000AAKX-001CA0>
+wd0: 16-sector PIO, LBA48, 476940MB, 976773168 sectors
+atapiscsi0 at pciide1 channel 0 drive 1
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: <hp, DVD-RAM GH40L, RB12> removable
+wd0(pciide1:0:0): using PIO mode 4, Ultra-DMA mode 6
+cd0(pciide1:0:1): using PIO mode 4, Ultra-DMA mode 5
+ichiic0 at pci0 dev 31 function 3 "Intel 82801GB SMBus" rev 0x01: apic 2 int 19
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 2GB DDR3 SDRAM PC3-10600
+spdmem1 at iic0 addr 0x52: 2GB DDR3 SDRAM PC3-10600
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+it0 at isa0 port 0x2e/2: IT8720F rev 5, EC port 0xa10
+umass0 at uhub0 port 6 configuration 1 interface 0 "Generic Mass Storage" rev 2.00/1.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd0 at scsibus2 targ 1 lun 0: <Generic, Flash Disk, 8.07> removable
+sd0: 7680MB, 512 bytes/sector, 15728640 sectors
+umass1 at uhub0 port 7 configuration 1 interface 0 "Generic USB 2.0 Reader" rev 2.00/58.88 addr 3
+umass1: using SCSI over Bulk-Only
+scsibus3 at umass1: 2 targets, initiator 0
+sd1 at scsibus3 targ 1 lun 0: <Generic-, Multi-Card, 1.00> removable
+uhidev0 at uhub2 port 1 configuration 1 interface 0 "Logitech USB-PS/2 Optical Mouse" rev 2.00/11.10 addr 2
+uhidev0: iclass 3/1
+ums0 at uhidev0: 3 buttons, Z dir
+wsmouse0 at ums0 mux 0
+uhidev1 at uhub2 port 2 configuration 1 interface 0 "vendor 0x173d product 0x0004" rev 1.10/1.50 addr 3
+uhidev1: iclass 3/1
+ukbd0 at uhidev1: 8 variable keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+uhidev2 at uhub2 port 2 configuration 1 interface 1 "vendor 0x173d product 0x0004" rev 1.10/1.50 addr 3
+uhidev2: iclass 3/0, 3 report ids
+uhid0 at uhidev2 reportid 1: input=3, output=0, feature=0
+uhid1 at uhidev2 reportid 2: input=1, output=0, feature=0
+uhid2 at uhidev2 reportid 3: input=2, output=0, feature=0
+vscsi0 at root
+scsibus4 at vscsi0: 256 targets
+softraid0 at root
+scsibus5 at softraid0: 256 targets
+root on sd0a (2ece4220700261ca.a) swap on sd0b dump on sd0b
+inteldrm0: 1680x1050, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wskbd1: connecting to wsdisplay0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
