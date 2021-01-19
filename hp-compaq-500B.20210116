@@ -16,15 +16,15 @@ acpi0: wakeup devices P0P2(S4) P0P3(S4) P0P1(S4) MC97(S4) P0P4(S4) P0P5(S4) P0P6
 acpitimer0 at acpi0: 3579545 Hz, 24 bits
 acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
 cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: Intel(R) Core(TM)2 Duo CPU E7500 @ 2.93GHz, 2933.75 MHz, 06-17-0a
+cpu0: Intel(R) Core(TM)2 Duo CPU E7500 @ 2.93GHz, 4107.06 MHz, 06-17-0a
 cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
 cpu0: 3MB 64b/line 8-way L2 cache
 cpu0: smt 0, core 0, package 0
 mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
-cpu0: apic clock running at 277MHz
+cpu0: apic clock running at 266MHz
 cpu0: mwait min=64, max=64, C-substates=0.2.2.2.2, IBE
 cpu1 at mainbus0: apid 1 (application processor)
-cpu1: Intel(R) Core(TM)2 Duo CPU E7500 @ 2.93GHz, 3050.68 MHz, 06-17-0a
+cpu1: Intel(R) Core(TM)2 Duo CPU E7500 @ 2.93GHz, 2933.34 MHz, 06-17-0a
 cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
 cpu1: 3MB 64b/line 8-way L2 cache
 cpu1: disabling user TSC (skew=-303)
@@ -47,7 +47,7 @@ acpibtn0 at acpi0: PWRB
 acpicpu0 at acpi0
 acpi0: SSDT checksum error: C1(@1 halt!), PSS
 acpicpu1 at acpi0: C1(@1 halt!), PSS
-cpu0: Enhanced SpeedStep 2933 MHz: speeds: 2936, 2670, 2403, 2136, 1870, 1603 MHz
+cpu0: Enhanced SpeedStep 4107 MHz: speeds: 2936, 2670, 2403, 2136, 1870, 1603 MHz
 pci0 at mainbus0 bus 0
 pchb0 at pci0 dev 0 function 0 "Intel G41 Host" rev 0x03
 inteldrm0 at pci0 dev 2 function 0 "Intel G41 Video" rev 0x03
@@ -55,9 +55,6 @@ drm0 at inteldrm0
 intagp0 at inteldrm0
 agp0 at intagp0: aperture at 0xd0000000, size 0x10000000
 inteldrm0: apic 2 int 16, G45, gen 4
-azalia0 at pci0 dev 27 function 0 "Intel 82801GB HD Audio" rev 0x01: msi
-azalia0: codecs: Realtek ALC662
-audio0 at azalia0
 ppb0 at pci0 dev 28 function 0 "Intel 82801GB PCIE" rev 0x01: msi
 pci1 at ppb0 bus 1
 ppb1 at pci0 dev 28 function 1 "Intel 82801GB PCIE" rev 0x01: msi
@@ -73,8 +70,10 @@ usb0 at ehci0: USB revision 2.0
 uhub0 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
 ppb2 at pci0 dev 30 function 0 "Intel 82801BA Hub-to-PCI" rev 0xe1
 pci3 at ppb2 bus 3
-3:4:0: io address conflict 0xe884/0x4
-envy0 at pci3 dev 4 function 0 "IC Ensemble Envy24PT/HT Audio" rev 0x01: can't map mt i/o space
+envy0 at pci3 dev 4 function 0 "IC Ensemble Envy24PT/HT Audio" rev 0x01: apic 2 int 20
+envy0: unknown 1724-based card, 2 inputs, 8 outputs
+audio0 at envy0
+midi0 at envy0: <Envy24 MIDI UART>
 pcib0 at pci0 dev 31 function 0 "Intel 82801GB LPC" rev 0x01
 pciide0 at pci0 dev 31 function 1 "Intel 82801GB IDE" rev 0x01: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
 pciide0: channel 0 disabled (no drives)
@@ -108,7 +107,7 @@ wskbd0 at pckbd0: console keyboard
 pcppi0 at isa0 port 0x61
 spkr0 at pcppi0
 it0 at isa0 port 0x2e/2: IT8720F rev 5, EC port 0xa10
-umass0 at uhub0 port 6 configuration 1 interface 0 "Generic Mass Storage" rev 2.00/1.00 addr 2
+umass0 at uhub0 port 5 configuration 1 interface 0 "Generic Mass Storage" rev 2.00/1.00 addr 2
 umass0: using SCSI over Bulk-Only
 scsibus2 at umass0: 2 targets, initiator 0
 sd0 at scsibus2 targ 1 lun 0: <Generic, Flash Disk, 8.07> removable
@@ -135,6 +134,8 @@ scsibus4 at vscsi0: 256 targets
 softraid0 at root
 scsibus5 at softraid0: 256 targets
 root on sd0a (2ece4220700261ca.a) swap on sd0b dump on sd0b
+WARNING: clock gained 2 days
+WARNING: CHECK AND RESET THE DATE!
 inteldrm0: 1680x1050, 32bpp
 wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
 wskbd1: connecting to wsdisplay0
