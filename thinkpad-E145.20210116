@@ -27,7 +27,7 @@ mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
 cpu0: apic clock running at 99MHz
 cpu0: mwait min=64, max=64, IBE
 cpu1 at mainbus0: apid 1 (application processor)
-cpu1: AMD E1-2500 APU with Radeon(TM) HD Graphics, 1397.39 MHz, 16-00-01
+cpu1: AMD E1-2500 APU with Radeon(TM) HD Graphics, 1397.38 MHz, 16-00-01
 cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TOPEXT,DBKP,PCTRL3,ITSC,BMI1,XSAVEOPT
 cpu1: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 1MB 64b/line 16-way L2 cache
 cpu1: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
@@ -49,7 +49,7 @@ acpipci0 at acpi0 PCI0: 0x00000010 0x00000011 0x00000000
 acpicmos0 at acpi0
 "SMB0001" at acpi0 not configured
 acpithinkpad0 at acpi0: version 1.0
-acpiac0 at acpi0: AC unit offline
+acpiac0 at acpi0: AC unit online
 acpibat0 at acpi0: BAT1 model "45N1174" serial   898 type LION oem "SANYO"
 acpibtn1 at acpi0: LID_
 "PNP0C14" at acpi0 not configured
@@ -137,11 +137,6 @@ softraid0 at root
 scsibus4 at softraid0: 256 targets
 root on sd1a (2ece4220700261ca.a) swap on sd1b dump on sd1b
 radeondrm0: KABINI
-cik_cp: Failed to load firmware "radeon/KABINI_pfp.bin"
-[drm] *ERROR* Failed to load firmware!
-drm:pid0:radeondrm_attachhook *ERROR* Fatal error during GPU init
-drm0 detached
-radeondrm0 detached
-vga1 at pci0 dev 1 function 0 "ATI Kabini" rev 0x00
-wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation), using wskbd0
-wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+radeondrm0: 1366x768, 32bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
