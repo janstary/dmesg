@@ -1,7 +1,7 @@
-OpenBSD 6.9-beta (GENERIC.MP) #0: Mon Feb 22 11:51:17 CET 2021
-    hans@t400.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+OpenBSD 6.9-beta (GENERIC.MP) #350: Sun Feb 21 11:04:59 MST 2021
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
 real mem = 6316298240 (6023MB)
-avail mem = 6109523968 (5826MB)
+avail mem = 6109519872 (5826MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -25,7 +25,7 @@ mtrr: Pentium Pro MTRR support, 7 var ranges, 88 fixed ranges
 cpu0: apic clock running at 266MHz
 cpu0: mwait min=64, max=64, C-substates=0.2.2.2.2.1.3, IBE
 cpu1 at mainbus0: apid 1 (application processor)
-cpu1: Intel(R) Core(TM)2 Duo CPU P8400 @ 2.26GHz, 2261.02 MHz, 06-17-06
+cpu1: Intel(R) Core(TM)2 Duo CPU P8400 @ 2.26GHz, 2261.01 MHz, 06-17-06
 cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
 cpu1: 3MB 64b/line 8-way L2 cache
 cpu1: smt 0, core 1, package 0
@@ -151,6 +151,7 @@ scsibus2 at vscsi0: 256 targets
 softraid0 at root
 scsibus3 at softraid0: 256 targets
 root on sd0a (7e642c4522750e51.a) swap on sd0b dump on sd0b
+drm:pid0:intel_cpu_fifo_underrun_irq_handler *ERROR* [drm] *ERROR* CPU pipe B FIFO underrun
 inteldrm0: 1280x800, 32bpp
 wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
 wsdisplay0: screen 1-5 added (std, vt100 emulation)
