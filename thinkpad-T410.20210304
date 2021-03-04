@@ -1,0 +1,153 @@
+OpenBSD 6.9-beta (GENERIC.MP) #374: Wed Mar  3 19:01:26 MST 2021
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 4062691328 (3874MB)
+avail mem = 3924172800 (3742MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.6 @ 0xe0010 (78 entries)
+bios0: vendor LENOVO version "6IET75WW (1.35 )" date 02/01/2011
+bios0: LENOVO 2537BN8
+acpi0 at bios0: ACPI 4.0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SSDT ECDT APIC MCFG HPET ASF! SLIC BOOT SSDT TCPA SSDT SSDT SSDT
+acpi0: wakeup devices LID_(S3) SLPB(S3) IGBE(S4) EXP1(S4) EXP2(S4) EXP3(S4) EXP4(S4) EXP5(S4) EHC1(S3) EHC2(S3) HDEF(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpiec0 at acpi0
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i5 CPU M 560 @ 2.67GHz, 2926.61 MHz, 06-25-05
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,POPCNT,AES,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 133MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.1, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM) i5 CPU M 560 @ 2.67GHz, 2926.01 MHz, 06-25-05
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,POPCNT,AES,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,MELTDOWN
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 1, core 0, package 0
+cpu2 at mainbus0: apid 4 (application processor)
+cpu2: Intel(R) Core(TM) i5 CPU M 560 @ 2.67GHz, 2926.02 MHz, 06-25-05
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,POPCNT,AES,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,MELTDOWN
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 5 (application processor)
+cpu3: Intel(R) Core(TM) i5 CPU M 560 @ 2.67GHz, 2926.01 MHz, 06-25-05
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,POPCNT,AES,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,MELTDOWN
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 2, package 0
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins, remapped
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus 3 (EXP2)
+acpiprt4 at acpi0: bus -1 (EXP3)
+acpiprt5 at acpi0: bus 5 (EXP4)
+acpiprt6 at acpi0: bus 13 (EXP5)
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+acpipci0 at acpi0 UNCR
+acpipci1 at acpi0 PCI0: 0x00000000 0x00000011 0x00000001
+acpicmos0 at acpi0
+tpm0 at acpi0 TPM_ addr 0xfed40000/0x5000, device 0x0000104a rev 0x4e
+acpibat0 at acpi0: BAT0 not present
+acpiac0 at acpi0: AC unit online
+acpithinkpad0 at acpi0: version 1.0
+"*pnp0c14" at acpi0 not configured
+"PNP0C14" at acpi0 not configured
+acpicpu0 at acpi0: C3(350@245 mwait.3@0x20), C2(500@205 mwait.3@0x10), C1(1000@3 mwait.1), PSS
+acpicpu1 at acpi0: C3(350@245 mwait.3@0x20), C2(500@205 mwait.3@0x10), C1(1000@3 mwait.1), PSS
+acpicpu2 at acpi0: C3(350@245 mwait.3@0x20), C2(500@205 mwait.3@0x10), C1(1000@3 mwait.1), PSS
+acpicpu3 at acpi0: C3(350@245 mwait.3@0x20), C2(500@205 mwait.3@0x10), C1(1000@3 mwait.1), PSS
+acpipwrres0 at acpi0: PUBS, resource for EHC1, EHC2
+acpitz0 at acpi0: critical temperature is 100 degC
+acpivideo0 at acpi0: VID_
+acpivout0 at acpivideo0: LCD0
+acpivideo1 at acpi0: VID_
+cpu0: using IvyBridge MDS workaround
+cpu0: Enhanced SpeedStep 2926 MHz: speeds: 2667, 2666, 2533, 2399, 2266, 2133, 1999, 1866, 1733, 1599, 1466, 1333, 1199 MHz
+pci0 at mainbus0 bus 255
+pchb0 at pci0 dev 0 function 0 "Intel QuickPath" rev 0x02
+pchb1 at pci0 dev 0 function 1 "Intel QuickPath" rev 0x02
+pchb2 at pci0 dev 2 function 0 "Intel QPI Link" rev 0x02
+pchb3 at pci0 dev 2 function 1 "Intel QPI Physical" rev 0x02
+pchb4 at pci0 dev 2 function 2 "Intel Reserved" rev 0x02
+pchb5 at pci0 dev 2 function 3 "Intel Reserved" rev 0x02
+pci1 at mainbus0 bus 0
+pchb6 at pci1 dev 0 function 0 "Intel Core Host" rev 0x02
+inteldrm0 at pci1 dev 2 function 0 "Intel HD Graphics" rev 0x02
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0xd0000000, size 0x10000000
+inteldrm0: msi, IRONLAKE, gen 5
+"Intel 3400 MEI" rev 0x06 at pci1 dev 22 function 0 not configured
+puc0 at pci1 dev 22 function 3 "Intel 3400 KT" rev 0x06: ports: 16 com
+com4 at puc0 port 0 apic 1 int 17: ns16550a, 16 byte fifo
+com4: probed fifo depth: 0 bytes
+em0 at pci1 dev 25 function 0 "Intel 82577LM" rev 0x06: msi, address f0:de:f1:56:8d:55
+ehci0 at pci1 dev 26 function 0 "Intel 3400 USB" rev 0x06: apic 1 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+azalia0 at pci1 dev 27 function 0 "Intel 3400 HD Audio" rev 0x06: msi
+azalia0: codecs: Conexant/0x5069, Intel/0x2804, using Conexant/0x5069
+audio0 at azalia0
+ppb0 at pci1 dev 28 function 0 "Intel 3400 PCIE" rev 0x06: msi
+pci2 at ppb0 bus 2
+ppb1 at pci1 dev 28 function 1 "Intel 3400 PCIE" rev 0x06: msi
+pci3 at ppb1 bus 3
+iwn0 at pci3 dev 0 function 0 "Intel WiFi Link 1000" rev 0x00: msi, MIMO 1T2R, BGS, address 8c:a9:82:6d:02:ee
+ppb2 at pci1 dev 28 function 3 "Intel 3400 PCIE" rev 0x06: msi
+pci4 at ppb2 bus 5
+ppb3 at pci1 dev 28 function 4 "Intel 3400 PCIE" rev 0x06: msi
+pci5 at ppb3 bus 13
+sdhc0 at pci5 dev 0 function 0 "Ricoh 5U822 SD/MMC" rev 0x01: apic 1 int 16
+sdhc0: SDHC 1.0, 50 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed
+"Ricoh 5U230 Memory Stick" rev 0x01 at pci5 dev 0 function 1 not configured
+"Ricoh 5U832 Firewire" rev 0x01 at pci5 dev 0 function 3 not configured
+ehci1 at pci1 dev 29 function 0 "Intel 3400 USB" rev 0x06: apic 1 int 19
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb4 at pci1 dev 30 function 0 "Intel 82801BAM Hub-to-PCI" rev 0xa6
+pci6 at ppb4 bus 14
+pcib0 at pci1 dev 31 function 0 "Intel QM57 LPC" rev 0x06
+ahci0 at pci1 dev 31 function 2 "Intel 3400 AHCI" rev 0x06: msi, AHCI 1.3
+ahci0: port 0: 1.5Gb/s
+ahci0: port 1: 1.5Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, WDC WD2500BEVS-2, 01.0> naa.50014ee255c261af
+sd0: 238475MB, 512 bytes/sector, 488397168 sectors
+cd0 at scsibus1 targ 1 lun 0: <HL-DT-ST, DVD-ROM DU30N, RX10> removable
+ichiic0 at pci1 dev 31 function 3 "Intel 3400 SMBus" rev 0x06: apic 1 int 23
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 2GB DDR3 SDRAM PC3-10600 SO-DIMM
+spdmem1 at iic0 addr 0x51: 2GB DDR3 SDRAM PC3-10600 SO-DIMM
+itherm0 at pci1 dev 31 function 6 "Intel 3400 Thermal" rev 0x06
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 7.2, 0x1c0b1 0xb40000 0x0 0xd047b1 0xa0000
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+aps0 at isa0 port 0x1600/31
+uhub2 at uhub0 port 1 configuration 1 interface 0 "Intel Rate Matching Hub" rev 2.00/0.00 addr 2
+uhub3 at uhub1 port 1 configuration 1 interface 0 "Intel Rate Matching Hub" rev 2.00/0.00 addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (bf97366805614469.a) swap on sd0b dump on sd0b
+inteldrm0: 1440x900, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
