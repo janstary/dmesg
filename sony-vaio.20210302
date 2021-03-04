@@ -1,0 +1,148 @@
+OpenBSD 6.9-beta (GENERIC) #363: Tue Mar  2 14:28:10 MST 2021
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC
+real mem = 4125605888 (3934MB)
+avail mem = 3985301504 (3800MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.6 @ 0xebe70 (17 entries)
+bios0: vendor American Megatrends Inc. version "R1090Y8" date 07/20/2010
+bios0: Sony Corporation VPCEB3S1E
+acpi0 at bios0: ACPI 4.0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC MCFG HPET SLIC SSDT SSDT
+acpi0: wakeup devices P0PF(S4) USB1(S3) USB2(S3) USB3(S3) USB4(S3) USB5(S3) USB6(S3) USB7(S3) HDEF(S4) RP01(S3) PXSX(S3) RP03(S3) PXSX(S3) EHC1(S3) EHC2(S3) RP06(S3) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i5 CPU M 460 @ 2.53GHz, 2793.65 MHz, 06-25-05
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,POPCNT,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 133MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.1, IBE
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf8000000, bus 0-63
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 2 (RP01)
+acpiprt2 at acpi0: bus 4 (RP03)
+acpiprt3 at acpi0: bus 3 (RP02)
+acpiprt4 at acpi0: bus -1 (RP04)
+acpiprt5 at acpi0: bus 5 (RP06)
+acpiprt6 at acpi0: bus 1 (PEGP)
+acpiprt7 at acpi0: bus -1 (PEG3)
+acpiec0 at acpi0
+acpisony0 at acpi0: SNC_
+acpipci0 at acpi0 PCI0: 0x00000004 0x00000011 0x00000001
+acpicmos0 at acpi0
+"SNY5001" at acpi0 not configured
+acpipci1 at acpi0 CPBG
+acpibat0 at acpi0: BAT0 type LiOn oem "Sony Corp."
+acpiac0 at acpi0: AC unit online
+acpibtn0 at acpi0: LID0
+acpibtn1 at acpi0: PWRB
+acpicpu0 at acpi0: C3(350@245 mwait.3@0x20), C1(1000@3 mwait.1), PSS
+acpitz0 at acpi0: critical temperature is 103 degC
+acpitz1 at acpi0: critical temperature is 103 degC
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: DD02
+cpu0: using IvyBridge MDS workaround
+cpu0: Enhanced SpeedStep 2793 MHz: speeds: 2534, 2533, 2399, 2266, 2133, 1999, 1866, 1733, 1599, 1466, 1333, 1199 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "Intel Core Host" rev 0x02
+ppb0 at pci0 dev 1 function 0 "Intel 3400 PCIE" rev 0x02: msi
+pci1 at ppb0 bus 1
+radeondrm0 at pci1 dev 0 function 0 "ATI Mobility Radeon HD 5650" rev 0x00
+drm0 at radeondrm0
+radeondrm0: msi
+azalia0 at pci1 dev 0 function 1 "ATI Radeon HD 5600 Audio" rev 0x00: msi
+azalia0: no supported codecs
+"Intel 3400 MEI" rev 0x06 at pci0 dev 22 function 0 not configured
+ehci0 at pci0 dev 26 function 0 "Intel 3400 USB" rev 0x05: apic 2 int 16
+ehci0: timed out waiting for BIOS
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+azalia1 at pci0 dev 27 function 0 "Intel 3400 HD Audio" rev 0x05: msi
+azalia1: codecs: Realtek ALC269
+audio0 at azalia1
+ppb1 at pci0 dev 28 function 0 "Intel 3400 PCIE" rev 0x05: msi
+pci2 at ppb1 bus 2
+athn0 at pci2 dev 0 function 0 "Atheros AR9285" rev 0x01: apic 2 int 16
+athn0: AR9285 rev 2 (1T1R), ROM rev 13, address 78:dd:08:f8:b3:fc
+ppb2 at pci0 dev 28 function 1 "Intel 3400 PCIE" rev 0x05: msi
+pci3 at ppb2 bus 3
+sdhc0 at pci3 dev 0 function 0 "Ricoh 5U822 SD/MMC" rev 0x00: apic 2 int 17
+sdhc0: SDHC 1.0, 50 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed
+"Ricoh 5U230 Memory Stick" rev 0x00 at pci3 dev 0 function 1 not configured
+sdhc1 at pci3 dev 0 function 4 "Ricoh 5U822 SD/MMC" rev 0x00: apic 2 int 19
+sdhc1: SDHC 1.0, 50 MHz base clock
+sdmmc1 at sdhc1: 4-bit, sd high-speed, mmc high-speed
+ppb3 at pci0 dev 28 function 2 "Intel 3400 PCIE" rev 0x05: msi
+pci4 at ppb3 bus 4
+mskc0 at pci4 dev 0 function 0 "Marvell Yukon 88E8059" rev 0x11, Yukon-2 Optima (0x1): msi
+msk0 at mskc0 port A: address 54:42:49:72:3f:3d
+eephy0 at msk0 phy 0: PHYG65G Gigabit PHY, rev. 0
+ppb4 at pci0 dev 28 function 5 "Intel 3400 PCIE" rev 0x05: msi
+pci5 at ppb4 bus 5
+ehci1 at pci0 dev 29 function 0 "Intel 3400 USB" rev 0x05: apic 2 int 23
+ehci1: timed out waiting for BIOS
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb5 at pci0 dev 30 function 0 "Intel 82801BAM Hub-to-PCI" rev 0xa5
+pci6 at ppb5 bus 13
+pcib0 at pci0 dev 31 function 0 "Intel HM55 LPC" rev 0x05
+ahci0 at pci0 dev 31 function 2 "Intel 3400 AHCI" rev 0x05: msi, AHCI 1.3
+ahci0: port 0: 1.5Gb/s
+ahci0: port 1: 1.5Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, ST9500325AS, 0006> naa.5000c5002526b461
+sd0: 476940MB, 512 bytes/sector, 976773168 sectors
+cd0 at scsibus1 targ 1 lun 0: <MATSHITA, DVD-RAM UJ890AS, 1.00> removable
+ichiic0 at pci0 dev 31 function 3 "Intel 3400 SMBus" rev 0x05: apic 2 int 18
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 2GB DDR3 SDRAM PC3-10600 SO-DIMM
+spdmem1 at iic0 addr 0x52: 2GB DDR3 SDRAM PC3-10600 SO-DIMM
+itherm0 at pci0 dev 31 function 6 "Intel 3400 Thermal" rev 0x05
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+pci7 at mainbus0 bus 63
+pchb1 at pci7 dev 0 function 0 "Intel QuickPath" rev 0x02
+pchb2 at pci7 dev 0 function 1 "Intel QuickPath" rev 0x02
+pchb3 at pci7 dev 2 function 0 "Intel QPI Link" rev 0x02
+pchb4 at pci7 dev 2 function 1 "Intel QPI Physical" rev 0x02
+pchb5 at pci7 dev 2 function 2 "Intel Reserved" rev 0x02
+pchb6 at pci7 dev 2 function 3 "Intel Reserved" rev 0x02
+uhub2 at uhub0 port 1 configuration 1 interface 0 "Intel Rate Matching Hub" rev 2.00/0.00 addr 2
+uvideo0 at uhub2 port 2 configuration 1 interface 0 "USB 2.0 Camera_FLV14 USB 2.0 Camera" rev 2.00/9c.30 addr 3
+video0 at uvideo0
+ugen0 at uhub2 port 6 "Broadcom Corp Broadcom Bluetooth Device" rev 2.00/5.96 addr 4
+uhub3 at uhub1 port 1 configuration 1 interface 0 "Intel Rate Matching Hub" rev 2.00/0.00 addr 2
+umass0 at uhub3 port 6 configuration 1 interface 0 "Generic Mass Storage" rev 2.00/1.00 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: <Generic, Flash Disk, 8.07> removable
+sd1: 7680MB, 512 bytes/sector, 15728640 sectors
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd1a (2ece4220700261ca.a) swap on sd1b dump on sd1b
+radeondrm0: REDWOOD
+radeondrm0: 1366x768, 32bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
