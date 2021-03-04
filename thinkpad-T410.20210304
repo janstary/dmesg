@@ -1,7 +1,7 @@
-OpenBSD 6.9-beta (GENERIC.MP) #374: Wed Mar  3 19:01:26 MST 2021
-    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+OpenBSD 6.9-beta (GENERIC.MP) #0: Thu Mar  4 20:35:16 CET 2021
+    hans@t410.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
 real mem = 4062691328 (3874MB)
-avail mem = 3924172800 (3742MB)
+avail mem = 3924197376 (3742MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -17,12 +17,12 @@ acpitimer0 at acpi0: 3579545 Hz, 24 bits
 acpiec0 at acpi0
 acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
 cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: Intel(R) Core(TM) i5 CPU M 560 @ 2.67GHz, 2926.61 MHz, 06-25-05
+cpu0: Intel(R) Core(TM) i5 CPU M 560 @ 2.67GHz, 2926.43 MHz, 06-25-05
 cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,POPCNT,AES,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,MELTDOWN
 cpu0: 256KB 64b/line 8-way L2 cache
 cpu0: smt 0, core 0, package 0
 mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
-cpu0: apic clock running at 133MHz
+cpu0: apic clock running at 132MHz
 cpu0: mwait min=64, max=64, C-substates=0.2.1.1, IBE
 cpu1 at mainbus0: apid 1 (application processor)
 cpu1: Intel(R) Core(TM) i5 CPU M 560 @ 2.67GHz, 2926.01 MHz, 06-25-05
@@ -35,7 +35,7 @@ cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CF
 cpu2: 256KB 64b/line 8-way L2 cache
 cpu2: smt 0, core 2, package 0
 cpu3 at mainbus0: apid 5 (application processor)
-cpu3: Intel(R) Core(TM) i5 CPU M 560 @ 2.67GHz, 2926.01 MHz, 06-25-05
+cpu3: Intel(R) Core(TM) i5 CPU M 560 @ 2.67GHz, 2926.02 MHz, 06-25-05
 cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,POPCNT,AES,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,MELTDOWN
 cpu3: 256KB 64b/line 8-way L2 cache
 cpu3: smt 1, core 2, package 0
