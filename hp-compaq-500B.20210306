@@ -1,7 +1,7 @@
-OpenBSD 6.9-beta (GENERIC) #370: Sat Mar  6 01:04:28 MST 2021
-    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC
+OpenBSD 6.9-beta (GENERIC.MP) #379: Sat Mar  6 01:15:42 MST 2021
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
 real mem = 4242145280 (4045MB)
-avail mem = 4098314240 (3908MB)
+avail mem = 4098203648 (3908MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -16,14 +16,18 @@ acpi0: wakeup devices P0P2(S4) P0P3(S4) P0P1(S4) MC97(S4) P0P4(S4) P0P5(S4) P0P6
 acpitimer0 at acpi0: 3579545 Hz, 24 bits
 acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
 cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: Intel(R) Core(TM)2 Duo CPU E7500 @ 2.93GHz, 2933.67 MHz, 06-17-0a
+cpu0: Intel(R) Core(TM)2 Duo CPU E7500 @ 2.93GHz, 2933.74 MHz, 06-17-0a
 cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
 cpu0: 3MB 64b/line 8-way L2 cache
 cpu0: smt 0, core 0, package 0
 mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
 cpu0: apic clock running at 277MHz
 cpu0: mwait min=64, max=64, C-substates=0.2.2.2.2, IBE
-cpu at mainbus0: not configured
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM)2 Duo CPU E7500 @ 2.93GHz, 3050.67 MHz, 06-17-0a
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+cpu1: 3MB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
 ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins, remapped
 acpimcfg0 at acpi0
 acpimcfg0: addr 0xe0000000, bus 0-255
@@ -41,6 +45,7 @@ acpicmos0 at acpi0
 acpibtn0 at acpi0: PWRB
 acpicpu0 at acpi0
 acpi0: SSDT checksum error: C1(@1 halt!), PSS
+acpicpu1 at acpi0: C1(@1 halt!), PSS
 cpu0: Enhanced SpeedStep 2933 MHz: speeds: 2936, 2670, 2403, 2136, 1870, 1603 MHz
 pci0 at mainbus0 bus 0
 pchb0 at pci0 dev 0 function 0 "Intel G41 Host" rev 0x03
