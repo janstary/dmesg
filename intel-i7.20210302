@@ -1,7 +1,7 @@
-OpenBSD 6.9-beta (GENERIC.MP) #370: Tue Mar  2 03:15:47 MST 2021
-    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
-real mem = 17009606656 (16221MB)
-avail mem = 16478728192 (15715MB)
+OpenBSD 6.9-beta (GENERIC.MP) #0: Tue Mar  2 18:54:49 CET 2021
+    hans@box.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 4124704768 (3933MB)
+avail mem = 3984318464 (3799MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -19,7 +19,7 @@ acpimcfg0 at acpi0
 acpimcfg0: addr 0xf4000000, bus 0-63
 acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
 cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz, 3392.79 MHz, 06-2a-07
+cpu0: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz, 3392.81 MHz, 06-2a-07
 cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
 cpu0: 256KB 64b/line 8-way L2 cache
 cpu0: smt 0, core 0, package 0
@@ -27,17 +27,17 @@ mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
 cpu0: apic clock running at 99MHz
 cpu0: mwait min=64, max=64, C-substates=0.2.1.1, IBE
 cpu1 at mainbus0: apid 2 (application processor)
-cpu1: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz, 3392.32 MHz, 06-2a-07
+cpu1: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz, 3392.31 MHz, 06-2a-07
 cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
 cpu1: 256KB 64b/line 8-way L2 cache
 cpu1: smt 0, core 1, package 0
 cpu2 at mainbus0: apid 4 (application processor)
-cpu2: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz, 3392.32 MHz, 06-2a-07
+cpu2: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz, 3392.31 MHz, 06-2a-07
 cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
 cpu2: 256KB 64b/line 8-way L2 cache
 cpu2: smt 0, core 2, package 0
 cpu3 at mainbus0: apid 6 (application processor)
-cpu3: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz, 3392.32 MHz, 06-2a-07
+cpu3: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz, 3392.31 MHz, 06-2a-07
 cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
 cpu3: 256KB 64b/line 8-way L2 cache
 cpu3: smt 0, core 3, package 0
@@ -126,23 +126,20 @@ pcib0 at pci0 dev 31 function 0 "Intel H67 LPC" rev 0x05
 ahci0 at pci0 dev 31 function 2 "Intel 6 Series AHCI" rev 0x05: apic 2 int 19, AHCI 1.3
 ahci0: port 0: 6.0Gb/s
 ahci0: port 1: 6.0Gb/s
-ahci0: port 4: 3.0Gb/s
-ahci0: port 5: 3.0Gb/s
+ahci0: port 2: 3.0Gb/s
+ahci0: port 3: 3.0Gb/s
 scsibus1 at ahci0: 32 targets
 sd0 at scsibus1 targ 0 lun 0: <ATA, WDC WDS250G2B0B, 4010> naa.5001b448b8532530
 sd0: 238475MB, 512 bytes/sector, 488397168 sectors, thin
-sd1 at scsibus1 targ 1 lun 0: <ATA, ST2000DM008-2FR1, 0001> naa.5000c500c128f41c
-sd1: 1907729MB, 512 bytes/sector, 3907029168 sectors, thin
-sd2 at scsibus1 targ 4 lun 0: <ATA, WDC WD30EFRX-68E, 82.0> naa.50014ee20aaed824
-sd2: 2861588MB, 512 bytes/sector, 5860533168 sectors
-sd3 at scsibus1 targ 5 lun 0: <ATA, WDC WD30EZRX-00M, 80.0> naa.50014ee25c38d81f
+sd1 at scsibus1 targ 1 lun 0: <ATA, WDC WD30EFRX-68E, 82.0> naa.50014ee20aaed824
+sd1: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd2 at scsibus1 targ 2 lun 0: <ATA, ST2000DM008-2FR1, 0001> naa.5000c500c128f41c
+sd2: 1907729MB, 512 bytes/sector, 3907029168 sectors, thin
+sd3 at scsibus1 targ 3 lun 0: <ATA, WDC WD30EZRX-00M, 80.0> naa.50014ee25c38d81f
 sd3: 2861588MB, 512 bytes/sector, 5860533168 sectors
 ichiic0 at pci0 dev 31 function 3 "Intel 6 Series SMBus" rev 0x05: apic 2 int 18
 iic0 at ichiic0
-spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-10600
-spdmem1 at iic0 addr 0x51: 4GB DDR3 SDRAM PC3-10600
-spdmem2 at iic0 addr 0x52: 4GB DDR3 SDRAM PC3-10600
-spdmem3 at iic0 addr 0x53: 4GB DDR3 SDRAM PC3-10600
+spdmem0 at iic0 addr 0x51: 4GB DDR3 SDRAM PC3-10600
 isa0 at pcib0
 isadma0 at isa0
 com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
@@ -163,7 +160,6 @@ scsibus2 at vscsi0: 256 targets
 softraid0 at root
 scsibus3 at softraid0: 256 targets
 root on sd0a (8e7aa56bfa6854a1.a) swap on sd0b dump on sd0b
-WARNING: / was not properly unmounted
 inteldrm0: 1360x768, 32bpp
 wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
 wsdisplay0: screen 1-5 added (std, vt100 emulation)
