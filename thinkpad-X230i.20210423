@@ -1,7 +1,7 @@
-OpenBSD 6.9-current (GENERIC) #466: Fri Apr 23 19:19:59 MDT 2021
-    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC
+OpenBSD 6.9-current (GENERIC.MP) #475: Fri Apr 23 19:31:37 MDT 2021
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
 real mem = 8231874560 (7850MB)
-avail mem = 7967125504 (7598MB)
+avail mem = 7967010816 (7597MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -24,9 +24,21 @@ cpu0: smt 0, core 0, package 0
 mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
 cpu0: apic clock running at 99MHz
 cpu0: mwait min=64, max=64, C-substates=0.2.1.1.2, IBE
-cpu at mainbus0: not configured
-cpu at mainbus0: not configured
-cpu at mainbus0: not configured
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz, 2394.58 MHz, 06-3a-09
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,XSAVE,AVX,F16C,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 1, core 0, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz, 2394.58 MHz, 06-3a-09
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,XSAVE,AVX,F16C,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 1, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz, 2394.58 MHz, 06-3a-09
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,XSAVE,AVX,F16C,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 1, package 0
 ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
 acpimcfg0 at acpi0
 acpimcfg0: addr 0xf8000000, bus 0-63
@@ -48,6 +60,9 @@ acpithinkpad0 at acpi0: version 1.0
 "PNP0C14" at acpi0 not configured
 "PNP0C14" at acpi0 not configured
 acpicpu0 at acpi0: C2(350@80 mwait.1@0x20), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C2(350@80 mwait.1@0x20), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C2(350@80 mwait.1@0x20), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C2(350@80 mwait.1@0x20), C1(1000@1 mwait.1), PSS
 acpipwrres0 at acpi0: PUBS, resource for XHCI, EHC1, EHC2
 acpitz0 at acpi0: critical temperature is 103 degC
 acpidock0 at acpi0: GDCK not docked (0)
@@ -74,7 +89,7 @@ azalia0: codecs: Realtek ALC269, Intel/0x2806, using Realtek ALC269
 audio0 at azalia0
 ppb0 at pci0 dev 28 function 0 "Intel 7 Series PCIE" rev 0xc4: msi
 pci1 at ppb0 bus 2
-sdhc0 at pci1 dev 0 function 0 "Ricoh 5U822 SD/MMC" rev 0x07: apic 2 int 16
+sdhc0 at pci1 dev 0 function 0 "Ricoh 5U823 SD/MMC" rev 0x04: apic 2 int 16
 sdhc0: SDHC 3.0, 50 MHz base clock
 sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed, dma
 ppb1 at pci0 dev 28 function 1 "Intel 7 Series PCIE" rev 0xc4: msi
