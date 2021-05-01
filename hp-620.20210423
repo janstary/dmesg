@@ -1,13 +1,13 @@
-OpenBSD 6.9-current (GENERIC.MP) #475: Fri Apr 23 19:31:37 MDT 2021
-    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
-real mem = 3129475072 (2984MB)
-avail mem = 3019313152 (2879MB)
+OpenBSD 6.9-current (GENERIC) #466: Fri Apr 23 19:19:59 MDT 2021
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC
+real mem = 8468824064 (8076MB)
+avail mem = 8196894720 (7817MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
 mainbus0 at root
-bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xbbac3000 (22 entries)
-bios0: vendor Hewlett-Packard version "68PVI Ver. F.04" date 07/21/2010
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xb9ec3000 (21 entries)
+bios0: vendor Hewlett-Packard version "68PVI Ver. F.20" date 12/12/2011
 bios0: Hewlett-Packard HP 620
 acpi0 at bios0: ACPI 3.0
 acpi0: sleep states S0 S3 S4 S5
@@ -17,18 +17,14 @@ acpitimer0 at acpi0: 3579545 Hz, 24 bits
 acpihpet0 at acpi0: 14318179 Hz
 acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
 cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: Pentium(R) Dual-Core CPU T4500 @ 2.30GHz, 2294.68 MHz, 06-17-0a
+cpu0: Pentium(R) Dual-Core CPU T4500 @ 2.30GHz, 2294.67 MHz, 06-17-0a
 cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,EST,TM2,SSSE3,CX16,xTPR,PDCM,XSAVE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
 cpu0: 1MB 64b/line 4-way L2 cache
 cpu0: smt 0, core 0, package 0
 mtrr: Pentium Pro MTRR support, 7 var ranges, 88 fixed ranges
 cpu0: apic clock running at 199MHz
 cpu0: mwait min=64, max=64, C-substates=0.2.2.2, IBE
-cpu1 at mainbus0: apid 1 (application processor)
-cpu1: Pentium(R) Dual-Core CPU T4500 @ 2.30GHz, 2294.25 MHz, 06-17-0a
-cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,EST,TM2,SSSE3,CX16,xTPR,PDCM,XSAVE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
-cpu1: 1MB 64b/line 4-way L2 cache
-cpu1: smt 0, core 1, package 0
+cpu at mainbus0: not configured
 ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins, remapped
 acpimcfg0 at acpi0
 acpimcfg0: addr 0xe0000000, bus 0-255
@@ -45,7 +41,7 @@ acpipci0 at acpi0 PCI0: 0x00000010 0x00000011 0x00000000
 acpicmos0 at acpi0
 "PNP0A06" at acpi0 not configured
 "SYN0176" at acpi0 not configured
-acpibat0 at acpi0: BAT0 model "Primary" serial 20628 2010/06/27 type LIon oem "Hewlett-Packard"
+acpibat0 at acpi0: BAT0 not present
 acpiac0 at acpi0: AC unit online
 acpibtn0 at acpi0: SLPB
 acpibtn1 at acpi0: LID_
@@ -65,7 +61,6 @@ acpibtn1 at acpi0: LID_
 "PNP0C0B" at acpi0 not configured
 "PNP0C0B" at acpi0 not configured
 acpicpu0 at acpi0: !C2(250@17 mwait.3@0x20), C1(1000@1 mwait.1), PSS
-acpicpu1 at acpi0: !C2(250@17 mwait.3@0x20), C1(1000@1 mwait.1), PSS
 acpipwrres0 at acpi0: APPR, resource for HDEF
 acpipwrres1 at acpi0: COMP, resource for COM1
 acpipwrres2 at acpi0: LPP_, resource for LPT0
@@ -168,14 +163,11 @@ umass0: using SCSI over Bulk-Only
 scsibus2 at umass0: 2 targets, initiator 0
 sd1 at scsibus2 targ 1 lun 0: <Generic, Flash Disk, 8.07> removable
 sd1: 7680MB, 512 bytes/sector, 15728640 sectors
-ugen0 at uhub2 port 1 "Broadcom Corp HP Integrated Module" rev 2.00/3.06 addr 2
 vscsi0 at root
 scsibus3 at vscsi0: 256 targets
 softraid0 at root
 scsibus4 at softraid0: 256 targets
 root on sd1a (2ece4220700261ca.a) swap on sd1b dump on sd1b
-WARNING: clock gained 3 days
-WARNING: CHECK AND RESET THE DATE!
 inteldrm0: 1366x768, 32bpp
 wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
 wsdisplay0: screen 1-5 added (std, vt100 emulation)
