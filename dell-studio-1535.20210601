@@ -1,0 +1,296 @@
+OpenBSD 6.9-current (GENERIC.MP) #42: Tue Jun  1 12:10:25 MDT 2021
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 4268081152 (4070MB)
+avail mem = 4123246592 (3932MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xf7040 (45 entries)
+bios0: vendor Dell Inc. version "A05" date 07/30/2008
+bios0: Dell Inc. Studio 1535
+acpi0 at bios0: ACPI 4.0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET APIC MCFG SLIC OSFR BOOT SSDT
+acpi0: wakeup devices PCI0(S5) PCIE(S4) USB1(S0) USB2(S0) USB3(S0) USB4(S0) USB5(S0) EHC2(S0) EHCI(S0) AZAL(S3) RP01(S3) RP02(S3) RP03(S3) RP04(S3) RP05(S3) RP06(S5) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM)2 Duo CPU T8100 @ 2.10GHz, 2304.87 MHz, 06-17-06
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+cpu0: 3MB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 199MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.2.2.2.1.3, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM)2 Duo CPU T8100 @ 2.10GHz, 2095.00 MHz, 06-17-06
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+cpu1: 3MB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins, remapped
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf8000000, bus 0-63
+acpimcfg0: addr 0x0, bus 0-0
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 3 (PCIE)
+acpiprt2 at acpi0: bus -1 (AGP_)
+acpiprt3 at acpi0: bus 11 (RP01)
+acpiprt4 at acpi0: bus 12 (RP02)
+acpiprt5 at acpi0: bus -1 (RP03)
+acpiprt6 at acpi0: bus 13 (RP04)
+acpiprt7 at acpi0: bus -1 (RP05)
+acpiprt8 at acpi0: bus 9 (RP06)
+acpipci0 at acpi0 PCI0
+"ITE8708" at acpi0 not configured
+acpicmos0 at acpi0
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: PBTN
+acpibtn2 at acpi0: SBTN
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT0 model "DELL WU9468" serial 20829 type LION oem "Samsung SDI"
+"PNP0C32" at acpi0 not configured
+"*pnp0c14" at acpi0 not configured
+acpicpu0 at acpi0: !C3(100@57 mwait.3@0x30), !C2(500@1 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: !C3(100@57 mwait.3@0x30), !C2(500@1 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpitz0 at acpi0: critical temperature is 127 degC
+acpivideo0 at acpi0: VID_
+acpivideo1 at acpi0: VID_
+acpivideo2 at acpi0: VID2
+cpu0: Enhanced SpeedStep 2304 MHz: speeds: 2101, 2100, 1600, 1200 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "Intel GM965 Host" rev 0x03
+inteldrm0 at pci0 dev 2 function 0 "Intel GM965 Video" rev 0x03
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0xe0000000, size 0x10000000
+inteldrm0: apic 2 int 16, I965GM, gen 4
+"Intel GM965 Video" rev 0x03 at pci0 dev 2 function 1 not configured
+uhci0 at pci0 dev 26 function 0 "Intel 82801H USB" rev 0x03: apic 2 int 20
+uhci1 at pci0 dev 26 function 1 "Intel 82801H USB" rev 0x03: apic 2 int 21
+ehci0 at pci0 dev 26 function 7 "Intel 82801H USB" rev 0x03: apic 2 int 22
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 "Intel 82801H HD Audio" rev 0x03: msi
+azalia0: codecs: IDT 92HD73C1, CMD Technology/0x1392, using IDT 92HD73C1
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 "Intel 82801H PCIE" rev 0x03: msi
+pci1 at ppb0 bus 11
+ppb1 at pci0 dev 28 function 1 "Intel 82801H PCIE" rev 0x03: msi
+pci2 at ppb1 bus 12
+iwm0 at pci2 dev 0 function 0 "Intel AC 7260" rev 0xbb, msi
+ppb2 at pci0 dev 28 function 3 "Intel 82801H PCIE" rev 0x03: msi
+pci3 at ppb2 bus 13
+ppb3 at pci0 dev 28 function 5 "Intel 82801H PCIE" rev 0x03: msi
+pci4 at ppb3 bus 9
+bge0 at pci4 dev 0 function 0 "Broadcom BCM5784" rev 0x10, BCM5784 A1 (0x5784100): msi, address 00:21:70:73:d6:c0
+brgphy0 at bge0 phy 1: BCM5784 10/100/1000baseT PHY, rev. 4
+uhci2 at pci0 dev 29 function 0 "Intel 82801H USB" rev 0x03: apic 2 int 20
+uhci3 at pci0 dev 29 function 1 "Intel 82801H USB" rev 0x03: apic 2 int 21
+uhci4 at pci0 dev 29 function 2 "Intel 82801H USB" rev 0x03: apic 2 int 22
+ehci1 at pci0 dev 29 function 7 "Intel 82801H USB" rev 0x03: apic 2 int 20
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb4 at pci0 dev 30 function 0 "Intel 82801BAM Hub-to-PCI" rev 0xf3
+pci5 at ppb4 bus 3
+"Ricoh 5C832 Firewire" rev 0x05 at pci5 dev 1 function 0 not configured
+sdhc0 at pci5 dev 1 function 1 "Ricoh 5C822 SD/MMC" rev 0x22: apic 2 int 18
+sdhc0: SDHC 1.0, 33 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed
+"Ricoh 5C843 MMC" rev 0x12 at pci5 dev 1 function 2 not configured
+"Ricoh 5C592 Memory Stick" rev 0x12 at pci5 dev 1 function 3 not configured
+"Ricoh 5C852 xD" rev 0x12 at pci5 dev 1 function 4 not configured
+pcib0 at pci0 dev 31 function 0 "Intel 82801HBM LPC" rev 0x03
+ahci0 at pci0 dev 31 function 2 "Intel 82801HBM AHCI" rev 0x03: msi, AHCI 1.1
+ahci0: port 0: 1.5Gb/s
+ahci0: port 1: 1.5Gb/s
+ahci0: PHY offline on port 2
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, WDC WD3200BEVT-7, 11.0> naa.50014ee256dc38af
+sd0: 305245MB, 512 bytes/sector, 625142448 sectors
+cd0 at scsibus1 targ 1 lun 0: <Optiarc, DVD+-RW AD-7640S, HD18> removable
+ichiic0 at pci0 dev 31 function 3 "Intel 82801H SMBus" rev 0x03: apic 2 int 17
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 2GB DDR2 SDRAM non-parity PC2-5300CL5 SO-DIMM
+spdmem1 at iic0 addr 0x52: 2GB DDR2 SDRAM non-parity PC2-5300CL5 SO-DIMM
+usb2 at uhci0: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci1: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb4 at uhci2: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb5 at uhci3: USB revision 1.0
+uhub5 at usb5 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb6 at uhci4: USB revision 1.0
+uhub6 at usb6 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pms0: ALPS Glidepoint, version 0x7321
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: VMX (using slow L1TF mitigation)
+dt: 443 probes
+uvideo0 at uhub1 port 5 configuration 1 interface 0 "SONiX Technology Inc. Laptop_Integrated_Webcam_2M" rev 2.00/82.29 addr 2
+video0 at uvideo0
+ugen0 at uhub3 port 1 "Intel product 0x07dc" rev 2.00/0.01 addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (9eb2e22eeb49aa3d.a) swap on sd0b dump on sd0b
+inteldrm0: 1280x800, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+iwm0: hw rev 0x140, fw ver 17.3216344376.0, address 48:51:b7:93:03:5a
+iwm0: dumping device error log
+iwm0: Start Error Log Dump:
+iwm0: Status: 0x9, count: 6
+iwm0: 0x00003421 | ADVANCED_SYSASSERT          
+iwm0: 00000220 | trm_hw_status0
+iwm0: 00000000 | trm_hw_status1
+iwm0: 00000B30 | branchlink2
+iwm0: 000164C0 | interruptlink1
+iwm0: 00000000 | interruptlink2
+iwm0: DEADBEEF | data1
+iwm0: DEADBEEF | data2
+iwm0: DEADBEEF | data3
+iwm0: FFDE4D95 | beacon time
+iwm0: A468A26A | tsf low
+iwm0: 000000DD | tsf hi
+iwm0: 00000000 | time gp1
+iwm0: 00894DCD | time gp2
+iwm0: 00000000 | uCode revision type
+iwm0: 00000011 | uCode version major
+iwm0: BFB58538 | uCode version minor
+iwm0: 00000144 | hw version
+iwm0: 00889004 | board version
+iwm0: 003A0028 | hcmd
+iwm0: 24022082 | isr0
+iwm0: 00000000 | isr1
+iwm0: 00000002 | isr2
+iwm0: 00414080 | isr3
+iwm0: 00000000 | isr4
+iwm0: 01000112 | last cmd Id
+iwm0: 00000000 | wait_event
+iwm0: 000000D4 | l2p_control
+iwm0: 00018030 | l2p_duration
+iwm0: 00000007 | l2p_mhvalid
+iwm0: 00000000 | l2p_addr_match
+iwm0: 00000007 | lmpm_pmg_sel
+iwm0: 15041745 | timestamp
+iwm0: 00008088 | flow_handler
+driver status:
+  tx ring  0: qid=0  cur=59  queued=1  
+  tx ring  1: qid=1  cur=0   queued=0  
+  tx ring  2: qid=2  cur=0   queued=0  
+  tx ring  3: qid=3  cur=0   queued=0  
+  tx ring  4: qid=4  cur=0   queued=0  
+  tx ring  5: qid=5  cur=7   queued=1  
+  tx ring  6: qid=6  cur=0   queued=0  
+  tx ring  7: qid=7  cur=0   queued=0  
+  tx ring  8: qid=8  cur=0   queued=0  
+  tx ring  9: qid=9  cur=0   queued=0  
+  tx ring 10: qid=10 cur=0   queued=0  
+  tx ring 11: qid=11 cur=0   queued=0  
+  tx ring 12: qid=12 cur=0   queued=0  
+  tx ring 13: qid=13 cur=0   queued=0  
+  tx ring 14: qid=14 cur=0   queued=0  
+  tx ring 15: qid=15 cur=0   queued=0  
+  tx ring 16: qid=16 cur=0   queued=0  
+  tx ring 17: qid=17 cur=0   queued=0  
+  tx ring 18: qid=18 cur=0   queued=0  
+  tx ring 19: qid=19 cur=0   queued=0  
+  tx ring 20: qid=20 cur=0   queued=0  
+  tx ring 21: qid=21 cur=0   queued=0  
+  tx ring 22: qid=22 cur=0   queued=0  
+  tx ring 23: qid=23 cur=0   queued=0  
+  tx ring 24: qid=24 cur=0   queued=0  
+  tx ring 25: qid=25 cur=0   queued=0  
+  tx ring 26: qid=26 cur=0   queued=0  
+  tx ring 27: qid=27 cur=0   queued=0  
+  tx ring 28: qid=28 cur=0   queued=0  
+  tx ring 29: qid=29 cur=0   queued=0  
+  tx ring 30: qid=30 cur=0   queued=0  
+  rx ring: cur=131
+  802.11 state ASSOC
+iwm0: fatal firmware error
+iwm0: could not remove MAC context (error 35)
+iwm0: dumping device error log
+iwm0: Start Error Log Dump:
+iwm0: Status: 0x9, count: 6
+iwm0: 0x00003421 | ADVANCED_SYSASSERT          
+iwm0: 00A00220 | trm_hw_status0
+iwm0: 00000000 | trm_hw_status1
+iwm0: 00000B30 | branchlink2
+iwm0: 000164C0 | interruptlink1
+iwm0: 00000000 | interruptlink2
+iwm0: DEADBEEF | data1
+iwm0: DEADBEEF | data2
+iwm0: DEADBEEF | data3
+iwm0: FFDEB848 | beacon time
+iwm0: A4C2D7B7 | tsf low
+iwm0: 000000DD | tsf hi
+iwm0: 00000000 | time gp1
+iwm0: 0046C402 | time gp2
+iwm0: 00000000 | uCode revision type
+iwm0: 00000011 | uCode version major
+iwm0: BFB58538 | uCode version minor
+iwm0: 00000144 | hw version
+iwm0: 00889004 | board version
+iwm0: 003A0028 | hcmd
+iwm0: 24022082 | isr0
+iwm0: 01000000 | isr1
+iwm0: 00000002 | isr2
+iwm0: 004140C0 | isr3
+iwm0: 00000000 | isr4
+iwm0: 01000112 | last cmd Id
+iwm0: 00000000 | wait_event
+iwm0: 000000C0 | l2p_control
+iwm0: 00018030 | l2p_duration
+iwm0: 0000003F | l2p_mhvalid
+iwm0: 00000000 | l2p_addr_match
+iwm0: 00000005 | lmpm_pmg_sel
+iwm0: 15041745 | timestamp
+iwm0: 00007888 | flow_handler
+driver status:
+  tx ring  0: qid=0  cur=59  queued=1  
+  tx ring  1: qid=1  cur=0   queued=0  
+  tx ring  2: qid=2  cur=0   queued=0  
+  tx ring  3: qid=3  cur=0   queued=0  
+  tx ring  4: qid=4  cur=0   queued=0  
+  tx ring  5: qid=5  cur=7   queued=1  
+  tx ring  6: qid=6  cur=0   queued=0  
+  tx ring  7: qid=7  cur=0   queued=0  
+  tx ring  8: qid=8  cur=0   queued=0  
+  tx ring  9: qid=9  cur=0   queued=0  
+  tx ring 10: qid=10 cur=0   queued=0  
+  tx ring 11: qid=11 cur=0   queued=0  
+  tx ring 12: qid=12 cur=0   queued=0  
+  tx ring 13: qid=13 cur=0   queued=0  
+  tx ring 14: qid=14 cur=0   queued=0  
+  tx ring 15: qid=15 cur=0   queued=0  
+  tx ring 16: qid=16 cur=0   queued=0  
+  tx ring 17: qid=17 cur=0   queued=0  
+  tx ring 18: qid=18 cur=0   queued=0  
+  tx ring 19: qid=19 cur=0   queued=0  
+  tx ring 20: qid=20 cur=0   queued=0  
+  tx ring 21: qid=21 cur=0   queued=0  
+  tx ring 22: qid=22 cur=0   queued=0  
+  tx ring 23: qid=23 cur=0   queued=0  
+  tx ring 24: qid=24 cur=0   queued=0  
+  tx ring 25: qid=25 cur=0   queued=0  
+  tx ring 26: qid=26 cur=0   queued=0  
+  tx ring 27: qid=27 cur=0   queued=0  
+  tx ring 28: qid=28 cur=0   queued=0  
+  tx ring 29: qid=29 cur=0   queued=0  
+  tx ring 30: qid=30 cur=0   queued=0  
+  rx ring: cur=124
+  802.11 state ASSOC
+iwm0: fatal firmware error
+iwm0: could not remove MAC context (error 35)
