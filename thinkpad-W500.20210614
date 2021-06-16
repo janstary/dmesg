@@ -1,7 +1,7 @@
 OpenBSD 6.9-current (GENERIC.MP) #74: Mon Jun 14 00:57:26 MDT 2021
     deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
 real mem = 8463781888 (8071MB)
-avail mem = 8191803392 (7812MB)
+avail mem = 8191774720 (7812MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -17,7 +17,7 @@ acpitimer0 at acpi0: 3579545 Hz, 24 bits
 acpiec0 at acpi0
 acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
 cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: Intel(R) Core(TM)2 Duo CPU P9500 @ 2.53GHz, 798.14 MHz, 06-17-06
+cpu0: Intel(R) Core(TM)2 Duo CPU P9500 @ 2.53GHz, 798.17 MHz, 06-17-06
 cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
 cpu0: 6MB 64b/line 16-way L2 cache
 cpu0: smt 0, core 0, package 0
@@ -155,13 +155,9 @@ softraid0 at root
 scsibus3 at softraid0: 256 targets
 root on sd0a (f926ff4ff44f498e.a) swap on sd0b dump on sd0b
 radeondrm0: RV635
-r600_cp: Failed to load firmware "radeon/RV635_pfp.bin"
-[drm] *ERROR* Failed to load firmware!
-drm:pid0:radeondrm_attachhook *ERROR* Fatal error during GPU init
-drm1 detached
-radeondrm0 detached
-"ATI Mobility Radeon HD 3650" rev 0x00 at pci1 dev 0 function 0 not configured
-drm:pid0:intel_cpu_fifo_underrun_irq_handler *ERROR* [drm] *ERROR* CPU pipe B FIFO underrun
+radeondrm0: 1920x1200, 32bpp
+wsdisplay1 at radeondrm0
+wsdisplay1: screen 0-5 added (std, vt100 emulation)
 inteldrm0: 1920x1200, 32bpp
 wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
 wsdisplay0: screen 1-5 added (std, vt100 emulation)
