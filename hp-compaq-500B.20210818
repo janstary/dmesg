@@ -1,4 +1,4 @@
-OpenBSD 7.0-beta (GENERIC.MP) #0: Wed Aug 18 16:57:24 CEST 2021
+OpenBSD 7.0-beta (GENERIC.MP) #0: Wed Aug 18 16:20:19 CEST 2021
     hans@usb.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
 real mem = 4242145280 (4045MB)
 avail mem = 4097634304 (3907MB)
@@ -16,15 +16,15 @@ acpi0: wakeup devices P0P2(S4) P0P3(S4) P0P1(S4) MC97(S4) P0P4(S4) P0P5(S4) P0P6
 acpitimer0 at acpi0: 3579545 Hz, 24 bits
 acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
 cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: Intel(R) Core(TM)2 Duo CPU E7500 @ 2.93GHz, 2933.77 MHz, 06-17-0a
+cpu0: Intel(R) Core(TM)2 Duo CPU E7500 @ 2.93GHz, 4107.04 MHz, 06-17-0a
 cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
 cpu0: 3MB 64b/line 8-way L2 cache
 cpu0: smt 0, core 0, package 0
 mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
-cpu0: apic clock running at 277MHz
+cpu0: apic clock running at 266MHz
 cpu0: mwait min=64, max=64, C-substates=0.2.2.2.2, IBE
 cpu1 at mainbus0: apid 1 (application processor)
-cpu1: Intel(R) Core(TM)2 Duo CPU E7500 @ 2.93GHz, 3050.67 MHz, 06-17-0a
+cpu1: Intel(R) Core(TM)2 Duo CPU E7500 @ 2.93GHz, 2933.34 MHz, 06-17-0a
 cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
 cpu1: 3MB 64b/line 8-way L2 cache
 cpu1: smt 0, core 1, package 0
@@ -46,7 +46,7 @@ acpibtn0 at acpi0: PWRB
 acpicpu0 at acpi0
 acpi0: SSDT checksum error: C1(@1 halt!), PSS
 acpicpu1 at acpi0: C1(@1 halt!), PSS
-cpu0: Enhanced SpeedStep 2933 MHz: speeds: 2936, 2670, 2403, 2136, 1870, 1603 MHz
+cpu0: Enhanced SpeedStep 4107 MHz: speeds: 2936, 2670, 2403, 2136, 1870, 1603 MHz
 pci0 at mainbus0 bus 0
 pchb0 at pci0 dev 0 function 0 "Intel G41 Host" rev 0x03
 ppb0 at pci0 dev 1 function 0 "Intel G45 PCIE" rev 0x03: msi
@@ -78,7 +78,13 @@ ppb3 at pci0 dev 30 function 0 "Intel 82801BA Hub-to-PCI" rev 0xe1
 pci4 at ppb3 bus 4
 envy0 at pci4 dev 4 function 0 "IC Ensemble Envy24PT/HT Audio" rev 0x01: apic 2 int 20
 envy0: unknown 1724-based card, 2 inputs, 8 outputs
+envy0: eeprom:  36 53 49 36 78 78 78 78 45 47 4f 53 59 53 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+envy0: gpio_mask = ffff53
+envy0: gpio_dir = 59534f
+envy0: gpio_state = 600bc
 audio0 at envy0
+envy0: allocated 65536 bytes dir=1, ka=0xffff8000224da000, da=a0a3000
+envy0: allocated 65536 bytes dir=2, ka=0xffff8000224ea000, da=a0b3000
 midi0 at envy0: <Envy24 MIDI UART>
 pcib0 at pci0 dev 31 function 0 "Intel 82801GB LPC" rev 0x01
 pciide0 at pci0 dev 31 function 1 "Intel 82801GB IDE" rev 0x01: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
