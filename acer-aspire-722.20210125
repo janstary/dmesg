@@ -1,0 +1,145 @@
+OpenBSD 6.8-current (GENERIC.MP) #294: Mon Jan 25 01:19:42 MST 2021
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 3987992576 (3803MB)
+avail mem = 3851808768 (3673MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xe3e70 (51 entries)
+bios0: vendor Acer version "V1.04" date 06/08/2011
+bios0: Acer AO722
+acpi0 at bios0: ACPI 4.0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET APIC MCFG BOOT SLIC SSDT SSDT
+acpi0: wakeup devices SPB2(S4) GEC_(S4) USB0(S3) USB4(S3) P2P_(S5)
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpihpet0 at acpi0: 14318180 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: AMD C-60 APU with Radeon(tm) HD Graphics, 998.31 MHz, 14-02-00
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,SSSE3,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,IBS,SKINIT,ITSC
+cpu0: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 16-way L2 cache
+cpu0: 8 4MB entries fully associative
+cpu0: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 199MHz
+cpu0: mwait min=64, max=64, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: AMD C-60 APU with Radeon(tm) HD Graphics, 997.51 MHz, 14-02-00
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,SSSE3,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,IBS,SKINIT,ITSC
+cpu1: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 16-way L2 cache
+cpu1: 8 4MB entries fully associative
+cpu1: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 21, 24 pins, remapped
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf8000000, bus 0-63
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PB2_)
+acpiprt2 at acpi0: bus -1 (PB3_)
+acpiprt3 at acpi0: bus -1 (PB4_)
+acpiprt4 at acpi0: bus -1 (PB5_)
+acpiprt5 at acpi0: bus -1 (PB6_)
+acpiprt6 at acpi0: bus -1 (PB7_)
+acpiprt7 at acpi0: bus 2 (SPB0)
+acpiprt8 at acpi0: bus -1 (SPB1)
+acpiprt9 at acpi0: bus 6 (SPB2)
+acpiprt10 at acpi0: bus 7 (SPB3)
+acpiprt11 at acpi0: bus 1 (P2P_)
+acpiec0 at acpi0
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: SLPB
+acpipci0 at acpi0 PCI0
+acpicmos0 at acpi0
+"ETD0500" at acpi0 not configured
+"PNP0C14" at acpi0 not configured
+"PNP0C14" at acpi0 not configured
+acpibat0 at acpi0: BAT1 model "13848633228217409" serial feb7 type Lion oem "Sanyo "
+acpiac0 at acpi0: AC unit online
+acpibtn2 at acpi0: LID_
+acpicpu0 at acpi0: C2(0@100 io@0xf800), C1(@1 halt!), PSS
+acpicpu1 at acpi0: C2(0@100 io@0xf800), C1(@1 halt!), PSS
+acpivideo0 at acpi0: VGA_
+acpivout0 at acpivideo0: LCD_
+acpivideo1 at acpi0: VGA_
+acpivideo2 at acpi0: VGA_
+cpu0: 998 MHz: speeds: 1000 800 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "AMD 14h Host" rev 0x00
+radeondrm0 at pci0 dev 1 function 0 "ATI Radeon HD 6290" rev 0x00
+drm0 at radeondrm0
+radeondrm0: msi
+azalia0 at pci0 dev 1 function 1 "ATI Radeon HD 6310 HD Audio" rev 0x00: msi
+azalia0: no supported codecs
+ahci0 at pci0 dev 17 function 0 "ATI SBx00 SATA" rev 0x00: apic 4 int 19, AHCI 1.2
+ahci0: port 0: 3.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, WDC WD5000BPVT-2, 01.0> naa.50014ee6ac068a7a
+sd0: 476940MB, 512 bytes/sector, 976773168 sectors
+ohci0 at pci0 dev 18 function 0 "ATI SB700 USB" rev 0x00: apic 4 int 18, version 1.0, legacy support
+ehci0 at pci0 dev 18 function 2 "ATI SB700 USB2" rev 0x00: apic 4 int 17
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "ATI EHCI root hub" rev 2.00/1.00 addr 1
+ohci1 at pci0 dev 19 function 0 "ATI SB700 USB" rev 0x00: apic 4 int 18, version 1.0, legacy support
+ehci1 at pci0 dev 19 function 2 "ATI SB700 USB2" rev 0x00: apic 4 int 17
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 "ATI EHCI root hub" rev 2.00/1.00 addr 1
+piixpm0 at pci0 dev 20 function 0 "ATI SBx00 SMBus" rev 0x42: SMI
+iic0 at piixpm0
+spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-10600 SO-DIMM
+azalia1 at pci0 dev 20 function 2 "ATI SBx00 HD Audio" rev 0x40: apic 4 int 16
+azalia1: codecs: Conexant/0x506c
+audio0 at azalia1
+pcib0 at pci0 dev 20 function 3 "ATI SB700 ISA" rev 0x40
+ppb0 at pci0 dev 20 function 4 "ATI SB600 PCI" rev 0x40
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 21 function 0 "ATI SB800 PCIE" rev 0x00: msi
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 21 function 2 "ATI SB800 PCIE" rev 0x00
+pci3 at ppb2 bus 6
+alc0 at pci3 dev 0 function 0 "Attansic Technology L2C" rev 0xc1: msi, address b8:70:f4:b2:96:97
+atphy0 at alc0 phy 0: F2 10/100 PHY, rev. 5
+ppb3 at pci0 dev 21 function 3 "ATI SB800 PCIE" rev 0x00
+pci4 at ppb3 bus 7
+athn0 at pci4 dev 0 function 0 "Atheros AR9285" rev 0x01: apic 4 int 19
+athn0: AR9285 rev 2 (1T1R), ROM rev 13, address 48:5d:60:e0:a1:ce
+pchb1 at pci0 dev 24 function 0 "AMD 14h Link Cfg" rev 0x43
+pchb2 at pci0 dev 24 function 1 "AMD 14h Address Map" rev 0x00
+pchb3 at pci0 dev 24 function 2 "AMD 14h DRAM Cfg" rev 0x00
+km0 at pci0 dev 24 function 3 "AMD 14h Misc Cfg" rev 0x00
+pchb4 at pci0 dev 24 function 4 "AMD 14h CPU Power" rev 0x00
+pchb5 at pci0 dev 24 function 5 "AMD 14h Reserved" rev 0x00
+pchb6 at pci0 dev 24 function 6 "AMD 14h NB Power" rev 0x00
+pchb7 at pci0 dev 24 function 7 "AMD 14h Reserved" rev 0x00
+usb2 at ohci0: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 "ATI OHCI root hub" rev 1.00/1.00 addr 1
+usb3 at ohci1: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 "ATI OHCI root hub" rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pms0: Elantech Touchpad, version 2, firmware 0x40213
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: SVM/RVI
+uvideo0 at uhub1 port 1 configuration 1 interface 0 "Y2B7B00RJ WebCam" rev 2.00/0.04 addr 2
+video0 at uvideo0
+umass0 at uhub1 port 2 configuration 1 interface 0 "Generic USB2.0-CRW" rev 2.00/38.82 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: <Generic-, Multi-Card, 1.00> removable serial.0bda0138516388200000
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (cb5acbded5e81032.a) swap on sd0b dump on sd0b
+radeondrm0: PALM
+radeondrm0: 1366x768, 32bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)

@@ -1,7 +1,7 @@
-OpenBSD 6.8-current (GENERIC.MP) #558: Sun Dec 13 17:02:21 MST 2020
+OpenBSD 6.8-current (GENERIC.MP) #610: Sat Jan 16 01:07:36 MST 2021
     deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC.MP
 real mem  = 2137341952 (2038MB)
-avail mem = 2082025472 (1985MB)
+avail mem = 2081988608 (1985MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -70,6 +70,7 @@ bge0 at pci1 dev 0 function 0 "Broadcom BCM5751M" rev 0x21, BCM5750 C1 (0x4201):
 brgphy0 at bge0 phy 1: BCM5750 10/100/1000baseT PHY, rev. 0
 ppb1 at pci0 dev 28 function 1 "Intel 82801GB PCIE" rev 0x02: apic 1 int 21
 pci2 at ppb1 bus 3
+wpi0 at pci2 dev 0 function 0 "Intel PRO/Wireless 3945ABG" rev 0x02: msi, MoW2, address 00:18:de:01:db:c2
 ppb2 at pci0 dev 28 function 2 "Intel 82801GB PCIE" rev 0x02: apic 1 int 22
 pci3 at ppb2 bus 4
 ppb3 at pci0 dev 28 function 3 "Intel 82801GB PCIE" rev 0x02: apic 1 int 23

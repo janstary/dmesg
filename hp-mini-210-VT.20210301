@@ -1,0 +1,119 @@
+OpenBSD 6.9-beta (GENERIC.MP) #699: Mon Mar  1 12:18:44 MST 2021
+    deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC.MP
+RTC BIOS diagnostic error 80<clock_battery>
+real mem  = 2134999040 (2036MB)
+avail mem = 2079657984 (1983MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 04/23/10, SMBIOS rev. 2.6 @ 0xe8380 (18 entries)
+bios0: vendor Hewlett-Packard version "F.12" date 04/23/2010
+bios0: Hewlett-Packard HP Mini 210 VT
+acpi0 at bios0: ACPI 4.0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SSDT SSDT SSDT HPET APIC MCFG SLIC BOOT
+acpi0: wakeup devices PWRB(S4) P32_(S4) UHC1(S3) UHC2(S3) ECHI(S3) EXP1(S5) EXP2(S4) EXP3(S4) EXP4(S4) AZAL(S4) MODM(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Atom(TM) CPU N470 @ 1.83GHz ("GenuineIntel" 686-class) 1.83 GHz, 06-1c-0a
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,EST,TM2,SSSE3,CX16,xTPR,PDCM,MOVBE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+mtrr: Pentium Pro MTRR support, 7 var ranges, 88 fixed ranges
+cpu0: apic clock running at 166MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.2.0.2, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Atom(TM) CPU N470 @ 1.83GHz ("GenuineIntel" 686-class) 1.83 GHz, 06-1c-0a
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,EST,TM2,SSSE3,CX16,xTPR,PDCM,MOVBE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 20, 24 pins, remapped
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 5 (P32_)
+acpiprt2 at acpi0: bus 1 (EXP1)
+acpiprt3 at acpi0: bus 2 (EXP2)
+acpiprt4 at acpi0: bus -1 (EXP3)
+acpiprt5 at acpi0: bus -1 (EXP4)
+acpiec0 at acpi0
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: LID0
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT0 model "Primary" serial   type LION oem "Hewlett-Packard"
+"PNP0A08" at acpi0 not configured
+acpicmos0 at acpi0
+"PNP0C14" at acpi0 not configured
+acpicpu0 at acpi0: !C2(500@1 io@0x414), C1(1000@1 halt), PSS
+acpicpu1 at acpi0: !C2(500@1 io@0x414), C1(1000@1 halt), PSS
+acpitz0 at acpi0: critical temperature is 110 degC
+acpivideo0 at acpi0: OVGA
+acpivout0 at acpivideo0: DD02
+bios0: ROM list: 0xc0000/0xda00! 0xce000/0x1000
+cpu0: Enhanced SpeedStep 1829 MHz: speeds: 1833, 1333, 1000 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (no bios)
+pchb0 at pci0 dev 0 function 0 "Intel Pineview DMI" rev 0x00
+inteldrm0 at pci0 dev 2 function 0 "Intel Pineview Video" rev 0x00
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0x80000000, size 0x10000000
+inteldrm0: apic 4 int 16, PINEVIEW, gen 3
+"Intel Pineview Video" rev 0x00 at pci0 dev 2 function 1 not configured
+azalia0 at pci0 dev 27 function 0 "Intel 82801GB HD Audio" rev 0x02: msi
+azalia0: codecs: IDT 92HD81B1X
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 "Intel 82801GB PCIE" rev 0x02: apic 4 int 16
+pci1 at ppb0 bus 1
+1:0:0: rom address conflict 0xffff0000/0x10000
+re0 at pci1 dev 0 function 0 "Realtek 8101E" rev 0x02: RTL8102EL (0x2480), msi, address 3c:4a:92:4c:58:f0
+rlphy0 at re0 phy 7: RTL8201L 10/100 PHY, rev. 1
+ppb1 at pci0 dev 28 function 1 "Intel 82801GB PCIE" rev 0x02: apic 4 int 17
+pci2 at ppb1 bus 2
+uhci0 at pci0 dev 29 function 0 "Intel 82801GB USB" rev 0x02: apic 4 int 16
+uhci1 at pci0 dev 29 function 1 "Intel 82801GB USB" rev 0x02: apic 4 int 17
+uhci2 at pci0 dev 29 function 2 "Intel 82801GB USB" rev 0x02: apic 4 int 18
+uhci3 at pci0 dev 29 function 3 "Intel 82801GB USB" rev 0x02: apic 4 int 19
+ehci0 at pci0 dev 29 function 7 "Intel 82801GB USB" rev 0x02: apic 4 int 16
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb2 at pci0 dev 30 function 0 "Intel 82801BAM Hub-to-PCI" rev 0xe2
+pci3 at ppb2 bus 5
+pcib0 at pci0 dev 31 function 0 "Intel NM10 LPC" rev 0x02
+ahci0 at pci0 dev 31 function 2 "Intel 82801GR AHCI" rev 0x02: msi, AHCI 1.1
+ahci0: port 0: 3.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, INTEL SSDSA2M040, 2CV1> naa.50015179593bd675
+sd0: 38166MB, 512 bytes/sector, 78165360 sectors, thin
+ichiic0 at pci0 dev 31 function 3 "Intel 82801GB SMBus" rev 0x02: apic 4 int 17
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 2GB DDR2 SDRAM non-parity PC2-6400CL6 SO-DIMM
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pms0: Synaptics clickpad, firmware 7.4, 0x1e0b1 0xe40000 0x0 0xd04771 0x5a0400
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+uvideo0 at uhub0 port 4 configuration 1 interface 0 "Image Processor HP Webcam-50" rev 2.00/0.06 addr 2
+video0 at uvideo0
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (c3cac300fd798ecf.a) swap on sd0b dump on sd0b
+WARNING: clock lost 44 days
+WARNING: CHECK AND RESET THE DATE!
+inteldrm0: 1024x600, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
