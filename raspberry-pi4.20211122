@@ -1,0 +1,93 @@
+OpenBSD 7.0-current (GENERIC.MP) #0: Fri Oct 22 12:38:28 CEST 2021
+    hans@pi4.stare.cz:/usr/src/sys/arch/arm64/compile/GENERIC.MP
+real mem  = 8419930112 (8029MB)
+avail mem = 8128757760 (7752MB)
+random: good seed from bootblocks
+mainbus0 at root: Raspberry Pi 4 Model B Rev 1.4
+cpu0 at mainbus0 mpidr 0: ARM Cortex-A72 r0p3
+cpu0: 48KB 64b/line 3-way L1 PIPT I-cache, 32KB 64b/line 2-way L1 D-cache
+cpu0: 1024KB 64b/line 16-way L2 cache
+cpu0: CRC32,ASID16
+cpu1 at mainbus0 mpidr 1: ARM Cortex-A72 r0p3
+cpu1: 48KB 64b/line 3-way L1 PIPT I-cache, 32KB 64b/line 2-way L1 D-cache
+cpu1: 1024KB 64b/line 16-way L2 cache
+cpu1: CRC32,ASID16
+cpu2 at mainbus0 mpidr 2: ARM Cortex-A72 r0p3
+cpu2: 48KB 64b/line 3-way L1 PIPT I-cache, 32KB 64b/line 2-way L1 D-cache
+cpu2: 1024KB 64b/line 16-way L2 cache
+cpu2: CRC32,ASID16
+cpu3 at mainbus0 mpidr 3: ARM Cortex-A72 r0p3
+cpu3: 48KB 64b/line 3-way L1 PIPT I-cache, 32KB 64b/line 2-way L1 D-cache
+cpu3: 1024KB 64b/line 16-way L2 cache
+cpu3: CRC32,ASID16
+efi0 at mainbus0: UEFI 2.8
+efi0: Das U-Boot rev 0x20211000
+apm0 at mainbus0
+simplefb0 at mainbus0: 1824x984, 32bpp
+wsdisplay0 at simplefb0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+"system" at mainbus0 not configured
+"axi" at mainbus0 not configured
+simplebus0 at mainbus0: "soc"
+bcmclock0 at simplebus0
+bcmmbox0 at simplebus0
+bcmgpio0 at simplebus0
+bcmaux0 at simplebus0
+ampintc0 at simplebus0 nirq 256, ncpu 4 ipi: 0, 1: "interrupt-controller"
+bcmtmon0 at simplebus0
+bcmdmac0 at simplebus0: DMA0 DMA2 DMA4 DMA5 DMA6 DMA7 DMA8 DMA9
+"timer" at simplebus0 not configured
+pluart0 at simplebus0
+"local_intc" at simplebus0 not configured
+bcmdog0 at simplebus0
+bcmirng0 at simplebus0
+"firmware" at simplebus0 not configured
+"power" at simplebus0 not configured
+"mailbox" at simplebus0 not configured
+sdhc0 at simplebus0
+sdhc0: SDHC 3.0, 250 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed
+"gpiomem" at simplebus0 not configured
+"fb" at simplebus0 not configured
+"vcsm" at simplebus0 not configured
+"clocks" at mainbus0 not configured
+"phy" at mainbus0 not configured
+"clk-27M" at mainbus0 not configured
+"clk-108M" at mainbus0 not configured
+simplebus1 at mainbus0: "emmc2bus"
+sdhc1 at simplebus1
+sdhc1: SDHC 3.0, 100 MHz base clock
+sdmmc1 at sdhc1: 8-bit, sd high-speed, mmc high-speed, ddr52, dma
+"arm-pmu" at mainbus0 not configured
+agtimer0 at mainbus0: 54000 kHz
+simplebus2 at mainbus0: "scb"
+bcmpcie0 at simplebus2: disabled
+bse0 at simplebus2: address dc:a6:32:e0:50:d3
+brgphy0 at bse0 phy 1: BCM54210E 10/100/1000baseT PHY, rev. 2
+"dma" at simplebus2 not configured
+"hevc-decoder" at simplebus2 not configured
+"rpivid-local-intc" at simplebus2 not configured
+"h264-decoder" at simplebus2 not configured
+"vp9-decoder" at simplebus2 not configured
+gpioleds0 at mainbus0: no LEDs
+"sd_io_1v8_reg" at mainbus0 not configured
+"sd_vcc_reg" at mainbus0 not configured
+"fixedregulator_3v3" at mainbus0 not configured
+"fixedregulator_5v0" at mainbus0 not configured
+simplebus3 at mainbus0: "v3dbus"
+"bootloader" at mainbus0 not configured
+dt: 445 probes
+scsibus0 at sdmmc1: 2 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: <SD/MMC, SD16G, 0030> removable
+sd0: 14804MB, 512 bytes/sector, 30318592 sectors
+bwfm0 at sdmmc0 function 1
+manufacturer 0x02d0, product 0xa9a6 at sdmmc0 function 2 not configured
+manufacturer 0x02d0, product 0xa9a6 at sdmmc0 function 3 not configured
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on sd0a (45389c1cc48ccfc4.a) swap on sd0b dump on sd0b
+WARNING: CHECK AND RESET THE DATE!
+gpio0 at bcmgpio0: 58 pins
+bwfm0: address dc:a6:32:e0:50:d4
