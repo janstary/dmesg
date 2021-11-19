@@ -1,7 +1,7 @@
-OpenBSD 7.0-current (GENERIC.MP) #0: Fri Nov 19 12:55:32 CET 2021
+OpenBSD 7.0-current (GENERIC.MP) #0: Fri Nov 19 18:59:32 CET 2021
     hans@pi.stare.cz:/usr/src/sys/arch/arm64/compile/GENERIC.MP
 real mem  = 8419885056 (8029MB)
-avail mem = 8128720896 (7752MB)
+avail mem = 8128729088 (7752MB)
 random: good seed from bootblocks
 mainbus0 at root: Raspberry Pi 4 Model B Rev 1.4
 cpu0 at mainbus0 mpidr 0: ARM Cortex-A72 r0p3
@@ -23,6 +23,9 @@ cpu3: CRC32,ASID16
 efi0 at mainbus0: UEFI 2.8
 efi0: Das U-Boot rev 0x20210100
 apm0 at mainbus0
+simplefb0 at mainbus0: 1824x984, 32bpp
+wsdisplay0 at simplefb0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
 "system" at mainbus0 not configured
 "axi" at mainbus0 not configured
 simplebus0 at mainbus0: "soc"
@@ -34,7 +37,7 @@ ampintc0 at simplebus0 nirq 256, ncpu 4 ipi: 0, 1: "interrupt-controller"
 bcmtmon0 at simplebus0
 bcmdmac0 at simplebus0: DMA0 DMA2 DMA4 DMA5 DMA6 DMA7 DMA8 DMA9
 "timer" at simplebus0 not configured
-pluart0 at simplebus0: console
+pluart0 at simplebus0
 "local_intc" at simplebus0 not configured
 bcmdog0 at simplebus0
 bcmirng0 at simplebus0
