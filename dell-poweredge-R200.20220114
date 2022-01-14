@@ -1,0 +1,107 @@
+OpenBSD 7.0-current (GENERIC.MP) #0: Fri Jan 14 20:56:22 CET 2022
+    hans@toposym.fit.cvut.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 4276822016 (4078MB)
+avail mem = 4130037760 (3938MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.5 @ 0xcff9c000 (46 entries)
+bios0: vendor Dell Inc. version "1.4.3" date 05/15/2009
+bios0: Dell Inc. PowerEdge R200
+acpi0 at bios0: ACPI 3.0
+acpi0: sleep states S0 S4 S5
+acpi0: tables DSDT FACP APIC SPCR HPET MCFG WD__ SLIC ERST HEST BERT EINJ SSDT SSDT SSDT
+acpi0: wakeup devices PCI0(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Xeon(R) CPU E3120 @ 3.16GHz, 2000.38 MHz, 06-17-0a
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+cpu0: 6MB 64b/line 16-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 333MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.2.2.2, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Xeon(R) CPU E3120 @ 3.16GHz, 2000.15 MHz, 06-17-0a
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+cpu1: 6MB 64b/line 16-way L2 cache
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins, remapped
+acpihpet0 at acpi0: 14318179 Hz
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (PEX1)
+acpiprt2 at acpi0: bus 2 (SBE0)
+acpiprt3 at acpi0: bus 3 (SBE4)
+acpiprt4 at acpi0: bus 4 (SBE5)
+acpiprt5 at acpi0: bus 5 (COMP)
+acpipci0 at acpi0 PCI0: 0x00000010 0x00000011 0x00000000
+acpicmos0 at acpi0
+com0 at acpi0 COMA addr 0x3f8/0x8 irq 4: ns16550a, 16 byte fifo
+com1 at acpi0 COMB addr 0x2f8/0x8 irq 3: ti16750, 64 byte fifo
+com1: probed fifo depth: 0 bytes
+acpicpu0 at acpi0: C1(@1 halt!), PSS
+acpicpu1 at acpi0: C1(@1 halt!), PSS
+ipmi at mainbus0 not configured
+cpu0: Enhanced SpeedStep 2000 MHz: speeds: 3166, 2667, 2333, 2000 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "Intel 3200/3210 Host" rev 0x01
+ppb0 at pci0 dev 1 function 0 "Intel 3200/3210 PCIE" rev 0x01: msi
+pci1 at ppb0 bus 1
+mpi0 at pci1 dev 0 function 0 "Symbios Logic SAS1068E" rev 0x08: msi
+mpi0: SAS6IR, firmware 0.25.47.0
+scsibus1 at mpi0: 112 targets
+sd0 at scsibus1 targ 0 lun 0: <Dell, VIRTUAL DISK, 1028> naa.600508e0000000009ed329b65835f206
+sd0: 69376MB, 512 bytes/sector, 142082048 sectors
+ppb1 at pci0 dev 28 function 0 "Intel 82801I PCIE" rev 0x02: msi
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 28 function 4 "Intel 82801I PCIE" rev 0x02
+pci3 at ppb2 bus 3
+bge0 at pci3 dev 0 function 0 "Broadcom BCM5721" rev 0x21, BCM5750 C1 (0x4201): msi, address 00:22:19:d6:32:bf
+brgphy0 at bge0 phy 1: BCM5750 10/100/1000baseT PHY, rev. 0
+ppb3 at pci0 dev 28 function 5 "Intel 82801I PCIE" rev 0x02
+pci4 at ppb3 bus 4
+bge1 at pci4 dev 0 function 0 "Broadcom BCM5721" rev 0x21, BCM5750 C1 (0x4201): msi, address 00:22:19:d6:32:c0
+brgphy1 at bge1 phy 1: BCM5750 10/100/1000baseT PHY, rev. 0
+uhci0 at pci0 dev 29 function 0 "Intel 82801I USB" rev 0x02: apic 2 int 21
+uhci1 at pci0 dev 29 function 1 "Intel 82801I USB" rev 0x02: apic 2 int 20
+uhci2 at pci0 dev 29 function 2 "Intel 82801I USB" rev 0x02: apic 2 int 21
+ehci0 at pci0 dev 29 function 7 "Intel 82801I USB" rev 0x02: apic 2 int 21
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb4 at pci0 dev 30 function 0 "Intel 82801BA Hub-to-PCI" rev 0x92
+pci5 at ppb4 bus 5
+radeondrm0 at pci5 dev 5 function 0 "ATI ES1000" rev 0x02
+drm0 at radeondrm0
+radeondrm0: apic 2 int 19
+pcib0 at pci0 dev 31 function 0 "Intel 82801IR LPC" rev 0x02
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+uhub4 at uhub0 port 5 configuration 1 interface 0 "Cypress Semiconductor USB2 Hub" rev 2.00/0.0b addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (39682c121cba2ea4.a) swap on sd0b dump on sd0b
+radeondrm0: RV100
+[drm] *ERROR* radeon: ring test failed (scratch(0x15E4)=0xCAFEDEAD)
+[drm] *ERROR* radeon: cp isn't working (-22).
+drm:pid0:r100_startup *ERROR* failed initializing CP (-22).
+drm:pid0:r100_init *ERROR* Disabling GPU acceleration
+radeondrm0: 1280x1024, 16bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
