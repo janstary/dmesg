@@ -1,0 +1,224 @@
+OpenBSD 7.0-current (GENERIC.MP) #0: Fri Feb  4 18:32:35 CET 2022
+    hans@usb.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 16711942144 (15937MB)
+avail mem = 16188248064 (15438MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 3.1 @ 0x6eb6d000 (61 entries)
+bios0: vendor LENOVO version "R0YET27W (1.10 )" date 01/22/2019
+bios0: LENOVO 20N8000TMC
+acpi0 at bios0: ACPI 6.1
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SSDT SSDT SSDT SSDT SSDT SSDT TPM2 UEFI SSDT HPET APIC MCFG ECDT SSDT BOOT SLIC SSDT LPIT WSMT SSDT DBGP DBG2 MSDM BATB SSDT NHLT SSDT DMAR FPDT UEFI
+acpi0: wakeup devices XHC_(S3) XDCI(S4) HDAS(S4) RP01(S4) PXSX(S4) RP02(S4) PXSX(S4) RP03(S4) PXSX(S4) RP04(S4) PXSX(S4) RP05(S4) PXSX(S4) RP06(S4) PXSX(S4) RP07(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 23999999 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz, 1693.99 MHz, 06-8e-0b
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SRBDS_CTRL,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 24MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz, 1695.04 MHz, 06-8e-0b
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SRBDS_CTRL,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 4 (application processor)
+cpu2: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz, 1696.05 MHz, 06-8e-0b
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SRBDS_CTRL,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 6 (application processor)
+cpu3: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz, 1696.05 MHz, 06-8e-0b
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SRBDS_CTRL,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 0, core 3, package 0
+cpu4 at mainbus0: apid 1 (application processor)
+cpu4: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz, 1696.05 MHz, 06-8e-0b
+cpu4: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SRBDS_CTRL,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu4: 256KB 64b/line 8-way L2 cache
+cpu4: smt 1, core 0, package 0
+cpu5 at mainbus0: apid 3 (application processor)
+cpu5: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz, 1696.05 MHz, 06-8e-0b
+cpu5: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SRBDS_CTRL,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu5: 256KB 64b/line 8-way L2 cache
+cpu5: smt 1, core 1, package 0
+cpu6 at mainbus0: apid 5 (application processor)
+cpu6: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz, 1696.05 MHz, 06-8e-0b
+cpu6: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SRBDS_CTRL,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu6: 256KB 64b/line 8-way L2 cache
+cpu6: smt 1, core 2, package 0
+cpu7 at mainbus0: apid 7 (application processor)
+cpu7: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz, 1696.05 MHz, 06-8e-0b
+cpu7: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SRBDS_CTRL,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu7: 256KB 64b/line 8-way L2 cache
+cpu7: smt 1, core 3, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 120 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-255
+acpiec0 at acpi0
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 2 (RP01)
+acpiprt2 at acpi0: bus -1 (RP02)
+acpiprt3 at acpi0: bus -1 (RP03)
+acpiprt4 at acpi0: bus -1 (RP04)
+acpiprt5 at acpi0: bus 3 (RP05)
+acpiprt6 at acpi0: bus -1 (RP06)
+acpiprt7 at acpi0: bus -1 (RP07)
+acpiprt8 at acpi0: bus -1 (RP08)
+acpiprt9 at acpi0: bus 4 (RP09)
+acpiprt10 at acpi0: bus -1 (RP10)
+acpiprt11 at acpi0: bus 5 (RP11)
+acpiprt12 at acpi0: bus -1 (RP12)
+acpiprt13 at acpi0: bus 7 (RP13)
+acpiprt14 at acpi0: bus -1 (RP14)
+acpiprt15 at acpi0: bus -1 (RP15)
+acpiprt16 at acpi0: bus -1 (RP16)
+acpiprt17 at acpi0: bus -1 (RP17)
+acpiprt18 at acpi0: bus -1 (RP18)
+acpiprt19 at acpi0: bus -1 (RP19)
+acpiprt20 at acpi0: bus -1 (RP20)
+acpiprt21 at acpi0: bus -1 (RP21)
+acpiprt22 at acpi0: bus -1 (RP22)
+acpiprt23 at acpi0: bus -1 (RP23)
+acpiprt24 at acpi0: bus -1 (RP24)
+acpipci0 at acpi0 PCI0: 0x00000000 0x00000011 0x00000001
+acpithinkpad0 at acpi0: version 2.0
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT0 model "01AV447" serial 10357 type LiP oem "SMP"
+"LEN0100" at acpi0 not configured
+"INT3403" at acpi0 not configured
+"INT3403" at acpi0 not configured
+"INT3403" at acpi0 not configured
+acpicmos0 at acpi0
+pchgpio0 at acpi0 GPI0 addr 0xfd6e0000/0x10000 0xfd6d0000/0x10000 0xfd6a0000/0x10000 irq 14, 320 pins
+"PNP0C14" at acpi0 not configured
+"INT0E0C" at acpi0 not configured
+acpibtn0 at acpi0: SLPB
+"PNP0C14" at acpi0 not configured
+"PNP0C14" at acpi0 not configured
+acpibtn1 at acpi0: LID_
+"PNP0C14" at acpi0 not configured
+"PNP0C14" at acpi0 not configured
+"PNP0C14" at acpi0 not configured
+"INT3400" at acpi0 not configured
+tpm0 at acpi0 TPM_ 2.0 (CRB) addr 0xfed40000/0x5000, device 0x00000000 rev 0x0
+"USBC000" at acpi0 not configured
+acpipwrres0 at acpi0: PUBS
+acpipwrres1 at acpi0: PUBS, resource for XHC_
+acpipwrres2 at acpi0: USBC, resource for XDCI
+acpipwrres3 at acpi0: PCRP, resource for RP05
+acpipwrres4 at acpi0: V0PR
+acpipwrres5 at acpi0: V1PR
+acpipwrres6 at acpi0: V2PR
+acpipwrres7 at acpi0: WRST
+acpicpu0 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu4 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu5 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu6 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu7 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpitz0 at acpi0: critical temperature is 127 degC
+acpipwrres8 at acpi0: PIN_
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: DD1F
+cpu0: using VERW MDS workaround
+cpu0: Enhanced SpeedStep 1693 MHz: speeds: 2001, 2000, 1900, 1800, 1700, 1500, 1400, 1300, 1200, 1100, 1000, 800, 700, 600, 500, 400 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "Intel Core 8G Host" rev 0x0b
+inteldrm0 at pci0 dev 2 function 0 "Intel UHD Graphics 620" rev 0x00
+drm0 at inteldrm0
+inteldrm0: msi, COFFEELAKE, gen 9
+"Intel Core 6G Thermal" rev 0x0b at pci0 dev 4 function 0 not configured
+"Intel Core GMM" rev 0x00 at pci0 dev 8 function 0 not configured
+pchtemp0 at pci0 dev 18 function 0 "Intel 300 Series Thermal" rev 0x30
+xhci0 at pci0 dev 20 function 0 "Intel 300 Series xHCI" rev 0x30: msi, xHCI 1.10
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 "Intel xHCI root hub" rev 3.00/1.00 addr 1
+"Intel 300 Series Shared SRAM" rev 0x30 at pci0 dev 20 function 2 not configured
+"Intel 300 Series MEI" rev 0x30 at pci0 dev 22 function 0 not configured
+ahci0 at pci0 dev 23 function 0 "Intel 300 Series AHCI" rev 0x30: msi, AHCI 1.3.1
+ahci0: port 1: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 1 lun 0: <ATA, WDC WD10SPZX-08Z, 04.0> naa.50014ee26618c4b6
+sd0: 953869MB, 512 bytes/sector, 1953525168 sectors, thin
+ppb0 at pci0 dev 28 function 0 "Intel 300 Series PCIE" rev 0xf0: msi
+pci1 at ppb0 bus 2
+sdhc0 at pci1 dev 0 function 0 "O2 Micro 0Z8621 SD/MMC" rev 0x01: apic 2 int 16
+sdhc0: SDHC 4.0, 50 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed, ddr52, dma
+ppb1 at pci0 dev 28 function 4 "Intel 300 Series PCIE" rev 0xf0: msi
+pci2 at ppb1 bus 3
+3:0:0: rom address conflict 0xfffe0000/0x20000
+amdgpu0 at pci2 dev 0 function 0 "ATI Polaris 12" rev 0xc0
+drm1 at amdgpu0
+amdgpu0: msi
+ppb2 at pci0 dev 29 function 0 "Intel 300 Series PCIE" rev 0xf0: msi
+pci3 at ppb2 bus 4
+re0 at pci3 dev 0 function 0 "Realtek 8168" rev 0x10: RTL8168GU/8111GU (0x5080), msi, address e8:6a:64:c3:4c:82
+rgephy0 at re0 phy 7: RTL8251 PHY, rev. 0
+ppb3 at pci0 dev 29 function 2 "Intel 300 Series PCIE" rev 0xf0: msi
+pci4 at ppb3 bus 5
+iwm0 at pci4 dev 0 function 0 "Intel Dual Band Wireless-AC 9260" rev 0x29, msix
+ppb4 at pci0 dev 29 function 4 "Intel 300 Series PCIE" rev 0xf0: msi
+pci5 at ppb4 bus 7
+nvme0 at pci5 dev 0 function 0 "SK hynix BC501 NVMe" rev 0x00: msix, NVMe 1.2
+nvme0: HFM256GDHTNG-8510B, firmware 80020C00, serial NI91T010910601L4S
+scsibus2 at nvme0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: <NVMe, HFM256GDHTNG-851, 8002>
+sd1: 244198MB, 512 bytes/sector, 500118192 sectors
+pcib0 at pci0 dev 31 function 0 "Intel 300 Series LPC" rev 0x30
+azalia0 at pci0 dev 31 function 3 "Intel 300 Series HD Audio" rev 0x30: msi
+azalia0: codecs: Conexant/0x1f86, Intel/0x280b, using Conexant/0x1f86
+audio0 at azalia0
+ichiic0 at pci0 dev 31 function 4 "Intel 300 Series SMBus" rev 0x30: apic 2 int 16
+iic0 at ichiic0
+"Intel 300 Series SPI" rev 0x30 at pci0 dev 31 function 5 not configured
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics clickpad, firmware 10.32, 0x1e2a1 0x940300 0x378f40 0xf00aa3 0x12e800
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+wbsio0 at isa0 port 0x4e/2: W83627THF rev 0x27
+vmm0 at mainbus0: VMX/EPT
+ugen0 at uhub0 port 5 "Intel Bluetooth" rev 2.00/0.02 addr 2
+uvideo0 at uhub0 port 6 configuration 1 interface 0 "SunplusIT Inc Integrated Camera" rev 2.01/54.22 addr 3
+video0 at uvideo0
+ugen1 at uhub0 port 8 "Synaptics product 0x00a2" rev 2.00/1.64 addr 4
+umass0 at uhub0 port 15 configuration 1 interface 0 "USB Flash Disk" rev 3.20/11.00 addr 5
+umass0: using SCSI over Bulk-Only
+scsibus3 at umass0: 2 targets, initiator 0
+sd2 at scsibus3 targ 1 lun 0: <USB, Flash Disk, 1100> removable
+sd2: 15200MB, 512 bytes/sector, 31129600 sectors
+vscsi0 at root
+scsibus4 at vscsi0: 256 targets
+softraid0 at root
+scsibus5 at softraid0: 256 targets
+root on sd2a (ae84f900c6e6a15b.a) swap on sd2b dump on sd2b
+drm:pid0:intel_ddi_sanitize_encoder_pll_mapping *NOTICE* [drm] [ENCODER:102:DDI z/PHY ] is disabled/in DSI mode with an ungated DDI clock, gate it
+drm:pid0:intel_ddi_sanitize_encoder_pll_mapping *NOTICE* [drm] [ENCODER:109:DDI z/PHY ] is disabled/in DSI mode with an ungated DDI clock, gate it
+inteldrm0: 1920x1080, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+drm:pid0:amdgpu_get_bios *ERROR* Unable to locate a BIOS ROM
+drm:pid0:amdgpu_attachhook *ERROR* Fatal error during GPU init
+amdgpu_device_unmap_mmio: stub
+drm1 detached
+amdgpu0 detached
+"ATI Polaris 12" rev 0xc0 at pci2 dev 0 function 0 not configured
+iwm0: could not read firmware iwm-9260-46 (error 2)
+iwm0: failed to load init firmware
