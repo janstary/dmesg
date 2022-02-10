@@ -1,7 +1,7 @@
-OpenBSD 7.0-current (GENERIC.MP) #0: Thu Feb 10 00:12:23 CET 2022
+OpenBSD 7.0-current (GENERIC.MP) #0: Thu Feb 10 14:59:15 CET 2022
     hans@usb.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
 real mem = 8234086400 (7852MB)
-avail mem = 7967334400 (7598MB)
+avail mem = 7900401664 (7534MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -17,7 +17,7 @@ acpitimer0 at acpi0: 3579545 Hz, 24 bits
 acpihpet0 at acpi0: 14318179 Hz
 acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
 cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz, 2394.94 MHz, 06-3a-09
+cpu0: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz, 2395.04 MHz, 06-3a-09
 cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,XSAVE,AVX,F16C,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
 cpu0: 256KB 64b/line 8-way L2 cache
 cpu0: smt 0, core 0, package 0
@@ -25,7 +25,7 @@ mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
 cpu0: apic clock running at 99MHz
 cpu0: mwait min=64, max=64, C-substates=0.2.1.1.2, IBE
 cpu1 at mainbus0: apid 1 (application processor)
-cpu1: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz, 2394.56 MHz, 06-3a-09
+cpu1: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz, 2394.57 MHz, 06-3a-09
 cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,XSAVE,AVX,F16C,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
 cpu1: 256KB 64b/line 8-way L2 cache
 cpu1: smt 1, core 0, package 0
@@ -35,7 +35,7 @@ cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CF
 cpu2: 256KB 64b/line 8-way L2 cache
 cpu2: smt 0, core 1, package 0
 cpu3 at mainbus0: apid 3 (application processor)
-cpu3: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz, 2394.56 MHz, 06-3a-09
+cpu3: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz, 2394.57 MHz, 06-3a-09
 cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,XSAVE,AVX,F16C,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
 cpu3: 256KB 64b/line 8-way L2 cache
 cpu3: smt 1, core 1, package 0
@@ -70,7 +70,7 @@ acpivideo0 at acpi0: VID_
 acpivout0 at acpivideo0: LCD0
 acpivideo1 at acpi0: VID_
 cpu0: using VERW MDS workaround (except on vmm entry)
-cpu0: Enhanced SpeedStep 2394 MHz: speeds: 2400, 2300, 2200, 2100, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200 MHz
+cpu0: Enhanced SpeedStep 2395 MHz: speeds: 2400, 2300, 2200, 2100, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200 MHz
 pci0 at mainbus0 bus 0
 pchb0 at pci0 dev 0 function 0 "Intel Core 3G Host" rev 0x09
 inteldrm0 at pci0 dev 2 function 0 "Intel HD Graphics 4000" rev 0x09
@@ -139,3 +139,37 @@ root on sd1a (ae84f900c6e6a15b.a) swap on sd1b dump on sd1b
 inteldrm0: 1366x768, 32bpp
 wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
 wsdisplay0: screen 1-5 added (std, vt100 emulation)
+witness: acquiring duplicate lock of same type: "&uobj->vmobjlock"
+ 1st uobjlk
+ 2nd uobjlk
+Starting stack trace...
+witness_checkorder(fffffd81df11c8a0,9,0) at witness_checkorder+0x8ac
+rw_enter(fffffd81df11c890,1) at rw_enter+0x68
+uvm_obj_wire(fffffd821ce5bab0,0,40000,ffff80003378f738) at uvm_obj_wire+0x46
+shmem_get_pages(ffff800001075280) at shmem_get_pages+0xb8
+__i915_gem_object_get_pages(ffff800001075280) at __i915_gem_object_get_pages+0x6d
+i915_gem_fault(ffff800001075280,ffff80003378fad0,10009b000,66431f53000,ffff80003378fa50,1,7dc736254d30337a,ffff80000011c078,ffff80000011c178) at i915_gem_fault+0x203
+drm_fault(ffff80003378fad0,66431f53000,ffff80003378fa50,1,0,0,4687aa2e86d72b6e,ffff80003378fad0) at drm_fault+0x156
+uvm_fault(fffffd81e1173180,66431f53000,0,2) at uvm_fault+0x179
+upageflttrap(ffff80003378fc30,66431f53000) at upageflttrap+0x62
+usertrap(ffff80003378fc30) at usertrap+0x129
+recall_trap() at recall_trap+0x8
+end of kernel
+end trace frame: 0x7f7ffffddf40, count: 246
+End of stack trace.
+acpicpu0: notify: C3(200@87 mwait.1@0x30), C2(500@59 mwait.1@0x10), C1(1000@1 mwait.1)
+acpicpu1: notify: C3(200@87 mwait.1@0x30), C2(500@59 mwait.1@0x10), C1(1000@1 mwait.1)
+acpicpu2: notify: C3(200@87 mwait.1@0x30), C2(500@59 mwait.1@0x10), C1(1000@1 mwait.1)
+acpicpu3: notify: C3(200@87 mwait.1@0x30), C2(500@59 mwait.1@0x10), C1(1000@1 mwait.1)
+acpicpu0: notify: C2(350@80 mwait.1@0x20), C1(1000@1 mwait.1)
+acpicpu1: notify: C2(350@80 mwait.1@0x20), C1(1000@1 mwait.1)
+acpicpu2: notify: C2(350@80 mwait.1@0x20), C1(1000@1 mwait.1)
+acpicpu3: notify: C2(350@80 mwait.1@0x20), C1(1000@1 mwait.1)
+acpicpu0: notify: C3(200@87 mwait.1@0x30), C2(500@59 mwait.1@0x10), C1(1000@1 mwait.1)
+acpicpu1: notify: C3(200@87 mwait.1@0x30), C2(500@59 mwait.1@0x10), C1(1000@1 mwait.1)
+acpicpu2: notify: C3(200@87 mwait.1@0x30), C2(500@59 mwait.1@0x10), C1(1000@1 mwait.1)
+acpicpu3: notify: C3(200@87 mwait.1@0x30), C2(500@59 mwait.1@0x10), C1(1000@1 mwait.1)
+acpicpu0: notify: C2(350@80 mwait.1@0x20), C1(1000@1 mwait.1)
+acpicpu1: notify: C2(350@80 mwait.1@0x20), C1(1000@1 mwait.1)
+acpicpu2: notify: C2(350@80 mwait.1@0x20), C1(1000@1 mwait.1)
+acpicpu3: notify: C2(350@80 mwait.1@0x20), C1(1000@1 mwait.1)
