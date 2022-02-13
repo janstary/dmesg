@@ -1,12 +1,12 @@
-OpenBSD 7.0-current (GENERIC.MP) #0: Thu Feb 10 14:59:15 CET 2022
-    hans@usb.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+OpenBSD 7.0-current (GENERIC.MP) #325: Thu Feb 10 12:26:12 MST 2022
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
 real mem = 4121772032 (3930MB)
-avail mem = 3942699008 (3760MB)
+avail mem = 3979628544 (3795MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
 mainbus0 at root
-bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xe6ec0 (53 entries)
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xe6ec0 (54 entries)
 bios0: vendor LENOVO version "9CCN35WW(V3.01)" date 10/16/2015
 bios0: LENOVO 20382
 acpi0 at bios0: ACPI 5.0
@@ -18,7 +18,7 @@ acpimcfg0 at acpi0
 acpimcfg0: addr 0xe0000000, bus 0-63
 acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
 cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: Intel(R) Pentium(R) CPU N3540 @ 2.16GHz, 2167.09 MHz, 06-37-08
+cpu0: Intel(R) Pentium(R) CPU N3540 @ 2.16GHz, 2167.08 MHz, 06-37-08
 cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,MOVBE,POPCNT,DEADLINE,RDRAND,NXE,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,TSC_ADJUST,SMEP,ERMS,MD_CLEAR,IBRS,IBPB,STIBP,SENSOR,ARAT,MELTDOWN
 cpu0: 1MB 64b/line 16-way L2 cache
 cpu0: smt 0, core 0, package 0
@@ -26,17 +26,17 @@ mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
 cpu0: apic clock running at 83MHz
 cpu0: mwait min=64, max=64, C-substates=0.2.0.0.0.0.3.3, IBE
 cpu1 at mainbus0: apid 2 (application processor)
-cpu1: Intel(R) Pentium(R) CPU N3540 @ 2.16GHz, 2166.66 MHz, 06-37-08
+cpu1: Intel(R) Pentium(R) CPU N3540 @ 2.16GHz, 2166.68 MHz, 06-37-08
 cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,MOVBE,POPCNT,DEADLINE,RDRAND,NXE,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,TSC_ADJUST,SMEP,ERMS,MD_CLEAR,IBRS,IBPB,STIBP,SENSOR,ARAT,MELTDOWN
 cpu1: 1MB 64b/line 16-way L2 cache
 cpu1: smt 0, core 1, package 0
 cpu2 at mainbus0: apid 4 (application processor)
-cpu2: Intel(R) Pentium(R) CPU N3540 @ 2.16GHz, 2166.68 MHz, 06-37-08
+cpu2: Intel(R) Pentium(R) CPU N3540 @ 2.16GHz, 2166.70 MHz, 06-37-08
 cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,MOVBE,POPCNT,DEADLINE,RDRAND,NXE,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,TSC_ADJUST,SMEP,ERMS,MD_CLEAR,IBRS,IBPB,STIBP,SENSOR,ARAT,MELTDOWN
 cpu2: 1MB 64b/line 16-way L2 cache
 cpu2: smt 0, core 2, package 0
 cpu3 at mainbus0: apid 6 (application processor)
-cpu3: Intel(R) Pentium(R) CPU N3540 @ 2.16GHz, 2166.67 MHz, 06-37-08
+cpu3: Intel(R) Pentium(R) CPU N3540 @ 2.16GHz, 2166.68 MHz, 06-37-08
 cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,MOVBE,POPCNT,DEADLINE,RDRAND,NXE,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,TSC_ADJUST,SMEP,ERMS,MD_CLEAR,IBRS,IBPB,STIBP,SENSOR,ARAT,MELTDOWN
 cpu3: 1MB 64b/line 16-way L2 cache
 cpu3: smt 0, core 3, package 0
@@ -90,8 +90,8 @@ ahci0 at pci0 dev 19 function 0 "Intel Bay Trail AHCI" rev 0x0e: msi, AHCI 1.3
 ahci0: port 0: 3.0Gb/s
 ahci0: port 1: 1.5Gb/s
 scsibus1 at ahci0: 32 targets
-sd0 at scsibus1 targ 0 lun 0: <ATA, INTEL SSDSA2BW16, 4PC1> naa.5001517972e3162d
-sd0: 152627MB, 512 bytes/sector, 312581808 sectors, thin
+sd0 at scsibus1 targ 0 lun 0: <ATA, WDC WD3200BEVT-2, 11.0> naa.50014ee256c4eb5d
+sd0: 305244MB, 512 bytes/sector, 625140335 sectors
 cd0 at scsibus1 targ 1 lun 0: <HL-DT-ST, DVDRAM GUA0N, AL00> removable
 xhci0 at pci0 dev 20 function 0 "Intel Bay Trail xHCI" rev 0x0e: msi, xHCI 1.0
 usb0 at xhci0: USB revision 3.0
@@ -112,11 +112,11 @@ re0 at pci3 dev 0 function 0 "Realtek 8168" rev 0x10: RTL8168GU/8111GU (0x5080),
 rgephy0 at re0 phy 7: RTL8251 PHY, rev. 0
 ppb3 at pci0 dev 28 function 3 "Intel Bay Trail PCIE" rev 0x0e: msi
 pci4 at ppb3 bus 4
-iwm0 at pci4 dev 0 function 0 "Intel AC 7260" rev 0x6b, msi
+"Atheros AR9565" rev 0x01 at pci4 dev 0 function 0 not configured
 pcib0 at pci0 dev 31 function 0 "Intel Bay Trail LPC" rev 0x0e
 ichiic0 at pci0 dev 31 function 3 "Intel Bay Trail SMBus" rev 0x0e: apic 2 int 18
 iic0 at ichiic0
-iic0: addr 0x4d 00=13 01=15 04=06 05=55 07=55 0a=06 0b=55 0d=55 10=e0 15=55 19=55 1a=55 20=55 21=0a 22=70 23=14 24=60 25=08 26=08 27=12 28=12 29=e0 2c=55 30=55 31=12 3b=80 3e=0b 5a=10 5b=04 5c=10 5d=19 5e=34 5f=ff fd=21 fe=5d ff=01 words 00=13ff 01=15ff 02=00ff 03=00ff 04=06ff 05=55ff 06=00ff 07=55ff
+iic0: addr 0x4d 00=15 01=15 04=06 05=55 07=55 0a=06 0b=55 0d=55 10=c0 15=55 19=55 1a=55 20=55 21=0a 22=70 23=16 25=08 26=08 27=12 28=12 2c=55 30=55 31=12 3b=80 3e=0b 5a=10 5b=04 5c=10 5d=19 5e=34 5f=ff fd=21 fe=5d ff=01 words 00=14ff 01=15ff 02=00ff 03=00ff 04=06ff 05=55ff 06=00ff 07=55ff
 spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-12800 SO-DIMM
 isa0 at pcib0
 isadma0 at isa0
@@ -129,23 +129,18 @@ pms0: Elantech Touchpad, version 4, firmware 0x594f03
 pcppi0 at isa0 port 0x61
 spkr0 at pcppi0
 vmm0 at mainbus0: VMX/EPT (using slow L1TF mitigation)
-umass0 at uhub0 port 2 configuration 1 interface 0 "USB Flash Disk" rev 2.10/11.00 addr 2
-umass0: using SCSI over Bulk-Only
-scsibus2 at umass0: 2 targets, initiator 0
-sd1 at scsibus2 targ 1 lun 0: <USB, Flash Disk, 1100> removable
-sd1: 15200MB, 512 bytes/sector, 31129600 sectors
-uhub1 at uhub0 port 4 configuration 1 interface 0 "Terminus Technology USB 2.0 Hub" rev 2.00/1.11 addr 3
-ugen0 at uhub1 port 2 "Validity Sensors VFS5011 Fingerprint Reader" rev 1.10/0.78 addr 4
-uvideo0 at uhub1 port 3 configuration 1 interface 0 "CKZEABCTH Lenovo EasyCamera" rev 2.00/0.04 addr 5
+uhub1 at uhub0 port 4 configuration 1 interface 0 "Terminus Technology USB 2.0 Hub" rev 2.00/1.11 addr 2
+ugen0 at uhub1 port 2 "Validity Sensors VFS5011 Fingerprint Reader" rev 1.10/0.78 addr 3
+uvideo0 at uhub1 port 3 configuration 1 interface 0 "CKZEABCTH Lenovo EasyCamera" rev 2.00/0.04 addr 4
 video0 at uvideo0
-ugen1 at uhub1 port 4 "Intel product 0x07dc" rev 2.00/0.01 addr 6
+ugen1 at uhub1 port 4 "Atheros Communications product 0x3004" rev 1.10/0.01 addr 5
 vscsi0 at root
-scsibus3 at vscsi0: 256 targets
+scsibus2 at vscsi0: 256 targets
 softraid0 at root
-scsibus4 at softraid0: 256 targets
-root on sd1a (ae84f900c6e6a15b.a) swap on sd1b dump on sd1b
+scsibus3 at softraid0: 256 targets
+root on sd0a (ab44bdaaa957f091.a) swap on sd0b dump on sd0b
+WARNING: clock gained 2 days
+WARNING: CHECK AND RESET THE DATE!
 inteldrm0: 1366x768, 32bpp
 wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
 wsdisplay0: screen 1-5 added (std, vt100 emulation)
-iwm0: could not read firmware iwm-7260-17 (error 2)
-iwm0: failed to load init firmware
