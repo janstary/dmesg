@@ -1,7 +1,7 @@
-OpenBSD 7.2-beta (GENERIC.MP) #700: Fri Aug 19 23:55:16 MDT 2022
-    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+OpenBSD 7.2-beta (GENERIC.MP) #0: Sat Aug 20 23:10:48 CEST 2022
+    hans@www.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
 real mem = 2112425984 (2014MB)
-avail mem = 2031079424 (1936MB)
+avail mem = 2031075328 (1936MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -18,7 +18,7 @@ acpimcfg0 at acpi0
 acpimcfg0: addr 0xf8000000, bus 0-63
 acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
 cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: AMD GX-412TC SOC, 998.27 MHz, 16-30-01
+cpu0: AMD GX-412TC SOC, 998.24 MHz, 16-30-01
 cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TOPEXT,DBKP,PERFTSC,PCTRL3,ITSC,BMI1,XSAVEOPT
 cpu0: 32KB 64b/line 8-way D-cache, 32KB 64b/line 2-way I-cache, 2MB 64b/line 16-way L2 cache
 cpu0: smt 0, core 0, package 0
@@ -26,17 +26,21 @@ mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
 cpu0: apic clock running at 99MHz
 cpu0: mwait min=64, max=64, IBE
 cpu1 at mainbus0: apid 1 (application processor)
+tsc: cpu0/cpu1: sync test round 1/2 failed
+tsc: cpu0/cpu1: cpu1: 2 lags 146 cycles
 cpu1: AMD GX-412TC SOC, 998.14 MHz, 16-30-01
 cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TOPEXT,DBKP,PERFTSC,PCTRL3,ITSC,BMI1,XSAVEOPT
 cpu1: 32KB 64b/line 8-way D-cache, 32KB 64b/line 2-way I-cache, 2MB 64b/line 16-way L2 cache
 cpu1: smt 0, core 1, package 0
 cpu2 at mainbus0: apid 2 (application processor)
-cpu2: AMD GX-412TC SOC, 998.14 MHz, 16-30-01
+tsc: cpu0/cpu2: sync test round 2/2 failed
+tsc: cpu0/cpu2: cpu2: 2 lags 141 cycles
+cpu2: AMD GX-412TC SOC, 998.36 MHz, 16-30-01
 cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TOPEXT,DBKP,PERFTSC,PCTRL3,ITSC,BMI1,XSAVEOPT
 cpu2: 32KB 64b/line 8-way D-cache, 32KB 64b/line 2-way I-cache, 2MB 64b/line 16-way L2 cache
 cpu2: smt 0, core 2, package 0
 cpu3 at mainbus0: apid 3 (application processor)
-cpu3: AMD GX-412TC SOC, 998.14 MHz, 16-30-01
+cpu3: AMD GX-412TC SOC, 998.38 MHz, 16-30-01
 cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TOPEXT,DBKP,PERFTSC,PCTRL3,ITSC,BMI1,XSAVEOPT
 cpu3: 32KB 64b/line 8-way D-cache, 32KB 64b/line 2-way I-cache, 2MB 64b/line 16-way L2 cache
 cpu3: smt 0, core 3, package 0
