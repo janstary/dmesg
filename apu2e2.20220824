@@ -18,7 +18,7 @@ acpimcfg0 at acpi0
 acpimcfg0: addr 0xf8000000, bus 0-63
 acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
 cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: AMD GX-412TC SOC, 998.28 MHz, 16-30-01
+cpu0: AMD GX-412TC SOC, 998.26 MHz, 16-30-01
 cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TOPEXT,DBKP,PERFTSC,PCTRL3,ITSC,BMI1,XSAVEOPT
 cpu0: 32KB 64b/line 8-way D-cache, 32KB 64b/line 2-way I-cache, 2MB 64b/line 16-way L2 cache
 cpu0: smt 0, core 0, package 0
@@ -26,17 +26,17 @@ mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
 cpu0: apic clock running at 99MHz
 cpu0: mwait min=64, max=64, IBE
 cpu1 at mainbus0: apid 1 (application processor)
-cpu1: AMD GX-412TC SOC, 998.14 MHz, 16-30-01
+cpu1: AMD GX-412TC SOC, 998.18 MHz, 16-30-01
 cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TOPEXT,DBKP,PERFTSC,PCTRL3,ITSC,BMI1,XSAVEOPT
 cpu1: 32KB 64b/line 8-way D-cache, 32KB 64b/line 2-way I-cache, 2MB 64b/line 16-way L2 cache
 cpu1: smt 0, core 1, package 0
 cpu2 at mainbus0: apid 2 (application processor)
-cpu2: AMD GX-412TC SOC, 998.27 MHz, 16-30-01
+cpu2: AMD GX-412TC SOC, 998.17 MHz, 16-30-01
 cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TOPEXT,DBKP,PERFTSC,PCTRL3,ITSC,BMI1,XSAVEOPT
 cpu2: 32KB 64b/line 8-way D-cache, 32KB 64b/line 2-way I-cache, 2MB 64b/line 16-way L2 cache
 cpu2: smt 0, core 2, package 0
 cpu3 at mainbus0: apid 3 (application processor)
-cpu3: AMD GX-412TC SOC, 998.13 MHz, 16-30-01
+cpu3: AMD GX-412TC SOC, 998.14 MHz, 16-30-01
 cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TOPEXT,DBKP,PERFTSC,PCTRL3,ITSC,BMI1,XSAVEOPT
 cpu3: 32KB 64b/line 8-way D-cache, 32KB 64b/line 2-way I-cache, 2MB 64b/line 16-way L2 cache
 cpu3: smt 0, core 3, package 0
@@ -103,8 +103,8 @@ iic1 at piixpm0
 iic1: addr 0x4c 3e=00 48=00 4a=00 4e=00 fc=00 fe=00 words 00=ffff 01=ffff 02=ffff 03=ffff 04=ffff 05=ffff 06=ffff 07=ffff
 pcib0 at pci0 dev 20 function 3 "AMD Hudson-2 LPC" rev 0x11
 sdhc0 at pci0 dev 20 function 7 "AMD Bolton SD/MMC" rev 0x01: apic 4 int 16
-sdhc0: SDHC 2.0, 50 MHz base clock
-sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed, dma
+sdhc0: SDHC 3.0, 200 MHz base clock
+sdmmc0 at sdhc0: 8-bit, sd high-speed, mmc high-speed, dma
 pchb2 at pci0 dev 24 function 0 "AMD 16h Link Cfg" rev 0x00
 pchb3 at pci0 dev 24 function 1 "AMD 16h Address Map" rev 0x00
 pchb4 at pci0 dev 24 function 2 "AMD 16h DRAM Cfg" rev 0x00
