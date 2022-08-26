@@ -1,7 +1,7 @@
 OpenBSD 7.2-beta (GENERIC.MP) #707: Wed Aug 24 10:03:37 MDT 2022
     deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
-real mem = 8460570624 (8068MB)
-avail mem = 8186769408 (7807MB)
+real mem = 4165603328 (3972MB)
+avail mem = 4021968896 (3835MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -17,7 +17,7 @@ acpitimer0 at acpi0: 3579545 Hz, 24 bits
 acpiec0 at acpi0
 acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
 cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: Intel(R) Core(TM)2 Duo CPU P8400 @ 2.26GHz, 2261.35 MHz, 06-17-06
+cpu0: Intel(R) Core(TM)2 Duo CPU P8400 @ 2.26GHz, 2261.33 MHz, 06-17-06
 cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
 cpu0: 32KB 64b/line 8-way D-cache, 32KB 64b/line 8-way I-cache, 3MB 64b/line 12-way L2 cache
 cpu0: smt 0, core 0, package 0
