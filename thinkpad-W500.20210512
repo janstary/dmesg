@@ -1,0 +1,306 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+    2018, 2019, 2020 The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 9.2 (GENERIC) #0: Wed May 12 13:15:55 UTC 2021
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
+total memory = 3990 MB
+avail memory = 3850 MB
+rnd: seeded with 256 bits
+timecounter: Timecounters tick every 10.000 msec
+Kernelized RAIDframe activated
+running cgd selftest aes-xts-256 aes-xts-512 done
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+LENOVO 40612JG (ThinkPad W500)
+mainbus0 (root)
+ACPI: RSDP 0x00000000000F6450 000024 (v02 LENOVO)
+ACPI: XSDT 0x00000000BD949B7A 00009C (v01 LENOVO TP-6F    00003090  LTP 00000000)
+ACPI: FACP 0x00000000BD949D00 0000F4 (v03 LENOVO TP-6F    00003090 LNVO 00000001)
+Firmware Warning (ACPI): 32/64X length mismatch in FADT/Pm1aControlBlock: 16/32 (20190405/tbfadt-642)
+Firmware Warning (ACPI): Invalid length for FADT/Pm1aControlBlock: 32, using default 16 (20190405/tbfadt-745)
+ACPI: DSDT 0x00000000BD94A10E 00FAC1 (v01 LENOVO TP-6F    00003090 MSFT 03000000)
+ACPI: FACS 0x00000000BD98E000 000040
+ACPI: SSDT 0x00000000BD949EB4 00025A (v01 LENOVO TP-6F    00003090 MSFT 03000000)
+ACPI: ECDT 0x00000000BD959BCF 000052 (v01 LENOVO TP-6F    00003090 LNVO 00000001)
+ACPI: APIC 0x00000000BD959C21 000078 (v01 LENOVO TP-6F    00003090 LNVO 00000001)
+ACPI: MCFG 0x00000000BD959C99 00003C (v01 LENOVO TP-6F    00003090 LNVO 00000001)
+ACPI: HPET 0x00000000BD959CD5 000038 (v01 LENOVO TP-6F    00003090 LNVO 00000001)
+ACPI: SLIC 0x00000000BD959DC2 000176 (v01 LENOVO TP-6F    00003090  LTP 00000000)
+ACPI: BOOT 0x00000000BD959F38 000028 (v01 LENOVO TP-6F    00003090  LTP 00000001)
+ACPI: ASF! 0x00000000BD959F60 0000A0 (v16 LENOVO TP-6F    00003090 PTL  00000001)
+ACPI: SSDT 0x00000000BD98D1FA 000568 (v01 LENOVO TP-6F    00003090 INTL 20050513)
+ACPI: TCPA 0x00000000BD707000 000032 (v00                 00000000      00000000)
+ACPI: DMAR 0x00000000BD706000 000120 (v01        ?        00000001      00000000)
+ACPI: SSDT 0x00000000BD6D3000 000655 (v01 PmRef  CpuPm    00003000 INTL 20050624)
+ACPI: SSDT 0x00000000BD6D2000 000274 (v01 PmRef  Cpu0Tst  00003000 INTL 20050624)
+ACPI: SSDT 0x00000000BD6D1000 000242 (v01 PmRef  ApTst    00003000 INTL 20050624)
+ACPI: 6 ACPI AML tables successfully acquired and loaded
+ioapic0 at mainbus0 apid 1: pa 0xfec00000, version 0x20, 24 pins
+cpu0 at mainbus0 apid 0
+cpu0: Intel(R) Core(TM)2 Duo CPU     P9500  @ 2.53GHz, id 0x10676
+cpu0: package 0, core 0, smt 0
+cpu1 at mainbus0 apid 1
+cpu1: Intel(R) Core(TM)2 Duo CPU     P9500  @ 2.53GHz, id 0x10676
+cpu1: package 0, core 1, smt 0
+acpi0 at mainbus0: Intel ACPICA 20190405
+acpi0: X/RSDT: OemId <LENOVO,TP-6F   ,00003090>, AslId < LTP,00000000>
+acpiecdt0 at acpi0: ACPI Embedded Controller via ECDT
+acpi0: MCFG: segment 0, bus 0-63, address 0x00000000e0000000
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFFEC40D35C3C8 0002C8 (v01 PmRef  Cpu0Ist  00003000 INTL 20050624)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFFEC40D3CF008 00087A (v01 PmRef  Cpu0Cst  00003001 INTL 20050624)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFFEC40D35B208 0001CF (v01 PmRef  ApIst    00003000 INTL 20050624)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFFEC440F1EF48 00008D (v01 PmRef  ApCst    00003000 INTL 20050624)
+acpi0: SCI interrupting at int 9
+acpi0: fixed power button present
+timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
+hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
+timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
+acpiec0 at acpi0 (EC, PNP0C09-0): using acpiecdt0
+MEM (PNP0C01) at acpi0 not configured
+acpilid0 at acpi0 (LID, PNP0C0D): ACPI Lid Switch
+acpibut0 at acpi0 (SLPB, PNP0C0E): ACPI Sleep Button
+SIO (PNP0C02) at acpi0 not configured
+attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43 irq 0
+pcppi1 at acpi0 (SPKR, PNP0800): io 0x61
+spkr0 at pcppi1: PC Speaker
+wsbell at spkr0 not configured
+midi0 at pcppi1: PC speaker
+sysbeep0 at pcppi1
+pckbc1 at acpi0 (KBD, PNP0303) (kbd port): io 0x60,0x64 irq 1
+pckbc2 at acpi0 (MOU, IBM0057) (aux port): irq 12
+acpibat0 at acpi0 (BAT0, PNP0C0A-0): ACPI Battery
+acpiacad0 at acpi0 (AC, ACPI0003-0): ACPI AC Adapter
+thinkpad0 at acpi0 (HKEY, IBM0068)
+acpivga0 at acpi0 (VID): ACPI Display Adapter
+acpiout0 at acpivga0 (LCD0, 0x0400): ACPI Display Output Device
+acpiout0: brightness levels: [20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,100]
+acpiout1 at acpivga0 (CRT0, 0x0100): ACPI Display Output Device
+acpiout2 at acpivga0 (DVI0, 0x0300): ACPI Display Output Device
+acpiout3 at acpivga0 (DVI1, 0x0301): ACPI Display Output Device
+acpiout4 at acpivga0 (DVI2, 0x0302): ACPI Display Output Device
+acpivga0: connected output devices:
+acpivga0:   0x0400 (acpiout0): Unknown Output Device, head 0
+acpiwmi0 at acpi0 (WMI1, PNP0C14-1): ACPI WMI Interface
+acpiwmibus at acpiwmi0 not configured
+acpitz0 at acpi0 (THM0)
+acpitz0: levels: critical 127.0 C, passive cooling
+acpitz1 at acpi0 (THM1): cpu0 cpu1
+acpitz1: levels: critical 100.0 C, passive 95.5 C, passive cooling
+ACPI: Enabled 3 GPEs in block 00 to 3F
+attimer1: attached to pcppi1
+pckbd0 at pckbc1 (kbd slot)
+pckbc1: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc1 (aux slot)
+pms0: Synaptics touchpad version 7.0
+pms0: Passthrough, Palm detect
+pckbc1: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+pchb0 at pci0 dev 0 function 0: vendor 8086 product 2a40 (rev. 0x07)
+agp0 at pchb0: G4X-family chipset
+agp0: detected 32252k stolen memory
+agp0: aperture at 0xd0000000, size 0x10000000
+i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 2a42 (rev. 0x07)
+vendor 8086 product 2a43 (miscellaneous display, revision 0x07) at pci0 dev 2 function 1 not configured
+vendor 8086 product 2a44 (miscellaneous communications, revision 0x07) at pci0 dev 3 function 0 not configured
+wm0 at pci0 dev 25 function 0: 82801I mobile (AMT) LAN Controller (rev. 0x03)
+wm0: interrupting at msi0 vec 0
+wm0: PCI-Express bus
+wm0: 2048 words FLASH, version 1.8.3
+wm0: Ethernet address 00:1c:25:97:c2:f5
+wm0: 0x2a4480<FLASH,IOH_VALID,PCIE,ASF_FIRM,AMT,WOL>
+makphy0 at wm0 phy 2: Marvell 88E1149 Gigabit PHY, rev. 1
+makphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+uhci0 at pci0 dev 26 function 0: vendor 8086 product 2937 (rev. 0x03)
+uhci0: interrupting at ioapic0 pin 20
+usb0 at uhci0: USB revision 1.0
+uhci1 at pci0 dev 26 function 1: vendor 8086 product 2938 (rev. 0x03)
+uhci1: interrupting at ioapic0 pin 21
+usb1 at uhci1: USB revision 1.0
+uhci2 at pci0 dev 26 function 2: vendor 8086 product 2939 (rev. 0x03)
+uhci2: interrupting at ioapic0 pin 22
+usb2 at uhci2: USB revision 1.0
+ehci0 at pci0 dev 26 function 7: vendor 8086 product 293c (rev. 0x03)
+ehci0: interrupting at ioapic0 pin 23
+ehci0: EHCI version 1.0
+ehci0: 3 companion controllers, 2 ports each: uhci0 uhci1 uhci2
+usb3 at ehci0: USB revision 2.0
+hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
+hdaudio0: interrupting at msi1 vec 0
+hdafg0 at hdaudio0: vendor 14f1 product 5051
+hdafg0: DAC00 2ch: HP Out [Jack]
+hdafg0: ADC01 2ch: Mic In [Jack]
+hdafg0: DAC02 2ch: Speaker [Built-In]
+hdafg0: ADC03 2ch: Mic In [Built-In]
+hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz PCM16 PCM20 PCM24 AC3
+audio0 at hdafg0: playback, capture, full duplex, independent
+audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
+audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
+spkr1 at audio0: PC Speaker (synthesized)
+wsbell at spkr1 not configured
+ppb0 at pci0 dev 28 function 0: vendor 8086 product 2940 (rev. 0x03)
+ppb0: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
+pci1 at ppb0 bus 2
+pci1: i/o space, memory space enabled, rd/line, wr/inv ok
+ppb1 at pci0 dev 28 function 1: vendor 8086 product 2942 (rev. 0x03)
+ppb1: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
+pci2 at ppb1 bus 3
+pci2: i/o space, memory space enabled, rd/line, wr/inv ok
+iwn0 at pci2 dev 0 function 0: vendor 8086 product 4236 (rev. 0x00)
+iwn0: interrupting at msi2 vec 0
+iwn0: MIMO 3T3R, MoW, address 00:16:ea:b2:58:ec
+iwn0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+iwn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+iwn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+ppb2 at pci0 dev 28 function 3: vendor 8086 product 2946 (rev. 0x03)
+ppb2: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
+pci3 at ppb2 bus 5
+pci3: i/o space, memory space enabled, rd/line, wr/inv ok
+ppb3 at pci0 dev 28 function 4: vendor 8086 product 2948 (rev. 0x03)
+ppb3: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
+pci4 at ppb3 bus 13
+pci4: i/o space, memory space enabled, rd/line, wr/inv ok
+uhci3 at pci0 dev 29 function 0: vendor 8086 product 2934 (rev. 0x03)
+uhci3: interrupting at ioapic0 pin 16
+usb4 at uhci3: USB revision 1.0
+uhci4 at pci0 dev 29 function 1: vendor 8086 product 2935 (rev. 0x03)
+uhci4: interrupting at ioapic0 pin 17
+usb5 at uhci4: USB revision 1.0
+uhci5 at pci0 dev 29 function 2: vendor 8086 product 2936 (rev. 0x03)
+uhci5: interrupting at ioapic0 pin 18
+usb6 at uhci5: USB revision 1.0
+ehci1 at pci0 dev 29 function 7: vendor 8086 product 293a (rev. 0x03)
+ehci1: interrupting at ioapic0 pin 19
+ehci1: EHCI version 1.0
+ehci1: 3 companion controllers, 2 ports each: uhci3 uhci4 uhci5
+usb7 at ehci1: USB revision 2.0
+ppb4 at pci0 dev 30 function 0: vendor 8086 product 2448 (rev. 0x93)
+pci5 at ppb4 bus 21
+pci5: i/o space, memory space enabled
+cbb0 at pci5 dev 0 function 0: vendor 1180 product 0476 (rev. 0xba)
+fwohci0 at pci5 dev 0 function 1: vendor 1180 product 0832 (rev. 0x04)
+fwohci0: interrupting at ioapic0 pin 17
+fwohci0: OHCI version 1.10 (ROM=0)
+fwohci0: No. of Isochronous channels is 4.
+fwohci0: EUI64 00:01:6c:00:00:6f:53:66
+fwohci0: Phy 1394a available S400, 1 ports.
+fwohci0: Link S400, max_rec 2048 bytes.
+ieee1394if0 at fwohci0: IEEE1394 bus
+fwip0 at ieee1394if0: IP over IEEE1394
+fwohci0: Initiate bus reset
+fwohci0: Clear PME# now
+sdhc0 at pci5 dev 0 function 2: vendor 1180 product 0822 (rev. 0x21)
+sdhc0: interrupting at ioapic0 pin 18
+sdhc0: SDHC 1.0, rev 4, SDMA, 33000 kHz, HS 3.3V, 512 byte blocks
+sdmmc0 at sdhc0 slot 0
+vendor 1180 product 0843 (miscellaneous system, revision 0x11) at pci5 dev 0 function 3 not configured
+vendor 1180 product 0592 (miscellaneous system, revision 0x11) at pci5 dev 0 function 4 not configured
+vendor 1180 product 0852 (miscellaneous system, revision 0x11) at pci5 dev 0 function 5 not configured
+cbb0: cacheline 0x10 lattimer 0x20
+cbb0: bhlc 0x822010
+cbb0: interrupting at ioapic0 pin 16
+cardslot0 at cbb0
+cardbus0 at cardslot0: bus 22
+pcmcia0 at cardslot0
+ichlpcib0 at pci0 dev 31 function 0: vendor 8086 product 2917 (rev. 0x03)
+timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
+ichlpcib0: 24-bit timer
+tco0 at ichlpcib0: TCO (watchdog) timer configured.
+tco0: Min/Max interval 1/367 seconds
+ahcisata0 at pci0 dev 31 function 2: vendor 8086 product 2929 (rev. 0x03)
+ahcisata0: 64-bit DMA
+ahcisata0: AHCI revision 1.20, 4 ports, 32 slots, CAP 0xef20ffa3<SXS,CCCS,PSC,SSC,PMD,ISS=0x2=Gen2,SCLO,SAL,SALP,SSS,SSNTF,SNCQ,S64A>
+ahcisata0: interrupting at msi3 vec 0
+atabus0 at ahcisata0 channel 0
+atabus1 at ahcisata0 channel 1
+ichsmb0 at pci0 dev 31 function 3: vendor 8086 product 2930 (rev. 0x03)
+ichsmb0: interrupting at ioapic0 pin 23
+iic0 at ichsmb0: I2C bus
+isa0 at ichlpcib0
+tpm0 at isa0 iomem 0xfed40000-0xfed44fff irq 7tpm0: device 0x10208086 rev 0x6
+acpicpu0 at cpu0: ACPI CPU
+acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
+acpicpu0: C2: FFH, lat   1 us, pow   500 mW
+acpicpu0: C3: FFH, lat  57 us, pow   100 mW, bus master check
+acpicpu0: P0: FFH, lat  10 us, pow 35000 mW, 2534 MHz
+acpicpu0: P1: FFH, lat  10 us, pow 35000 mW, 2533 MHz
+acpicpu0: P2: FFH, lat  10 us, pow 15000 mW, 1600 MHz
+acpicpu0: P3: FFH, lat  10 us, pow 12000 mW,  800 MHz
+acpicpu0: T0: FFH, lat   1 us, pow 12000 mW, 100 %
+acpicpu0: T1: FFH, lat   1 us, pow 10500 mW,  88 %
+acpicpu0: T2: FFH, lat   1 us, pow  9000 mW,  75 %
+acpicpu0: T3: FFH, lat   1 us, pow  7500 mW,  63 %
+acpicpu0: T4: FFH, lat   1 us, pow  6000 mW,  50 %
+acpicpu0: T5: FFH, lat   1 us, pow  4500 mW,  38 %
+acpicpu0: T6: FFH, lat   1 us, pow  3000 mW,  25 %
+acpicpu0: T7: FFH, lat   1 us, pow  1500 mW,  13 %
+coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=105
+acpicpu1 at cpu1: ACPI CPU
+coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=105
+fwohci0: BUS reset
+fwohci0: node_id=0xc800ffc0, gen=1, CYCLEMASTER mode
+ieee1394if0: 1 nodes, maxhop <= 0 cable IRM irm(0) (me)
+ieee1394if0: bus manager 0
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+acpiacad0: AC adapter offline.
+IPsec: Initialized Security Association Processing.
+acpibat0: SANYO LION rechargeable battery
+acpibat0: granularity: low->warn 0.001 Wh, warn->full 0.001 Wh
+uhub0 at usb0: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+uhub1 at usb1: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub1: 2 ports with 2 removable, self powered
+uhub2 at usb2: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub2: 2 ports with 2 removable, self powered
+uhub3 at usb3: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+uhub3: 6 ports with 6 removable, self powered
+uhub4 at usb4: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub4: 2 ports with 2 removable, self powered
+uhub5 at usb5: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub5: 2 ports with 2 removable, self powered
+uhub6 at usb6: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub6: 2 ports with 2 removable, self powered
+uhub7 at usb7: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+uhub7: 6 ports with 6 removable, self powered
+ahcisata0 port 0: device present, speed: 3.0Gb/s
+ahcisata0 port 1: device present, speed: 1.5Gb/s
+wd0 at atabus0 drive 0
+wd0: <TOSHIBA MQ01ACF050>
+wd0: drive supports 16-sector PIO transfers, LBA48 addressing
+wd0: 465 GB, 969021 cyl, 16 head, 63 sec, 512 bytes/sect x 976773168 sectors (0 bytes/physsect; first aligned sector: 8)
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100), WRITE DMA FUA, NCQ (32 tags)
+wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA), NCQ (31 tags)
+atapibus0 at atabus1: 1 targets
+cd0 at atapibus0 drive 0: <HL-DT-ST DVDRAM GSA-U20N, M1B87VD5048, HX10> cdrom removable
+cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133)
+cd0(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA)
+boot device: wd0
+root on wd0a dumps on wd0b
+root file system type: ffs
+kern.module.path=/stand/amd64/9.2/modules
+kern info: [drm] Memory usable by graphics device = 512M
+kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+kern info: [drm] Driver supports precise vblank timestamp query.
+i915drmkms0: interrupting at ioapic0 pin 16 (i915drmkms0)
+WARNING: clock gained 5 days
+intelfb0 at i915drmkms0
+intelfb0: framebuffer at 0xffffdd0067908000, size 1920x1200, depth 32, stride 7680
+wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+ugen0 at uhub1 port 1
+ugen0: AuthenTec (0x8ff) Fingerprint Sensor (0x2810), rev 2.00/17.03, addr 2
+ubt0 at uhub1 port 2
+ubt0: Lenovo Computer Corp (0xa5c) ThinkPad Bluetooth with Enhanced Data Rate II (0x2145), rev 2.00/3.52, addr 3
+acpibat0: normal capacity on 'charge state'
+wsdisplay0: screen 1 added (default, vt100 emulation)
+wsdisplay0: screen 2 added (default, vt100 emulation)
+wsdisplay0: screen 3 added (default, vt100 emulation)
+wsdisplay0: screen 4 added (default, vt100 emulation)
