@@ -1,7 +1,7 @@
-OpenBSD 7.2-current (GENERIC.MP) #1898: Mon Nov 21 00:57:55 MST 2022
-    deraadt@arm64.openbsd.org:/usr/src/sys/arch/arm64/compile/GENERIC.MP
+OpenBSD 7.2-current (GENERIC.MP) #0: Mon Nov 21 17:28:05 CET 2022
+    hans@pi.stare.cz:/usr/src/sys/arch/arm64/compile/GENERIC.MP
 real mem  = 8419926016 (8029MB)
-avail mem = 8126869504 (7750MB)
+avail mem = 8126873600 (7750MB)
 random: good seed from bootblocks
 mainbus0 at root: Raspberry Pi 4 Model B Rev 1.4
 cpu0 at mainbus0 mpidr 0: ARM Cortex-A72 r0p3
