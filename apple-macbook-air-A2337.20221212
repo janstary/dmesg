@@ -1,0 +1,122 @@
+OpenBSD 7.2-current (GENERIC.MP) #0: Mon Dec 12 12:47:50 CET 2022
+    hans@mb.stare.cz:/usr/src/sys/arch/arm64/compile/GENERIC.MP
+real mem  = 7916920832 (7550MB)
+avail mem = 7555481600 (7205MB)
+random: good seed from bootblocks
+mainbus0 at root: Apple MacBook Air (M1, 2020)
+cpu0 at mainbus0 mpidr 0: Apple Icestorm r1p1
+cpu0: 128KB 64b/line 8-way L1 VIPT I-cache, 64KB 64b/line 8-way L1 D-cache
+cpu0: 4096KB 128b/line 16-way L2 cache
+cpu0: TLBIOS+IRANGE,TS+AXFLAG,FHM,DP,SHA3,RDM,Atomic,CRC32,SHA2+SHA512,SHA1,AES+PMULL,SPECRES,SB,FRINTTS,GPI,LRCPC+LDAPUR,FCMA,JSCVT,API+PAC,DPB,SpecSEI,PAN+ATS1E1,LO,HPDS,CSV3,CSV2,DIT
+cpu1 at mainbus0 mpidr 1: Apple Icestorm r1p1
+cpu1: 128KB 64b/line 8-way L1 VIPT I-cache, 64KB 64b/line 8-way L1 D-cache
+cpu1: 4096KB 128b/line 16-way L2 cache
+cpu1: TLBIOS+IRANGE,TS+AXFLAG,FHM,DP,SHA3,RDM,Atomic,CRC32,SHA2+SHA512,SHA1,AES+PMULL,SPECRES,SB,FRINTTS,GPI,LRCPC+LDAPUR,FCMA,JSCVT,API+PAC,DPB,SpecSEI,PAN+ATS1E1,LO,HPDS,CSV3,CSV2,DIT
+cpu2 at mainbus0 mpidr 2: Apple Icestorm r1p1
+cpu2: 128KB 64b/line 8-way L1 VIPT I-cache, 64KB 64b/line 8-way L1 D-cache
+cpu2: 4096KB 128b/line 16-way L2 cache
+cpu2: TLBIOS+IRANGE,TS+AXFLAG,FHM,DP,SHA3,RDM,Atomic,CRC32,SHA2+SHA512,SHA1,AES+PMULL,SPECRES,SB,FRINTTS,GPI,LRCPC+LDAPUR,FCMA,JSCVT,API+PAC,DPB,SpecSEI,PAN+ATS1E1,LO,HPDS,CSV3,CSV2,DIT
+cpu3 at mainbus0 mpidr 3: Apple Icestorm r1p1
+cpu3: 128KB 64b/line 8-way L1 VIPT I-cache, 64KB 64b/line 8-way L1 D-cache
+cpu3: 4096KB 128b/line 16-way L2 cache
+cpu3: TLBIOS+IRANGE,TS+AXFLAG,FHM,DP,SHA3,RDM,Atomic,CRC32,SHA2+SHA512,SHA1,AES+PMULL,SPECRES,SB,FRINTTS,GPI,LRCPC+LDAPUR,FCMA,JSCVT,API+PAC,DPB,SpecSEI,PAN+ATS1E1,LO,HPDS,CSV3,CSV2,DIT
+cpu4 at mainbus0 mpidr 10100: Apple Firestorm r1p1
+cpu4: 192KB 64b/line 6-way L1 VIPT I-cache, 128KB 64b/line 8-way L1 D-cache
+cpu4: 12288KB 128b/line 12-way L2 cache
+cpu4: TLBIOS+IRANGE,TS+AXFLAG,FHM,DP,SHA3,RDM,Atomic,CRC32,SHA2+SHA512,SHA1,AES+PMULL,SPECRES,SB,FRINTTS,GPI,LRCPC+LDAPUR,FCMA,JSCVT,API+PAC,DPB,SpecSEI,PAN+ATS1E1,LO,HPDS,CSV3,CSV2,DIT
+cpu5 at mainbus0 mpidr 10101: Apple Firestorm r1p1
+cpu5: 192KB 64b/line 6-way L1 VIPT I-cache, 128KB 64b/line 8-way L1 D-cache
+cpu5: 12288KB 128b/line 12-way L2 cache
+cpu5: TLBIOS+IRANGE,TS+AXFLAG,FHM,DP,SHA3,RDM,Atomic,CRC32,SHA2+SHA512,SHA1,AES+PMULL,SPECRES,SB,FRINTTS,GPI,LRCPC+LDAPUR,FCMA,JSCVT,API+PAC,DPB,SpecSEI,PAN+ATS1E1,LO,HPDS,CSV3,CSV2,DIT
+cpu6 at mainbus0 mpidr 10102: Apple Firestorm r1p1
+cpu6: 192KB 64b/line 6-way L1 VIPT I-cache, 128KB 64b/line 8-way L1 D-cache
+cpu6: 12288KB 128b/line 12-way L2 cache
+cpu6: TLBIOS+IRANGE,TS+AXFLAG,FHM,DP,SHA3,RDM,Atomic,CRC32,SHA2+SHA512,SHA1,AES+PMULL,SPECRES,SB,FRINTTS,GPI,LRCPC+LDAPUR,FCMA,JSCVT,API+PAC,DPB,SpecSEI,PAN+ATS1E1,LO,HPDS,CSV3,CSV2,DIT
+cpu7 at mainbus0 mpidr 10103: Apple Firestorm r1p1
+cpu7: 192KB 64b/line 6-way L1 VIPT I-cache, 128KB 64b/line 8-way L1 D-cache
+cpu7: 12288KB 128b/line 12-way L2 cache
+cpu7: TLBIOS+IRANGE,TS+AXFLAG,FHM,DP,SHA3,RDM,Atomic,CRC32,SHA2+SHA512,SHA1,AES+PMULL,SPECRES,SB,FRINTTS,GPI,LRCPC+LDAPUR,FCMA,JSCVT,API+PAC,DPB,SpecSEI,PAN+ATS1E1,LO,HPDS,CSV3,CSV2,DIT
+efi0 at mainbus0: UEFI 2.9
+efi0: Das U-Boot rev 0x20220700
+apm0 at mainbus0
+"opp-table-0" at mainbus0 not configured
+"opp-table-1" at mainbus0 not configured
+agtimer0 at mainbus0: 24000 kHz
+"pmu-e" at mainbus0 not configured
+"pmu-p" at mainbus0 not configured
+"clock-ref" at mainbus0 not configured
+"clock-120m" at mainbus0 not configured
+simplebus0 at mainbus0: "soc"
+aplintc0 at simplebus0 nirq 896 ndie 1
+aplpmgr0 at simplebus0
+aplpinctrl0 at simplebus0
+aplpinctrl1 at simplebus0
+aplpmgr1 at simplebus0
+apldog0 at simplebus0
+aplmbox0 at simplebus0
+aplpinctrl2 at simplebus0
+aplpinctrl3 at simplebus0
+aplmbox1 at simplebus0
+apldart0 at simplebus0: bypass
+apldart1 at simplebus0: bypass
+apldart2 at simplebus0: bypass
+apldart3 at simplebus0: bypass
+apldart4 at simplebus0
+apldart5 at simplebus0: bypass
+aplcpu0 at simplebus0
+apliic0 at simplebus0
+iic0 at apliic0
+"apple,cd321x" at iic0 addr 0x38 not configured
+"apple,cd321x" at iic0 addr 0x3f not configured
+apliic1 at simplebus0
+iic1 at apliic1
+tascodec0 at iic1 addr 0x31
+apliic2 at simplebus0
+iic2 at apliic2
+tascodec1 at iic2 addr 0x34
+"cirrus,cs42l83" at iic2 addr 0x48 not configured
+aplspi0 at simplebus0
+aplhidev0 at aplspi0
+aplkbd0 at aplhidev0: 8 variable keys, 6 key codes
+wskbd0 at aplkbd0: console keyboard
+aplms0 at aplhidev0
+wsmouse0 at aplms0 mux 0
+exuart0 at simplebus0
+exuart1 at simplebus0
+aplspmi0 at simplebus0
+aplpmu0 at aplspmi0 sid 0xf
+aplsmc0 at simplebus0
+aplsart0 at simplebus0
+aplns0 at simplebus0
+nvme0 at aplns0: NVMe 1.1
+nvme0: APPLE SSD AP0256Q, firmware 873.40.4, serial 0ba016e96434ee18
+scsibus0 at nvme0: 2 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: <NVMe, APPLE SSD AP0256, 873.>
+sd0: 239372MB, 4096 bytes/sector, 61279344 sectors
+xhci0 at simplebus0, xHCI 1.10
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 "Generic xHCI root hub" rev 3.00/1.00 addr 1
+xhci1 at simplebus0, xHCI 1.10
+usb1 at xhci1: USB revision 3.0
+uhub1 at usb1 configuration 1 interface 0 "Generic xHCI root hub" rev 3.00/1.00 addr 1
+aplpcie0 at simplebus0
+pci0 at aplpcie0
+ppb0 at pci0 dev 0 function 0 "Apple M1 PCIe" rev 0x01
+pci1 at ppb0 bus 1
+bwfm0 at pci1 dev 0 function 0 "Broadcom BCM4378" rev 0x03: msi
+vendor "Broadcom", unknown product 0x5f69 (class network subclass miscellaneous, rev 0x03) at pci1 dev 0 function 1 not configured
+"clock-ref" at simplebus0 not configured
+aplnco0 at simplebus0
+apldma0 at simplebus0
+aplmca0 at simplebus0
+gpiobl0 at mainbus0
+aplaudio0 at mainbus0
+simplefb0 at mainbus0: 2560x1600, 32bpp
+wsdisplay0 at simplefb0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on sd0a (0f72c500fa6fee6b.a) swap on sd0b dump on sd0b
+bwfm0: address d4:57:63:c6:35:69
