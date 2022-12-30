@@ -1,7 +1,7 @@
-OpenBSD 7.2-current (GENERIC.MP) #0: Wed Dec 28 15:40:27 CET 2022
-    hans@e145.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+OpenBSD 7.2-current (GENERIC.MP) #911: Wed Dec 28 10:45:43 MST 2022
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
 real mem = 5647761408 (5386MB)
-avail mem = 5459173376 (5206MB)
+avail mem = 5459165184 (5206MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -45,7 +45,7 @@ acpipci0 at acpi0 PCI0: 0x00000010 0x00000011 0x00000000
 acpicmos0 at acpi0
 "SMB0001" at acpi0 not configured
 acpithinkpad0 at acpi0: version 1.0
-acpiac0 at acpi0: AC unit online
+acpiac0 at acpi0: AC unit offline
 acpibat0 at acpi0: BAT1 model "45N1174" serial   898 type LION oem "SANYO"
 acpibtn1 at acpi0: LID_
 "PNP0C14" at acpi0 not configured
@@ -84,8 +84,8 @@ uhub0 at usb0 configuration 1 interface 0 "AMD xHCI root hub" rev 3.00/1.00 addr
 ahci0 at pci0 dev 17 function 0 "AMD Hudson-2 SATA" rev 0x00: msi, AHCI 1.3
 ahci0: port 0: 6.0Gb/s
 scsibus1 at ahci0: 32 targets
-sd0 at scsibus1 targ 0 lun 0: <ATA, KingDian S180 60, F.00> naa.5000000000000000
-sd0: 57241MB, 512 bytes/sector, 117231408 sectors, thin
+sd0 at scsibus1 targ 0 lun 0: <ATA, TOSHIBA MQ02ABF0, HDF0> naa.5000039801d88e8a
+sd0: 476940MB, 512 bytes/sector, 976773168 sectors, thin
 ohci0 at pci0 dev 18 function 0 "AMD Hudson-2 USB" rev 0x39: apic 4 int 18, version 1.0, legacy support
 ehci0 at pci0 dev 18 function 2 "AMD Hudson-2 USB2" rev 0x39: apic 4 int 17
 usb1 at ehci0: USB revision 2.0
@@ -126,7 +126,7 @@ vscsi0 at root
 scsibus2 at vscsi0: 256 targets
 softraid0 at root
 scsibus3 at softraid0: 256 targets
-root on sd0a (1bb9b839fb175dff.a) swap on sd0b dump on sd0b
+root on sd0a (f53fc7e0472a681a.a) swap on sd0b dump on sd0b
 radeondrm0: KABINI
 radeondrm0: 1366x768, 32bpp
 wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
