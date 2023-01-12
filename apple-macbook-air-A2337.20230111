@@ -1,5 +1,5 @@
-OpenBSD 7.2-current (GENERIC.MP) #1963: Wed Jan 11 04:09:06 MST 2023
-    deraadt@arm64.openbsd.org:/usr/src/sys/arch/arm64/compile/GENERIC.MP
+OpenBSD 7.2-current (GENERIC.MP) #1: Wed Jan 11 17:55:53 CET 2023
+    hans@mb.stare.cz:/usr/src/sys/arch/arm64/compile/GENERIC.MP
 real mem  = 7916920832 (7550MB)
 avail mem = 7555313664 (7205MB)
 random: good seed from bootblocks
