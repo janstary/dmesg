@@ -1,0 +1,128 @@
+OpenBSD 7.3-current (GENERIC.MP) #0: Sat Apr 29 23:58:22 CEST 2023
+    hans@stary.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 2098511872 (2001MB)
+avail mem = 2015338496 (1921MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0x7e16d820 (7 entries)
+bios0: vendor coreboot version "4.0" date 09/08/2014
+bios0: PC Engines APU
+acpi0 at bios0: ACPI 4.0
+acpi0: sleep states S0 S1 S3 S4 S5
+acpi0: tables DSDT FACP SPCR HPET APIC HEST SSDT SSDT SSDT
+acpi0: wakeup devices AGPB(S4) HDMI(S4) PBR4(S4) PBR5(S4) PBR6(S4) PBR7(S4) PE20(S4) PE21(S4) PE22(S4) PE23(S4) PIBR(S4) UOH1(S3) UOH2(S3) UOH3(S3) UOH4(S3) UOH5(S3) [...]
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpihpet0 at acpi0: 14318180 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: AMD G-T40E Processor, 1000.01 MHz, 14-02-00
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,SSSE3,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,IBS,SKINIT,ITSC
+cpu0: 32KB 64b/line 8-way D-cache, 32KB 64b/line 2-way I-cache
+cpu0: 512KB 64b/line 16-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 200MHz
+cpu0: mwait min=64, max=64, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: AMD G-T40E Processor, 1000.02 MHz, 14-02-00
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,SSSE3,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,IBS,SKINIT,ITSC
+cpu1: 32KB 64b/line 8-way D-cache, 32KB 64b/line 2-way I-cache
+cpu1: 512KB 64b/line 16-way L2 cache
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 21, 24 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (AGPB)
+acpiprt2 at acpi0: bus -1 (HDMI)
+acpiprt3 at acpi0: bus 1 (PBR4)
+acpiprt4 at acpi0: bus 2 (PBR5)
+acpiprt5 at acpi0: bus 3 (PBR6)
+acpiprt6 at acpi0: bus -1 (PBR7)
+acpiprt7 at acpi0: bus 5 (PE20)
+acpiprt8 at acpi0: bus -1 (PE21)
+acpiprt9 at acpi0: bus -1 (PE22)
+acpiprt10 at acpi0: bus -1 (PE23)
+acpiprt11 at acpi0: bus 4 (PIBR)
+acpipci0 at acpi0 PCI0: 0x00000000 0x00000011 0x00000001
+acpicmos0 at acpi0
+acpibtn0 at acpi0: PWRB
+acpicpu0 at acpi0: C2(0@100 io@0x841), C1(@1 halt!), PSS
+acpicpu1 at acpi0: C2(0@100 io@0x841), C1(@1 halt!), PSS
+cpu0: 1000 MHz: speeds: 1000 800 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "AMD 14h Host" rev 0x00
+ppb0 at pci0 dev 4 function 0 "AMD 14h PCIE" rev 0x00: msi
+pci1 at ppb0 bus 1
+re0 at pci1 dev 0 function 0 "Realtek 8168" rev 0x06: RTL8168E/8111E (0x2c00), msi, address 00:0d:b9:3d:bb:fc
+rgephy0 at re0 phy 7: RTL8169S/8110S/8211 PHY, rev. 4
+ppb1 at pci0 dev 5 function 0 "AMD 14h PCIE" rev 0x00: msi
+pci2 at ppb1 bus 2
+re1 at pci2 dev 0 function 0 "Realtek 8168" rev 0x06: RTL8168E/8111E (0x2c00), msi, address 00:0d:b9:3d:bb:fd
+rgephy1 at re1 phy 7: RTL8169S/8110S/8211 PHY, rev. 4
+ppb2 at pci0 dev 6 function 0 "AMD 14h PCIE" rev 0x00: msi
+pci3 at ppb2 bus 3
+re2 at pci3 dev 0 function 0 "Realtek 8168" rev 0x06: RTL8168E/8111E (0x2c00), msi, address 00:0d:b9:3d:bb:fe
+rgephy2 at re2 phy 7: RTL8169S/8110S/8211 PHY, rev. 4
+ahci0 at pci0 dev 17 function 0 "ATI SBx00 SATA" rev 0x40: apic 2 int 19, AHCI 1.2
+ahci0: port 0: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, KINGSTON SMS200S, 605A> naa.50026b725a08fef7
+sd0: 57241MB, 512 bytes/sector, 117231408 sectors, thin
+ohci0 at pci0 dev 18 function 0 "ATI SB700 USB" rev 0x00: apic 2 int 18, version 1.0, legacy support
+ehci0 at pci0 dev 18 function 2 "ATI SB700 USB2" rev 0x00: apic 2 int 17
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "ATI EHCI root hub" rev 2.00/1.00 addr 1
+ohci1 at pci0 dev 19 function 0 "ATI SB700 USB" rev 0x00: apic 2 int 18, version 1.0, legacy support
+ehci1 at pci0 dev 19 function 2 "ATI SB700 USB2" rev 0x00: apic 2 int 17
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 "ATI EHCI root hub" rev 2.00/1.00 addr 1
+piixpm0 at pci0 dev 20 function 0 "ATI SBx00 SMBus" rev 0x42: SMI
+iic0 at piixpm0
+pcib0 at pci0 dev 20 function 3 "ATI SB700 ISA" rev 0x40
+ppb3 at pci0 dev 20 function 4 "ATI SB600 PCI" rev 0x40
+pci4 at ppb3 bus 4
+ohci2 at pci0 dev 20 function 5 "ATI SB700 USB" rev 0x00: apic 2 int 18, version 1.0, legacy support
+ppb4 at pci0 dev 21 function 0 "ATI SB800 PCIE" rev 0x00
+pci5 at ppb4 bus 5
+ohci3 at pci0 dev 22 function 0 "ATI SB700 USB" rev 0x00: apic 2 int 18, version 1.0, legacy support
+ehci2 at pci0 dev 22 function 2 "ATI SB700 USB2" rev 0x00: apic 2 int 17
+usb2 at ehci2: USB revision 2.0
+uhub2 at usb2 configuration 1 interface 0 "ATI EHCI root hub" rev 2.00/1.00 addr 1
+pchb1 at pci0 dev 24 function 0 "AMD 14h Link Cfg" rev 0x43
+pchb2 at pci0 dev 24 function 1 "AMD 14h Address Map" rev 0x00
+pchb3 at pci0 dev 24 function 2 "AMD 14h DRAM Cfg" rev 0x00
+km0 at pci0 dev 24 function 3 "AMD 14h Misc Cfg" rev 0x00
+pchb4 at pci0 dev 24 function 4 "AMD 14h CPU Power" rev 0x00
+pchb5 at pci0 dev 24 function 5 "AMD 14h Reserved" rev 0x00
+pchb6 at pci0 dev 24 function 6 "AMD 14h NB Power" rev 0x00
+pchb7 at pci0 dev 24 function 7 "AMD 14h Reserved" rev 0x00
+usb3 at ohci0: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 "ATI OHCI root hub" rev 1.00/1.00 addr 1
+usb4 at ohci1: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 "ATI OHCI root hub" rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+wbsio0 at isa0 port 0x2e/2: NCT5104D rev 0x52
+usb5 at ohci2: USB revision 1.0
+uhub5 at usb5 configuration 1 interface 0 "ATI OHCI root hub" rev 1.00/1.00 addr 1
+usb6 at ohci3: USB revision 1.0
+uhub6 at usb6 configuration 1 interface 0 "ATI OHCI root hub" rev 1.00/1.00 addr 1
+vmm0 at mainbus0: SVM/RVI
+umass0 at uhub2 port 1 configuration 1 interface 0 "Generic Flash Card Reader/Writer" rev 2.01/1.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: <Multiple, Card Reader, 1.00> removable serial.058f6366058F63666485
+sd1: 29508MB, 512 bytes/sector, 60432384 sectors
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd1a (47e56166cfb1e429.a) swap on sd1b dump on sd1b
+WARNING: / was not properly unmounted
