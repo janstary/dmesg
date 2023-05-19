@@ -1,7 +1,7 @@
-OpenBSD 7.3-current (GENERIC.MP) #2095: Mon Apr 17 14:00:13 MDT 2023
+OpenBSD 7.3-current (GENERIC.MP) #2122: Wed May 17 23:06:34 MDT 2023
     deraadt@arm64.openbsd.org:/usr/src/sys/arch/arm64/compile/GENERIC.MP
 real mem  = 8419913728 (8029MB)
-avail mem = 8124628992 (7748MB)
+avail mem = 8124624896 (7748MB)
 random: good seed from bootblocks
 mainbus0 at root: Raspberry Pi 4 Model B Rev 1.4
 cpu0 at mainbus0 mpidr 0: ARM Cortex-A72 r0p3
@@ -84,7 +84,7 @@ gpioleds0 at mainbus0: "led0", "led1"
 simplebus3 at mainbus0: "v3dbus"
 "bootloader" at mainbus0 not configured
 scsibus0 at sdmmc1: 2 targets, initiator 0
-sd0 at scsibus0 targ 1 lun 0: <SD/MMC, SU32G, 0080> removable
+sd0 at scsibus0 targ 1 lun 0: <Sandisk, SU32G, 0080> removable
 sd0: 30436MB, 512 bytes/sector, 62333952 sectors
 uhub1 at uhub0 port 1 configuration 1 interface 0 "VIA Labs USB2.0 Hub" rev 2.10/4.21 addr 2
 bwfm0 at sdmmc0 function 1
