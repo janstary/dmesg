@@ -1,0 +1,136 @@
+OpenBSD 7.3-current (GENERIC.MP) #1168: Fri Apr 28 14:47:06 MDT 2023
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8234086400 (7852MB)
+avail mem = 7964897280 (7595MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xdae9c000 (69 entries)
+bios0: vendor LENOVO version "G2ETB7WW (2.77 )" date 09/24/2019
+bios0: LENOVO 2325T7Z
+acpi0 at bios0: ACPI 5.0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SLIC TCPA SSDT SSDT SSDT HPET APIC MCFG ECDT FPDT ASF! UEFI UEFI POAT SSDT SSDT UEFI DBG2
+acpi0: wakeup devices LID_(S4) SLPB(S3) IGBE(S4) EXP3(S4) XHCI(S3) EHC1(S3) EHC2(S3) HDEF(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz, 1197.33 MHz, 06-3a-09
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,XSAVE,AVX,F16C,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu0: 32KB 64b/line 8-way D-cache, 32KB 64b/line 8-way I-cache, 256KB 64b/line 8-way L2 cache, 3MB 64b/line 12-way L3 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.1.2, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz, 1197.30 MHz, 06-3a-09
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,XSAVE,AVX,F16C,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu1: 32KB 64b/line 8-way D-cache, 32KB 64b/line 8-way I-cache, 256KB 64b/line 8-way L2 cache, 3MB 64b/line 12-way L3 cache
+cpu1: smt 1, core 0, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz, 1197.31 MHz, 06-3a-09
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,XSAVE,AVX,F16C,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu2: 32KB 64b/line 8-way D-cache, 32KB 64b/line 8-way I-cache, 256KB 64b/line 8-way L2 cache, 3MB 64b/line 12-way L3 cache
+cpu2: smt 0, core 1, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz, 1197.32 MHz, 06-3a-09
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,XSAVE,AVX,F16C,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu3: 32KB 64b/line 8-way D-cache, 32KB 64b/line 8-way I-cache, 256KB 64b/line 8-way L2 cache, 3MB 64b/line 12-way L3 cache
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf8000000, bus 0-63
+acpiec0 at acpi0
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus 3 (EXP2)
+acpiprt4 at acpi0: bus 4 (EXP3)
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+acpipci0 at acpi0 PCI0: 0x00000000 0x00000011 0x00000001
+acpicmos0 at acpi0
+acpibat0 at acpi0: BAT0 model "45N1025" serial  1094 type LION oem "LGC"
+acpiac0 at acpi0: AC unit offline
+"LEN0078" at acpi0 not configured
+acpithinkpad0 at acpi0: version 1.0
+"PNP0C14" at acpi0 not configured
+"PNP0C14" at acpi0 not configured
+"PNP0C14" at acpi0 not configured
+acpicpu0 at acpi0: C3(200@87 mwait.1@0x30), C2(500@59 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@87 mwait.1@0x30), C2(500@59 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(200@87 mwait.1@0x30), C2(500@59 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(200@87 mwait.1@0x30), C2(500@59 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: PUBS, resource for XHCI, EHC1, EHC2
+acpitz0 at acpi0: critical temperature is 103 degC
+acpidock0 at acpi0: GDCK not docked (0)
+acpivideo0 at acpi0: VID_
+acpivout0 at acpivideo0: LCD0
+acpivideo1 at acpi0: VID_
+cpu0: using VERW MDS workaround (except on vmm entry)
+cpu0: Enhanced SpeedStep 1197 MHz: speeds: 2400, 2300, 2200, 2100, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "Intel Core 3G Host" rev 0x09
+inteldrm0 at pci0 dev 2 function 0 "Intel HD Graphics 4000" rev 0x09
+drm0 at inteldrm0
+inteldrm0: msi, IVYBRIDGE, gen 7
+xhci0 at pci0 dev 20 function 0 "Intel 7 Series xHCI" rev 0x04: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 "Intel xHCI root hub" rev 3.00/1.00 addr 1
+"Intel 7 Series MEI" rev 0x04 at pci0 dev 22 function 0 not configured
+em0 at pci0 dev 25 function 0 "Intel 82579LM" rev 0x04: msi, address 3c:97:0e:63:a5:25
+ehci0 at pci0 dev 26 function 0 "Intel 7 Series USB" rev 0x04: apic 2 int 16
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 "Intel 7 Series HD Audio" rev 0x04: msi
+azalia0: codecs: Realtek ALC269, Intel/0x2806, using Realtek ALC269
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 "Intel 7 Series PCIE" rev 0xc4: msi
+pci1 at ppb0 bus 2
+sdhc0 at pci1 dev 0 function 0 "Ricoh 5U822 SD/MMC" rev 0x07: apic 2 int 16
+sdhc0: SDHC 3.0, 50 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed, dma
+ppb1 at pci0 dev 28 function 1 "Intel 7 Series PCIE" rev 0xc4: msi
+pci2 at ppb1 bus 3
+iwn0 at pci2 dev 0 function 0 "Intel Centrino Advanced-N 6205" rev 0x34: msi, MIMO 2T2R, MoW, address e0:9d:31:9b:37:64
+ppb2 at pci0 dev 28 function 2 "Intel 7 Series PCIE" rev 0xc4: msi
+pci3 at ppb2 bus 4
+ehci1 at pci0 dev 29 function 0 "Intel 7 Series USB" rev 0x04: apic 2 int 23
+usb2 at ehci1: USB revision 2.0
+uhub2 at usb2 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 "Intel QM77 LPC" rev 0x04
+ahci0 at pci0 dev 31 function 2 "Intel 7 Series AHCI" rev 0x04: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, KingDian S180 60, F.00> naa.5000000000000000
+sd0: 57241MB, 512 bytes/sector, 117231408 sectors, thin
+ichiic0 at pci0 dev 31 function 3 "Intel 7 Series SMBus" rev 0x04: apic 2 int 18
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-12800 SO-DIMM
+spdmem1 at iic0 addr 0x51: 4GB DDR3 SDRAM PC3-12800 SO-DIMM
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics clickpad, firmware 8.1, 0x1e2b1 0x940300 0x194b40 0xd002a3 0x123800
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: VMX/EPT
+uhub3 at uhub1 port 1 configuration 1 interface 0 "Intel Rate Matching Hub" rev 2.00/0.00 addr 2
+ugen0 at uhub3 port 3 "Auth Biometric Coprocessor" rev 1.10/0.01 addr 3
+ugen1 at uhub3 port 4 "Broadcom Corp BCM20702A0" rev 2.00/1.12 addr 4
+uhub4 at uhub2 port 1 configuration 1 interface 0 "Intel Rate Matching Hub" rev 2.00/0.00 addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (1bb9b839fb175dff.a) swap on sd0b dump on sd0b
+inteldrm0: 1366x768, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
