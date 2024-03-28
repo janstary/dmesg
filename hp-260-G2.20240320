@@ -1,0 +1,183 @@
+OpenBSD 7.5 (GENERIC.MP) #82: Wed Mar 20 15:48:40 MDT 2024
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 12749877248 (12159MB)
+avail mem = 12342329344 (11770MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.8 @ 0xed1e0 (37 entries)
+bios0: vendor AMI version "02.25" date 03/10/2022
+bios0: HP Pippin2
+acpi0 at bios0: ACPI 5.0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC FPDT FIDT MCFG HPET SSDT LPIT SSDT SSDT SSDT SSDT DBGP DBG2 SSDT SSDT UEFI SSDT DMAR DBGP
+acpi0: wakeup devices PEG0(S4) PEGP(S4) PEG1(S4) PEGP(S4) PEG2(S4) PEGP(S4) RP09(S4) PXSX(S4) RP10(S4) PXSX(S4) RP11(S4) PXSX(S4) RP12(S4) PXSX(S4) RP13(S4) PXSX(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i3-6100U CPU @ 2.30GHz, 2194.89 MHz, 06-4e-03, patch 000000f0
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SRBDS_CTRL,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,RSBA,MISC_PKG_CT,ENERGY_FILT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu0: 32KB 64b/line 8-way D-cache, 32KB 64b/line 8-way I-cache, 256KB 64b/line 4-way L2 cache, 3MB 64b/line 12-way L3 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 24MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Core(TM) i3-6100U CPU @ 2.30GHz, 2194.89 MHz, 06-4e-03, patch 000000f0
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SRBDS_CTRL,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,RSBA,MISC_PKG_CT,ENERGY_FILT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu1: 32KB 64b/line 8-way D-cache, 32KB 64b/line 8-way I-cache, 256KB 64b/line 4-way L2 cache, 3MB 64b/line 12-way L3 cache
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 1 (application processor)
+cpu2: Intel(R) Core(TM) i3-6100U CPU @ 2.30GHz, 2194.89 MHz, 06-4e-03, patch 000000f0
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SRBDS_CTRL,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,RSBA,MISC_PKG_CT,ENERGY_FILT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu2: 32KB 64b/line 8-way D-cache, 32KB 64b/line 8-way I-cache, 256KB 64b/line 4-way L2 cache, 3MB 64b/line 12-way L3 cache
+cpu2: smt 1, core 0, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i3-6100U CPU @ 2.30GHz, 2194.89 MHz, 06-4e-03, patch 000000f0
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SRBDS_CTRL,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,RSBA,MISC_PKG_CT,ENERGY_FILT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu3: 32KB 64b/line 8-way D-cache, 32KB 64b/line 8-way I-cache, 256KB 64b/line 4-way L2 cache, 3MB 64b/line 12-way L3 cache
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 120 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf0000000, bus 0-127
+acpihpet0 at acpi0: 23999999 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEG0)
+acpiprt2 at acpi0: bus -1 (PEG1)
+acpiprt3 at acpi0: bus -1 (PEG2)
+acpiprt4 at acpi0: bus -1 (RP09)
+acpiprt5 at acpi0: bus -1 (RP10)
+acpiprt6 at acpi0: bus -1 (RP11)
+acpiprt7 at acpi0: bus -1 (RP12)
+acpiprt8 at acpi0: bus -1 (RP13)
+acpiprt9 at acpi0: bus -1 (RP01)
+acpiprt10 at acpi0: bus -1 (RP02)
+acpiprt11 at acpi0: bus 1 (RP03)
+acpiprt12 at acpi0: bus 2 (RP04)
+acpiprt13 at acpi0: bus -1 (RP05)
+acpiprt14 at acpi0: bus -1 (RP06)
+acpiprt15 at acpi0: bus -1 (RP07)
+acpiprt16 at acpi0: bus -1 (RP08)
+acpiprt17 at acpi0: bus -1 (RP17)
+acpiprt18 at acpi0: bus -1 (RP18)
+acpiprt19 at acpi0: bus -1 (RP19)
+acpiprt20 at acpi0: bus -1 (RP20)
+acpiprt21 at acpi0: bus -1 (RP14)
+acpiprt22 at acpi0: bus -1 (RP15)
+acpiprt23 at acpi0: bus -1 (RP16)
+acpiec0 at acpi0: not present
+acpipci0 at acpi0 PCI0: 0x00000000 0x00000011 0x00000001
+acpicmos0 at acpi0
+acpibtn0 at acpi0: SLPB
+"INT33A1" at acpi0 not configured
+acpibtn1 at acpi0: PWRB
+"PNP0C14" at acpi0 not configured
+"PNP0C0B" at acpi0 not configured
+"PNP0C0B" at acpi0 not configured
+"PNP0C0B" at acpi0 not configured
+"PNP0C0B" at acpi0 not configured
+"PNP0C0B" at acpi0 not configured
+acpicpu0 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: PG00, resource for PEG0
+acpipwrres1 at acpi0: PG01, resource for PEG1
+acpipwrres2 at acpi0: PG02, resource for PEG2
+acpipwrres3 at acpi0: WRST
+acpipwrres4 at acpi0: WRST
+acpipwrres5 at acpi0: WRST
+acpipwrres6 at acpi0: WRST
+acpipwrres7 at acpi0: WRST
+acpipwrres8 at acpi0: WRST
+acpipwrres9 at acpi0: WRST
+acpipwrres10 at acpi0: WRST
+acpipwrres11 at acpi0: WRST
+acpipwrres12 at acpi0: WRST
+acpipwrres13 at acpi0: WRST
+acpipwrres14 at acpi0: WRST
+acpipwrres15 at acpi0: WRST
+acpipwrres16 at acpi0: WRST
+acpipwrres17 at acpi0: WRST
+acpipwrres18 at acpi0: WRST
+acpipwrres19 at acpi0: WRST
+acpipwrres20 at acpi0: WRST
+acpipwrres21 at acpi0: WRST
+acpipwrres22 at acpi0: WRST
+acpipwrres23 at acpi0: FN00, resource for FAN0
+acpipwrres24 at acpi0: FN01, resource for FAN1
+acpipwrres25 at acpi0: FN02, resource for FAN2
+acpipwrres26 at acpi0: FN03, resource for FAN3
+acpipwrres27 at acpi0: FN04, resource for FAN4
+acpitz0 at acpi0: critical temperature is 119 degC
+acpitz1 at acpi0: critical temperature is 119 degC
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: DD1F
+cpu0: using VERW MDS workaround (except on vmm entry)
+cpu0: Enhanced SpeedStep 2194 MHz: speeds: 2301, 2300, 2200, 2000, 1900, 1800, 1600, 1500, 1300, 1200, 1100, 900, 800, 700, 500, 400 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "Intel Core 6G Host" rev 0x08
+inteldrm0 at pci0 dev 2 function 0 "Intel HD Graphics 520" rev 0x07
+drm0 at inteldrm0
+inteldrm0: msi, SKYLAKE, gen 9
+"Intel Core GMM" rev 0x00 at pci0 dev 8 function 0 not configured
+xhci0 at pci0 dev 20 function 0 "Intel 100 Series xHCI" rev 0x21: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 "Intel xHCI root hub" rev 3.00/1.00 addr 1
+"Intel 100 Series MEI" rev 0x21 at pci0 dev 22 function 0 not configured
+ahci0 at pci0 dev 23 function 0 "Intel 100 Series AHCI" rev 0x21: msi, AHCI 1.3.1
+ahci0: device on port 0 didn't come ready, TFD: 0x80<BSY>
+ahci0: CLO did not complete
+ahci0: port 0: 3.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, INTEL SSDSA2M040, 2CV1> naa.50015179593bd675
+sd0: 38166MB, 512 bytes/sector, 78165360 sectors, thin
+ppb0 at pci0 dev 28 function 0 "Intel 100 Series PCIE" rev 0xf1: msi
+pci1 at ppb0 bus 1
+re0 at pci1 dev 0 function 0 "Realtek 8168" rev 0x10: RTL8168GU/8111GU (0x5080), msi, address 7c:d3:0a:21:eb:f5
+rgephy0 at re0 phy 7: RTL8251 PHY, rev. 0
+ppb1 at pci0 dev 28 function 3 "Intel 100 Series PCIE" rev 0xf1: msi
+pci2 at ppb1 bus 2
+"Realtek 8723BE" rev 0x00 at pci2 dev 0 function 0 not configured
+pcib0 at pci0 dev 31 function 0 "Intel 100 Series LPC" rev 0x21
+"Intel 100 Series PMC" rev 0x21 at pci0 dev 31 function 2 not configured
+azalia0 at pci0 dev 31 function 3 "Intel 100 Series HD Audio" rev 0x21: msi
+azalia0: codecs: Realtek ALC221, Intel/0x2809, using Realtek ALC221
+audio0 at azalia0
+ichiic0 at pci0 dev 31 function 4 "Intel 100 Series SMBus" rev 0x21: apic 2 int 16
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 8GB DDR4 SDRAM PC4-17000 SO-DIMM
+spdmem1 at iic0 addr 0x52: 4GB DDR4 SDRAM PC4-17000 SO-DIMM
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+uhidev0 at uhub0 port 4 configuration 1 interface 0 "vendor 0x173d product 0x0004" rev 1.10/1.50 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+uhidev1 at uhub0 port 4 configuration 1 interface 1 "vendor 0x173d product 0x0004" rev 1.10/1.50 addr 2
+uhidev1: iclass 3/0, 3 report ids
+uhid0 at uhidev1 reportid 1: input=3, output=0, feature=0
+uhid1 at uhidev1 reportid 2: input=1, output=0, feature=0
+ucc0 at uhidev1 reportid 3: 4 usages, 3 keys, array
+wskbd2 at ucc0 mux 1
+uhidev2 at uhub0 port 5 configuration 1 interface 0 "Logitech USB-PS/2 Optical Mouse" rev 2.00/11.10 addr 3
+uhidev2: iclass 3/1
+ums0 at uhidev2: 3 buttons, Z dir
+wsmouse0 at ums0 mux 0
+ugen0 at uhub0 port 6 "Realtek Bluetooth Radio" rev 2.10/2.00 addr 4
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (921cf7198fa2abbd.a) swap on sd0b dump on sd0b
+inteldrm0: 1680x1050, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wskbd1: connecting to wsdisplay0
+wskbd2: connecting to wsdisplay0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
