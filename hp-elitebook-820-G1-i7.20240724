@@ -1,0 +1,147 @@
+OpenBSD 7.5-current (GENERIC.MP) #0: Wed Jul 24 14:36:27 CEST 2024
+    hans@hp.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 7962357760 (7593MB)
+avail mem = 7697833984 (7341MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0x9de3f000 (32 entries)
+bios0: vendor Hewlett-Packard version "L71 Ver. 01.49" date 02/24/2020
+bios0: Hewlett-Packard HP EliteBook 820 G1
+acpi0 at bios0: ACPI 5.0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET APIC MCFG TCPA SSDT SSDT SLIC FPDT BGRT SSDT SSDT SSDT SSDT ASF!
+acpi0: wakeup devices LANC(S5) EHC1(S0) XHC_(S0) PCIB(S5) NIC_(S5) RP04(S5) WNIC(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz, 1995.40 MHz, 06-45-01, patch 00000026
+cpu0: cpuid 1 edx=bfebfbff<FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE> ecx=77fafbff<SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND>
+cpu0: cpuid 6 eax=77<SENSOR,ARAT> ecx=9<EFFFREQ>
+cpu0: cpuid 7.0 ebx=27ab<FSGSBASE,TSC_ADJUST,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID> edx=9c000600<SRBDS_CTRL,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD>
+cpu0: cpuid a vers=3, gp=4, gpwidth=48, ff=3, ffwidth=48
+cpu0: cpuid d.1 eax=1<XSAVEOPT>
+cpu0: cpuid 80000001 edx=2c100800<NXE,PAGE1GB,RDTSCP,LONG> ecx=21<LAHF,ABM>
+cpu0: cpuid 80000007 edx=100<ITSC>
+cpu0: MELTDOWN
+cpu0: 32KB 64b/line 8-way D-cache, 32KB 64b/line 8-way I-cache, 256KB 64b/line 8-way L2 cache, 4MB 64b/line 16-way L3 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz, 1995.41 MHz, 06-45-01, patch 00000026
+cpu1: smt 1, core 0, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz, 1995.40 MHz, 06-45-01, patch 00000026
+cpu2: smt 0, core 1, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz, 1995.42 MHz, 06-45-01, patch 00000026
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 0 pa 0xfec00000, version 20, 40 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEGP)
+acpiprt2 at acpi0: bus 1 (RP01)
+acpiprt3 at acpi0: bus 2 (RP04)
+acpiprt4 at acpi0: bus 3 (RP06)
+acpiprt5 at acpi0: bus -1 (RP07)
+acpiprt6 at acpi0: bus -1 (RP08)
+acpiec0 at acpi0
+"HPQ6001" at acpi0 not configured
+acpipci0 at acpi0 PCI0: 0x00000010 0x00000011 0x00000000
+acpicmos0 at acpi0
+"PNP0A06" at acpi0 not configured
+"SYN3008" at acpi0 not configured
+"HPQ6007" at acpi0 not configured
+acpibat0 at acpi0: BAT0 model "Primary" serial 26675 2023/11/18 type LIon oem "Hewlett-Packard"
+acpiac0 at acpi0: AC unit online
+acpibtn0 at acpi0: SLPB
+acpibtn1 at acpi0: LID_
+"PNP0C14" at acpi0 not configured
+tpm0 at acpi0 GTPM 1.2 (TIS) addr 0xfed40000/0x5000, Infineon SLB9635 1.2 rev 0x10
+acpicpu0 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: APPR, resource for HDEF
+acpipwrres1 at acpi0: COMP, resource for COM1
+acpipwrres2 at acpi0: LPP_, resource for LPT0
+acpipwrres3 at acpi0: PXP6, resource for RP06
+acpitz0 at acpi0: critical temperature is 128 degC
+acpitz1 at acpi0: critical temperature is 128 degC
+acpitz2 at acpi0: critical temperature is 128 degC
+acpitz3 at acpi0: critical temperature is 128 degC
+acpitz4 at acpi0: critical temperature is 128 degC
+acpitz5 at acpi0: critical temperature is 128 degC
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: DD01
+cpu0: using VERW MDS workaround (except on vmm entry)
+cpu0: Enhanced SpeedStep 1995 MHz: speeds: 2701, 2700, 2600, 2400, 2300, 2100, 2000, 1800, 1700, 1600, 1400, 1300, 1100, 1000, 800, 756 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "Intel Core 4G Host" rev 0x0b
+inteldrm0 at pci0 dev 2 function 0 "Intel HD Graphics" rev 0x0b
+drm0 at inteldrm0
+inteldrm0: msi, HASWELL, gen 7
+azalia0 at pci0 dev 3 function 0 "Intel Core 4G HD Audio" rev 0x0b: msi
+azalia0: No codecs found
+xhci0 at pci0 dev 20 function 0 "Intel 8 Series xHCI" rev 0x04: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 "Intel xHCI root hub" rev 3.00/1.00 addr 1
+"Intel 8 Series MEI" rev 0x04 at pci0 dev 22 function 0 not configured
+puc0 at pci0 dev 22 function 3 "Intel 8 Series KT" rev 0x04: ports: 16 com
+com4 at puc0 port 0 apic 0 int 19: ns16550a, 16 byte fifo
+com4: probed fifo depth: 0 bytes
+em0 at pci0 dev 25 function 0 "Intel I218-LM" rev 0x04: msi, address 30:8d:99:15:01:20
+azalia1 at pci0 dev 27 function 0 "Intel 8 Series HD Audio" rev 0x04: msi
+azalia1: codecs: IDT/0x76e0
+audio0 at azalia1
+ppb0 at pci0 dev 28 function 0 "Intel 8 Series PCIE" rev 0xe4
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 28 function 3 "Intel 8 Series PCIE" rev 0xe4: msi
+pci2 at ppb1 bus 2
+iwm0 at pci2 dev 0 function 0 "Intel AC 7260" rev 0x73, msi
+ppb2 at pci0 dev 28 function 5 "Intel 8 Series PCIE" rev 0xe4: msi
+pci3 at ppb2 bus 3
+rtsx0 at pci3 dev 0 function 0 "Realtek RTS5227 Card Reader" rev 0x01: msi
+sdmmc0 at rtsx0: 4-bit, dma
+ehci0 at pci0 dev 29 function 0 "Intel 8 Series USB" rev 0x04: apic 0 int 17
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 "Intel 8 Series LPC" rev 0x04
+ahci0 at pci0 dev 31 function 2 "Intel 8 Series AHCI" rev 0x04: msi, AHCI 1.3
+ahci0: port 0: 3.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, INTEL SSDSA2BW16, 4PC1> naa.5001517972e3162d
+sd0: 152627MB, 512 bytes/sector, 312581808 sectors, thin
+ichiic0 at pci0 dev 31 function 3 "Intel 8 Series SMBus" rev 0x04: apic 0 int 18
+iic0 at ichiic0
+iic0: addr 0x2c 80=04 81=04 82=04 83=04 84=04 85=04 86=04 87=04 fd=01 words 00=ffff 01=ffff 02=ffff 03=ffff 04=ffff 05=ffff 06=ffff 07=ffff
+spdmem0 at iic0 addr 0x50: 8GB DDR3 SDRAM PC3-12800 SO-DIMM
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+uhub2 at uhub0 port 3 configuration 1 interface 0 "SMSC USB2134B" rev 2.10/50.00 addr 2
+uhub3 at uhub0 port 12 configuration 1 interface 0 "SMSC USB5534B" rev 3.00/50.00 addr 3
+uhub4 at uhub1 port 1 configuration 1 interface 0 "Intel Rate Matching Hub" rev 2.00/0.04 addr 2
+sdmmc0: can't enable card
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (643f9b23a4fb4487.a) swap on sd0b dump on sd0b
+WARNING: bad clock chip time
+WARNING: CHECK AND RESET THE DATE!
+inteldrm0: 1366x768, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+iwm0: hw rev 0x140, fw ver 17.3216344376.0, address ac:fd:ce:75:8f:fa
