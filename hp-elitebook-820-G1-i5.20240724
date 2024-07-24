@@ -1,13 +1,13 @@
 OpenBSD 7.5-current (GENERIC.MP) #0: Wed Jul 24 14:36:27 CEST 2024
     hans@hp.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
 real mem = 3667390464 (3497MB)
-avail mem = 3533094912 (3369MB)
+avail mem = 3533111296 (3369MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
 mainbus0 at root
-bios0 at mainbus0: SMBIOS rev. 2.7 @ 0x9de3f000 (31 entries)
-bios0: vendor Hewlett-Packard version "L71 Ver. 01.10" date 03/25/2014
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0x9de3f000 (32 entries)
+bios0: vendor Hewlett-Packard version "L71 Ver. 01.49" date 02/24/2020
 bios0: Hewlett-Packard HP EliteBook 820 G1
 acpi0 at bios0: ACPI 5.0
 acpi0: sleep states S0 S3 S4 S5
@@ -35,10 +35,10 @@ cpu1 at mainbus0: apid 1 (application processor)
 cpu1: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz, 1795.86 MHz, 06-45-01, patch 00000026
 cpu1: smt 1, core 0, package 0
 cpu2 at mainbus0: apid 2 (application processor)
-cpu2: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz, 1795.87 MHz, 06-45-01, patch 00000026
+cpu2: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz, 1795.86 MHz, 06-45-01, patch 00000026
 cpu2: smt 0, core 1, package 0
 cpu3 at mainbus0: apid 3 (application processor)
-cpu3: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz, 1795.87 MHz, 06-45-01, patch 00000026
+cpu3: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz, 1795.90 MHz, 06-45-01, patch 00000026
 cpu3: smt 1, core 1, package 0
 ioapic0 at mainbus0: apid 0 pa 0xfec00000, version 20, 40 pins
 acpimcfg0 at acpi0
@@ -57,12 +57,12 @@ acpicmos0 at acpi0
 "PNP0A06" at acpi0 not configured
 "SYN3008" at acpi0 not configured
 "HPQ6007" at acpi0 not configured
-tpm0 at acpi0 GTPM 1.2 (TIS) addr 0xfed40000/0x5000, Infineon SLB9635 1.2 rev 0x10
-acpibat0 at acpi0: BAT0 not present
+acpibat0 at acpi0: BAT0 model "Primary" serial 00669 2014/10/08 type LIon oem "Hewlett-Packard"
 acpiac0 at acpi0: AC unit online
 acpibtn0 at acpi0: SLPB
 acpibtn1 at acpi0: LID_
 "PNP0C14" at acpi0 not configured
+tpm0 at acpi0 GTPM 1.2 (TIS) addr 0xfed40000/0x5000, Infineon SLB9635 1.2 rev 0x10
 acpicpu0 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
 acpicpu1 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
 acpicpu2 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
@@ -142,6 +142,8 @@ scsibus2 at vscsi0: 256 targets
 softraid0 at root
 scsibus3 at softraid0: 256 targets
 root on sd0a (643f9b23a4fb4487.a) swap on sd0b dump on sd0b
+WARNING: bad clock chip time
+WARNING: CHECK AND RESET THE DATE!
 inteldrm0: 1366x768, 32bpp
 wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
 wsdisplay0: screen 1-5 added (std, vt100 emulation)
