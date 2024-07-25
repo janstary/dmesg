@@ -1,7 +1,7 @@
 OpenBSD 7.5-current (GENERIC.MP) #0: Thu Jul 25 12:44:41 CEST 2024
     hans@hp5.stare.cz:/usr/src/sys/arch/amd64/compile/GENERIC.MP
-real mem = 5814874112 (5545MB)
-avail mem = 5615468544 (5355MB)
+real mem = 7962357760 (7593MB)
+avail mem = 7697838080 (7341MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -32,13 +32,13 @@ mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
 cpu0: apic clock running at 99MHz
 cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
 cpu1 at mainbus0: apid 1 (application processor)
-cpu1: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz, 1795.85 MHz, 06-45-01, patch 00000026
+cpu1: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz, 1795.86 MHz, 06-45-01, patch 00000026
 cpu1: smt 1, core 0, package 0
 cpu2 at mainbus0: apid 2 (application processor)
 cpu2: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz, 1795.87 MHz, 06-45-01, patch 00000026
 cpu2: smt 0, core 1, package 0
 cpu3 at mainbus0: apid 3 (application processor)
-cpu3: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz, 1795.88 MHz, 06-45-01, patch 00000026
+cpu3: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz, 1795.87 MHz, 06-45-01, patch 00000026
 cpu3: smt 1, core 1, package 0
 ioapic0 at mainbus0: apid 0 pa 0xfec00000, version 20, 40 pins
 acpimcfg0 at acpi0
@@ -121,7 +121,7 @@ ichiic0 at pci0 dev 31 function 3 "Intel 8 Series SMBus" rev 0x04: apic 0 int 18
 iic0 at ichiic0
 iic0: addr 0x2c 80=04 81=04 82=04 83=04 84=04 85=04 86=04 87=04 fd=01 words 00=ffff 01=ffff 02=ffff 03=ffff 04=ffff 05=ffff 06=ffff 07=ffff
 spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-12800 SO-DIMM
-spdmem1 at iic0 addr 0x52: 2GB DDR3 SDRAM PC3-12800 SO-DIMM
+spdmem1 at iic0 addr 0x52: 4GB DDR3 SDRAM PC3-12800 SO-DIMM
 isa0 at pcib0
 isadma0 at isa0
 pckbc0 at isa0 port 0x60/5 irq 1 irq 12
