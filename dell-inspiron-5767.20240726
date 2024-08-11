@@ -1,0 +1,212 @@
+OpenBSD 7.5-current (GENERIC.MP) #212: Fri Jul 26 22:17:29 MDT 2024
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8380882944 (7992MB)
+avail mem = 8103657472 (7728MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.8 @ 0xe9ca0 (95 entries)
+bios0: vendor Dell Inc. version "1.3.1" date 10/05/2020
+bios0: Dell Inc. Inspiron 5767
+acpi0 at bios0: ACPI 5.0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC FPDT FIDT MCFG HPET SSDT BOOT SSDT HPET SSDT UEFI SSDT LPIT WSMT SSDT SSDT DBGP DBG2 MSDM SSDT SLIC SSDT SSDT DMAR SSDT
+acpi0: wakeup devices RP09(S4) PXSX(S4) RP10(S4) PXSX(S4) RP11(S4) PXSX(S4) RP12(S4) PXSX(S4) RP13(S4) PXSX(S4) RP01(S4) PEGP(S4) PEGA(S4) RP02(S4) PXSX(S4) RP03(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 2593.96 MHz, 06-8e-09, patch 000000f4
+cpu0: cpuid 1 edx=bfebfbff<FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE> ecx=77fafbbf<SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND>
+cpu0: cpuid 6 eax=27f7<SENSOR,ARAT> ecx=9<EFFFREQ>
+cpu0: cpuid 7.0 ebx=29c67af<FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT> edx=bc002e00<SRBDS_CTRL,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD>
+cpu0: cpuid a vers=4, gp=4, gpwidth=48, ff=3, ffwidth=48
+cpu0: cpuid d.1 eax=f<XSAVEOPT,XSAVEC,XGETBV1,XSAVES>
+cpu0: cpuid 80000001 edx=2c100800<NXE,PAGE1GB,RDTSCP,LONG> ecx=121<LAHF,ABM,3DNOWP>
+cpu0: cpuid 80000007 edx=100<ITSC>
+cpu0: msr 10a=2000c04<RSBA,MISC_PKG_CT,ENERGY_FILT,GDS_CTRL>
+cpu0: MELTDOWN
+cpu0: 32KB 64b/line 8-way D-cache, 32KB 64b/line 8-way I-cache, 256KB 64b/line 4-way L2 cache, 4MB 64b/line 16-way L3 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 24MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 2593.96 MHz, 06-8e-09, patch 000000f4
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 1 (application processor)
+cpu2: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 2593.96 MHz, 06-8e-09, patch 000000f4
+cpu2: smt 1, core 0, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 2593.96 MHz, 06-8e-09, patch 000000f4
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 120 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 23999999 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEG0)
+acpiprt2 at acpi0: bus -1 (PEG1)
+acpiprt3 at acpi0: bus -1 (PEG2)
+acpiprt4 at acpi0: bus -1 (RP09)
+acpiprt5 at acpi0: bus -1 (RP10)
+acpiprt6 at acpi0: bus -1 (RP11)
+acpiprt7 at acpi0: bus -1 (RP12)
+acpiprt8 at acpi0: bus -1 (RP13)
+acpiprt9 at acpi0: bus 1 (RP01)
+acpiprt10 at acpi0: bus -1 (RP02)
+acpiprt11 at acpi0: bus -1 (RP03)
+acpiprt12 at acpi0: bus -1 (RP04)
+acpiprt13 at acpi0: bus 2 (RP05)
+acpiprt14 at acpi0: bus 3 (RP06)
+acpiprt15 at acpi0: bus -1 (RP07)
+acpiprt16 at acpi0: bus -1 (RP08)
+acpiprt17 at acpi0: bus -1 (RP17)
+acpiprt18 at acpi0: bus -1 (RP18)
+acpiprt19 at acpi0: bus -1 (RP19)
+acpiprt20 at acpi0: bus -1 (RP20)
+acpiprt21 at acpi0: bus -1 (RP14)
+acpiprt22 at acpi0: bus -1 (RP15)
+acpiprt23 at acpi0: bus -1 (RP16)
+acpiec0 at acpi0
+acpiec at acpi0 not configured
+acpipci0 at acpi0 PCI0: 0x00000000 0x00000011 0x00000001
+acpicmos0 at acpi0
+"INT3403" at acpi0 not configured
+"INT3403" at acpi0 not configured
+pchgpio0 at acpi0 GPI0 addr 0xfdaf0000/0x10000 0xfdae0000/0x10000 0xfdac0000/0x10000 irq 14, 176 pins
+"DELL0768" at acpi0 not configured
+"INT3402" at acpi0 not configured
+"INT33A1" at acpi0 not configured
+"PNP0C14" at acpi0 not configured
+acpibtn0 at acpi0: LID0(wakeup)
+acpibtn1 at acpi0: PBTN(wakeup)
+acpibtn2 at acpi0: SBTN
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT0 model "DELL CYMGM76" serial 57381 type LION oem "Samsung SDI"
+"DELLABCE" at acpi0 not configured
+"INT3400" at acpi0 not configured
+acpicpu0 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: WRST
+acpipwrres1 at acpi0: WRST
+acpipwrres2 at acpi0: WRST
+acpipwrres3 at acpi0: WRST
+acpipwrres4 at acpi0: WRST
+acpipwrres5 at acpi0: PC09, resource for RP01
+acpipwrres6 at acpi0: WRST
+acpipwrres7 at acpi0: WRST
+acpipwrres8 at acpi0: WRST
+acpipwrres9 at acpi0: WRST
+acpipwrres10 at acpi0: WRST
+acpipwrres11 at acpi0: WRST
+acpipwrres12 at acpi0: WRST
+acpipwrres13 at acpi0: WRST
+acpipwrres14 at acpi0: WRST
+acpipwrres15 at acpi0: WRST
+acpipwrres16 at acpi0: WRST
+acpipwrres17 at acpi0: WRST
+acpipwrres18 at acpi0: WRST
+acpipwrres19 at acpi0: WRST
+acpitz0 at acpi0: critical temperature is 107 degC
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: LCD_
+cpu0: using VERW MDS workaround (except on vmm entry)
+cpu0: Enhanced SpeedStep 2593 MHz: speeds: 2701, 2700, 2600, 2500, 2400, 2200, 2000, 1800, 1600, 1500, 1300, 1100, 800, 700, 600, 400 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "Intel Core 7G Host" rev 0x02
+inteldrm0 at pci0 dev 2 function 0 "Intel HD Graphics 620" rev 0x02
+drm0 at inteldrm0
+inteldrm0: msi, KABYLAKE, gen 9
+"Intel Core 6G Thermal" rev 0x02 at pci0 dev 4 function 0 not configured
+xhci0 at pci0 dev 20 function 0 "Intel 100 Series xHCI" rev 0x21: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 "Intel xHCI root hub" rev 3.00/1.00 addr 1
+pchtemp0 at pci0 dev 20 function 2 "Intel 100 Series Thermal" rev 0x21
+dwiic0 at pci0 dev 21 function 0 "Intel 100 Series I2C" rev 0x21: apic 2 int 16
+iic0 at dwiic0
+ihidev0 at iic0 addr 0x2c irq 51, vendor 0x6cb product 0x7e92, DELL0768
+ihidev0: 15 report ids
+imt0 at ihidev0: clickpad, 5 contacts
+wsmouse0 at imt0 mux 0
+ims0 at ihidev0 reportid 2: 2 buttons
+wsmouse1 at ims0 mux 0
+hid at ihidev0 reportid 6 not configured
+hid at ihidev0 reportid 7 not configured
+hid at ihidev0 reportid 9 not configured
+hid at ihidev0 reportid 10 not configured
+hid at ihidev0 reportid 11 not configured
+hid at ihidev0 reportid 12 not configured
+hid at ihidev0 reportid 13 not configured
+hid at ihidev0 reportid 14 not configured
+hid at ihidev0 reportid 15 not configured
+dwiic1 at pci0 dev 21 function 1 "Intel 100 Series I2C" rev 0x21: apic 2 int 17
+iic1 at dwiic1
+"Intel 100 Series MEI" rev 0x21 at pci0 dev 22 function 0 not configured
+ahci0 at pci0 dev 23 function 0 "Intel 100 Series AHCI" rev 0x21: msi, AHCI 1.3.1
+ahci0: port 0: 6.0Gb/s
+ahci0: port 1: 1.5Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, Samsung SSD 870, SVQ0> naa.5002538f4162bf36
+sd0: 953869MB, 512 bytes/sector, 1953525168 sectors, thin
+cd0 at scsibus1 targ 1 lun 0: <HL-DT-ST, DVD+-RW GU90N, A1C1> removable
+ppb0 at pci0 dev 28 function 0 "Intel 100 Series PCIE" rev 0xf1: msi
+pci1 at ppb0 bus 1
+amdgpu0 at pci1 dev 0 function 0 "ATI Topaz" rev 0xc3
+drm1 at amdgpu0
+amdgpu0: msi
+ppb1 at pci0 dev 28 function 4 "Intel 100 Series PCIE" rev 0xf1: msi
+pci2 at ppb1 bus 2
+iwm0 at pci2 dev 0 function 0 "Intel AC 3165" rev 0x79, msi
+ppb2 at pci0 dev 28 function 5 "Intel 100 Series PCIE" rev 0xf1: msi
+pci3 at ppb2 bus 3
+re0 at pci3 dev 0 function 0 "Realtek 8101E" rev 0x07: RTL8106E (0x4480), msi, address 50:9a:4c:b6:3a:5c
+rlphy0 at re0 phy 7: RTL8201E, rev. 2
+pcib0 at pci0 dev 31 function 0 "Intel 200 Series LPC" rev 0x21
+"Intel 100 Series PMC" rev 0x21 at pci0 dev 31 function 2 not configured
+azalia0 at pci0 dev 31 function 3 "Intel 200 Series HD Audio" rev 0x21: msi
+azalia0: codecs: Realtek ALC256, Intel/0x280b, using Realtek ALC256
+audio0 at azalia0
+ichiic0 at pci0 dev 31 function 4 "Intel 100 Series SMBus" rev 0x21: apic 2 int 16
+iic2 at ichiic0
+spdmem0 at iic2 addr 0x52: 8GB DDR4 SDRAM PC4-19200 SO-DIMM
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: VMX/EPT
+uhidev0 at uhub0 port 3 configuration 1 interface 0 "Logitech USB Optical Mouse" rev 2.00/67.00 addr 2
+uhidev0: iclass 3/1
+ums0 at uhidev0: 8 buttons, Z and W dir
+wsmouse2 at ums0 mux 0
+uvideo0 at uhub0 port 5 configuration 1 interface 0 "CNFFH37N1441920004B1 Integrated_Webcam_HD" rev 2.00/64.26 addr 3
+video0 at uvideo0
+ugen0 at uhub0 port 6 "Generic USB2.0-CRW" rev 2.00/39.60 addr 4
+ugen1 at uhub0 port 8 "Intel Bluetooth" rev 2.00/0.01 addr 5
+umass0 at uhub0 port 14 configuration 1 interface 0 "USB Flash Disk" rev 3.20/11.00 addr 6
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: <USB, Flash Disk, 1100> removable serial.090c1000QG9QGR2ZCN1F
+sd1: 14861MB, 512 bytes/sector, 30435328 sectors
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd1a (e01e3148d4d59331.a) swap on sd1b dump on sd1b
+WARNING: clock gained 14 days
+WARNING: CHECK AND RESET THE DATE!
+drm:pid0:intel_ddi_sanitize_encoder_pll_mapping *NOTICE* [drm] [ENCODER:102:DDI B/PHY B] is disabled/in DSI mode with an ungated DDI clock, gate it
+inteldrm0: 1920x1080, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+drm:pid0:amdgpu_get_bios *ERROR* Unable to locate a BIOS ROM
+drm:pid0:amdgpu_driver_load_kms *ERROR* Fatal error during GPU init
+drm1 detached
+amdgpu0 detached
+"ATI Topaz" rev 0xc3 at pci1 dev 0 function 0 not configured
+iwm0: hw rev 0x210, fw ver 29.4063824552.0, address 7c:67:a2:ee:e3:5a
