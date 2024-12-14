@@ -1,7 +1,7 @@
-OpenBSD 7.6-current (GENERIC) #472: Fri Dec 13 13:35:16 MST 2024
-    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC
+OpenBSD 7.6-current (GENERIC.MP) #479: Fri Dec 13 23:10:38 MST 2024
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
 real mem = 2112446464 (2014MB)
-avail mem = 2025144320 (1931MB)
+avail mem = 2024988672 (1931MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -18,7 +18,7 @@ acpimcfg0 at acpi0
 acpimcfg0: addr 0xf8000000, bus 0-63
 acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
 cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: AMD GX-412TC SOC, 998.18 MHz, 16-30-01, patch 07030105
+cpu0: AMD GX-412TC SOC, 998.29 MHz, 16-30-01, patch 07030105
 cpu0: cpuid 1 edx=178bfbff<FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT> ecx=36d8220b<SSE3,PCLMUL,MWAIT,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C>
 cpu0: cpuid 6 eax=4<ARAT> ecx=1<EFFFREQ>
 cpu0: cpuid 7.0 ebx=8<BMI1>
@@ -30,9 +30,15 @@ cpu0: smt 0, core 0, package 0
 mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
 cpu0: apic clock running at 99MHz
 cpu0: mwait min=64, max=64, IBE
-cpu at mainbus0: not configured
-cpu at mainbus0: not configured
-cpu at mainbus0: not configured
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: AMD GX-412TC SOC, 998.26 MHz, 16-30-01, patch 07030105
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: AMD GX-412TC SOC, 998.54 MHz, 16-30-01, patch 07030105
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: AMD GX-412TC SOC, 998.61 MHz, 16-30-01, patch 07030105
+cpu3: smt 0, core 3, package 0
 ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 21, 24 pins
 ioapic1 at mainbus0: apid 5 pa 0xfec20000, version 21, 32 pins
 acpihpet0 at acpi0: 14318180 Hz
@@ -43,6 +49,9 @@ acpiprt3 at acpi0: bus -1 (PBR6)
 acpiprt4 at acpi0: bus 2 (PBR7)
 acpiprt5 at acpi0: bus -1 (PBR8)
 acpicpu0 at acpi0: C2(0@400 io@0x1771), C1(@1 halt!), PSS
+acpicpu1 at acpi0: C2(0@400 io@0x1771), C1(@1 halt!), PSS
+acpicpu2 at acpi0: C2(0@400 io@0x1771), C1(@1 halt!), PSS
+acpicpu3 at acpi0: C2(0@400 io@0x1771), C1(@1 halt!), PSS
 acpipci0 at acpi0 PCI0: 0x00000000 0x00000011 0x00000001
 acpicmos0 at acpi0
 com0 at acpi0 COM1 addr 0x3f8/0x8 irq 4: ns16550a, 16 byte fifo
@@ -112,5 +121,3 @@ scsibus3 at vscsi0: 256 targets
 softraid0 at root
 scsibus4 at softraid0: 256 targets
 root on sd1a (935d4b4c539cee8a.a) swap on sd1b dump on sd1b
-uid 0 on /usr: file system full
-uid 0 on /usr: file system full
