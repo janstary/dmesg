@@ -1,0 +1,199 @@
+OpenBSD 7.6-current (GENERIC) #261: Thu Jan  9 13:13:36 MST 2025
+    deraadt@armv7.openbsd.org:/usr/src/sys/arch/armv7/compile/GENERIC
+real mem  = 484147200 (461MB)
+avail mem = 464543744 (443MB)
+random: good seed from bootblocks
+mainbus0 at root: TI AM335x BeagleBone Black
+cpu0 at mainbus0 mpidr 0: ARM Cortex-A8 r3p2
+cpu0: 32KB 64b/line 4-way L1 VIPT I-cache, 32KB 64b/line 4-way L1 D-cache
+cpu0: 256KB 64b/line 8-way L2 cache
+omap0 at mainbus0
+prcm0 at omap0 rev 0.2
+dmtimer0 at omap0 rev 3.1
+dmtimer1 at omap0 rev 3.1
+omsysc0 at mainbus0: "target-module"
+omsysc1 at omsysc0: "target-module"
+"pmu" at omsysc1 not configured
+simplebus0 at mainbus0: "ocp"
+intc0 at simplebus0 rev 5.0
+simplebus1 at simplebus0: "interconnect"
+simplebus2 at simplebus1: "segment"
+simplebus3 at simplebus1: "segment"
+omsysc2 at simplebus3: "target-module"
+"cpu" at omsysc2 not configured
+simplebus4 at simplebus1: "segment"
+omsysc3 at simplebus4: "target-module"
+simplebus5 at omsysc3: "prcm"
+omcm0 at simplebus5: "clock"
+omclock0 at omcm0: "clock"
+omclock1 at omcm0: "clock"
+omclock2 at omcm0: "clock"
+omclock3 at omcm0: "clock"
+omclock4 at omcm0: "clock"
+omclock5 at omcm0: "clock"
+omclock6 at omcm0: "clock"
+omclock7 at omcm0: "clock"
+omcm1 at simplebus5: "clock"
+omclock8 at omcm1: "clock"
+omclock9 at omcm1: "clock"
+omclock10 at omcm1: "clock"
+omcm2 at simplebus5: "clock"
+omclock11 at omcm2: "clock"
+omcm3 at simplebus5: "clock"
+omclock12 at omcm3: "clock"
+omcm4 at simplebus5: "clock"
+omclock13 at omcm4: "clock"
+omcm5 at simplebus5: "clock"
+omclock14 at omcm5: "clock"
+"prm" at simplebus5 not configured
+"prm" at simplebus5 not configured
+"prm" at simplebus5 not configured
+"prm" at simplebus5 not configured
+"prm" at simplebus5 not configured
+"prm" at simplebus5 not configured
+"prm" at simplebus5 not configured
+omsysc4 at simplebus4: "target-module"
+simplebus6 at omsysc4: "scm"
+syscon0 at simplebus6: "scm_conf"
+pinctrl0 at simplebus6
+"control" at simplebus6 not configured
+"wkup_m3_ipc" at simplebus6 not configured
+"dma-router" at simplebus6 not configured
+omsysc5 at simplebus4: "target-module"
+omgpio0 at omsysc5: rev 0.1
+gpio0 at omgpio0: 32 pins
+omsysc6 at simplebus4: "target-module"
+com0 at omsysc6: ti16750, 64 byte fifo
+com0: console
+omsysc7 at simplebus4: "target-module"
+tiiic0 at omsysc7 rev 0.11
+iic0 at tiiic0
+"ti,tps65217" at iic0 addr 0x24 not configured
+"atmel,24c256" at iic0 addr 0x50 not configured
+nxphdmi0 at iic0 addr 0x70: rev 0x0301
+nxphdmi0: no display detected
+omsysc8 at simplebus4: "target-module"
+omsysc9 at simplebus4: "target-module"
+"timer" at omsysc9 not configured
+omsysc10 at simplebus4: "target-module"
+omdog0 at omsysc10 rev 0.1
+omsysc11 at simplebus4: "target-module"
+"rtc" at omsysc11 not configured
+simplebus7 at simplebus0: "interconnect"
+simplebus8 at simplebus7: "segment"
+omsysc12 at simplebus8: "target-module"
+omsysc13 at simplebus8: "target-module"
+omsysc14 at simplebus8: "target-module"
+omsysc15 at simplebus8: "target-module"
+omsysc16 at simplebus8: "target-module"
+"mcasp" at omsysc16 not configured
+omsysc17 at simplebus8: "target-module"
+omsysc18 at simplebus8: "target-module"
+"timer" at omsysc18 not configured
+omsysc19 at simplebus8: "target-module"
+"timer" at omsysc19 not configured
+omsysc20 at simplebus8: "target-module"
+"timer" at omsysc20 not configured
+omsysc21 at simplebus8: "target-module"
+"timer" at omsysc21 not configured
+omsysc22 at simplebus8: "target-module"
+"timer" at omsysc22 not configured
+omsysc23 at simplebus8: "target-module"
+"timer" at omsysc23 not configured
+omsysc24 at simplebus8: "target-module"
+omgpio1 at omsysc24: rev 0.1
+gpio1 at omgpio1: 32 pins
+omsysc25 at simplebus8: "target-module"
+ommmc0 at omsysc25
+sdmmc0 at ommmc0: 4-bit
+omsysc26 at simplebus8: "target-module"
+omsysc27 at simplebus8: "target-module"
+"mailbox" at omsysc27 not configured
+omsysc28 at simplebus8: "target-module"
+"spinlock" at omsysc28 not configured
+simplebus9 at simplebus7: "segment"
+omsysc29 at simplebus9: "target-module"
+tiiic1 at omsysc29 rev 0.11
+iic1 at tiiic1
+"atmel,24c256" at iic1 addr 0x54 not configured
+"atmel,24c256" at iic1 addr 0x55 not configured
+"atmel,24c256" at iic1 addr 0x56 not configured
+"atmel,24c256" at iic1 addr 0x57 not configured
+omsysc30 at simplebus9: "target-module"
+omsysc31 at simplebus9: "target-module"
+omsysc32 at simplebus9: "target-module"
+omsysc33 at simplebus9: "target-module"
+omsysc34 at simplebus9: "target-module"
+omgpio2 at omsysc34: rev 0.1
+gpio2 at omgpio2: 32 pins
+omsysc35 at simplebus9: "target-module"
+omgpio3 at omsysc35: rev 0.1
+gpio3 at omgpio3: 32 pins
+omsysc36 at simplebus9: "target-module"
+omsysc37 at simplebus9: "target-module"
+omsysc38 at simplebus9: "target-module"
+ommmc1 at omsysc38
+sdmmc1 at ommmc1: 8-bit
+simplebus10 at simplebus7: "segment"
+omsysc39 at simplebus10: "target-module"
+"mpu" at omsysc39 not configured
+simplebus11 at simplebus7: "segment"
+omsysc40 at simplebus11: "target-module"
+omsysc41 at simplebus11: "target-module"
+omsysc42 at simplebus11: "target-module"
+omsysc43 at simplebus11: "target-module"
+amdisplay0 at omsysc43
+amdisplay0: no display attached.
+omsysc44 at simplebus11: "target-module"
+omrng0 at omsysc44
+simplebus12 at simplebus0: "interconnect"
+simplebus13 at simplebus12: "segment"
+simplebus14 at simplebus0: "interconnect"
+simplebus15 at simplebus14: "segment"
+omsysc45 at simplebus15: "target-module"
+cpsw0 at omsysc45: version 1.12 (0), address 90:59:af:82:2e:7e
+ukphy0 at cpsw0 phy 0: Generic IEEE 802.3u media interface, rev. 1: OUI 0x0001f0, model 0x000f
+omsysc46 at simplebus15: "target-module"
+"pruss" at omsysc46 not configured
+simplebus16 at simplebus0: "interconnect"
+simplebus17 at simplebus16: "segment"
+omsysc47 at simplebus0: "target-module"
+"dma" at omsysc47 not configured
+omsysc48 at simplebus0: "target-module"
+"dma" at omsysc48 not configured
+omsysc49 at simplebus0: "target-module"
+"dma" at omsysc49 not configured
+omsysc50 at simplebus0: "target-module"
+"dma" at omsysc50 not configured
+omsysc51 at simplebus0: "target-module"
+omsysc52 at simplebus0: "target-module"
+"usb-phy" at omsysc52 not configured
+"usb" at omsysc52 not configured
+"usb-phy" at omsysc52 not configured
+"usb" at omsysc52 not configured
+"dma-controller" at omsysc52 not configured
+omsysc53 at simplebus0: "target-module"
+"sram" at omsysc53 not configured
+omsysc54 at simplebus0: "target-module"
+"emif" at omsysc54 not configured
+omsysc55 at simplebus0: "target-module"
+omsysc56 at simplebus0: "target-module"
+"sham" at omsysc56 not configured
+omsysc57 at simplebus0: "target-module"
+"aes" at omsysc57 not configured
+omsysc58 at simplebus0: "target-module"
+"gpu" at omsysc58 not configured
+scsibus0 at sdmmc0: 2 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: <SD/MMC, 00000, 0010> removable
+sd0: 971MB, 512 bytes/sector, 1989632 sectors
+scsibus1 at sdmmc1: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: <SD/MMC, MMC02G, 0000> removable
+sd1: 1832MB, 512 bytes/sector, 3751936 sectors
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+bootfile: sd0a:/bsd
+boot device: sd0
+root on sd0a (de09ac5bc5478d72.a) swap on sd0b dump on sd0b
+WARNING: CHECK AND RESET THE DATE!
