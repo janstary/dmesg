@@ -1,0 +1,154 @@
+OpenBSD 7.6-current (GENERIC.MP) #417: Wed Nov  6 15:53:38 MST 2024
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 1048248320 (999MB)
+avail mem = 993361920 (947MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xfa780 (26 entries)
+bios0: vendor American Megatrends Inc. version "A1637IMS V1.2" date 05/28/2007
+bios0: Micro-Star International MSI Notebook PR600
+acpi0 at bios0: ACPI 2.0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC MCFG SLIC OEMB HPET GSCI SSDT
+acpi0: wakeup devices P0P2(S4) P0P1(S4) CBC0(S3) CBC5(S3) P0P4(S4) HDAC(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM)2 Duo CPU T7100 @ 1.80GHz, 1197.07 MHz, 06-0f-0d, patch 000000a4
+cpu0: cpuid 1 edx=bfebfbff<FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE> ecx=e3bd<SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM>
+cpu0: cpuid 6 eax=3<SENSOR> ecx=1<EFFFREQ>
+cpu0: cpuid a vers=2, gp=2, gpwidth=40, ff=3, ffwidth=40
+cpu0: cpuid 80000001 edx=20100800<NXE,LONG> ecx=1<LAHF>
+cpu0: MELTDOWN
+cpu0: 32KB 64b/line 8-way D-cache, 32KB 64b/line 8-way I-cache, 2MB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 199MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.2.2.2, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM)2 Duo CPU T7100 @ 1.80GHz, 1197.13 MHz, 06-0f-0d, patch 000000a4
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (P0P1)
+acpiprt2 at acpi0: bus 5 (P0P4)
+acpiprt3 at acpi0: bus 4 (P0P5)
+acpiprt4 at acpi0: bus 3 (P0P6)
+acpiprt5 at acpi0: bus -1 (P0P7)
+acpiprt6 at acpi0: bus -1 (P0P8)
+acpiprt7 at acpi0: bus -1 (P0P9)
+acpiec0 at acpi0
+acpipci0 at acpi0 PCI0
+acpicmos0 at acpi0
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT1 model "MS-1637
+" serial 
+ type LION
+ oem "MSI Corp.
+"
+acpibtn0 at acpi0: LID0
+acpibtn1 at acpi0: PWRB
+acpicpu0 at acpi0: !C3(100@57 mwait.3@0x30), !C2(500@1 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: !C3(100@57 mwait.3@0x30), !C2(500@1 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpitz0 at acpi0: critical temperature is 100 degC
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: DD04
+cpu0: Enhanced SpeedStep 1197 MHz: speeds: 1801, 1800, 1200, 800 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "Intel GM965 Host" rev 0x03
+inteldrm0 at pci0 dev 2 function 0 "Intel GM965 Video" rev 0x03
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0xd0000000, size 0x10000000
+inteldrm0: apic 2 int 16, I965GM, gen 4
+"Intel GM965 Video" rev 0x03 at pci0 dev 2 function 1 not configured
+uhci0 at pci0 dev 26 function 0 "Intel 82801H USB" rev 0x03: apic 2 int 16
+uhci1 at pci0 dev 26 function 1 "Intel 82801H USB" rev 0x03: apic 2 int 21
+ehci0 at pci0 dev 26 function 7 "Intel 82801H USB" rev 0x03: apic 2 int 18
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 "Intel 82801H HD Audio" rev 0x03: msi
+azalia0: codecs: Realtek ALC883, AT&T/Lucent/0x1040, using Realtek ALC883
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 "Intel 82801H PCIE" rev 0x03: msi
+pci1 at ppb0 bus 5
+re0 at pci1 dev 0 function 0 "Realtek 8168" rev 0x01: RTL8168 2 (0x3800), msi, address 00:19:db:3b:eb:9b
+rgephy0 at re0 phy 7: RTL8169S/8110S/8211, rev. 2
+ppb1 at pci0 dev 28 function 1 "Intel 82801H PCIE" rev 0x03: msi
+pci2 at ppb1 bus 4
+"Intel Turbo Memory" rev 0x01 at pci2 dev 0 function 0 not configured
+ppb2 at pci0 dev 28 function 2 "Intel 82801H PCIE" rev 0x03: msi
+pci3 at ppb2 bus 3
+iwn0 at pci3 dev 0 function 0 "Intel Wireless WiFi Link 4965" rev 0x61: msi, MIMO 2T3R, MoW2, address 00:13:e8:1d:0e:3f
+uhci2 at pci0 dev 29 function 0 "Intel 82801H USB" rev 0x03: apic 2 int 23
+uhci3 at pci0 dev 29 function 1 "Intel 82801H USB" rev 0x03: apic 2 int 19
+uhci4 at pci0 dev 29 function 2 "Intel 82801H USB" rev 0x03: apic 2 int 18
+ehci1 at pci0 dev 29 function 7 "Intel 82801H USB" rev 0x03: apic 2 int 23
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb3 at pci0 dev 30 function 0 "Intel 82801BAM Hub-to-PCI" rev 0xf3
+pci4 at ppb3 bus 1
+cbb0 at pci4 dev 4 function 0 "O2 Micro OZ711SP1 CardBus" rev 0x01: apic 2 int 22
+sdhc0 at pci4 dev 4 function 2 "O2 Micro OZ711MP1 SDHC" rev 0x02: apic 2 int 22
+sdhc0: SDHC 3.00, 50 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed
+"O2 Micro OZ711MP1 XDHC" rev 0x01 at pci4 dev 4 function 3 not configured
+"O2 Micro Firewire" rev 0x02 at pci4 dev 4 function 4 not configured
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 2 device 0 cacheline 0x0, lattimer 0x40
+pcmcia0 at cardslot0
+pcib0 at pci0 dev 31 function 0 "Intel 82801HBM LPC" rev 0x03
+pciide0 at pci0 dev 31 function 1 "Intel 82801HBM IDE" rev 0x03: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 1
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: <Optiarc, DVD RW AD-7530A, EX32> removable
+cd0(pciide0:0:1): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+ahci0 at pci0 dev 31 function 2 "Intel 82801HBM AHCI" rev 0x03: msi, AHCI 1.1
+ahci0: port 0: 1.5Gb/s
+ahci0: PHY offline on port 1
+ahci0: PHY offline on port 2
+scsibus2 at ahci0: 32 targets
+sd0 at scsibus2 targ 0 lun 0: <ATA, WDC WD1600BEVS-0, 04.0> naa.50014ee255897879
+sd0: 152627MB, 512 bytes/sector, 312581808 sectors
+usb2 at uhci0: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci1: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb4 at uhci2: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb5 at uhci3: USB revision 1.0
+uhub5 at usb5 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb6 at uhci4: USB revision 1.0
+uhub6 at usb6 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 6.1, 0xa3a0b3 0x10008 0x0 0xa04713 0x0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: unknown
+umass0 at uhub0 port 2 configuration 1 interface 0 "USB SanDisk 3.2Gen1" rev 2.10/1.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus3 at umass0: 2 targets, initiator 0
+sd1 at scsibus3 targ 1 lun 0: <USB, SanDisk 3.2Gen1, 1.00> removable serial.078155ab810763b019f7
+sd1: 29358MB, 512 bytes/sector, 60125184 sectors
+vscsi0 at root
+scsibus4 at vscsi0: 256 targets
+softraid0 at root
+scsibus5 at softraid0: 256 targets
+root on sd1a (bacc390c32543c41.a) swap on sd1b dump on sd1b
+WARNING: bad clock chip time
+WARNING: CHECK AND RESET THE DATE!
+inteldrm0: 1280x800, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
