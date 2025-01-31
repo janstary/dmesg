@@ -1,14 +1,14 @@
-[ using 1365556 bytes of bsd ELF symbol table ]
+[ using 1368628 bytes of bsd ELF symbol table ]
 console out [ATY,RockHopper2_A] console in [keyboard], using USB
 using parent ATY,RockHopper2Paren:: memaddr 98000000, size 8000000 : consaddr 9c008000 : ioaddr 90020000, size 20000: width 1920 linebytes 2048 height 1080 depth 8
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 	The Regents of the University of California.  All rights reserved.
-Copyright (c) 1995-2024 OpenBSD. All rights reserved.  https://www.OpenBSD.org
+Copyright (c) 1995-2025 OpenBSD. All rights reserved.  https://www.OpenBSD.org
 
-OpenBSD 7.6-current (GENERIC) #11: Fri Dec 13 03:13:09 MST 2024
-    gkoehler@maryland:/usr/src/sys/arch/macppc/compile/GENERIC
+OpenBSD 7.6-current (GENERIC) #0: Fri Jan 31 14:37:21 CET 2025
+    hans@ppc.stare.cz:/usr/src/sys/arch/macppc/compile/GENERIC
 real mem = 1073741824 (1024MB)
-avail mem = 1025196032 (977MB)
+avail mem = 1025146880 (977MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
