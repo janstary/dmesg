@@ -1,7 +1,7 @@
-OpenBSD 7.8-current (GENERIC.MP) #62: Mon Oct 20 10:16:42 MDT 2025
+OpenBSD 7.8-current (GENERIC.MP) #66: Tue Oct 21 15:42:41 MDT 2025
     deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
 real mem = 17065639936 (16275MB)
-avail mem = 16521551872 (15756MB)
+avail mem = 16521564160 (15756MB)
 random: good seed from bootblocks
 mpath0 at root
 scsibus0 at mpath0: 256 targets
@@ -33,13 +33,13 @@ mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
 cpu0: apic clock running at 100MHz
 cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
 cpu1 at mainbus0: apid 2 (application processor)
-cpu1: Intel(R) Core(TM) i5-4308U CPU @ 2.80GHz, 2700.02 MHz, 06-45-01, patch 00000026
+cpu1: Intel(R) Core(TM) i5-4308U CPU @ 2.80GHz, 2700.03 MHz, 06-45-01, patch 00000026
 cpu1: smt 0, core 1, package 0
 cpu2 at mainbus0: apid 1 (application processor)
-cpu2: Intel(R) Core(TM) i5-4308U CPU @ 2.80GHz, 2700.07 MHz, 06-45-01, patch 00000026
+cpu2: Intel(R) Core(TM) i5-4308U CPU @ 2.80GHz, 2700.08 MHz, 06-45-01, patch 00000026
 cpu2: smt 1, core 0, package 0
 cpu3 at mainbus0: apid 3 (application processor)
-cpu3: Intel(R) Core(TM) i5-4308U CPU @ 2.80GHz, 2700.07 MHz, 06-45-01, patch 00000026
+cpu3: Intel(R) Core(TM) i5-4308U CPU @ 2.80GHz, 2700.06 MHz, 06-45-01, patch 00000026
 cpu3: smt 1, core 1, package 0
 ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 40 pins
 acpiec0 at acpi0
