@@ -1,0 +1,182 @@
+OpenBSD 7.8-current (GENERIC.MP) #192: Sun Dec 28 22:15:38 MST 2025
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 17065639936 (16275MB)
+avail mem = 16521424896 (15756MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0x8ad10000 (43 entries)
+bios0: vendor Apple Inc. version "478.0.0.0.0" date 01/13/2023
+bios0: Apple Inc. MacBookPro11,1
+efi0 at bios0: UEFI 1.1
+acpi0 at bios0: ACPI 5.0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET APIC SBST ECDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT DMAR MCFG
+acpi0: wakeup devices P0P2(S3) EC__(S3) HDEF(S3) RP01(S3) RP02(S3) RP03(S4) ARPT(S4) RP05(S3) RP06(S3) XHC1(S3) ADP1(S3) LID0(S3)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i5-4308U CPU @ 2.80GHz, 2700.02 MHz, 06-45-01, patch 00000026
+cpu0: cpuid 1 edx=bfebfbff<FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE> ecx=77fafbbf<SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND>
+cpu0: cpuid 6 eax=77<SENSOR,ARAT,PTS> ecx=9<EFFFREQ>
+cpu0: cpuid 7.0 ebx=27ab<FSGSBASE,TSC_ADJUST,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID> edx=9c000600<SRBDS_CTRL,MD_CLEAR,IBRS,IBPB,STIBP,L1DF,SSBD>
+cpu0: cpuid a vers=3, gp=4, gpwidth=48, ff=3, ffwidth=48
+cpu0: cpuid d.1 eax=1<XSAVEOPT>
+cpu0: cpuid 80000001 edx=2c100800<NXE,PAGE1GB,RDTSCP,LONG> ecx=21<LAHF,ABM>
+cpu0: cpuid 80000007 edx=100<ITSC>
+cpu0: MELTDOWN
+cpu0: 32KB 64b/line 8-way D-cache, 32KB 64b/line 8-way I-cache, 256KB 64b/line 8-way L2 cache, 3MB 64b/line 12-way L3 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 100MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Core(TM) i5-4308U CPU @ 2.80GHz, 2700.03 MHz, 06-45-01, patch 00000026
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 1 (application processor)
+cpu2: Intel(R) Core(TM) i5-4308U CPU @ 2.80GHz, 2700.07 MHz, 06-45-01, patch 00000026
+cpu2: smt 1, core 0, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i5-4308U CPU @ 2.80GHz, 2700.06 MHz, 06-45-01, patch 00000026
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 40 pins
+acpiec0 at acpi0
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-155
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (P0P2)
+acpiprt2 at acpi0: bus 1 (RP01)
+acpiprt3 at acpi0: bus 2 (RP02)
+acpiprt4 at acpi0: bus 3 (RP03)
+acpiprt5 at acpi0: bus 5 (RP05)
+acpiprt6 at acpi0: bus 4 (RP06)
+acpisbs0 at acpi0: SBS0 model "bq20z451" serial 45 type LION oem "SMP"
+acpipci0 at acpi0 PCI0: 0x00000004 0x00000011 0x00000001
+acpicmos0 at acpi0
+asmc0 at acpi0: SMC_ (smc-huronriver) addr 0x300/0x20: rev 2.16f616, 571 keys
+"ACPI0008" at acpi0 not configured
+"ACPI0001" at acpi0 not configured
+acpiac0 at acpi0: AC unit online
+acpibtn0 at acpi0: LID0(wakeup)
+acpibtn1 at acpi0: PWRB
+abl0 at acpi0: PNLF (backlight)
+acpibtn2 at acpi0: SLPB
+acpicpu0 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpivideo0 at acpi0: IGPU
+acpivout0 at acpivideo0: DD01
+cpu0: using VERW MDS workaround (except on vmm entry)
+cpu0: Enhanced SpeedStep 2700 MHz: speeds: 2801, 2800, 2700, 2400, 2200, 2000, 1700, 1500, 1300, 1100, 900, 756 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "Intel Core 4G Host" rev 0x09
+inteldrm0 at pci0 dev 2 function 0 "Intel Iris 5100" rev 0x09
+drm0 at inteldrm0
+inteldrm0: msi, HASWELL, gen 7
+azalia0 at pci0 dev 3 function 0 "Intel Core 4G HD Audio" rev 0x09: msi
+azalia0: No codecs found
+xhci0 at pci0 dev 20 function 0 "Intel 8 Series xHCI" rev 0x04: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 "Intel xHCI root hub" rev 3.00/1.00 addr 1
+"Intel 8 Series MEI" rev 0x04 at pci0 dev 22 function 0 not configured
+azalia1 at pci0 dev 27 function 0 "Intel 8 Series HD Audio" rev 0x04: msi
+azalia1: codecs: Cirrus Logic CS4208
+audio0 at azalia1
+ppb0 at pci0 dev 28 function 0 "Intel 8 Series PCIE" rev 0xe4
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 28 function 1 "Intel 8 Series PCIE" rev 0xe4: msi
+pci2 at ppb1 bus 2
+"Broadcom BCM15700A2" rev 0x00 at pci2 dev 0 function 0 not configured
+ppb2 at pci0 dev 28 function 2 "Intel 8 Series PCIE" rev 0xe4: msi
+pci3 at ppb2 bus 3
+"Broadcom BCM4360" rev 0x03 at pci3 dev 0 function 0 not configured
+ppb3 at pci0 dev 28 function 4 "Intel 8 Series PCIE" rev 0xe4: msi
+pci4 at ppb3 bus 5
+ppb4 at pci4 dev 0 function 0 "Intel DSL5520 Thunderbolt" rev 0x00
+pci5 at ppb4 bus 6
+ppb5 at pci5 dev 0 function 0 "Intel DSL5520 Thunderbolt" rev 0x00: msi
+pci6 at ppb5 bus 7
+"Intel DSL5520 Thunderbolt" rev 0x00 at pci6 dev 0 function 0 not configured
+ppb6 at pci5 dev 3 function 0 "Intel DSL5520 Thunderbolt" rev 0x00: msi
+pci7 at ppb6 bus 8
+ppb7 at pci5 dev 4 function 0 "Intel DSL5520 Thunderbolt" rev 0x00: msi
+pci8 at ppb7 bus 57
+ppb8 at pci5 dev 5 function 0 "Intel DSL5520 Thunderbolt" rev 0x00: msi
+pci9 at ppb8 bus 58
+ppb9 at pci5 dev 6 function 0 "Intel DSL5520 Thunderbolt" rev 0x00: msi
+pci10 at ppb9 bus 107
+ppb10 at pci0 dev 28 function 5 "Intel 8 Series PCIE" rev 0xe4: msi
+pci11 at ppb10 bus 4
+ahci0 at pci11 dev 0 function 0 "Samsung S4LN053X01" rev 0x01: apic 2 int 16, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, APPLE SSD SM0512, UXM2> naa.5002538655584d30
+sd0: 477102MB, 512 bytes/sector, 977105060 sectors, thin
+pcib0 at pci0 dev 31 function 0 "Intel 8 Series LPC" rev 0x04
+ichiic0 at pci0 dev 31 function 3 "Intel 8 Series SMBus" rev 0x04: apic 2 int 18
+iic0 at ichiic0
+iic0: addr 0x26 00=01 12=80 16=75 26=0f 29=01 2c=ff 2d=90 2e=f0 2f=9f 31=01 3e=09 3f=1f 42=84 50=03 51=d1 52=26 54=05 58=08 60=88 63=88 f0=03 f1=0a f2=01 f3=84 words 00=0100 01=0000 02=0000 03=0000 04=0000 05=0000 06=0000 07=0000
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns8250, no fifo
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: VMX/EPT
+efifb at mainbus0 not configured
+umass0 at uhub0 port 2 configuration 1 interface 0 "vendor 0x13fe UDinfo UF2 4GB" rev 2.00/1.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: <, UDinfo UF2 4GB, PMAP> removable serial.13fe420001AB10213748
+sd1: 3824MB, 512 bytes/sector, 7831552 sectors
+uhub1 at uhub0 port 3 configuration 1 interface 0 "Apple Inc. BRCM20702 Hub" rev 2.00/1.00 addr 3
+uhidev0 at uhub1 port 1 configuration 1 interface 0 "Apple Computer product 0x820a" rev 2.00/1.00 addr 4
+uhidev0: iclass 3/1, 1 report id
+ukbd0 at uhidev0 reportid 1: 8 variable keys, 6 key codes
+wskbd0 at ukbd0: console keyboard
+uhidev1 at uhub1 port 2 configuration 1 interface 0 "Apple Computer product 0x820b" rev 2.00/1.00 addr 5
+uhidev1: iclass 3/1, 2 report ids
+ums0 at uhidev1 reportid 2: 3 buttons
+wsmouse0 at ums0 mux 0
+ugen0 at uhub1 port 3 "Apple Inc. Bluetooth USB Host Controller" rev 2.00/1.50 addr 6
+uhidev2 at uhub0 port 5 configuration 1 interface 0 "Apple Inc. Apple Internal Keyboard / Trackpad" rev 2.00/2.24 addr 7
+uhidev2: iclass 3/1, 82 report ids
+ukbd1 at uhidev2 reportid 1: 8 variable keys, 6 key codes, country code 33
+wskbd1 at ukbd1 mux 1
+uhid0 at uhidev2 reportid 9: input=0, output=0, feature=3
+ucc0 at uhidev2 reportid 82: 5 usages, 3 keys, enum
+wskbd2 at ucc0 mux 1
+uhidev3 at uhub0 port 5 configuration 1 interface 1 "Apple Inc. Apple Internal Keyboard / Trackpad" rev 2.00/2.24 addr 7
+uhidev3: iclass 3/0, 68 report ids
+uhid1 at uhidev3 reportid 68: input=511, output=0, feature=0
+ubcmtp0 at uhub0 port 5 configuration 1 interface 2 "Apple Inc. Apple Internal Keyboard / Trackpad" rev 2.00/2.24 addr 7
+wsmouse1 at ubcmtp0 mux 0
+umass1 at uhub0 port 10 configuration 1 interface 0 "USB SanDisk 3.2Gen1" rev 3.20/1.00 addr 8
+umass1: using SCSI over Bulk-Only
+scsibus3 at umass1: 2 targets, initiator 0
+sd2 at scsibus3 targ 1 lun 0: <USB, SanDisk 3.2Gen1, 1.00> removable serial.0781558181079632e196
+sd2: 29358MB, 512 bytes/sector, 60125184 sectors
+umass2 at uhub0 port 12 configuration 1 interface 0 "Apple Card Reader" rev 3.00/8.20 addr 9
+umass2: using SCSI over Bulk-Only
+scsibus4 at umass2: 2 targets, initiator 0
+sd3 at scsibus4 targ 1 lun 0: <APPLE, SD Card Reader, 3.00> removable serial.05ac8406000000000820
+vscsi0 at root
+scsibus5 at vscsi0: 256 targets
+softraid0 at root
+scsibus6 at softraid0: 256 targets
+root on sd2a (22987a7c7fdbb27b.a) swap on sd2b dump on sd2b
+inteldrm0: 2560x1600, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wskbd1: connecting to wsdisplay0
+wskbd2: connecting to wsdisplay0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+sd1 detached
+scsibus2 detached
+umass0 detached
+umass0 at uhub0 port 11 configuration 1 interface 0 "USB SanDisk 3.2Gen1" rev 3.20/1.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: <USB, SanDisk 3.2Gen1, 1.00> removable serial.078155ab810763b019f7
+sd1: 29358MB, 512 bytes/sector, 60125184 sectors

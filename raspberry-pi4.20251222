@@ -1,0 +1,102 @@
+OpenBSD 7.8-current (GENERIC.MP) #0: Mon Dec 22 14:36:37 CET 2025
+    hans@rpi.stare.cz:/usr/src/sys/arch/arm64/compile/GENERIC.MP
+real mem  = 8441495552 (8050MB)
+avail mem = 8137535488 (7760MB)
+random: good seed from bootblocks
+mainbus0 at root: Raspberry Pi 4 Model B Rev 1.4
+efi0 at mainbus0: UEFI 2.11
+efi0: Das U-Boot rev 0x20250700
+smbios0 at efi0: SMBIOS 3.7.0
+smbios0: vendor U-Boot version "2025.07" date 07/01/2025
+smbios0: raspberrypi Raspberry Pi 4 Model B Rev 1.4
+cpu0 at mainbus0 mpidr 0: ARM Cortex-A72 r0p3
+cpu0: 48KB 64b/line 3-way L1 PIPT I-cache, 32KB 64b/line 2-way L1 D-cache
+cpu0: 1024KB 64b/line 16-way L2 cache
+cpu0: CRC32,ASID16
+cpu1 at mainbus0 mpidr 1: ARM Cortex-A72 r0p3
+cpu1: 48KB 64b/line 3-way L1 PIPT I-cache, 32KB 64b/line 2-way L1 D-cache
+cpu1: 1024KB 64b/line 16-way L2 cache
+cpu2 at mainbus0 mpidr 2: ARM Cortex-A72 r0p3
+cpu2: 48KB 64b/line 3-way L1 PIPT I-cache, 32KB 64b/line 2-way L1 D-cache
+cpu2: 1024KB 64b/line 16-way L2 cache
+cpu3 at mainbus0 mpidr 3: ARM Cortex-A72 r0p3
+cpu3: 48KB 64b/line 3-way L1 PIPT I-cache, 32KB 64b/line 2-way L1 D-cache
+cpu3: 1024KB 64b/line 16-way L2 cache
+"linux,cma" at mainbus0 not configured
+"nvram" at mainbus0 not configured
+apm0 at mainbus0
+"system" at mainbus0 not configured
+"axi" at mainbus0 not configured
+simplebus0 at mainbus0: "soc"
+bcmclock0 at simplebus0
+bcmmbox0 at simplebus0
+bcmgpio0 at simplebus0
+bcmaux0 at simplebus0
+ampintc0 at simplebus0 nirq 256, ncpu 4 ipi 0: "interrupt-controller"
+bcmtmon0 at simplebus0
+bcmdmac0 at simplebus0: DMA0 DMA2 DMA4 DMA5 DMA6 DMA7 DMA8 DMA9 DMA10
+pluart0 at simplebus0: rev 3, 32 byte fifo
+pluart0: console
+"interrupt-controller" at simplebus0 not configured
+bcmdog0 at simplebus0
+bcmirng0 at simplebus0
+"firmware" at simplebus0 not configured
+"power" at simplebus0 not configured
+"mailbox" at simplebus0 not configured
+sdhc0 at simplebus0
+sdhc0: SDHC 3.00, 250 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed
+"gpiomem" at simplebus0 not configured
+"fb" at simplebus0 not configured
+simplebus1 at simplebus0: "nvmem"
+"nvmem_otp" at simplebus1 not configured
+"nvmem_cust" at simplebus1 not configured
+"nvmem_priv" at simplebus1 not configured
+simplebus2 at mainbus0: "clocks"
+"clk-osc" at simplebus2 not configured
+"clk-usb" at simplebus2 not configured
+"phy" at mainbus0 not configured
+"clk-27M" at mainbus0 not configured
+"clk-108M" at mainbus0 not configured
+simplebus3 at mainbus0: "emmc2bus"
+sdhc1 at simplebus3
+sdhc1: SDHC 3.00, 100 MHz base clock
+sdmmc1 at sdhc1: 8-bit, sd high-speed, mmc high-speed, ddr52, dma
+"pmu" at mainbus0 not configured
+agtimer0 at mainbus0: 54000 kHz
+simplebus4 at mainbus0: "scb"
+bcmpcie0 at simplebus4
+pci0 at bcmpcie0
+ppb0 at pci0 dev 0 function 0 "Broadcom BCM2711" rev 0x10
+pci1 at ppb0 bus 1
+xhci0 at pci1 dev 0 function 0 "VIA VL805 xHCI" rev 0x01: intx, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 "VIA xHCI root hub" rev 3.00/1.00 addr 1
+bse0 at simplebus4: address dc:a6:32:e0:50:d3
+brgphy0 at bse0 phy 1: BCM54210E, rev. 2
+"codec" at simplebus4 not configured
+"dma" at simplebus4 not configured
+gpioleds0 at mainbus0: "ACT", "PWR"
+"cam_dummy_reg" at mainbus0 not configured
+"regulator-cam1" at mainbus0 not configured
+"regulator-sd-io-1v8" at mainbus0 not configured
+"regulator-sd-vcc" at mainbus0 not configured
+"fixedregulator_3v3" at mainbus0 not configured
+"fixedregulator_5v0" at mainbus0 not configured
+"zone_dma" at mainbus0 not configured
+simplebus5 at mainbus0: "v3dbus"
+scsibus0 at sdmmc1: 2 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: <Sandisk, SE32G, 0080> removable
+sd0: 30436MB, 512 bytes/sector, 62333952 sectors
+uhub1 at uhub0 port 1 configuration 1 interface 0 "VIA Labs USB2.0 Hub" rev 2.10/4.21 addr 2
+bwfm0 at sdmmc0 function 1
+manufacturer 0x02d0, product 0xa9a6 at sdmmc0 function 2 not configured
+manufacturer 0x02d0, product 0xa9a6 at sdmmc0 function 3 not configured
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on sd0a (a33e6029ac9d8f70.a) swap on sd0b dump on sd0b
+WARNING: CHECK AND RESET THE DATE!
+gpio0 at bcmgpio0: 58 pins
+bwfm0: address dc:a6:32:e0:50:d4
