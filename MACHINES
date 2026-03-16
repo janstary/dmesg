@@ -1,7 +1,3 @@
-# dmesg
-
-dmesg collected over the years running OpenBSD on various machines
-
 # laptops
 
 host	model		cpu   # freq D,I,L2,L3   C? mems  freq disk cap makej wifi	               notes

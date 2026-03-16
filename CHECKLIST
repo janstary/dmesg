@@ -1,0 +1,46 @@
+bios:
+	do we have the latest bios?
+	upgrade from win before reinstall
+	(or do from another win disk swapped in)
+
+battery:
+	sysctl hw: batter condition?
+
+disk:
+	replace rotating disks with ssd or nvme
+	can we boot from nvme?
+
+video:
+	video(1): does the internal webcam work?
+	xvinfo: do we have a Xv adapter
+
+cpu C states:
+	do we have at least C3?
+
+suspend/resume:
+	does everything wake up correctly?
+	including wifi?
+
+audio:
+	does the internal mic work
+	do the internal speakers work?
+	does the headphone jack work?
+	do headphones mute the speakers?
+	do volume and mute buttons work?
+	sndioctl, mixerctl, audioctl
+
+wifi:
+	is the card supported? (Replace with athn or iwn.)
+	https://marc.info/?l=openbsd-misc&m=160278763201347&w=2
+	https://marc.info/?l=openbsd-misc&m=149079257620166&w=2
+
+report:
+	dmesg
+	acpidump
+	sysctl hw
+	pcidump
+	usbdevs
+	usbutils
+	xdpyinfo
+	xvinfo
+	mixerctl
