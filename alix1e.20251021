@@ -1,0 +1,68 @@
+OpenBSD 7.8-current (GENERIC) #121: Tue Oct 21 23:44:14 MDT 2025
+    deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC
+real mem  = 259207168 (247MB)
+avail mem = 236756992 (225MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 07/19/10, BIOS32 rev. 0 @ 0xfa950
+apm0 at bios0: Power Management spec V1.2 (slowidle)
+pcibios0 at bios0: rev 2.1 @ 0xf0000/0xdfb4
+pcibios0: PCI IRQ Routing Table rev 1.0 @ 0xfdf30/128 (6 entries)
+pcibios0: PCI Exclusive IRQs: 5 10 11
+pcibios0: no compatible PCI ICU found: ICU vendor 0x1022 product 0x2090
+pcibios0: Warning, unable to fix up PCI interrupt routing
+pcibios0: PCI bus #0 is the last bus
+bios0: ROM list: 0xc0000/0x8000 0xc8000/0xa800 0xef000/0x1000!
+cpu0 at mainbus0: (uniprocessor)
+cpu0: Geode(TM) Integrated Processor by AMD PCS ("AuthenticAMD" 586-class) 499 MHz, 05-0a-02
+cpu0: FPU,DE,PSE,TSC,MSR,CX8,SEP,PGE,CMOV,CFLUSH,MMX,MMXX,3DNOW2,3DNOW
+mtrr: K6-family MTRR support (2 registers)
+amdmsr0 at mainbus0
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 1 function 0 "AMD Geode LX" rev 0x33
+vga1 at pci0 dev 1 function 1 "AMD Geode LX Video" rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+glxsb0 at pci0 dev 1 function 2 "AMD Geode LX Crypto" rev 0x00: RNG AES
+vr0 at pci0 dev 13 function 0 "VIA VT6105M RhineIII" rev 0x96: irq 11, address 00:0d:b9:0e:9e:f4
+ukphy0 at vr0 phy 1: Generic IEEE 802.3u media interface, rev. 3: OUI 0x004063, model 0x0034
+athn0 at pci0 dev 14 function 0 "Atheros AR9280" rev 0x01: irq 10
+athn0: AR9280 rev 2 (2T2R), ROM rev 16, address 00:80:48:72:97:82
+glxpcib0 at pci0 dev 15 function 0 "AMD CS5536 ISA" rev 0x03: rev 3, 32-bit 3579545Hz timer, watchdog, gpio, i2c
+gpio0 at glxpcib0: 32 pins
+iic0 at glxpcib0
+pciide0 at pci0 dev 15 function 2 "AMD CS5536 IDE" rev 0x01: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+wd0 at pciide0 channel 0 drive 0: <SDCFHS-016G>
+wd0: 1-sector PIO, LBA48, 15279MB, 31293360 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+auglx0 at pci0 dev 15 function 3 "AMD CS5536 Audio" rev 0x01: irq 11, CS5536 AC97
+ac97: codec id 0x414c4770 (Avance Logic ALC203 rev 0)
+ac97: codec features headphone, 20 bit DAC, 18 bit ADC, No 3D Stereo
+audio0 at auglx0
+ohci0 at pci0 dev 15 function 4 "AMD CS5536 USB" rev 0x02: irq 5, version 1.0, legacy support
+ehci0 at pci0 dev 15 function 5 "AMD CS5536 USB" rev 0x02: irq 5
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "AMD EHCI root hub" rev 2.00/1.00 addr 1
+isa0 at glxpcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+wbsio0 at isa0 port 0x2e/2: W83627HF rev 0x41
+lm1 at wbsio0 port 0x290/8: W83627HF
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 "AMD OHCI root hub" rev 1.00/1.00 addr 1
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on wd0a (cfeae50a002d1e1d.a) swap on wd0b dump on wd0b
