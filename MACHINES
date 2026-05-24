@@ -16,9 +16,6 @@ host	model		cpu   # freq D,I,L2,L3   C? mems  freq disk cap makej notes
 box	Gigabyte H67MA	i7    8 3.70 32,32,256,8 C3 8888 12800 SSD   60 04:27 sees 4/8 ram
 kancl   Gigabyte Z68MX  i5    4 3.60 32,32,256,6 C3 4424 10600 M2   128 06:14 sees 4/8 ram
 bzm	HP 260 G2       i3    4 2.30 32,32,256,3 C3 84   17000 SSD   40 08:52 DDR4; wifi "Realtek 8723BE" unsupported
-netbsd	MSI 7733        i3    4 2.80 256         C3      12800 SATA 300       sees 4/8 ram
-freebsd	MSI 7733        i3    4 2.80 256         C3      12800 SATA 320       sees 4/8 ram
-debian	MSI 7733        i3    4 2.80 256         C3      12800                sees 4/8 ram
 
 # little boxes
 
