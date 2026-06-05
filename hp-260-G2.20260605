@@ -28,7 +28,7 @@ random: registering fast source Intel Secure Key Seed
 random: fast provider: "Intel Secure Key Seed"
 random: unblocking device.
 ioapic0 <Version 2.0> irqs 0-119
-Launching APs: 1 2 3
+Launching APs: 1 3 2
 random: entropy device external interface
 kbd1 at kbdmux0
 smbios0: <System Management BIOS> at iomem 0xf05e0-0xf05fe
@@ -104,11 +104,10 @@ hwpstate_intel2: <Intel Speed Shift> on cpu2
 cpufreq2: <CPU frequency control> on cpu2
 hwpstate_intel3: <Intel Speed Shift> on cpu3
 cpufreq3: <CPU frequency control> on cpu3
-Timecounter "TSC-low" frequency 1151999237 Hz quality 1000
+Timecounter "TSC-low" frequency 1151999160 Hz quality 1000
 Timecounters tick every 1.000 msec
 ZFS filesystem version: 5
 ZFS storage pool version: features support (5000)
-ugen0.1: <Intel XHCI root HUB> at usbus0
 hdacc0: <Realtek ALC221 HDA CODEC> at cad 0 on hdac0
 hdaa0: <Realtek ALC221 Audio Function Group> at nid 1 on hdacc0
 pcm0: <Realtek ALC221 (Analog)> at nid 23 and 26 on hdaa0
@@ -117,16 +116,12 @@ hdacc1: <Intel Skylake HDA CODEC> at cad 2 on hdac0
 hdaa1: <Intel Skylake Audio Function Group> at nid 1 on hdacc1
 pcm2: <Intel Skylake (HDMI/DP 8ch)> at nid 3 on hdaa1
 Trying to mount root from zfs:zroot/ROOT/default []...
+ugen0.1: <Intel XHCI root HUB> at usbus0
 uhub0 on usbus0
 uhub0: <Intel XHCI root HUB, class 9/0, rev 3.00/1.00, addr 1> on usbus0
 uhub0: 18 ports with 18 removable, self powered
 Root mount waiting for: usbus0 CAM
 ugen0.2: <Realtek Bluetooth Radio> at usbus0
-ugen0.3: <USB SanDisk 3.2Gen1> at usbus0
-umass0 on uhub0
-umass0: <USB SanDisk 3.2Gen1, class 0/0, rev 3.20/1.00, addr 2> on usbus0
-umass0:  SCSI over Bulk-Only; quirks = 0x0
-umass0:1:0: Attached to scbus1
 Root mount waiting for: CAM
 Root mount waiting for: CAM
 Root mount waiting for: CAM
@@ -137,17 +132,6 @@ ada0: 300.000MB/s transfers (SATA 2.x, UDMA6, PIO 8192bytes)
 ada0: Command Queueing enabled
 ada0: 38166MB (78165360 512 byte sectors)
 ada0: quirks=0x1<4K>
-da0 at umass-sim0 bus 0 scbus1 target 0 lun 0
-da0: <USB SanDisk 3.2Gen1 1.00> Removable Direct Access SPC-4 SCSI device
-da0: Serial Number 0101a13e8bada965193fa336071026fbee4db7a23281fceb8c0af03342d0
-da0: 400.000MB/s transfers
-da0: 29358MB (60125184 512 byte sectors)
-da0: quirks=0x2<NO_6_BYTE>
-GEOM_PART: integrity check failed (da0, MBR)
-KLD drm.ko: depends on iic - not available or version mismatch
-linker_load_file: /boot/modules/drm.ko - unsupported file type
-KLD i915kms.ko: depends on drmn - not available or version mismatch
-linker_load_file: /boot/modules/i915kms.ko - unsupported file type
 acpi_wmi0: <ACPI-WMI mapping> on acpi0
 acpi_wmi0: cannot find EC device
 acpi_wmi0: Embedded MOF found
