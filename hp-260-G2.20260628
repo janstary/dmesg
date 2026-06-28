@@ -1,0 +1,214 @@
+---<<BOOT>>---
+Copyright (c) 1992-2026 The FreeBSD Project.
+Copyright (c) 1979, 1980, 1983, 1986, 1988, 1989, 1991, 1992, 1993, 1994
+	The Regents of the University of California. All rights reserved.
+FreeBSD is a registered trademark of The FreeBSD Foundation.
+FreeBSD 16.0-CURRENT #0 main-n287043-c263dd413ca0-dirty: Sun Jun 28 08:57:59 CEST 2026
+    hans@freebsd.stare.cz:/usr/obj/usr/src/amd64.amd64/sys/HP260 amd64
+FreeBSD clang version 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2)
+VT(vga): resolution 640x480
+sysctl_register_oid: can't re-use a leaf (vfs.zfs.metaslab.condense_pct)!
+CPU: Intel(R) Core(TM) i3-6100U CPU @ 2.30GHz (2300.00-MHz K8-class CPU)
+  Origin="GenuineIntel"  Id=0x406e3  Family=0x6  Model=0x4e  Stepping=3
+  Features=0xbfebfbff<FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CLFLUSH,DTS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE>
+  Features2=0x7ffafbbf<SSE3,PCLMULQDQ,DTES64,MON,DS_CPL,VMX,EST,TM2,SSSE3,SDBG,FMA,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,TSCDLT,AESNI,XSAVE,OSXSAVE,AVX,F16C,RDRAND>
+  AMD Features=0x2c100800<SYSCALL,NX,Page1GB,RDTSCP,LM>
+  AMD Features2=0x121<LAHF,ABM,Prefetch>
+  Structured Extended Features=0x29c6fbf<FSGSBASE,TSCADJ,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,NFPUSG,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PROCTRACE>
+  Structured Extended Features3=0xbc002e00<MCUOPT,MD_CLEAR,TSXFA,IBPB,STIBP,L1DFL,ARCH_CAP,SSBD>
+  XSAVE Features=0xf<XSAVEOPT,XSAVEC,XINUSE,XSAVES>
+  IA32_ARCH_CAPS=0xc04<RSBA>
+  VT-x: PAT,HLT,MTF,PAUSE,EPT,UG,VPID
+  TSC: P-state invariant, performance statistics
+real memory  = 8589934592 (8192 MB)
+avail memory = 8200949760 (7821 MB)
+Event timer "LAPIC" quality 600
+ACPI APIC Table: <HPQOEM SLIC-CPC>
+FreeBSD/SMP: Multiprocessor System Detected: 4 CPUs
+FreeBSD/SMP: 1 package(s) x 2 core(s) x 2 hardware threads
+random: registering fast source Intel Secure Key Seed
+random: fast provider: "Intel Secure Key Seed"
+random: unblocking device.
+ioapic0 <Version 2.0> irqs 0-119
+Launching APs: 1 3 2
+random: entropy device external interface
+kbd1 at kbdmux0
+smbios0: <System Management BIOS> at iomem 0xf05e0-0xf05fe
+smbios0: Entry point: v2.1 (32-bit), Version: 2.8, BCD Revision: 2.8
+aesni0: <AES-CBC,AES-CCM,AES-GCM,AES-ICM,AES-XTS>
+acpi0: <HPQOEM SLIC-CPC>
+acpi0: Power Button (fixed)
+cpu0: <ACPI CPU> on acpi0
+hpet0: <High Precision Event Timer> iomem 0xfed00000-0xfed003ff on acpi0
+Timecounter "HPET" frequency 24000000 Hz quality 950
+Event timer "HPET" frequency 24000000 Hz quality 550
+Event timer "HPET1" frequency 24000000 Hz quality 440
+Event timer "HPET2" frequency 24000000 Hz quality 440
+Event timer "HPET3" frequency 24000000 Hz quality 440
+Event timer "HPET4" frequency 24000000 Hz quality 440
+atrtc0: <AT realtime clock> port 0x70-0x77 irq 8 on acpi0
+atrtc0: Warning: Couldn't map I/O.
+atrtc0: registered as a time-of-day clock, resolution 1.000000s
+Event timer "RTC" frequency 32768 Hz quality 0
+attimer0: <AT timer> port 0x40-0x43,0x50-0x53 irq 0 on acpi0
+Timecounter "i8254" frequency 1193182 Hz quality 0
+Event timer "i8254" frequency 1193182 Hz quality 100
+Timecounter "ACPI-fast" frequency 3579545 Hz quality 900
+acpi_timer0: <24-bit timer at 3.579545MHz> port 0x1808-0x180b on acpi0
+pcib0: <ACPI Host-PCI bridge> port 0xcf8-0xcff on acpi0
+pci0: <ACPI PCI bus> on pcib0
+vgapci0: <VGA-compatible display> port 0xf000-0xf03f mem 0xee000000-0xeeffffff,0xd0000000-0xdfffffff irq 16 at device 2.0 on pci0
+vgapci0: Boot video device
+xhci0: <Intel Sunrise Point-LP USB 3.0 controller> mem 0xef210000-0xef21ffff irq 16 at device 20.0 on pci0
+xhci0: 32 bytes context size, 64-bit DMA
+xhci0: xECP capabilities <PROTO,PROTO,VEND(c0),LEGACY,VEND(c6),VEND(c7),VEND(c2),DEBUG,VEND(c3),VEND(c4),VEND(c5)>
+usbus0 on xhci0
+usbus0: 5.0Gbps Super Speed USB v3.0
+pci0: <simple comms> at device 22.0 (no driver attached)
+ahci0: <Intel Sunrise Point-LP AHCI SATA controller> port 0xf090-0xf097,0xf080-0xf083,0xf060-0xf07f mem 0xef228000-0xef229fff,0xef22c000-0xef22c0ff,0xef22b000-0xef22b7ff irq 16 at device 23.0 on pci0
+ahci0: AHCI v1.31 with 2 6Gbps ports, Port Multiplier not supported
+ahcich0: <AHCI channel> at channel 0 on ahci0
+pcib1: <ACPI PCI-PCI bridge> irq 18 at device 28.0 on pci0
+pci1: <ACPI PCI bus> on pcib1
+re0: <Realtek 8168/8111 B/C/CP/D/DP/E/F/G PCIe Gigabit Ethernet> port 0xe000-0xe0ff mem 0xef104000-0xef104fff,0xef100000-0xef103fff irq 18 at device 0.0 on pci1
+re0: Using 1 MSI-X message
+re0: ASPM disabled
+re0: Chip rev. 0x50800000
+re0: MAC rev. 0x00100000
+miibus0: <MII bus> on re0
+rgephy0: <RTL8251/8153 1000BASE-T media interface> PHY 1 on miibus0
+rgephy0:  none, 10baseT, 10baseT-FDX, 10baseT-FDX-flow, 100baseTX, 100baseTX-FDX, 100baseTX-FDX-flow, 1000baseT-FDX, 1000baseT-FDX-master, 1000baseT-FDX-flow, 1000baseT-FDX-flow-master, auto, auto-flow
+re0: Using defaults for TSO: 65518/35/2048
+re0: Ethernet address: 7c:d3:0a:21:eb:f5
+re0: netmap queues/slots: TX 1/256, RX 1/256
+pcib2: <ACPI PCI-PCI bridge> irq 19 at device 28.3 on pci0
+pci2: <ACPI PCI bus> on pcib2
+pci2: <network> at device 0.0 (no driver attached)
+isab0: <PCI-ISA bridge> at device 31.0 on pci0
+isa0: <ISA bus> on isab0
+pci0: <memory> at device 31.2 (no driver attached)
+hdac0: <Intel Sunrise Point-LP HDA Controller> mem 0xef220000-0xef223fff,0xef200000-0xef20ffff irq 16 at device 31.3 on pci0
+acpi_button0: <Sleep Button> on acpi0
+acpi_spmc0: <System Power Management Controller> on acpi0
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+Firmware Warning (ACPI): Possibly buggy BIOS with ACPI_TYPE_INTEGER for function enumeration
+ (20260408/ACPI-3141)
+acpi_spmc0: DSMs supported: <Intel,Microsoft,AMD>
+acpi_spmc0: DSM Intel, revision 0: Supported functions: 0x7e<DEVICE_CONSTRAINTS,CRASH_DUMP_DEVICE,DISPLAY_OFF,DISPLAY_ON,LPI_ENTRY,LPI_EXIT>
+acpi_spmc0: DSM Microsoft, revision 0: Supported functions: 0
+acpi_spmc0: DSM AMD, revision 0: Supported functions: 0
+acpi_button1: <Power Button> on acpi0
+acpi_tz0: <Thermal Zone> on acpi0
+acpi_tz1: <Thermal Zone> on acpi0
+orm0: <ISA Option ROM> at iomem 0xd0000-0xd0fff pnpid ORM0000 on isa0
+vga0: <Generic ISA VGA> at port 0x3c0-0x3df iomem 0xa0000-0xbffff pnpid PNP0900 on isa0
+atkbdc0: <Keyboard controller (i8042)> at port 0x60,0x64 on isa0
+atkbd0: <AT Keyboard> irq 1 on atkbdc0
+kbd0 at atkbd0
+atkbd0: [GIANT-LOCKED]
+hwpstate_intel0: <Intel Speed Shift> on cpu0
+cpufreq0: <CPU frequency control> on cpu0
+hwpstate_intel1: <Intel Speed Shift> on cpu1
+cpufreq1: <CPU frequency control> on cpu1
+hwpstate_intel2: <Intel Speed Shift> on cpu2
+cpufreq2: <CPU frequency control> on cpu2
+hwpstate_intel3: <Intel Speed Shift> on cpu3
+cpufreq3: <CPU frequency control> on cpu3
+Timecounter "TSC-low" frequency 1151999379 Hz quality 1000
+Timecounters tick every 1.000 msec
+ZFS filesystem version: 5
+ZFS storage pool version: features support (5000)
+ugen0.1: <Intel XHCI root HUB> at usbus0
+hdacc0: <Realtek ALC221 HDA CODEC> at cad 0 on hdac0
+hdaa0: <Realtek ALC221 Audio Function Group> at nid 1 on hdacc0
+pcm0: <Realtek ALC221 (Analog)> at nid 23 and 26 on hdaa0
+pcm1: <Realtek ALC221 (Front Analog Headphones)> at nid 33 on hdaa0
+hdacc1: <Intel Skylake HDA CODEC> at cad 2 on hdac0
+hdaa1: <Intel Skylake Audio Function Group> at nid 1 on hdacc1
+pcm2: <Intel Skylake (HDMI/DP 8ch)> at nid 3 on hdaa1
+Trying to mount root from zfs:zroot/ROOT/default []...
+uhub0 on usbus0
+uhub0: <Intel XHCI root HUB, class 9/0, rev 3.00/1.00, addr 1> on usbus0
+uhub0: 18 ports with 18 removable, self powered
+Root mount waiting for: usbus0 CAM
+ugen0.2: <Realtek Bluetooth Radio> at usbus0
+Root mount waiting for: CAM
+Root mount waiting for: CAM
+Root mount waiting for: CAM
+ada0 at ahcich0 bus 0 scbus0 target 0 lun 0
+ada0: <INTEL SSDSA2M040G2GC 2CV102HD> ATA-7 SATA 2.x device
+ada0: Serial Number CVGB034601RX040NGN
+ada0: 300.000MB/s transfers (SATA 2.x, UDMA6, PIO 8192bytes)
+ada0: Command Queueing enabled
+ada0: 38166MB (78165360 512 byte sectors)
+ada0: quirks=0x1<4K>
+acpi_wmi0: <ACPI-WMI mapping> on acpi0
+acpi_wmi0: cannot find EC device
+acpi_wmi0: Embedded MOF found
+ichsmb0: <Intel Sunrise Point-LP SMBus controller> port 0xf040-0xf05f mem 0xef22a000-0xef22a0ff irq 16 at device 31.4 on pci0
+smbus0: <System Management Bus> on ichsmb0
+re0: link state changed to UP
+lo0: link state changed to UP
+re0: link state changed to DOWN
+re0: link state changed to UP
